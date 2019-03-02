@@ -33,6 +33,7 @@ spec.loader.exec_module(utils)
 # foo.MyClass()
 
 import pandas as pd
+import random
 
 from ete3 import Tree, NodeStyle, TreeStyle, TextFace, faces
 # from convergence-scripts/script/diffsel_script_utils import *
@@ -116,6 +117,7 @@ df = open("bac_metadata_r86.tsv","r").readlines()
 utils.MESSAGE("Table contains "+str(len(df)) + " lines.")
 
 groups={}
+accession_to_data = dict()
 for line in df[1:]:
     words = line.split("\t")
     group=words[-5].split(";")[3]
@@ -123,18 +125,23 @@ for line in df[1:]:
         groups[group] = {"GC":[],"Size":[],"dist_to_root":[],"completeness":[],"contamination":[],"accession":[]}
     accession = words[0]
     if accession in tip_to_dist.keys():
-        groups[group]["GC"].append([accession,float(words[4])])
-        groups[group]["Size"].append([accession,float(words[6])])
-        groups[group]["dist_to_root"].append([accession,tip_to_dist[accession]])
-        groups[group]["completeness"].append([accession,float(words[20])])
-        groups[group]["contamination"].append([accession,float(words[21])])
+        gc = float(words[4])
+        siz = float(words[6])
+        dist = tip_to_dist[accession]
+        completeness = float(words[19])
+        contamination=float(words[20])
+        groups[group]["GC"].append([accession,gc])
+        groups[group]["Size"].append([accession,siz])
+        groups[group]["dist_to_root"].append([accession,dist])
+        groups[group]["completeness"].append([accession,completeness])
+        groups[group]["contamination"].append([accession,contamination])
         groups[group]["accession"].append(accession)
-
-print(len(groups.keys()))
-
-print(list(groups.keys())[0])
-
-test = list(groups.keys())[0]
+        accession_to_data[accession] = {"GC":gc,"Size":siz,"dist_to_root":dist,"completeness":completeness,"contamination":contamination}
+# print(len(groups.keys()))
+#
+# print(list(groups.keys())[0])
+#
+# test = list(groups.keys())[0]
 
 #print(groups[test]["GC"])
 
@@ -150,40 +157,118 @@ for k in groups.keys():
         group_mean_GCs[k] = float(sum(group_GCs))/len(group_GCs)
 mean_GC = float(sum(all_GC))/len(all_GC)
 
-print (mean_GC)
-representant = {}
+print ("Mean GC: " + str(mean_GC))
+representant = dict()
+representantRandom = dict()
+representantBestGC = dict()
+representantBestCompleteness = dict()
+representantBestContamination = dict()
+representantBestDistance = dict()
+representantBestSize = dict()
+representant_noGC = dict()
+
+nsample = 10
+
 for k in groups.keys():
     #print (groups[k])
-    score = {}
+    score = dict()
+    score_noGC = dict()
     tabgc=groups[k]["GC"]
-# If we want to compare to the overall average    tabgc.sort(key=lambda x: abs(mean_GC-x[1]))
-    tabgc.sort(key=lambda x: abs(group_mean_GCs[k]-x[1]))
-    for t in range(len(tabgc)):
-        score[tabgc[t][0]] = t
-    tabsize=groups[k]["Size"]
-    tabsize.sort(key=lambda x: -x[1])
-    for t in range(len(tabsize)):
-        score[tabsize[t][0]] += t
-    tabcomplet=groups[k]["completeness"]
-    tabcomplet.sort(key=lambda x: -x[1]) 
-    for t in range(len(tabcomplet)):
-        score[tabcomplet[t][0]] += t
-    tabconta=groups[k]["contamination"]
-    tabconta.sort(key=lambda x: x[1])
-    for t in range(len(tabconta)):
-        score[tabconta[t][0]] += t
-    tabdist=groups[k]["dist_to_root"]
-    tabdist.sort(key=lambda x: x[1])
-    for t in range(len(tabdist)):
-        score[tabdist[t][0]] += t
-    keys = list(score.keys())
-    keys.sort(key=lambda x:score[x])
-    if len(keys) > 0:
-        representant[k] = keys[0]
+    if (len(tabgc) > 0):
+    # If we want to compare to the overall average    tabgc.sort(key=lambda x: abs(mean_GC-x[1]))
+        print("Group "+str(k) + " ; Number of Genomes: " + str(len(tabgc)))
+        # for i in range(min(len(tabgc), 10)):
+        #     print("BEFORE GC : Group "+str(k) + " : " + str(abs(group_mean_GCs[k]-tabgc[i][1])))
+        # print("MEAN : " + str(group_mean_GCs[k]))
 
+        tabgc.sort(key=lambda x: abs(group_mean_GCs[k]-x[1]))
+        for t in range(len(tabgc)):
+            score[tabgc[t][0]] = t
+        tabsize=groups[k]["Size"]
+        tabsize.sort(key=lambda x: -x[1])
+        for t in range(len(tabsize)):
+            score[tabsize[t][0]] += t
+            score_noGC[tabsize[t][0]] = t
+        tabcomplet=groups[k]["completeness"]
+        # for i in range(min(len(tabgc), 10)):
+        #     print("BEFORE INCOMPLETENESS : Group "+str(k) + " : " + str(tabcomplet[i][1]))
+        tabcomplet.sort(key=lambda x: -x[1])
+        # for i in range(min(len(tabgc), 10)):
+        #     print("AFTER INCOMPLETENESS : Group "+str(k) + " : " + str(tabcomplet[i][1]))
+        for t in range(len(tabcomplet)):
+            score[tabcomplet[t][0]] += t
+            score_noGC[tabsize[t][0]] += t
+            # score[tabcomplet[t][0]] += t
+        tabconta=groups[k]["contamination"]
+        tabconta.sort(key=lambda x: x[1])
+        for t in range(len(tabconta)):
+            score[tabconta[t][0]] += t
+            score_noGC[tabsize[t][0]] += t
+        tabdist=groups[k]["dist_to_root"]
+        tabdist.sort(key=lambda x: x[1])
+        for t in range(len(tabdist)):
+            score[tabdist[t][0]] += t
+            score_noGC[tabsize[t][0]] += t
+        print ("\tBest GC: " + str(tabgc[0][1]) + "; Worst GC: " +  str(tabgc[-1][1]))
+        print ("\tBest size: " + str(tabsize[0][1]) + "; Worst size: " +  str(tabsize[-1][1]))
+        print ("\tBest completeness: " + str(tabcomplet[0][1]) + "; Worst completeness: " +  str(tabcomplet[-1][1]))
+        print ("\tBest contamination: " + str(tabconta[0][1]) + "; Worst contamination: " +  str(tabconta[-1][1]))
+        print ("\tBest distance: " + str(tabdist[0][1]) + "; Worst distance: " +  str(tabdist[-1][1]))
+        keys = list(score.keys())
+        keys.sort(key=lambda x: score[x])
+        keys_noGC = list(score_noGC.keys())
+        keys_noGC.sort(key=lambda x: score_noGC[x])
+        if len(keys) > 0:
+            representant[k] = keys[0]
+            representant_noGC[k] = keys_noGC[0]
+            representantRandom[k] = [random.choice(keys) for _ in range(nsample)]
+            representantBestGC[k] = tabgc[0][0]
+            representantBestCompleteness[k] = tabcomplet[0][0]
+            representantBestContamination[k] = tabconta[0][0]
+            representantBestDistance[k] = tabdist[0][0]
+            representantBestSize[k] = tabsize[0][0]
+            print("\tSelected representant genome: GC: " + str(accession_to_data[keys[0]]["GC"]) + " ; size: " + str(accession_to_data[keys[0]]["Size"]) + " ; completeness: " + str(accession_to_data[keys[0]]["completeness"]) + " ; contamination: " + str(accession_to_data[keys[0]]["contamination"]) +" ; distance:" + str(accession_to_data[keys[0]]["dist_to_root"]))
 output = open("representant","w")
 for k in representant.keys():
     output.write(representant[k]+"\n")
+output.close()
+
+output = open("representantNoGC","w")
+for k in representant_noGC.keys():
+    output.write(representant_noGC[k]+"\n")
+output.close()
+
+output = open("representantRandom","w")
+for k in representant.keys():
+    for i in range(nsample):
+        output.write(representantRandom[k][i]+"\n")
+output.close()
+
+output = open("representantBestSize","w")
+for k in representant.keys():
+    output.write(representantBestSize[k]+"\n")
+output.close()
+
+output = open("representantBestGC","w")
+for k in representant.keys():
+    output.write(representantBestGC[k]+"\n")
+output.close()
+
+output = open("representantBestCompleteness","w")
+for k in representant.keys():
+    output.write(representantBestCompleteness[k]+"\n")
+output.close()
+
+output = open("representantBestContamination","w")
+for k in representant.keys():
+    output.write(representantBestContamination[k]+"\n")
+output.close()
+
+output = open("representantBestDistance","w")
+for k in representant.keys():
+    output.write(representantBestDistance[k]+"\n")
+output.close()
+
 #print (len(representant.keys()))
 
 
