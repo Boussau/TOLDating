@@ -1,0 +1,206 @@
+---
+title: "Analysis of selected genomes"
+output: html_notebook
+---
+
+### We select 776 genomes from a big data set containing thousands of them. We enforce that there must be one genome per group of organisms. We use different criteria: GC closest to the mean of the group, genome with the largest size in the group, genome with the lowest amount of contamination, most complete genome, genome closest to the parent node of the group. We also use two compound measures, that weigh each variable the same: one that includes all of them, and one that includes all of them except GC. Finally I compare the sampled genomes with each of those approaches to all genomes in the data set, and to a random sample of genomes.
+
+```{r, cache=T}
+setwd("~/Data/TransferRelated/datingWithTransfers/TOL_Dating_From_Literature/Bacteria")
+d0 <- read.table("Data/bac_metadata_r86.tsv", h=T, sep="\t", fill=T, na.strings = c("none", "na", "NA"), colClasses = "character", quote="")
+```
+
+
+
+```{r, cache=T}
+d = d0
+d$gc_percentage <- as.numeric(d$gc_percentage)
+
+d$genome_size <- as.numeric(d$genome_size)
+
+d$checkm_completeness <- as.numeric(d$checkm_completeness)
+
+d$checkm_contamination <- as.numeric(d$checkm_contamination)
+
+# Some contamination values are above 100!
+d[d$checkm_contamination > 100,]$checkm_contamination <- 100
+
+
+d$genome_size <- as.numeric(d$genome_size)
+
+summary(d)
+```
+
+
+```{r}
+samp <- read.table("Data/representant", h=F, colClasses = "character")$V1
+summary(samp)
+subd <- d[which(d$accession%in%samp),]
+
+```
+
+```{r}
+sampRand <- read.table("Data/representantRandom", h=F, colClasses = "character")$V1
+summary(sampRand)
+subdRand <- d[which(d$accession%in%sampRand),]
+
+```
+
+
+```{r}
+sampGC <- read.table("Data/representantBestGC", h=F, colClasses = "character")$V1
+summary(sampGC)
+subdGC <- d[which(d$accession%in%sampGC),]
+```
+
+
+```{r}
+sampContamination <- read.table("Data/representantBestContamination", h=F, colClasses = "character")$V1
+summary(sampContamination)
+subdContamination <- d[which(d$accession%in%sampContamination),]
+
+```
+
+
+```{r}
+sampCompleteness <- read.table("Data/representantBestCompleteness", h=F, colClasses = "character")$V1
+summary(sampCompleteness)
+subdCompleteness <- d[which(d$accession%in%sampCompleteness),]
+
+```
+
+
+```{r}
+sampDistance <- read.table("Data/representantBestDistance", h=F, colClasses = "character")$V1
+summary(sampDistance)
+subdDistance <- d[which(d$accession%in%sampDistance),]
+
+```
+
+```{r}
+sampSize <- read.table("Data/representantBestSize", h=F, colClasses = "character")$V1
+summary(sampSize)
+subdSize <- d[which(d$accession%in%sampSize),]
+
+```
+
+
+```{r}
+sampNoGC <- read.table("Data/representantNoGC", h=F, colClasses = "character")$V1
+summary(sampNoGC)
+subdNoGC <- d[which(d$accession%in%sampNoGC),]
+
+```
+
+
+
+```{r}
+names = c("all", "selected", "selected without GC", "best GC", "best size", "best Contamination", "best Completeness", "best Distance", "Random 10")
+colors = c("white", "red", "pink", "orange", "darkgreen", "blue", "purple", "grey", "brown")
+par(pin=c(7.2,3))
+par(mar = c(7, 4, 2, 2) + 0.2) #add room for the rotated labels
+end_point = length(names)
+
+```
+
+
+
+
+```{r}
+
+boxplot(d$gc_percentage, subd$gc_percentage, subdNoGC$gc_percentage, subdGC$gc_percentage, subdSize$gc_percentage, subdContamination$gc_percentage, subdCompleteness$gc_percentage, subdDistance$gc_percentage, subdRand$gc_percentage, col=colors, main="GC content in all and sampled genomes", names=names, cex.axis=0.7, xaxt="n", space=1)
+text(seq(1,end_point,by=1), par("usr")[3]-0.25, 
+     srt = 60, adj= 1, xpd = TRUE,
+     labels = names, cex=0.65)
+```
+
+
+```{r}
+#par(mfrow=c(1,2))
+#plot(density(as.numeric(as.character(d$genome_size)), na.rm = T), lwd=2, xlim=c(0,10000000), ylim=c(0,0.000001), main="Genome size in all and sampled genomes")
+#lines(density(as.numeric(as.character(subd$genome_size)), na.rm = T), lwd=2, col="red")
+
+boxplot(d$genome_size, subd$genome_size, subdNoGC$genome_size, subdGC$genome_size, subdSize$genome_size, subdContamination$genome_size, subdCompleteness$genome_size, subdDistance$genome_size, subdRand$genome_size, log="y", col=colors, main="Genome size in all and sampled genomes", names=names, cex.axis=0.7, xaxt="n", space=1)
+text(seq(1,end_point,by=1), par("usr")[3]-0.25, 
+     srt = 60, adj= 1, xpd = TRUE,
+     labels = names, cex=0.65)
+
+```
+
+```{r}
+#par(mfrow=c(1,2))
+#plot(density(as.numeric(as.character(d$checkm_completeness)), na.rm = T), lwd=2, xlim=c(0,100), ylim=c(0,0.1), main="Completeness in all and sampled genomes")
+#lines(density(as.numeric(as.character(subd$checkm_completeness)), na.rm = T), lwd=2, col="red")
+boxplot(d$checkm_completeness, subd$checkm_completeness, subdNoGC$checkm_completeness, subdGC$checkm_completeness, subdSize$checkm_completeness, subdContamination$checkm_completeness, subdCompleteness$checkm_completeness, subdDistance$checkm_completeness, subdRand$checkm_completeness, col=colors, main="Completeness in all and sampled genomes", names=names, cex.axis=0.7, xaxt="n", space=1)
+text(seq(1,end_point,by=1), par("usr")[3]-0.25, 
+     srt = 60, adj= 1, xpd = TRUE,
+     labels = names, cex=0.65)
+
+```
+
+
+```{r}
+boxplot(d$checkm_contamination, subd$checkm_contamination, subdNoGC$checkm_contamination, subdGC$checkm_contamination, subdSize$checkm_contamination, subdContamination$checkm_contamination, subdCompleteness$checkm_contamination, subdDistance$checkm_contamination, subdRand$checkm_contamination, ylim=c(0,20), col=colors, main="Contamination in all and sampled genomes", names=names, cex.axis=0.7, xaxt="n", space=1)
+text(seq(1,end_point,by=1), par("usr")[3]-0.25, 
+     srt = 60, adj= 1, xpd = TRUE,
+     labels = names, cex=0.65)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Additional material 
+
+
+```{r}
+plot(density(as.numeric(as.character(d$gc_percentage)), na.rm = T), lwd=2, xlim=c(0,100), ylim=c(0,0.1), main="GC content in all and sampled genomes")
+lines(density(as.numeric(as.character(subd$gc_percentage)), na.rm = T), lwd=2, col="red")
+lines(density(as.numeric(as.character(subdGC$gc_percentage)), na.rm = T), lwd=2, col="orange")
+lines(density(as.numeric(as.character(subdContamination$gc_percentage)), na.rm = T), lwd=2, col="darkgreen")
+lines(density(as.numeric(as.character(subdCompleteness$gc_percentage)), na.rm = T), lwd=2, col="blue")
+lines(density(as.numeric(as.character(subdDistance$gc_percentage)), na.rm = T), lwd=2, col="purple")
+lines(density(as.numeric(as.character(subdRand$gc_percentage)), na.rm = T), lwd=2, col="grey")
+legend(legend=names, col=c("black", "red", "orange", "darkgreen", "blue", "purple", "grey"), "topright", lwd=1)
+```
+
+
+
+```{r}
+hist(d$gc_percentage, nc=50, freq=FALSE, main="GC content in all and sampled genomes")
+hist(subd$gc_percentage, nc=20, add=T, col=rgb(1,0,0,0.5), freq=FALSE)
+```
+
+```{r}
+par(mfrow=c(1,2))
+plot(density(as.numeric(as.character(d$checkm_contamination)), na.rm = T), lwd=2, xlim=c(0,100), ylim=c(0,1), main="Contamination in all and sampled genomes")
+lines(density(as.numeric(as.character(subd$checkm_contamination)), na.rm = T), lwd=2, col="red")
+boxplot(d$checkm_contamination, subd$checkm_contamination, col=c("white", "red"), ylim=c(0,100))
+```
+
+
+
+
+
+
