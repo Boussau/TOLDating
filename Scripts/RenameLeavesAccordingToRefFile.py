@@ -41,6 +41,8 @@ for l in fref:
             sp_name = li[0] + "%" + li[51] + "%"+li[-6].strip().replace("d__Bacteria;","").replace(";","%").replace(":","_").replace("(","%").replace(")","%") + "%" + li[-5].strip().replace("(","%").replace(")","%")
         elif "d__Bacteria" in li[-5]:
             sp_name = li[0] + "%" + li[51] + "%"+ li[-5].strip().replace("d__Bacteria;","").replace(";","%").replace(":","_").replace("(","%").replace(")","%") + "%" + li[-4].strip().replace("(","%").replace(")","%")
+        elif "d__Archaea" in li[-5]:
+            sp_name = li[0] + "%" + li[51] + "%"+ li[-5].strip().replace("d__Archaea;","").replace(";","%").replace(":","_").replace("(","%").replace(")","%") + "%" + li[-4].strip().replace("(","%").replace(")","%")
         else:
             print("\n\n\t\tPROBLEM LINE: " + l)
             exit(-1)
