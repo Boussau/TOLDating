@@ -45,12 +45,16 @@ from argparse import ArgumentParser, FileType
 parser = ArgumentParser(description='Selects tips from a phylogenetic tree.')
 parser.add_argument('inputFile', metavar="input", type=FileType('r'), nargs=1, help='the tree file (newick format)')
 parser.add_argument('-d', '--dataFile', metavar="dataFile", type=FileType('r'), nargs=1, help="Information about tips")
+parser.add_argument('-l', '--level', metavar="level", type=int, nargs=1, help="Level of selection")
+
 #parser.add_argument('-t', '--transition', dest="add_transition", action='store_true', help="add the tag Transition where you put a convergent event.")
 
 args = parser.parse_args()
 
 tree_file = args.inputFile[0]
 utils.MESSAGE("Tree file is "+utils.param(tree_file.name))
+
+
 # sister = args.sister
 # utils.MESSAGE("Sister branch condition: "+param(sister))
 # add_transition = args.add_transition
@@ -59,8 +63,12 @@ utils.MESSAGE("Tree file is "+utils.param(tree_file.name))
 # utils.MESSAGE("Output file is "+utils.data(out_file))
 
 
-#data_file = args.dataFile[0]
-#utils.MESSAGE("Data file is "+utils.param(data_file.name))
+data_file = args.dataFile[0]
+utils.MESSAGE("Data file is "+utils.param(data_file.name)) # bac_metadata_r86.tsv
+
+level = args.level[0]
+utils.MESSAGE("Level is " + utils.param(level)) # bac_metadata_r86.tsv
+
 
 #===================================================================================================
 
@@ -85,7 +93,8 @@ tip_to_dist = dict()
 # Annotate inner nodes
 for node in t.traverse("postorder"):
     if node.is_leaf():
-        group = get_level_3 (node.name)
+#        group = get_level_3 (node.name)
+        group = get_level (level, node.name)
         node.add_feature("group", group)
         node.add_feature("dist_to_root", -1.0)
         if not group_to_tips.__contains__(group):
@@ -101,6 +110,7 @@ for node in t.traverse("postorder"):
             node.add_feature("dist_to_root",0.0)
             node.add_feature("group","NA")
 
+print("Number of groups: " + str(len(group_to_tips)))
 
 for node in t.traverse("preorder"):
     if (not node.is_root()) and node.dist_to_root==-1:
@@ -112,7 +122,7 @@ for node in t.traverse("preorder"):
 
 utils.STEP("Getting table")
 #df = pd.read_csv('bac_metadata_r86.tsv', sep='\t')
-df = open("bac_metadata_r86.tsv","r").readlines()
+df = open(data_file.name,"r").readlines()
 
 utils.MESSAGE("Table contains "+str(len(df)) + " lines.")
 
@@ -120,7 +130,7 @@ groups={}
 accession_to_data = dict()
 for line in df[1:]:
     words = line.split("\t")
-    group=words[-5].split(";")[3]
+    group=words[-5].split(";")[level]
     if not group in groups.keys():
         groups[group] = {"GC":[],"Size":[],"dist_to_root":[],"completeness":[],"contamination":[],"accession":[]}
     accession = words[0]
@@ -228,43 +238,43 @@ for k in groups.keys():
             representantBestDistance[k] = tabdist[0][0]
             representantBestSize[k] = tabsize[0][0]
             print("\tSelected representant genome: GC: " + str(accession_to_data[keys[0]]["GC"]) + " ; size: " + str(accession_to_data[keys[0]]["Size"]) + " ; completeness: " + str(accession_to_data[keys[0]]["completeness"]) + " ; contamination: " + str(accession_to_data[keys[0]]["contamination"]) +" ; distance:" + str(accession_to_data[keys[0]]["dist_to_root"]))
-output = open("representant","w")
+output = open("representant_"+str(level),"w")
 for k in representant.keys():
     output.write(representant[k]+"\n")
 output.close()
 
-output = open("representantNoGC","w")
+output = open("representantNoGC_"+str(level),"w")
 for k in representant_noGC.keys():
     output.write(representant_noGC[k]+"\n")
 output.close()
 
-output = open("representantRandom","w")
+output = open("representantRandom_"+str(level),"w")
 for k in representant.keys():
     for i in range(nsample):
         output.write(representantRandom[k][i]+"\n")
 output.close()
 
-output = open("representantBestSize","w")
+output = open("representantBestSize_"+str(level),"w")
 for k in representant.keys():
     output.write(representantBestSize[k]+"\n")
 output.close()
 
-output = open("representantBestGC","w")
+output = open("representantBestGC_"+str(level),"w")
 for k in representant.keys():
     output.write(representantBestGC[k]+"\n")
 output.close()
 
-output = open("representantBestCompleteness","w")
+output = open("representantBestCompleteness_"+str(level),"w")
 for k in representant.keys():
     output.write(representantBestCompleteness[k]+"\n")
 output.close()
 
-output = open("representantBestContamination","w")
+output = open("representantBestContamination_"+str(level),"w")
 for k in representant.keys():
     output.write(representantBestContamination[k]+"\n")
 output.close()
 
-output = open("representantBestDistance","w")
+output = open("representantBestDistance_"+str(level),"w")
 for k in representant.keys():
     output.write(representantBestDistance[k]+"\n")
 output.close()
