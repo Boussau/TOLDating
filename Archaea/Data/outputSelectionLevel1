@@ -1,0 +1,87 @@
+Parsing command line arguments
+-- Tree file is arc122_r86.1.treeRN
+-- Data file is arc_metadata_r86.tsv
+-- Level is 1
+-- Reading tree from file
+-- tree read
+Number of groups: 65
+Getting table
+-- Table contains 2076 lines.
+Mean GC: 47.39875710834637
+Group p__Euryarchaeota ; Number of Genomes: 161
+	Best GC: 38.9703509735; Worst GC: 61.1591716427
+	Best size: 3466370.0; Worst size: 773877.0
+	Best completeness: 100.0; Worst completeness: 50.66
+	Best contamination: 0.0; Worst contamination: 6.31
+	Best distance: 0.0; Worst distance: 0.06608
+	Selected representant genome: GC: 41.339525475 ; size: 2449987.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.0
+Group p__Halobacterota ; Number of Genomes: 427
+	Best GC: 56.9910750867; Worst GC: 29.2409080875
+	Best size: 5751492.0; Worst size: 758925.0
+	Best completeness: 100.0; Worst completeness: 55.9
+	Best contamination: 0.0; Worst contamination: 8.17
+	Best distance: 0.0; Worst distance: 0.25612999999999997
+	Selected representant genome: GC: 61.1768831514 ; size: 4280359.0 ; completeness: 99.93 ; contamination: 0.0 ; distance:0.0
+Group p__Crenarchaeota ; Number of Genomes: 239
+	Best GC: 43.3190656085; Worst GC: 63.4970620826
+	Best size: 3430706.0; Worst size: 545893.0
+	Best completeness: 100.0; Worst completeness: 56.23
+	Best contamination: 0.0; Worst contamination: 8.74
+	Best distance: 0.0; Worst distance: 0.71179
+	Selected representant genome: GC: 46.2249484721 ; size: 2191533.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.0
+Group p__Thermoplasmatota ; Number of Genomes: 488
+	Best GC: 47.6641106653; Worst GC: 69.3058718396
+	Best size: 2787008.0; Worst size: 773327.0
+	Best completeness: 100.0; Worst completeness: 51.13
+	Best contamination: 0.0; Worst contamination: 6.34
+	Best distance: 0.0; Worst distance: 0.52104
+	Selected representant genome: GC: 48.4288392698 ; size: 1876148.0 ; completeness: 80.0 ; contamination: 0.0 ; distance:0.0
+Group p__Nanoarchaeota ; Number of Genomes: 162
+	Best GC: 38.2718811333; Worst GC: 59.6291871343
+	Best size: 1897616.0; Worst size: 460634.0
+	Best completeness: 87.77; Worst completeness: 59.5
+	Best contamination: 0.0; Worst contamination: 3.97
+	Best distance: 0.0; Worst distance: 0.43236
+	Selected representant genome: GC: 36.7739552704 ; size: 912474.0 ; completeness: 86.21 ; contamination: 0.0 ; distance:0.0
+Group p__Asgardarchaeota ; Number of Genomes: 12
+	Best GC: 38.0543968717; Worst GC: 49.2815390729
+	Best size: 5684038.0; Worst size: 1406929.0
+	Best completeness: 96.26; Worst completeness: 71.89
+	Best contamination: 1.4; Worst contamination: 6.54
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 38.0543968717 ; size: 1460710.0 ; completeness: 96.26 ; contamination: 1.4 ; distance:0.0
+Group p__Micrarchaeota ; Number of Genomes: 54
+	Best GC: 48.7758628396; Worst GC: 29.7083535326
+	Best size: 1432180.0; Worst size: 551902.0
+	Best completeness: 92.21; Worst completeness: 67.21
+	Best contamination: 0.0; Worst contamination: 4.67
+	Best distance: 0.0; Worst distance: 0.0043100000000000005
+	Selected representant genome: GC: 47.3874554877 ; size: 1098042.0 ; completeness: 90.19 ; contamination: 0.0 ; distance:0.0
+Group p__Altiarchaeota ; Number of Genomes: 17
+	Best GC: 37.1218803721; Worst GC: 48.4767341401
+	Best size: 3188023.0; Worst size: 919319.0
+	Best completeness: 95.02; Worst completeness: 58.28
+	Best contamination: 0.0; Worst contamination: 5.14
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 32.5907895897 ; size: 1297126.0 ; completeness: 86.6 ; contamination: 0.93 ; distance:0.0
+Group p__JdFR-18 ; Number of Genomes: 1
+	Best GC: 39.1428829138; Worst GC: 39.1428829138
+	Best size: 2062134.0; Worst size: 2062134.0
+	Best completeness: 98.13; Worst completeness: 98.13
+	Best contamination: 1.87; Worst contamination: 1.87
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 39.1428829138 ; size: 2062134.0 ; completeness: 98.13 ; contamination: 1.87 ; distance:0.0
+Group p__UAP2 ; Number of Genomes: 5
+	Best GC: 40.9088110824; Worst GC: 39.5390843123
+	Best size: 733777.0; Worst size: 608185.0
+	Best completeness: 89.72; Worst completeness: 79.91
+	Best contamination: 0.0; Worst contamination: 1.87
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 40.9088110824 ; size: 635160.0 ; completeness: 89.72 ; contamination: 0.0 ; distance:0.0
+Group p__Hadesarchaeota ; Number of Genomes: 3
+	Best GC: 54.8401665144; Worst GC: 50.4769052677
+	Best size: 1231125.0; Worst size: 682265.0
+	Best completeness: 89.72; Worst completeness: 56.38
+	Best contamination: 0.8; Worst contamination: 1.87
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 54.8401665144 ; size: 1231125.0 ; completeness: 89.72 ; contamination: 1.87 ; distance:0.0
