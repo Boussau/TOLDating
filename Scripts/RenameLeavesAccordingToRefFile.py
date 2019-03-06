@@ -37,6 +37,7 @@ for l in fref:
         pass
     elif len(li)>=2:
         sp_name =""
+        # sp_name is going to be accession_numer%taxid%taxonomy
         if "d__Bacteria" in li[-6]:
             sp_name = li[0] + "%" + li[51] + "%"+li[-6].strip().replace("d__Bacteria;","").replace(";","%").replace(":","_").replace("(","%").replace(")","%") + "%" + li[-5].strip().replace("(","%").replace(")","%")
         elif "d__Bacteria" in li[-5]:

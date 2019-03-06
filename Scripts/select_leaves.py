@@ -83,6 +83,8 @@ def get_genome_accession(s):
     return (s.split("%")[0])
 
 def get_level (i, s):
+#    print(s)
+#    print(s.split("%")[i])
     return (s.split("%")[i])
 
 def get_level_3 (s):
@@ -95,6 +97,7 @@ for node in t.traverse("postorder"):
     if node.is_leaf():
 #        group = get_level_3 (node.name)
         group = get_level (level, node.name)
+        #print(group)
         node.add_feature("group", group)
         node.add_feature("dist_to_root", -1.0)
         if not group_to_tips.__contains__(group):
@@ -111,6 +114,8 @@ for node in t.traverse("postorder"):
             node.add_feature("group","NA")
 
 print("Number of groups: " + str(len(group_to_tips)))
+
+#print(group_to_tips.keys())
 
 for node in t.traverse("preorder"):
     if (not node.is_root()) and node.dist_to_root==-1:
@@ -130,7 +135,7 @@ groups={}
 accession_to_data = dict()
 for line in df[1:]:
     words = line.split("\t")
-    group=words[-5].split(";")[level]
+    group=words[-5].split(";")[level-1]
     if not group in groups.keys():
         groups[group] = {"GC":[],"Size":[],"dist_to_root":[],"completeness":[],"contamination":[],"accession":[]}
     accession = words[0]

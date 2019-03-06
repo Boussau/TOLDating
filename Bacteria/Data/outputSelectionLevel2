@@ -1,10 +1,10 @@
 Parsing command line arguments
 -- Tree file is bac120_r86.2.treeRN
 -- Data file is bac_metadata_r86.tsv
--- Level is 2
+-- Level is 3
 -- Reading tree from file
 -- tree read
-Number of groups: 114
+Number of groups: 284
 Getting table
 -- Table contains 125244 lines.
 Mean GC: 50.53868685435136
@@ -13,15 +13,15 @@ Group c__Gammaproteobacteria ; Number of Genomes: 5771
 	Best size: 11461141.0; Worst size: 271175.0
 	Best completeness: 100.0; Worst completeness: 27.08
 	Best contamination: 0.0; Worst contamination: 9.55
-	Best distance: 0.5729; Worst distance: 1.9362300000000006
-	Selected representant genome: GC: 54.9891182411 ; size: 5454741.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.8373500000000004
+	Best distance: 0.44483; Worst distance: 1.8081600000000002
+	Selected representant genome: GC: 54.9891182411 ; size: 5454741.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.7092800000000002
 Group c__Actinobacteria ; Number of Genomes: 3200
 	Best GC: 67.6037642817; Worst GC: 38.0106024518
 	Best size: 13047416.0; Worst size: 833294.0
 	Best completeness: 100.0; Worst completeness: 50.89
 	Best contamination: 0.0; Worst contamination: 7.93
-	Best distance: 0.6491; Worst distance: 1.51665
-	Selected representant genome: GC: 68.5326133267 ; size: 8777509.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.9719000000000002
+	Best distance: 0.37285; Worst distance: 1.2404
+	Selected representant genome: GC: 68.5326133267 ; size: 8777509.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.69565
 Group c__Halanaerobiia ; Number of Genomes: 19
 	Best GC: 34.184176697; Worst GC: 45.0703111494
 	Best size: 4216724.0; Worst size: 1950328.0
@@ -34,8 +34,8 @@ Group c__Bacilli ; Number of Genomes: 2501
 	Best size: 7076838.0; Worst size: 345965.0
 	Best completeness: 100.0; Worst completeness: 50.86
 	Best contamination: 0.0; Worst contamination: 8.23
-	Best distance: 0.39897; Worst distance: 2.14728
-	Selected representant genome: GC: 38.2315266801 ; size: 5229799.0 ; completeness: 99.43 ; contamination: 0.06 ; distance:0.4484
+	Best distance: 0.24816; Worst distance: 1.99647
+	Selected representant genome: GC: 38.2315266801 ; size: 5229799.0 ; completeness: 99.43 ; contamination: 0.06 ; distance:0.29759
 Group c__Thermotogae ; Number of Genomes: 66
 	Best GC: 40.3240678784; Worst GC: 27.1606417175
 	Best size: 3249669.0; Worst size: 974182.0
@@ -48,57 +48,57 @@ Group c__Bacteroidia ; Number of Genomes: 2800
 	Best size: 11439527.0; Worst size: 263431.0
 	Best completeness: 100.0; Worst completeness: 51.03
 	Best contamination: 0.0; Worst contamination: 9.15
-	Best distance: 0.65349; Worst distance: 1.4951400000000001
-	Selected representant genome: GC: 41.8285057069 ; size: 5193701.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.78011
+	Best distance: 0.30246; Worst distance: 1.1441100000000002
+	Selected representant genome: GC: 41.8285057069 ; size: 5193701.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.42908
 Group c__Leptospirae ; Number of Genomes: 58
 	Best GC: 41.6073073392; Worst GC: 54.3433101041
 	Best size: 5258178.0; Worst size: 3691029.0
 	Best completeness: 100.0; Worst completeness: 79.63
 	Best contamination: 0.0; Worst contamination: 2.35
-	Best distance: 0.7155499999999999; Worst distance: 0.8546999999999999
-	Selected representant genome: GC: 42.4780362852 ; size: 4436408.0 ; completeness: 98.82 ; contamination: 0.0 ; distance:0.8088199999999999
+	Best distance: 0.49954; Worst distance: 0.6386900000000001
+	Selected representant genome: GC: 42.4780362852 ; size: 4436408.0 ; completeness: 98.82 ; contamination: 0.0 ; distance:0.59281
 Group c__Campylobacteria ; Number of Genomes: 340
 	Best GC: 36.641407885; Worst GC: 53.9119158039
 	Best size: 3607848.0; Worst size: 947724.0
 	Best completeness: 100.0; Worst completeness: 53.25
 	Best contamination: 0.0; Worst contamination: 7.94
-	Best distance: 0.62936; Worst distance: 1.16359
-	Selected representant genome: GC: 37.6150314042 ; size: 1840041.0 ; completeness: 99.88 ; contamination: 0.0 ; distance:0.8934200000000001
+	Best distance: 0.26718000000000003; Worst distance: 0.80141
+	Selected representant genome: GC: 37.6150314042 ; size: 1840041.0 ; completeness: 99.88 ; contamination: 0.0 ; distance:0.5312399999999999
 Group c__Alphaproteobacteria ; Number of Genomes: 3079
 	Best GC: 58.141843741; Worst GC: 25.6946291578
 	Best size: 11738562.0; Worst size: 503620.0
 	Best completeness: 100.0; Worst completeness: 51.95
 	Best contamination: 0.0; Worst contamination: 10.0
-	Best distance: 0.6278999999999999; Worst distance: 1.46505
-	Selected representant genome: GC: 54.6556160161 ; size: 4768950.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.7693700000000001
+	Best distance: 0.46970999999999996; Worst distance: 1.30686
+	Selected representant genome: GC: 54.6556160161 ; size: 4768950.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.6111800000000002
 Group c__Cyanobacteriia ; Number of Genomes: 414
 	Best GC: 44.661510885; Worst GC: 69.1599437667
 	Best size: 68003531.0; Worst size: 841756.0
 	Best completeness: 100.0; Worst completeness: 55.71
 	Best contamination: 0.0; Worst contamination: 7.84
-	Best distance: 0.5439200000000001; Worst distance: 1.3547199999999997
-	Selected representant genome: GC: 45.7844742195 ; size: 8272254.0 ; completeness: 99.78 ; contamination: 0.22 ; distance:0.7066600000000002
+	Best distance: 0.27159; Worst distance: 1.0823899999999995
+	Selected representant genome: GC: 45.7844742195 ; size: 8272254.0 ; completeness: 99.78 ; contamination: 0.22 ; distance:0.4343299999999999
 Group c__Clostridia ; Number of Genomes: 2035
 	Best GC: 43.1787150086; Worst GC: 64.6333924787
 	Best size: 7712837.0; Worst size: 706962.0
 	Best completeness: 100.0; Worst completeness: 51.65
 	Best contamination: 0.0; Worst contamination: 9.82
-	Best distance: 0.41176; Worst distance: 1.2712499999999998
-	Selected representant genome: GC: 35.7171704632 ; size: 4897678.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.53872
+	Best distance: 0.3131; Worst distance: 1.1725899999999998
+	Selected representant genome: GC: 35.7171704632 ; size: 4897678.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.44005999999999995
 Group c__Chlorobia ; Number of Genomes: 24
 	Best GC: 52.0409769059; Worst GC: 44.278188967
 	Best size: 3293456.0; Worst size: 1873526.0
 	Best completeness: 99.98; Worst completeness: 89.78
 	Best contamination: 0.0; Worst contamination: 3.37
-	Best distance: 0.47514; Worst distance: 0.6698299999999999
-	Selected representant genome: GC: 51.3168337507 ; size: 2763181.0 ; completeness: 99.98 ; contamination: 0.0 ; distance:0.61592
+	Best distance: 0.21860000000000002; Worst distance: 0.41328999999999994
+	Selected representant genome: GC: 51.3168337507 ; size: 2763181.0 ; completeness: 99.98 ; contamination: 0.0 ; distance:0.3593799999999999
 Group c__Bacilli_A ; Number of Genomes: 309
 	Best GC: 48.7997452206; Worst GC: 66.1417343962
 	Best size: 9468060.0; Worst size: 2222169.0
 	Best completeness: 100.0; Worst completeness: 61.72
 	Best contamination: 0.0; Worst contamination: 6.77
-	Best distance: 0.30132000000000003; Worst distance: 0.5979800000000001
-	Selected representant genome: GC: 48.2684275167 ; size: 6326414.0 ; completeness: 99.85 ; contamination: 0.0 ; distance:0.5129000000000001
+	Best distance: 0.21864; Worst distance: 0.5153000000000001
+	Selected representant genome: GC: 48.2684275167 ; size: 6326414.0 ; completeness: 99.85 ; contamination: 0.0 ; distance:0.43022000000000005
 Group c__Deinococci ; Number of Genomes: 70
 	Best GC: 66.6143533875; Worst GC: 47.1239959422
 	Best size: 6650868.0; Worst size: 2016098.0
@@ -111,8 +111,8 @@ Group c__Spirochaetia ; Number of Genomes: 180
 	Best size: 5248051.0; Worst size: 902487.0
 	Best completeness: 100.0; Worst completeness: 54.41
 	Best contamination: 0.0; Worst contamination: 8.69
-	Best distance: 0.75805; Worst distance: 1.2516400000000003
-	Selected representant genome: GC: 45.5758889156 ; size: 3239340.0 ; completeness: 98.86 ; contamination: 0.0 ; distance:0.8051400000000001
+	Best distance: 0.44238; Worst distance: 0.9359700000000002
+	Selected representant genome: GC: 45.5758889156 ; size: 3239340.0 ; completeness: 98.86 ; contamination: 0.0 ; distance:0.48947000000000007
 Group c__Desulfuromonadia ; Number of Genomes: 74
 	Best GC: 56.4898137807; Worst GC: 45.644696864
 	Best size: 6223611.0; Worst size: 1830730.0
@@ -125,15 +125,15 @@ Group c__Rhodothermia ; Number of Genomes: 42
 	Best size: 5082244.0; Worst size: 1034048.0
 	Best completeness: 100.0; Worst completeness: 52.17
 	Best contamination: 0.0; Worst contamination: 7.06
-	Best distance: 0.52195; Worst distance: 0.7649000000000001
-	Selected representant genome: GC: 41.3089278447 ; size: 3953385.0 ; completeness: 99.61 ; contamination: 0.0 ; distance:0.59392
+	Best distance: 0.36579; Worst distance: 0.6087400000000002
+	Selected representant genome: GC: 41.3089278447 ; size: 3953385.0 ; completeness: 99.61 ; contamination: 0.0 ; distance:0.43776000000000004
 Group c__Acidobacteriae ; Number of Genomes: 51
 	Best GC: 58.8270816753; Worst GC: 47.6044477966
 	Best size: 9965640.0; Worst size: 1496642.0
 	Best completeness: 100.0; Worst completeness: 58.55
 	Best contamination: 0.0; Worst contamination: 13.79
-	Best distance: 0.5528000000000001; Worst distance: 0.8093400000000001
-	Selected representant genome: GC: 58.3838433178 ; size: 5650368.0 ; completeness: 99.95 ; contamination: 0.0 ; distance:0.64148
+	Best distance: 0.34939; Worst distance: 0.60593
+	Selected representant genome: GC: 58.3838433178 ; size: 5650368.0 ; completeness: 99.95 ; contamination: 0.0 ; distance:0.43806999999999996
 Group c__Negativicutes ; Number of Genomes: 173
 	Best GC: 47.5375794662; Worst GC: 31.4688759923
 	Best size: 6060615.0; Worst size: 998080.0
@@ -146,71 +146,71 @@ Group c__Rubrobacteria ; Number of Genomes: 5
 	Best size: 4891367.0; Worst size: 3187461.0
 	Best completeness: 98.68; Worst completeness: 97.68
 	Best contamination: 0.0; Worst contamination: 7.75
-	Best distance: 0.60461; Worst distance: 0.7595999999999999
-	Selected representant genome: GC: 66.5222417169 ; size: 3398074.0 ; completeness: 98.68 ; contamination: 0.0 ; distance:0.6984400000000001
+	Best distance: 0.08916; Worst distance: 0.24415
+	Selected representant genome: GC: 66.5222417169 ; size: 3398074.0 ; completeness: 98.68 ; contamination: 0.0 ; distance:0.18298999999999999
 Group c__Chlamydiia ; Number of Genomes: 56
 	Best GC: 39.8623114515; Worst GC: 26.2278493597
 	Best size: 3424182.0; Worst size: 974760.0
 	Best completeness: 100.0; Worst completeness: 64.1
 	Best contamination: 0.0; Worst contamination: 4.05
-	Best distance: 0.73727; Worst distance: 0.99596
-	Selected representant genome: GC: 38.9447285605 ; size: 2999361.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.7859799999999999
+	Best distance: 0.45302; Worst distance: 0.7117100000000001
+	Selected representant genome: GC: 38.9447285605 ; size: 2999361.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.50173
 Group c__Desulfovibrionia ; Number of Genomes: 115
 	Best GC: 57.3249662018; Worst GC: 32.4722377726
 	Best size: 5767550.0; Worst size: 1410056.0
 	Best completeness: 100.0; Worst completeness: 54.44
 	Best contamination: 0.0; Worst contamination: 3.25
-	Best distance: 0.6488700000000001; Worst distance: 1.14956
-	Selected representant genome: GC: 57.8361345889 ; size: 3730232.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.8749199999999999
+	Best distance: 0.25857; Worst distance: 0.75926
+	Selected representant genome: GC: 57.8361345889 ; size: 3730232.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.48462
 Group c__Polyangia ; Number of Genomes: 29
 	Best GC: 68.7090999648; Worst GC: 47.4524258115
 	Best size: 16040666.0; Worst size: 1821632.0
 	Best completeness: 98.39; Worst completeness: 56.06
 	Best contamination: 0.0; Worst contamination: 7.44
-	Best distance: 0.57377; Worst distance: 0.81351
-	Selected representant genome: GC: 69.4833879119 ; size: 9446314.0 ; completeness: 98.39 ; contamination: 2.93 ; distance:0.60426
+	Best distance: 0.46709; Worst distance: 0.7068299999999998
+	Selected representant genome: GC: 69.4833879119 ; size: 9446314.0 ; completeness: 98.39 ; contamination: 2.93 ; distance:0.49758
 Group c__Acidimicrobiia ; Number of Genomes: 188
 	Best GC: 55.2684060664; Worst GC: 33.3817903462
 	Best size: 4830181.0; Worst size: 641117.0
 	Best completeness: 100.0; Worst completeness: 50.95
 	Best contamination: 0.0; Worst contamination: 8.12
-	Best distance: 0.67225; Worst distance: 1.1333
-	Selected representant genome: GC: 55.4493394826 ; size: 2461858.0 ; completeness: 99.15 ; contamination: 1.28 ; distance:0.67225
+	Best distance: 0.44748; Worst distance: 0.9085300000000001
+	Selected representant genome: GC: 55.4493394826 ; size: 2461858.0 ; completeness: 99.15 ; contamination: 1.28 ; distance:0.44748
 Group c__Thermodesulfobacteria ; Number of Genomes: 12
 	Best GC: 38.2961092084; Worst GC: 50.119390622
 	Best size: 2322224.0; Worst size: 1634377.0
 	Best completeness: 99.45; Worst completeness: 90.74
 	Best contamination: 0.0; Worst contamination: 2.16
-	Best distance: 0.52896; Worst distance: 0.82726
-	Selected representant genome: GC: 42.4254507748 ; size: 2322224.0 ; completeness: 99.04 ; contamination: 0.0 ; distance:0.5438000000000001
+	Best distance: 0.18581999999999999; Worst distance: 0.48412
+	Selected representant genome: GC: 42.4254507748 ; size: 2322224.0 ; completeness: 99.04 ; contamination: 0.0 ; distance:0.20066
 Group c__Ignavibacteria ; Number of Genomes: 38
 	Best GC: 35.5977592217; Worst GC: 42.1206192967
 	Best size: 4405326.0; Worst size: 1497423.0
 	Best completeness: 100.0; Worst completeness: 65.81
 	Best contamination: 0.0; Worst contamination: 2.98
-	Best distance: 0.5115799999999999; Worst distance: 0.66421
-	Selected representant genome: GC: 35.2426726588 ; size: 4261372.0 ; completeness: 99.44 ; contamination: 0.0 ; distance:0.5677099999999999
+	Best distance: 0.40513; Worst distance: 0.55776
+	Selected representant genome: GC: 35.2426726588 ; size: 4261372.0 ; completeness: 99.44 ; contamination: 0.0 ; distance:0.46126000000000006
 Group c__Coriobacteriia ; Number of Genomes: 150
 	Best GC: 59.8142177646; Worst GC: 42.6568269294
 	Best size: 3948172.0; Worst size: 911908.0
 	Best completeness: 100.0; Worst completeness: 54.26
 	Best contamination: 0.0; Worst contamination: 8.06
-	Best distance: 0.56601; Worst distance: 1.12792
-	Selected representant genome: GC: 64.204599891 ; size: 3632260.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.7913400000000002
+	Best distance: 0.24614; Worst distance: 0.80805
+	Selected representant genome: GC: 64.204599891 ; size: 3632260.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.47146999999999994
 Group c__Thermoanaerobacteria ; Number of Genomes: 51
 	Best GC: 35.7780010598; Worst GC: 47.3281083007
 	Best size: 3403093.0; Worst size: 1203807.0
 	Best completeness: 100.0; Worst completeness: 54.01
 	Best contamination: 0.0; Worst contamination: 4.55
-	Best distance: 0.37158; Worst distance: 0.5008400000000001
-	Selected representant genome: GC: 34.3415715878 ; size: 2785056.0 ; completeness: 99.52 ; contamination: 0.0 ; distance:0.37244
+	Best distance: 0.28863000000000005; Worst distance: 0.41789
+	Selected representant genome: GC: 34.3415715878 ; size: 2785056.0 ; completeness: 99.52 ; contamination: 0.0 ; distance:0.28949
 Group c__Aquificae ; Number of Genomes: 22
 	Best GC: 37.0805115415; Worst GC: 46.9305473828
 	Best size: 2074826.0; Worst size: 1129840.0
 	Best completeness: 100.0; Worst completeness: 70.62
 	Best contamination: 0.0; Worst contamination: 1.83
-	Best distance: 0.47043; Worst distance: 0.6609
-	Selected representant genome: GC: 37.0805115415 ; size: 1983966.0 ; completeness: 99.8 ; contamination: 1.83 ; distance:0.47043
+	Best distance: 0.34402; Worst distance: 0.5344899999999999
+	Selected representant genome: GC: 37.0805115415 ; size: 1983966.0 ; completeness: 99.8 ; contamination: 1.83 ; distance:0.34402
 Group c__Fusobacteriia ; Number of Genomes: 82
 	Best GC: 29.0700507903; Worst GC: 35.3293941699
 	Best size: 4486650.0; Worst size: 585339.0
@@ -223,22 +223,22 @@ Group c__Brachyspirae ; Number of Genomes: 14
 	Best size: 3420763.0; Worst size: 2458396.0
 	Best completeness: 99.2; Worst completeness: 96.4
 	Best contamination: 0.0; Worst contamination: 0.8
-	Best distance: 0.73409; Worst distance: 0.77277
-	Selected representant genome: GC: 27.8969998566 ; size: 2586443.0 ; completeness: 99.2 ; contamination: 0.0 ; distance:0.7503799999999999
+	Best distance: 0.06857; Worst distance: 0.10725000000000001
+	Selected representant genome: GC: 27.8969998566 ; size: 2586443.0 ; completeness: 99.2 ; contamination: 0.0 ; distance:0.08486
 Group c__Desulfitobacteriia ; Number of Genomes: 39
 	Best GC: 43.6552952195; Worst GC: 56.9751906008
 	Best size: 6234251.0; Worst size: 1844795.0
 	Best completeness: 100.0; Worst completeness: 81.78
 	Best contamination: 0.0; Worst contamination: 6.58
-	Best distance: 0.35312; Worst distance: 0.5529199999999999
-	Selected representant genome: GC: 43.6234172611 ; size: 5292883.0 ; completeness: 99.49 ; contamination: 2.89 ; distance:0.47924999999999995
+	Best distance: 0.25462; Worst distance: 0.45441999999999994
+	Selected representant genome: GC: 43.6234172611 ; size: 5292883.0 ; completeness: 99.49 ; contamination: 2.89 ; distance:0.38075000000000003
 Group c__Alicyclobacillia ; Number of Genomes: 31
 	Best GC: 56.5494407434; Worst GC: 44.617414144
 	Best size: 5249768.0; Worst size: 2646965.0
 	Best completeness: 100.0; Worst completeness: 81.6
 	Best contamination: 0.0; Worst contamination: 6.92
-	Best distance: 0.27498; Worst distance: 0.54354
-	Selected representant genome: GC: 53.6873005308 ; size: 3398558.0 ; completeness: 99.2 ; contamination: 0.4 ; distance:0.44756
+	Best distance: 0.23087999999999997; Worst distance: 0.49944
+	Selected representant genome: GC: 53.6873005308 ; size: 3398558.0 ; completeness: 99.2 ; contamination: 0.4 ; distance:0.40346
 Group c__Deferribacteres ; Number of Genomes: 13
 	Best GC: 38.294262227; Worst GC: 48.5278202533
 	Best size: 3774844.0; Worst size: 2047374.0
@@ -251,71 +251,71 @@ Group c__Desulfobacteria ; Number of Genomes: 71
 	Best size: 14290418.0; Worst size: 1478187.0
 	Best completeness: 100.0; Worst completeness: 54.76
 	Best contamination: 0.0; Worst contamination: 6.16
-	Best distance: 0.5031300000000001; Worst distance: 0.8698400000000001
-	Selected representant genome: GC: 53.0473076255 ; size: 6711238.0 ; completeness: 99.33 ; contamination: 0.65 ; distance:0.63051
+	Best distance: 0.38238999999999995; Worst distance: 0.7491000000000001
+	Selected representant genome: GC: 53.0473076255 ; size: 6711238.0 ; completeness: 99.33 ; contamination: 0.65 ; distance:0.5097700000000001
 Group c__Fibrobacteria ; Number of Genomes: 36
 	Best GC: 49.1879174499; Worst GC: 61.7087743837
 	Best size: 3921019.0; Worst size: 1784380.0
 	Best completeness: 100.0; Worst completeness: 63.74
 	Best contamination: 0.0; Worst contamination: 5.17
-	Best distance: 0.5861; Worst distance: 0.7920800000000001
-	Selected representant genome: GC: 48.7866786279 ; size: 3921019.0 ; completeness: 100.0 ; contamination: 0.55 ; distance:0.72758
+	Best distance: 0.40567; Worst distance: 0.61165
+	Selected representant genome: GC: 48.7866786279 ; size: 3921019.0 ; completeness: 100.0 ; contamination: 0.55 ; distance:0.54715
 Group c__Synergistia ; Number of Genomes: 52
 	Best GC: 54.8388284457; Worst GC: 41.0694760848
 	Best size: 3585187.0; Worst size: 753593.0
 	Best completeness: 100.0; Worst completeness: 62.71
 	Best contamination: 0.0; Worst contamination: 3.95
-	Best distance: 0.53837; Worst distance: 0.84346
-	Selected representant genome: GC: 56.0671887556 ; size: 3287261.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.74157
+	Best distance: 0.29918; Worst distance: 0.60427
+	Selected representant genome: GC: 56.0671887556 ; size: 3287261.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.50238
 Group c__Dehalococcoidia ; Number of Genomes: 207
 	Best GC: 45.9565168605; Worst GC: 69.6622892457
 	Best size: 4958136.0; Worst size: 653203.0
 	Best completeness: 99.01; Worst completeness: 53.08
 	Best contamination: 0.0; Worst contamination: 9.0
-	Best distance: 0.49824; Worst distance: 1.3214100000000002
-	Selected representant genome: GC: 46.9132325516 ; size: 1473548.0 ; completeness: 99.01 ; contamination: 0.0 ; distance:0.7689000000000001
+	Best distance: 0.37831000000000004; Worst distance: 1.20148
+	Selected representant genome: GC: 46.9132325516 ; size: 1473548.0 ; completeness: 99.01 ; contamination: 0.0 ; distance:0.64897
 Group c__Desulfomonilia ; Number of Genomes: 4
 	Best GC: 54.4936485992; Worst GC: 50.0882867498
 	Best size: 6527027.0; Worst size: 3130992.0
 	Best completeness: 98.49; Worst completeness: 86.9
 	Best contamination: 1.29; Worst contamination: 2.1
-	Best distance: 0.5095500000000001; Worst distance: 0.5808199999999999
-	Selected representant genome: GC: 50.0882867498 ; size: 6527027.0 ; completeness: 98.39 ; contamination: 1.29 ; distance:0.5095500000000001
+	Best distance: 0.40577; Worst distance: 0.47704
+	Selected representant genome: GC: 50.0882867498 ; size: 6527027.0 ; completeness: 98.39 ; contamination: 1.29 ; distance:0.40577
 Group c__Verrucomicrobiae ; Number of Genomes: 269
 	Best GC: 53.6698868904; Worst GC: 69.9762852182
 	Best size: 8693933.0; Worst size: 618463.0
 	Best completeness: 100.0; Worst completeness: 50.54
 	Best contamination: 0.0; Worst contamination: 8.88
-	Best distance: 0.70325; Worst distance: 1.2847299999999997
-	Selected representant genome: GC: 53.6017794741 ; size: 3750771.0 ; completeness: 99.77 ; contamination: 0.0 ; distance:0.8985600000000001
+	Best distance: 0.48173; Worst distance: 1.0632099999999998
+	Selected representant genome: GC: 53.6017794741 ; size: 3750771.0 ; completeness: 99.77 ; contamination: 0.0 ; distance:0.6770400000000001
 Group c__Holophagae ; Number of Genomes: 7
 	Best GC: 62.9503760879; Worst GC: 45.8869199827
 	Best size: 4242989.0; Worst size: 691035.0
 	Best completeness: 99.12; Worst completeness: 59.76
 	Best contamination: 0.0; Worst contamination: 2.69
-	Best distance: 0.65786; Worst distance: 0.7436600000000001
-	Selected representant genome: GC: 62.9503760879 ; size: 4127237.0 ; completeness: 99.12 ; contamination: 0.88 ; distance:0.7152600000000001
+	Best distance: 0.18977; Worst distance: 0.27557000000000004
+	Selected representant genome: GC: 62.9503760879 ; size: 4127237.0 ; completeness: 99.12 ; contamination: 0.88 ; distance:0.24717
 Group c__Thermodesulfovibrionia ; Number of Genomes: 40
 	Best GC: 44.093308246; Worst GC: 62.8962882502
 	Best size: 4663699.0; Worst size: 1229570.0
 	Best completeness: 100.0; Worst completeness: 61.38
 	Best contamination: 0.0; Worst contamination: 5.45
-	Best distance: 0.38383; Worst distance: 0.68243
-	Selected representant genome: GC: 45.2552787271 ; size: 2103466.0 ; completeness: 98.18 ; contamination: 0.83 ; distance:0.4183
+	Best distance: 0.25104; Worst distance: 0.54964
+	Selected representant genome: GC: 45.2552787271 ; size: 2103466.0 ; completeness: 98.18 ; contamination: 0.83 ; distance:0.28551
 Group c__Fimbriimonadia ; Number of Genomes: 16
 	Best GC: 59.7353191805; Worst GC: 50.4935731981
 	Best size: 5231762.0; Worst size: 2199472.0
 	Best completeness: 95.83; Worst completeness: 68.9
 	Best contamination: 0.0; Worst contamination: 3.7
-	Best distance: 0.56899; Worst distance: 0.93634
-	Selected representant genome: GC: 60.4725723602 ; size: 2852210.0 ; completeness: 93.06 ; contamination: 0.1 ; distance:0.56899
+	Best distance: 0.34117000000000003; Worst distance: 0.70852
+	Selected representant genome: GC: 60.4725723602 ; size: 2852210.0 ; completeness: 93.06 ; contamination: 0.1 ; distance:0.34117000000000003
 Group c__Myxococcia ; Number of Genomes: 34
 	Best GC: 69.515445127; Worst GC: 60.5585043503
 	Best size: 12927638.0; Worst size: 2832261.0
 	Best completeness: 100.0; Worst completeness: 63.48
 	Best contamination: 0.0; Worst contamination: 6.61
-	Best distance: 0.55255; Worst distance: 0.67282
-	Selected representant genome: GC: 69.1921790708 ; size: 10350586.0 ; completeness: 99.35 ; contamination: 0.0 ; distance:0.64787
+	Best distance: 0.29427; Worst distance: 0.41454
+	Selected representant genome: GC: 69.1921790708 ; size: 10350586.0 ; completeness: 99.35 ; contamination: 0.0 ; distance:0.38959
 Group c__Leptospirillia ; Number of Genomes: 9
 	Best GC: 58.2207737514; Worst GC: 50.0475476434
 	Best size: 2610531.0; Worst size: 1618026.0
@@ -328,22 +328,22 @@ Group c__Desulfotomaculia ; Number of Genomes: 67
 	Best size: 5215335.0; Worst size: 1111031.0
 	Best completeness: 100.0; Worst completeness: 58.32
 	Best contamination: 0.0; Worst contamination: 7.75
-	Best distance: 0.33388999999999996; Worst distance: 0.55192
-	Selected representant genome: GC: 46.6257989009 ; size: 2892255.0 ; completeness: 99.37 ; contamination: 0.0 ; distance:0.33391
+	Best distance: 0.27053999999999995; Worst distance: 0.48857
+	Selected representant genome: GC: 46.6257989009 ; size: 2892255.0 ; completeness: 99.37 ; contamination: 0.0 ; distance:0.27055999999999997
 Group c__Planctomycetes ; Number of Genomes: 114
 	Best GC: 56.0291546106; Worst GC: 70.5521586899
 	Best size: 12363577.0; Worst size: 1798162.0
 	Best completeness: 100.0; Worst completeness: 62.08
 	Best contamination: 0.0; Worst contamination: 7.92
-	Best distance: 0.6889400000000001; Worst distance: 1.07163
-	Selected representant genome: GC: 55.6608157879 ; size: 8702386.0 ; completeness: 98.88 ; contamination: 3.37 ; distance:0.7806200000000001
+	Best distance: 0.40310999999999997; Worst distance: 0.7857999999999999
+	Selected representant genome: GC: 55.6608157879 ; size: 8702386.0 ; completeness: 98.88 ; contamination: 3.37 ; distance:0.49478999999999995
 Group c__Mahellia ; Number of Genomes: 15
 	Best GC: 42.4447583985; Worst GC: 34.4897185175
 	Best size: 3770829.0; Worst size: 1654937.0
 	Best completeness: 97.98; Worst completeness: 64.06
 	Best contamination: 0.0; Worst contamination: 3.6
-	Best distance: 0.38908; Worst distance: 0.52488
-	Selected representant genome: GC: 43.4519185758 ; size: 3135972.0 ; completeness: 97.98 ; contamination: 1.48 ; distance:0.40610999999999997
+	Best distance: 0.26504; Worst distance: 0.40084
+	Selected representant genome: GC: 43.4519185758 ; size: 3135972.0 ; completeness: 97.98 ; contamination: 1.48 ; distance:0.28207
 Group c__Chrysiogenetes ; Number of Genomes: 2
 	Best GC: 50.0463372345; Worst GC: 56.1087250719
 	Best size: 2928377.0; Worst size: 2825161.0
@@ -356,29 +356,29 @@ Group c__Thermaerobacteria ; Number of Genomes: 2
 	Best size: 2888741.0; Worst size: 2844696.0
 	Best completeness: 100.0; Worst completeness: 100.0
 	Best contamination: 0.0; Worst contamination: 0.0
-	Best distance: 0.39041; Worst distance: 0.39221
-	Selected representant genome: GC: 72.0441830192 ; size: 2888741.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.39221
+	Best distance: 0.03256; Worst distance: 0.03436
+	Selected representant genome: GC: 72.0441830192 ; size: 2888741.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.03436
 Group c__Desulfurobacteriia ; Number of Genomes: 5
 	Best GC: 39.8262604883; Worst GC: 52.1297781334
 	Best size: 1759526.0; Worst size: 1541968.0
 	Best completeness: 99.58; Worst completeness: 97.05
 	Best contamination: 0.42; Worst contamination: 1.69
-	Best distance: 0.41281; Worst distance: 0.43487000000000003
-	Selected representant genome: GC: 39.8262604883 ; size: 1653625.0 ; completeness: 97.26 ; contamination: 0.42 ; distance:0.41281
+	Best distance: 0.15689999999999998; Worst distance: 0.17896
+	Selected representant genome: GC: 39.8262604883 ; size: 1653625.0 ; completeness: 97.26 ; contamination: 0.42 ; distance:0.15689999999999998
 Group c__Bdellovibrionia ; Number of Genomes: 28
 	Best GC: 44.7752578205; Worst GC: 55.912820386
 	Best size: 4206823.0; Worst size: 2311718.0
 	Best completeness: 99.11; Worst completeness: 78.52
 	Best contamination: 0.0; Worst contamination: 2.78
-	Best distance: 0.6342699999999999; Worst distance: 0.84826
-	Selected representant genome: GC: 45.3039337368 ; size: 3331637.0 ; completeness: 99.1 ; contamination: 0.0 ; distance:0.70538
+	Best distance: 0.34057; Worst distance: 0.55456
+	Selected representant genome: GC: 45.3039337368 ; size: 3331637.0 ; completeness: 99.1 ; contamination: 0.0 ; distance:0.41168000000000005
 Group c__Sulfobacillia ; Number of Genomes: 6
 	Best GC: 51.4982790905; Worst GC: 56.762097158
 	Best size: 3861015.0; Worst size: 3180801.0
 	Best completeness: 99.0; Worst completeness: 83.17
 	Best contamination: 0.0; Worst contamination: 1.03
-	Best distance: 0.55955; Worst distance: 0.6224000000000001
-	Selected representant genome: GC: 56.7546631642 ; size: 3557831.0 ; completeness: 99.0 ; contamination: 0.0 ; distance:0.55955
+	Best distance: 0.17248; Worst distance: 0.23532999999999998
+	Selected representant genome: GC: 56.7546631642 ; size: 3557831.0 ; completeness: 99.0 ; contamination: 0.0 ; distance:0.17248
 Group c__Dictyoglomia ; Number of Genomes: 3
 	Best GC: 33.7831264653; Worst GC: 33.9573498028
 	Best size: 1959987.0; Worst size: 1830698.0
@@ -391,36 +391,36 @@ Group c__Thermovenabulia ; Number of Genomes: 12
 	Best size: 3033816.0; Worst size: 2264710.0
 	Best completeness: 97.12; Worst completeness: 90.73
 	Best contamination: 0.0; Worst contamination: 2.88
-	Best distance: 0.30421; Worst distance: 0.41837
-	Selected representant genome: GC: 39.4690301358 ; size: 3033816.0 ; completeness: 96.15 ; contamination: 0.0 ; distance:0.30443
+	Best distance: 0.24417; Worst distance: 0.35833
+	Selected representant genome: GC: 39.4690301358 ; size: 3033816.0 ; completeness: 96.15 ; contamination: 0.0 ; distance:0.24439
 Group c__Moorellia ; Number of Genomes: 16
 	Best GC: 49.5041127478; Worst GC: 36.1155197147
 	Best size: 4981858.0; Worst size: 1579730.0
 	Best completeness: 100.0; Worst completeness: 75.09
 	Best contamination: 0.0; Worst contamination: 5.61
-	Best distance: 0.28543; Worst distance: 0.43640999999999996
-	Selected representant genome: GC: 54.5806337012 ; size: 4981858.0 ; completeness: 99.36 ; contamination: 5.61 ; distance:0.32321
+	Best distance: 0.21314; Worst distance: 0.36412
+	Selected representant genome: GC: 54.5806337012 ; size: 4981858.0 ; completeness: 99.36 ; contamination: 5.61 ; distance:0.25092000000000003
 Group c__Chloroflexia ; Number of Genomes: 29
 	Best GC: 58.0150840471; Worst GC: 68.1093825274
 	Best size: 9249445.0; Worst size: 2478539.0
 	Best completeness: 100.0; Worst completeness: 71.91
 	Best contamination: 0.0; Worst contamination: 5.93
-	Best distance: 0.53329; Worst distance: 0.7227
-	Selected representant genome: GC: 60.690077644 ; size: 5723298.0 ; completeness: 99.69 ; contamination: 0.0 ; distance:0.55996
+	Best distance: 0.41904; Worst distance: 0.6084499999999999
+	Selected representant genome: GC: 60.690077644 ; size: 5723298.0 ; completeness: 99.69 ; contamination: 0.0 ; distance:0.44571
 Group c__Nitrospiria ; Number of Genomes: 46
 	Best GC: 54.8049497128; Worst GC: 41.4156151011
 	Best size: 4905828.0; Worst size: 1087550.0
 	Best completeness: 97.67; Worst completeness: 59.41
 	Best contamination: 0.0; Worst contamination: 6.55
-	Best distance: 0.3679; Worst distance: 0.66645
-	Selected representant genome: GC: 58.8698301731 ; size: 4454928.0 ; completeness: 97.67 ; contamination: 2.73 ; distance:0.55676
+	Best distance: 0.28326; Worst distance: 0.5818099999999999
+	Selected representant genome: GC: 58.8698301731 ; size: 4454928.0 ; completeness: 97.67 ; contamination: 2.73 ; distance:0.47212
 Group c__Zetaproteobacteria ; Number of Genomes: 18
 	Best GC: 51.4864380263; Worst GC: 62.9190600167
 	Best size: 2992730.0; Worst size: 1222282.0
 	Best completeness: 100.0; Worst completeness: 64.83
 	Best contamination: 0.0; Worst contamination: 6.3
-	Best distance: 0.53373; Worst distance: 0.7206800000000001
-	Selected representant genome: GC: 48.7555673882 ; size: 2497805.0 ; completeness: 99.58 ; contamination: 0.84 ; distance:0.65444
+	Best distance: 0.42958; Worst distance: 0.61653
+	Selected representant genome: GC: 48.7555673882 ; size: 2497805.0 ; completeness: 99.58 ; contamination: 0.84 ; distance:0.55029
 Group c__Babeliae ; Number of Genomes: 29
 	Best GC: 35.8949760973; Worst GC: 27.3810779831
 	Best size: 1602776.0; Worst size: 739619.0
@@ -433,78 +433,78 @@ Group c__Syntrophomonadia ; Number of Genomes: 34
 	Best size: 4006053.0; Worst size: 1774841.0
 	Best completeness: 99.36; Worst completeness: 65.09
 	Best contamination: 0.0; Worst contamination: 8.62
-	Best distance: 0.38555; Worst distance: 0.64842
-	Selected representant genome: GC: 45.5521151368 ; size: 3191472.0 ; completeness: 97.35 ; contamination: 0.04 ; distance:0.5641199999999998
+	Best distance: 0.30418; Worst distance: 0.56705
+	Selected representant genome: GC: 45.5521151368 ; size: 3191472.0 ; completeness: 97.35 ; contamination: 0.04 ; distance:0.48275
 Group c__Desulfobulbia ; Number of Genomes: 49
 	Best GC: 53.3494429896; Worst GC: 63.1874743293
 	Best size: 6515854.0; Worst size: 1224655.0
 	Best completeness: 100.0; Worst completeness: 58.77
 	Best contamination: 0.0; Worst contamination: 6.85
-	Best distance: 0.5444; Worst distance: 0.8245100000000001
-	Selected representant genome: GC: 53.7794379322 ; size: 3868181.0 ; completeness: 98.02 ; contamination: 0.15 ; distance:0.62024
+	Best distance: 0.22405000000000003; Worst distance: 0.50416
+	Selected representant genome: GC: 53.7794379322 ; size: 3868181.0 ; completeness: 98.02 ; contamination: 0.15 ; distance:0.29989
 Group c__Ktedonobacteria ; Number of Genomes: 13
 	Best GC: 53.4659145828; Worst GC: 61.1391123408
 	Best size: 5607959.0; Worst size: 2577001.0
 	Best completeness: 98.18; Worst completeness: 51.49
 	Best contamination: 0.0; Worst contamination: 3.96
-	Best distance: 0.4889200000000001; Worst distance: 0.57222
-	Selected representant genome: GC: 60.8821141524 ; size: 5607959.0 ; completeness: 98.18 ; contamination: 2.31 ; distance:0.4908800000000001
+	Best distance: 0.11503; Worst distance: 0.19833
+	Selected representant genome: GC: 60.8821141524 ; size: 5607959.0 ; completeness: 98.18 ; contamination: 2.31 ; distance:0.11699
 Group c__Thermoanaerobaculia ; Number of Genomes: 7
 	Best GC: 67.6315029644; Worst GC: 63.0562398685
 	Best size: 8024947.0; Worst size: 2660928.0
 	Best completeness: 94.44; Worst completeness: 80.34
 	Best contamination: 0.85; Worst contamination: 4.7
-	Best distance: 0.60422; Worst distance: 0.8015399999999999
-	Selected representant genome: GC: 69.3818104142 ; size: 8024947.0 ; completeness: 91.31 ; contamination: 2.56 ; distance:0.60422
+	Best distance: 0.3989; Worst distance: 0.59622
+	Selected representant genome: GC: 69.3818104142 ; size: 8024947.0 ; completeness: 91.31 ; contamination: 2.56 ; distance:0.3989
 Group c__Brocadiae ; Number of Genomes: 25
 	Best GC: 42.7067350844; Worst GC: 69.2465306275
 	Best size: 5194263.0; Worst size: 1351215.0
 	Best completeness: 100.0; Worst completeness: 60.08
 	Best contamination: 0.0; Worst contamination: 5.11
-	Best distance: 0.5766; Worst distance: 0.7575000000000001
-	Selected representant genome: GC: 42.4102281089 ; size: 4077002.0 ; completeness: 97.8 ; contamination: 1.65 ; distance:0.6655
+	Best distance: 0.39908; Worst distance: 0.57998
+	Selected representant genome: GC: 42.4102281089 ; size: 4077002.0 ; completeness: 97.8 ; contamination: 1.65 ; distance:0.48798
 Group c__Desulfobaccia ; Number of Genomes: 4
 	Best GC: 53.6446630643; Worst GC: 59.818125104
 	Best size: 3282536.0; Worst size: 2417725.0
 	Best completeness: 98.06; Worst completeness: 75.18
 	Best contamination: 0.65; Worst contamination: 7.28
-	Best distance: 0.49900999999999995; Worst distance: 0.54913
-	Selected representant genome: GC: 52.8911183305 ; size: 3282536.0 ; completeness: 98.06 ; contamination: 0.65 ; distance:0.54588
+	Best distance: 0.3211; Worst distance: 0.37122
+	Selected representant genome: GC: 52.8911183305 ; size: 3282536.0 ; completeness: 98.06 ; contamination: 0.65 ; distance:0.36797
 Group c__Bacteriovoracia ; Number of Genomes: 46
 	Best GC: 40.1549406764; Worst GC: 55.1667680999
 	Best size: 4908770.0; Worst size: 1863555.0
 	Best completeness: 95.09; Worst completeness: 60.75
 	Best contamination: 0.0; Worst contamination: 8.04
-	Best distance: 0.59056; Worst distance: 1.0267300000000001
-	Selected representant genome: GC: 39.2309676151 ; size: 3947588.0 ; completeness: 93.25 ; contamination: 0.0 ; distance:0.87364
+	Best distance: 0.45805; Worst distance: 0.89422
+	Selected representant genome: GC: 39.2309676151 ; size: 3947588.0 ; completeness: 93.25 ; contamination: 0.0 ; distance:0.7411300000000001
 Group c__Thermoleophilia ; Number of Genomes: 18
 	Best GC: 71.4385199347; Worst GC: 63.8593974341
 	Best size: 9313965.0; Worst size: 1569268.0
 	Best completeness: 100.0; Worst completeness: 59.47
 	Best contamination: 0.0; Worst contamination: 1.78
-	Best distance: 0.65059; Worst distance: 0.9145
-	Selected representant genome: GC: 72.3563372109 ; size: 6572728.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.7476700000000001
+	Best distance: 0.41813; Worst distance: 0.6820399999999999
+	Selected representant genome: GC: 72.3563372109 ; size: 6572728.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.51521
 Group c__Chitinivibrionia ; Number of Genomes: 4
 	Best GC: 46.1637816594; Worst GC: 52.4479479248
 	Best size: 4434773.0; Worst size: 2386160.0
 	Best completeness: 97.74; Worst completeness: 61.58
 	Best contamination: 0.0; Worst contamination: 3.3
-	Best distance: 0.53684; Worst distance: 0.66976
-	Selected representant genome: GC: 42.9214753495 ; size: 4434773.0 ; completeness: 97.74 ; contamination: 3.3 ; distance:0.53684
+	Best distance: 0.33089999999999997; Worst distance: 0.46382
+	Selected representant genome: GC: 42.9214753495 ; size: 4434773.0 ; completeness: 97.74 ; contamination: 3.3 ; distance:0.33089999999999997
 Group c__Desulfurellia ; Number of Genomes: 7
 	Best GC: 37.0062328841; Worst GC: 42.8481482353
 	Best size: 2002780.0; Worst size: 1694430.0
 	Best completeness: 100.0; Worst completeness: 98.63
 	Best contamination: 0.0; Worst contamination: 5.05
-	Best distance: 0.51767; Worst distance: 0.5969
-	Selected representant genome: GC: 37.0312212399 ; size: 1749386.0 ; completeness: 98.77 ; contamination: 0.41 ; distance:0.53239
+	Best distance: 0.27816; Worst distance: 0.35739
+	Selected representant genome: GC: 37.0312212399 ; size: 1749386.0 ; completeness: 98.77 ; contamination: 0.41 ; distance:0.29288
 Group c__Syntrophia ; Number of Genomes: 65
 	Best GC: 49.8072862124; Worst GC: 62.9753572232
 	Best size: 4194649.0; Worst size: 1034231.0
 	Best completeness: 97.42; Worst completeness: 54.07
 	Best contamination: 0.0; Worst contamination: 8.63
-	Best distance: 0.43516; Worst distance: 0.67989
-	Selected representant genome: GC: 53.1448540549 ; size: 2656228.0 ; completeness: 93.55 ; contamination: 1.29 ; distance:0.47370999999999996
+	Best distance: 0.2086; Worst distance: 0.4533300000000001
+	Selected representant genome: GC: 53.1448540549 ; size: 2656228.0 ; completeness: 93.55 ; contamination: 1.29 ; distance:0.24715000000000004
 Group c__Caldisericia ; Number of Genomes: 9
 	Best GC: 38.674796371; Worst GC: 57.69118753
 	Best size: 1995311.0; Worst size: 810645.0
@@ -517,22 +517,22 @@ Group c__Natranaerobiia ; Number of Genomes: 2
 	Best size: 3191453.0; Worst size: 2633330.0
 	Best completeness: 98.31; Worst completeness: 97.88
 	Best contamination: 0.0; Worst contamination: 1.69
-	Best distance: 0.4069; Worst distance: 0.41603999999999997
-	Selected representant genome: GC: 36.3089476799 ; size: 3191453.0 ; completeness: 98.31 ; contamination: 1.69 ; distance:0.4069
+	Best distance: 0.12277; Worst distance: 0.13191
+	Selected representant genome: GC: 36.3089476799 ; size: 3191453.0 ; completeness: 98.31 ; contamination: 1.69 ; distance:0.12277
 Group c__Anaerolineae ; Number of Genomes: 153
 	Best GC: 52.7308084291; Worst GC: 35.5237527734
 	Best size: 8509053.0; Worst size: 1033728.0
 	Best completeness: 100.0; Worst completeness: 56.55
 	Best contamination: 0.0; Worst contamination: 8.67
-	Best distance: 0.48854000000000003; Worst distance: 1.1097299999999999
-	Selected representant genome: GC: 57.0551205463 ; size: 6768311.0 ; completeness: 97.27 ; contamination: 0.61 ; distance:0.7636000000000001
+	Best distance: 0.33526; Worst distance: 0.95645
+	Selected representant genome: GC: 57.0551205463 ; size: 6768311.0 ; completeness: 97.27 ; contamination: 0.61 ; distance:0.61032
 Group c__Symbiobacteriia ; Number of Genomes: 1
 	Best GC: 68.6684043089; Worst GC: 68.6684043089
 	Best size: 3566135.0; Worst size: 3566135.0
 	Best completeness: 98.02; Worst completeness: 98.02
 	Best contamination: 0.03; Worst contamination: 0.03
-	Best distance: 0.37656999999999996; Worst distance: 0.37656999999999996
-	Selected representant genome: GC: 68.6684043089 ; size: 3566135.0 ; completeness: 98.02 ; contamination: 0.03 ; distance:0.37656999999999996
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 68.6684043089 ; size: 3566135.0 ; completeness: 98.02 ; contamination: 0.03 ; distance:0.0
 Group c__Calditrichia ; Number of Genomes: 4
 	Best GC: 45.0958222499; Worst GC: 43.4266433932
 	Best size: 4978541.0; Worst size: 1736815.0
@@ -545,50 +545,50 @@ Group c__Kiritimatiellae ; Number of Genomes: 59
 	Best size: 5778707.0; Worst size: 946416.0
 	Best completeness: 96.11; Worst completeness: 54.31
 	Best contamination: 0.0; Worst contamination: 4.96
-	Best distance: 0.59312; Worst distance: 1.0259199999999997
-	Selected representant genome: GC: 60.1883869147 ; size: 4090690.0 ; completeness: 87.84 ; contamination: 0.0 ; distance:0.72876
+	Best distance: 0.36384; Worst distance: 0.7966399999999999
+	Selected representant genome: GC: 60.1883869147 ; size: 4090690.0 ; completeness: 87.84 ; contamination: 0.0 ; distance:0.49948
 Group c__Paceibacteria ; Number of Genomes: 912
 	Best GC: 42.5221448951; Worst GC: 58.5476486846
 	Best size: 1375995.0; Worst size: 373038.0
 	Best completeness: 89.5; Worst completeness: 50.0
 	Best contamination: 0.0; Worst contamination: 5.17
-	Best distance: 0.76942; Worst distance: 1.8021800000000003
-	Selected representant genome: GC: 43.9690634827 ; size: 1151890.0 ; completeness: 89.5 ; contamination: 0.0 ; distance:0.8124300000000002
+	Best distance: 0.48313; Worst distance: 1.5158900000000002
+	Selected representant genome: GC: 43.9690634827 ; size: 1151890.0 ; completeness: 89.5 ; contamination: 0.0 ; distance:0.5261400000000003
 Group c__Microgenomatia ; Number of Genomes: 474
 	Best GC: 40.5590890508; Worst GC: 55.6762804863
 	Best size: 1650629.0; Worst size: 467269.0
 	Best completeness: 77.43; Worst completeness: 50.06
 	Best contamination: 0.0; Worst contamination: 4.09
-	Best distance: 0.8086; Worst distance: 1.5305299999999997
-	Selected representant genome: GC: 41.0876321696 ; size: 1056414.0 ; completeness: 73.76 ; contamination: 0.0 ; distance:0.9844700000000002
+	Best distance: 0.5571900000000001; Worst distance: 1.2791199999999998
+	Selected representant genome: GC: 41.0876321696 ; size: 1056414.0 ; completeness: 73.76 ; contamination: 0.0 ; distance:0.7330600000000003
 Group c__ABY1 ; Number of Genomes: 361
 	Best GC: 42.4584943758; Worst GC: 63.8832483483
 	Best size: 1713569.0; Worst size: 398478.0
 	Best completeness: 87.93; Worst completeness: 51.28
 	Best contamination: 0.0; Worst contamination: 4.49
-	Best distance: 0.7201; Worst distance: 1.21384
-	Selected representant genome: GC: 42.728987421 ; size: 1163392.0 ; completeness: 87.93 ; contamination: 0.0 ; distance:0.8821200000000001
+	Best distance: 0.43318999999999996; Worst distance: 0.9269299999999998
+	Selected representant genome: GC: 42.728987421 ; size: 1163392.0 ; completeness: 87.93 ; contamination: 0.0 ; distance:0.59521
 Group c__Kazan ; Number of Genomes: 8
 	Best GC: 48.727597472; Worst GC: 51.8291003342
 	Best size: 790931.0; Worst size: 455215.0
 	Best completeness: 74.09; Worst completeness: 55.91
 	Best contamination: 0.0; Worst contamination: 1.49
-	Best distance: 0.78667; Worst distance: 0.84398
-	Selected representant genome: GC: 45.581094344 ; size: 699981.0 ; completeness: 72.77 ; contamination: 0.0 ; distance:0.78667
+	Best distance: 0.34719; Worst distance: 0.4045
+	Selected representant genome: GC: 45.581094344 ; size: 699981.0 ; completeness: 72.77 ; contamination: 0.0 ; distance:0.34719
 Group c__Gracilibacteria ; Number of Genomes: 117
 	Best GC: 43.7248367327; Worst GC: 21.3653024986
 	Best size: 2094140.0; Worst size: 726290.0
 	Best completeness: 89.66; Worst completeness: 51.19
 	Best contamination: 0.0; Worst contamination: 3.7
-	Best distance: 0.79165; Worst distance: 1.6639899999999999
-	Selected representant genome: GC: 43.0923799452 ; size: 1204769.0 ; completeness: 83.8 ; contamination: 0.0 ; distance:0.92757
+	Best distance: 0.54569; Worst distance: 1.41803
+	Selected representant genome: GC: 43.0923799452 ; size: 1204769.0 ; completeness: 83.8 ; contamination: 0.0 ; distance:0.68161
 Group c__WOR-3 ; Number of Genomes: 7
 	Best GC: 46.2499244904; Worst GC: 62.6176779723
 	Best size: 3797522.0; Worst size: 1330663.0
 	Best completeness: 94.41; Worst completeness: 58.91
 	Best contamination: 0.0; Worst contamination: 3.71
-	Best distance: 0.64422; Worst distance: 0.7066
-	Selected representant genome: GC: 46.2499244904 ; size: 2532789.0 ; completeness: 93.41 ; contamination: 1.1 ; distance:0.67909
+	Best distance: 0.46827; Worst distance: 0.53065
+	Selected representant genome: GC: 46.2499244904 ; size: 2532789.0 ; completeness: 93.41 ; contamination: 1.1 ; distance:0.50314
 Group c__Methylomirabilia ; Number of Genomes: 36
 	Best GC: 69.3692854585; Worst GC: 58.2165069584
 	Best size: 5691809.0; Worst size: 1253275.0
@@ -601,22 +601,22 @@ Group c__WWE3 ; Number of Genomes: 55
 	Best size: 1088884.0; Worst size: 567895.0
 	Best completeness: 77.43; Worst completeness: 54.59
 	Best contamination: 0.0; Worst contamination: 3.45
-	Best distance: 0.87047; Worst distance: 1.1991800000000001
-	Selected representant genome: GC: 40.5442250067 ; size: 985345.0 ; completeness: 65.9 ; contamination: 0.0 ; distance:0.93391
+	Best distance: 0.57968; Worst distance: 0.90839
+	Selected representant genome: GC: 40.5442250067 ; size: 985345.0 ; completeness: 65.9 ; contamination: 0.0 ; distance:0.64312
 Group c__Dojkabacteria ; Number of Genomes: 30
 	Best GC: 35.5289483869; Worst GC: 49.5633095014
 	Best size: 1459386.0; Worst size: 532530.0
 	Best completeness: 79.86; Worst completeness: 51.15
 	Best contamination: 0.0; Worst contamination: 3.61
-	Best distance: 0.9170699999999999; Worst distance: 1.20256
-	Selected representant genome: GC: 33.8980833031 ; size: 733750.0 ; completeness: 79.86 ; contamination: 0.0 ; distance:1.0584
+	Best distance: 0.60934; Worst distance: 0.89483
+	Selected representant genome: GC: 33.8980833031 ; size: 733750.0 ; completeness: 79.86 ; contamination: 0.0 ; distance:0.7506700000000001
 Group c__Saccharimonadia ; Number of Genomes: 101
 	Best GC: 48.2581382067; Worst GC: 39.6265958526
 	Best size: 1339480.0; Worst size: 583916.0
 	Best completeness: 81.03; Worst completeness: 50.98
 	Best contamination: 0.0; Worst contamination: 3.37
-	Best distance: 0.7761800000000001; Worst distance: 1.39152
-	Selected representant genome: GC: 52.0993860446 ; size: 1186207.0 ; completeness: 65.74 ; contamination: 0.0 ; distance:0.9693100000000001
+	Best distance: 0.4098; Worst distance: 1.0251400000000002
+	Selected representant genome: GC: 52.0993860446 ; size: 1186207.0 ; completeness: 65.74 ; contamination: 0.0 ; distance:0.60293
 Group c__DG-26 ; Number of Genomes: 4
 	Best GC: 60.3331571221; Worst GC: 52.8276734984
 	Best size: 3074913.0; Worst size: 2323720.0
@@ -629,8 +629,8 @@ Group c__Desulfofervidia ; Number of Genomes: 2
 	Best size: 2540211.0; Worst size: 1357456.0
 	Best completeness: 96.75; Worst completeness: 61.93
 	Best contamination: 0.33; Worst contamination: 4.27
-	Best distance: 0.5081; Worst distance: 0.55743
-	Selected representant genome: GC: 37.1693147334 ; size: 2540211.0 ; completeness: 96.75 ; contamination: 4.27 ; distance:0.5081
+	Best distance: 0.19389; Worst distance: 0.24322
+	Selected representant genome: GC: 37.1693147334 ; size: 2540211.0 ; completeness: 96.75 ; contamination: 4.27 ; distance:0.19389
 Group c__MSB-5A5 ; Number of Genomes: 12
 	Best GC: 45.2160024985; Worst GC: 53.2481607416
 	Best size: 3858847.0; Worst size: 1439223.0
@@ -643,8 +643,8 @@ Group c__BSN033 ; Number of Genomes: 17
 	Best size: 4241461.0; Worst size: 1549187.0
 	Best completeness: 94.37; Worst completeness: 62.62
 	Best contamination: 0.65; Worst contamination: 6.77
-	Best distance: 0.36303; Worst distance: 0.46426999999999996
-	Selected representant genome: GC: 45.7219368286 ; size: 3982062.0 ; completeness: 93.23 ; contamination: 1.29 ; distance:0.42630999999999997
+	Best distance: 0.29252; Worst distance: 0.39375999999999994
+	Selected representant genome: GC: 45.7219368286 ; size: 3982062.0 ; completeness: 93.23 ; contamination: 1.29 ; distance:0.3558
 Group c__Cloacimonadia ; Number of Genomes: 34
 	Best GC: 39.0661313782; Worst GC: 53.8273254771
 	Best size: 2936005.0; Worst size: 972117.0
@@ -657,43 +657,43 @@ Group c__CPR2 ; Number of Genomes: 15
 	Best size: 1123966.0; Worst size: 573144.0
 	Best completeness: 79.67; Worst completeness: 57.3
 	Best contamination: 0.0; Worst contamination: 1.39
-	Best distance: 0.6839599999999999; Worst distance: 0.76959
-	Selected representant genome: GC: 39.1392766015 ; size: 1123966.0 ; completeness: 75.0 ; contamination: 0.46 ; distance:0.68894
+	Best distance: 0.40041; Worst distance: 0.48604
+	Selected representant genome: GC: 39.1392766015 ; size: 1123966.0 ; completeness: 75.0 ; contamination: 0.46 ; distance:0.40539
 Group c__Limnochordia ; Number of Genomes: 13
 	Best GC: 56.1623735653; Worst GC: 69.7310426205
 	Best size: 3817036.0; Worst size: 1786211.0
 	Best completeness: 95.55; Worst completeness: 70.72
 	Best contamination: 0.98; Worst contamination: 4.83
-	Best distance: 0.37603; Worst distance: 0.5385099999999999
-	Selected representant genome: GC: 54.3835050613 ; size: 2701748.0 ; completeness: 95.55 ; contamination: 2.82 ; distance:0.43806
+	Best distance: 0.29389; Worst distance: 0.45637000000000005
+	Selected representant genome: GC: 54.3835050613 ; size: 2701748.0 ; completeness: 95.55 ; contamination: 2.82 ; distance:0.35592
 Group c__Kryptonia ; Number of Genomes: 6
 	Best GC: 37.372270544; Worst GC: 38.5469179836
 	Best size: 2680691.0; Worst size: 2070112.0
 	Best completeness: 96.7; Worst completeness: 72.41
 	Best contamination: 1.72; Worst contamination: 7.65
-	Best distance: 0.40773; Worst distance: 0.43018999999999996
-	Selected representant genome: GC: 36.4055387212 ; size: 2680691.0 ; completeness: 96.7 ; contamination: 7.65 ; distance:0.42638999999999994
+	Best distance: 0.05158; Worst distance: 0.07404
+	Selected representant genome: GC: 36.4055387212 ; size: 2680691.0 ; completeness: 96.7 ; contamination: 7.65 ; distance:0.07024
 Group c__Peptococcia ; Number of Genomes: 20
 	Best GC: 43.3171014422; Worst GC: 31.921657198
 	Best size: 4512870.0; Worst size: 1658376.0
 	Best completeness: 98.72; Worst completeness: 58.35
 	Best contamination: 0.29; Worst contamination: 6.23
-	Best distance: 0.35117; Worst distance: 0.6440699999999999
-	Selected representant genome: GC: 45.1389543487 ; size: 3649665.0 ; completeness: 98.72 ; contamination: 1.91 ; distance:0.35459000000000007
+	Best distance: 0.24908999999999998; Worst distance: 0.54199
+	Selected representant genome: GC: 45.1389543487 ; size: 3649665.0 ; completeness: 98.72 ; contamination: 1.91 ; distance:0.25251
 Group c__Vampirovibrionia ; Number of Genomes: 65
 	Best GC: 34.9356569187; Worst GC: 51.3912814481
 	Best size: 6599159.0; Worst size: 1379694.0
 	Best completeness: 99.14; Worst completeness: 70.09
 	Best contamination: 0.0; Worst contamination: 5.7
-	Best distance: 0.5340800000000001; Worst distance: 0.90694
-	Selected representant genome: GC: 33.9954970591 ; size: 2109814.0 ; completeness: 94.87 ; contamination: 0.0 ; distance:0.64765
+	Best distance: 0.41383; Worst distance: 0.78669
+	Selected representant genome: GC: 33.9954970591 ; size: 2109814.0 ; completeness: 94.87 ; contamination: 0.0 ; distance:0.5274
 Group c__GBS-1 ; Number of Genomes: 2
 	Best GC: 41.8643871453; Worst GC: 44.6319240597
 	Best size: 1815427.0; Worst size: 1407079.0
 	Best completeness: 100.0; Worst completeness: 84.1
 	Best contamination: 0.0; Worst contamination: 0.15
-	Best distance: 0.38328; Worst distance: 0.38805
-	Selected representant genome: GC: 44.6319240597 ; size: 1815427.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.38805
+	Best distance: 0.10381; Worst distance: 0.10858
+	Selected representant genome: GC: 44.6319240597 ; size: 1815427.0 ; completeness: 100.0 ; contamination: 0.0 ; distance:0.10858
 Group c__OLB16 ; Number of Genomes: 1
 	Best GC: 54.585080111; Worst GC: 54.585080111
 	Best size: 4052939.0; Worst size: 4052939.0
@@ -706,43 +706,43 @@ Group c__Desulfarculia ; Number of Genomes: 5
 	Best size: 5934994.0; Worst size: 2076491.0
 	Best completeness: 99.35; Worst completeness: 68.49
 	Best contamination: 0.0; Worst contamination: 4.54
-	Best distance: 0.56508; Worst distance: 0.6886099999999999
-	Selected representant genome: GC: 65.7034940481 ; size: 3655731.0 ; completeness: 98.71 ; contamination: 0.0 ; distance:0.56508
+	Best distance: 0.37182000000000004; Worst distance: 0.49535
+	Selected representant genome: GC: 65.7034940481 ; size: 3655731.0 ; completeness: 98.71 ; contamination: 0.0 ; distance:0.37182000000000004
 Group c__32-111 ; Number of Genomes: 4
 	Best GC: 34.08338895; Worst GC: 38.085316836
 	Best size: 2035886.0; Worst size: 1150338.0
 	Best completeness: 94.51; Worst completeness: 68.54
 	Best contamination: 0.0; Worst contamination: 0.0
-	Best distance: 0.73037; Worst distance: 0.78265
-	Selected representant genome: GC: 30.7321615631 ; size: 1779560.0 ; completeness: 93.41 ; contamination: 0.0 ; distance:0.73037
+	Best distance: 0.21222; Worst distance: 0.2645
+	Selected representant genome: GC: 30.7321615631 ; size: 1779560.0 ; completeness: 93.41 ; contamination: 0.0 ; distance:0.21222
 Group c__Blastocatellia ; Number of Genomes: 24
 	Best GC: 54.1033883276; Worst GC: 64.1835705937
 	Best size: 8149540.0; Worst size: 2714156.0
 	Best completeness: 96.58; Worst completeness: 60.44
 	Best contamination: 0.85; Worst contamination: 6.89
-	Best distance: 0.56443; Worst distance: 0.84794
-	Selected representant genome: GC: 54.5548766313 ; size: 8149540.0 ; completeness: 96.58 ; contamination: 5.98 ; distance:0.56443
+	Best distance: 0.28721; Worst distance: 0.57072
+	Selected representant genome: GC: 54.5548766313 ; size: 8149540.0 ; completeness: 96.58 ; contamination: 5.98 ; distance:0.28721
 Group c__Lentisphaeria ; Number of Genomes: 25
 	Best GC: 52.3687637299; Worst GC: 37.5519191922
 	Best size: 10641996.0; Worst size: 1991733.0
 	Best completeness: 97.12; Worst completeness: 78.35
 	Best contamination: 0.68; Worst contamination: 6.76
-	Best distance: 0.67027; Worst distance: 1.01845
-	Selected representant genome: GC: 50.1297279833 ; size: 6419636.0 ; completeness: 96.62 ; contamination: 2.93 ; distance:0.73349
+	Best distance: 0.44156; Worst distance: 0.78974
+	Selected representant genome: GC: 50.1297279833 ; size: 6419636.0 ; completeness: 96.62 ; contamination: 2.93 ; distance:0.50478
 Group c__Marinisomatia ; Number of Genomes: 111
 	Best GC: 37.2619218847; Worst GC: 54.346587378
 	Best size: 3031464.0; Worst size: 600351.0
 	Best completeness: 97.8; Worst completeness: 52.06
 	Best contamination: 0.0; Worst contamination: 8.85
-	Best distance: 0.52157; Worst distance: 0.7935
-	Selected representant genome: GC: 37.789206626 ; size: 2468218.0 ; completeness: 97.8 ; contamination: 0.0 ; distance:0.60402
+	Best distance: 0.41895; Worst distance: 0.69088
+	Selected representant genome: GC: 37.789206626 ; size: 2468218.0 ; completeness: 97.8 ; contamination: 0.0 ; distance:0.5014000000000001
 Group c__Luteitaleia ; Number of Genomes: 35
 	Best GC: 60.2573428073; Worst GC: 46.1521678147
 	Best size: 7480314.0; Worst size: 1496158.0
 	Best completeness: 99.15; Worst completeness: 52.08
 	Best contamination: 0.0; Worst contamination: 8.38
-	Best distance: 0.52471; Worst distance: 0.69692
-	Selected representant genome: GC: 64.9138621288 ; size: 6334740.0 ; completeness: 85.09 ; contamination: 2.61 ; distance:0.5806600000000001
+	Best distance: 0.32804; Worst distance: 0.5002500000000001
+	Selected representant genome: GC: 64.9138621288 ; size: 6334740.0 ; completeness: 85.09 ; contamination: 2.61 ; distance:0.38399000000000005
 Group c__Fermentibacteria ; Number of Genomes: 9
 	Best GC: 63.6821486482; Worst GC: 58.866329545
 	Best size: 2978745.0; Worst size: 2013285.0
@@ -755,29 +755,29 @@ Group c__Syntrophobacteria ; Number of Genomes: 12
 	Best size: 4990251.0; Worst size: 2554159.0
 	Best completeness: 100.0; Worst completeness: 65.81
 	Best contamination: 0.0; Worst contamination: 7.58
-	Best distance: 0.4913; Worst distance: 0.58655
-	Selected representant genome: GC: 61.9696198865 ; size: 4239823.0 ; completeness: 100.0 ; contamination: 1.45 ; distance:0.4913
+	Best distance: 0.24566; Worst distance: 0.34091
+	Selected representant genome: GC: 61.9696198865 ; size: 4239823.0 ; completeness: 100.0 ; contamination: 1.45 ; distance:0.24566
 Group c__Aminicenantia ; Number of Genomes: 19
 	Best GC: 53.7045479507; Worst GC: 32.5979282914
 	Best size: 3507216.0; Worst size: 1927288.0
 	Best completeness: 93.85; Worst completeness: 69.7
 	Best contamination: 0.0; Worst contamination: 6.08
-	Best distance: 0.50578; Worst distance: 0.85161
-	Selected representant genome: GC: 44.5954103272 ; size: 2914703.0 ; completeness: 92.94 ; contamination: 5.13 ; distance:0.6244999999999999
+	Best distance: 0.32074; Worst distance: 0.66657
+	Selected representant genome: GC: 44.5954103272 ; size: 2914703.0 ; completeness: 92.94 ; contamination: 5.13 ; distance:0.43945999999999996
 Group c__Nitrospinia ; Number of Genomes: 16
 	Best GC: 45.3899470442; Worst GC: 56.2106055236
 	Best size: 3367023.0; Worst size: 1584250.0
 	Best completeness: 96.53; Worst completeness: 66.85
 	Best contamination: 0.85; Worst contamination: 4.44
-	Best distance: 0.4615; Worst distance: 0.58759
-	Selected representant genome: GC: 46.8526838657 ; size: 2647748.0 ; completeness: 96.53 ; contamination: 2.56 ; distance:0.5197700000000001
+	Best distance: 0.18493; Worst distance: 0.31101999999999996
+	Selected representant genome: GC: 46.8526838657 ; size: 2647748.0 ; completeness: 96.53 ; contamination: 2.56 ; distance:0.2432
 Group c__Caldatribacteriia ; Number of Genomes: 5
 	Best GC: 41.6829751278; Worst GC: 55.8498743297
 	Best size: 2349751.0; Worst size: 2080526.0
 	Best completeness: 99.44; Worst completeness: 88.06
 	Best contamination: 0.0; Worst contamination: 6.39
-	Best distance: 0.5686800000000001; Worst distance: 0.60696
-	Selected representant genome: GC: 41.6829751278 ; size: 2088116.0 ; completeness: 93.22 ; contamination: 1.69 ; distance:0.5686800000000001
+	Best distance: 0.2565; Worst distance: 0.29478
+	Selected representant genome: GC: 41.6829751278 ; size: 2088116.0 ; completeness: 93.22 ; contamination: 1.69 ; distance:0.2565
 Group c__Aerophobia ; Number of Genomes: 2
 	Best GC: 43.371447282; Worst GC: 43.3480946039
 	Best size: 2305959.0; Worst size: 1274958.0
@@ -797,8 +797,8 @@ Group c__DTU014 ; Number of Genomes: 2
 	Best size: 2764925.0; Worst size: 2266387.0
 	Best completeness: 94.12; Worst completeness: 89.41
 	Best contamination: 0.49; Worst contamination: 2.54
-	Best distance: 0.44411; Worst distance: 0.47356999999999994
-	Selected representant genome: GC: 53.5929958798 ; size: 2266387.0 ; completeness: 94.12 ; contamination: 0.49 ; distance:0.47356999999999994
+	Best distance: 0.32481; Worst distance: 0.35427
+	Selected representant genome: GC: 53.5929958798 ; size: 2266387.0 ; completeness: 94.12 ; contamination: 0.49 ; distance:0.35427
 Group c__Calescibacteriia ; Number of Genomes: 3
 	Best GC: 34.1407368391; Worst GC: 33.7718446372
 	Best size: 2317901.0; Worst size: 1477701.0
@@ -811,8 +811,8 @@ Group c__SHA-98 ; Number of Genomes: 11
 	Best size: 3228895.0; Worst size: 1706206.0
 	Best completeness: 95.1; Worst completeness: 67.13
 	Best contamination: 0.33; Worst contamination: 2.72
-	Best distance: 0.42469; Worst distance: 0.5305099999999999
-	Selected representant genome: GC: 59.8996179022 ; size: 3228895.0 ; completeness: 94.36 ; contamination: 1.96 ; distance:0.50712
+	Best distance: 0.30924; Worst distance: 0.41506
+	Selected representant genome: GC: 59.8996179022 ; size: 3228895.0 ; completeness: 94.36 ; contamination: 1.96 ; distance:0.39167
 Group c__Hydrogenedentia ; Number of Genomes: 6
 	Best GC: 49.9575771372; Worst GC: 67.1202772284
 	Best size: 5071787.0; Worst size: 1781666.0
@@ -825,15 +825,15 @@ Group c__Dethiobacteria ; Number of Genomes: 8
 	Best size: 3116746.0; Worst size: 1172128.0
 	Best completeness: 95.76; Worst completeness: 55.68
 	Best contamination: 0.0; Worst contamination: 1.98
-	Best distance: 0.36927; Worst distance: 0.5257
-	Selected representant genome: GC: 49.2403503106 ; size: 2143101.0 ; completeness: 93.22 ; contamination: 0.85 ; distance:0.40398
+	Best distance: 0.27733; Worst distance: 0.43376
+	Selected representant genome: GC: 49.2403503106 ; size: 2143101.0 ; completeness: 93.22 ; contamination: 0.85 ; distance:0.31204
 Group c__Omnitrophia ; Number of Genomes: 10
 	Best GC: 49.5616961136; Worst GC: 44.3986561305
 	Best size: 3020120.0; Worst size: 1200785.0
 	Best completeness: 96.77; Worst completeness: 66.01
 	Best contamination: 0.0; Worst contamination: 4.3
-	Best distance: 0.50685; Worst distance: 0.72446
-	Selected representant genome: GC: 49.8802845944 ; size: 2235349.0 ; completeness: 91.33 ; contamination: 0.0 ; distance:0.67252
+	Best distance: 0.28323; Worst distance: 0.50084
+	Selected representant genome: GC: 49.8802845944 ; size: 2235349.0 ; completeness: 91.33 ; contamination: 0.0 ; distance:0.4489
 Group c__DTU030 ; Number of Genomes: 1
 	Best GC: 55.7402716684; Worst GC: 55.7402716684
 	Best size: 1811268.0; Worst size: 1811268.0
@@ -846,8 +846,8 @@ Group c__Latescibacteria ; Number of Genomes: 2
 	Best size: 2290285.0; Worst size: 1596965.0
 	Best completeness: 76.68; Worst completeness: 57.63
 	Best contamination: 0.0; Worst contamination: 1.1
-	Best distance: 0.39606; Worst distance: 0.5592
-	Selected representant genome: GC: 55.501765552 ; size: 1596965.0 ; completeness: 76.68 ; contamination: 0.0 ; distance:0.39606
+	Best distance: 0.30369; Worst distance: 0.46683
+	Selected representant genome: GC: 55.501765552 ; size: 1596965.0 ; completeness: 76.68 ; contamination: 0.0 ; distance:0.30369
 Group c__Syntrophorhabdia ; Number of Genomes: 12
 	Best GC: 51.4162018625; Worst GC: 40.9158595361
 	Best size: 4028425.0; Worst size: 1795368.0
@@ -860,15 +860,15 @@ Group c__JS1 ; Number of Genomes: 14
 	Best size: 2583430.0; Worst size: 1069080.0
 	Best completeness: 98.31; Worst completeness: 53.39
 	Best contamination: 0.0; Worst contamination: 6.78
-	Best distance: 0.42548; Worst distance: 0.53816
-	Selected representant genome: GC: 34.0509295865 ; size: 2120997.0 ; completeness: 67.8 ; contamination: 0.0 ; distance:0.42548
+	Best distance: 0.23069; Worst distance: 0.34337
+	Selected representant genome: GC: 34.0509295865 ; size: 2120997.0 ; completeness: 67.8 ; contamination: 0.0 ; distance:0.23069
 Group c__UBA1414 ; Number of Genomes: 4
 	Best GC: 35.0965697525; Worst GC: 38.0089156417
 	Best size: 1709222.0; Worst size: 1176038.0
 	Best completeness: 95.81; Worst completeness: 72.13
 	Best contamination: 1.01; Worst contamination: 4.69
-	Best distance: 0.64168; Worst distance: 0.68425
-	Selected representant genome: GC: 34.8156595565 ; size: 1709222.0 ; completeness: 95.81 ; contamination: 2.73 ; distance:0.65079
+	Best distance: 0.25576; Worst distance: 0.29833
+	Selected representant genome: GC: 34.8156595565 ; size: 1709222.0 ; completeness: 95.81 ; contamination: 2.73 ; distance:0.26487
 Group c__Bipolaricaulia ; Number of Genomes: 16
 	Best GC: 62.8057267738; Worst GC: 49.8635406572
 	Best size: 1955059.0; Worst size: 930847.0
@@ -881,22 +881,22 @@ Group c__Phycisphaerae ; Number of Genomes: 83
 	Best size: 7803558.0; Worst size: 1469531.0
 	Best completeness: 100.0; Worst completeness: 57.1
 	Best contamination: 0.0; Worst contamination: 6.6
-	Best distance: 0.68781; Worst distance: 1.11748
-	Selected representant genome: GC: 61.8973272953 ; size: 4836209.0 ; completeness: 96.59 ; contamination: 0.0 ; distance:0.84151
+	Best distance: 0.43026; Worst distance: 0.8599299999999999
+	Selected representant genome: GC: 61.8973272953 ; size: 4836209.0 ; completeness: 96.59 ; contamination: 0.0 ; distance:0.58396
 Group c__DTU015 ; Number of Genomes: 10
 	Best GC: 63.0167874603; Worst GC: 45.0696967924
 	Best size: 2168890.0; Worst size: 1654358.0
 	Best completeness: 90.26; Worst completeness: 70.95
 	Best contamination: 0.0; Worst contamination: 2.48
-	Best distance: 0.42685; Worst distance: 0.67322
-	Selected representant genome: GC: 63.0167874603 ; size: 2168890.0 ; completeness: 87.29 ; contamination: 0.5 ; distance:0.42685
+	Best distance: 0.36369999999999997; Worst distance: 0.61007
+	Selected representant genome: GC: 63.0167874603 ; size: 2168890.0 ; completeness: 87.29 ; contamination: 0.5 ; distance:0.36369999999999997
 Group c__UBA8240 ; Number of Genomes: 1
 	Best GC: 50.9501370176; Worst GC: 50.9501370176
 	Best size: 5447951.0; Worst size: 5447951.0
 	Best completeness: 67.43; Worst completeness: 67.43
 	Best contamination: 2.2; Worst contamination: 2.2
-	Best distance: 0.43122; Worst distance: 0.43122
-	Selected representant genome: GC: 50.9501370176 ; size: 5447951.0 ; completeness: 67.43 ; contamination: 2.2 ; distance:0.43122
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 50.9501370176 ; size: 5447951.0 ; completeness: 67.43 ; contamination: 2.2 ; distance:0.0
 Group c__Dormibacteria ; Number of Genomes: 12
 	Best GC: 66.0105770367; Worst GC: 72.0323580214
 	Best size: 2936421.0; Worst size: 1584985.0
@@ -909,71 +909,71 @@ Group c__UBA4882 ; Number of Genomes: 9
 	Best size: 5066565.0; Worst size: 2176110.0
 	Best completeness: 93.22; Worst completeness: 70.11
 	Best contamination: 0.85; Worst contamination: 4.8
-	Best distance: 0.46266999999999997; Worst distance: 0.6113799999999999
-	Selected representant genome: GC: 42.7370607718 ; size: 5066565.0 ; completeness: 78.5 ; contamination: 2.62 ; distance:0.47914999999999996
+	Best distance: 0.33125; Worst distance: 0.47996
+	Selected representant genome: GC: 42.7370607718 ; size: 5066565.0 ; completeness: 78.5 ; contamination: 2.62 ; distance:0.34773
 Group c__Magnetococcia ; Number of Genomes: 14
 	Best GC: 56.9666550386; Worst GC: 65.3960811726
 	Best size: 4986701.0; Worst size: 2895658.0
 	Best completeness: 99.11; Worst completeness: 71.37
 	Best contamination: 0.84; Worst contamination: 4.73
-	Best distance: 0.48007; Worst distance: 0.6247199999999999
-	Selected representant genome: GC: 54.1674780028 ; size: 4719581.0 ; completeness: 98.32 ; contamination: 0.84 ; distance:0.48313999999999996
+	Best distance: 0.23761; Worst distance: 0.38226
+	Selected representant genome: GC: 54.1674780028 ; size: 4719581.0 ; completeness: 98.32 ; contamination: 0.84 ; distance:0.24068
 Group c__UBA10030 ; Number of Genomes: 8
 	Best GC: 54.2077957706; Worst GC: 40.2974775349
 	Best size: 4487400.0; Worst size: 2201516.0
 	Best completeness: 95.08; Worst completeness: 67.75
 	Best contamination: 0.91; Worst contamination: 3.02
-	Best distance: 0.43833; Worst distance: 0.49056
-	Selected representant genome: GC: 54.2077957706 ; size: 4487400.0 ; completeness: 86.81 ; contamination: 1.91 ; distance:0.4589
+	Best distance: 0.28208; Worst distance: 0.33431
+	Selected representant genome: GC: 54.2077957706 ; size: 4487400.0 ; completeness: 86.81 ; contamination: 1.91 ; distance:0.30265
 Group c__UBA796 ; Number of Genomes: 11
 	Best GC: 59.219093238; Worst GC: 41.8279074234
 	Best size: 6755994.0; Worst size: 3490701.0
 	Best completeness: 93.03; Worst completeness: 54.79
 	Best contamination: 0.05; Worst contamination: 3.36
-	Best distance: 0.56612; Worst distance: 0.8431
-	Selected representant genome: GC: 60.5554031248 ; size: 4595748.0 ; completeness: 93.03 ; contamination: 1.72 ; distance:0.57135
+	Best distance: 0.43896; Worst distance: 0.71594
+	Selected representant genome: GC: 60.5554031248 ; size: 4595748.0 ; completeness: 93.03 ; contamination: 1.72 ; distance:0.44419
 Group c__GWF2-35-9 ; Number of Genomes: 2
 	Best GC: 34.5325135479; Worst GC: 38.493761008
 	Best size: 3288269.0; Worst size: 2346213.0
 	Best completeness: 94.87; Worst completeness: 76.15
 	Best contamination: 3.42; Worst contamination: 4.27
-	Best distance: 0.50893; Worst distance: 0.6612199999999999
-	Selected representant genome: GC: 38.493761008 ; size: 3288269.0 ; completeness: 94.87 ; contamination: 4.27 ; distance:0.50893
+	Best distance: 0.34465; Worst distance: 0.49694
+	Selected representant genome: GC: 38.493761008 ; size: 3288269.0 ; completeness: 94.87 ; contamination: 4.27 ; distance:0.34465
 Group c__Gemmatimonadetes ; Number of Genomes: 54
 	Best GC: 60.7707658971; Worst GC: 44.8444479229
 	Best size: 7479215.0; Worst size: 1456366.0
 	Best completeness: 98.9; Worst completeness: 53.45
 	Best contamination: 0.0; Worst contamination: 6.59
-	Best distance: 0.61852; Worst distance: 0.76845
-	Selected representant genome: GC: 65.9022505517 ; size: 3097512.0 ; completeness: 88.46 ; contamination: 0.0 ; distance:0.6543400000000001
+	Best distance: 0.39142; Worst distance: 0.5413500000000001
+	Selected representant genome: GC: 65.9022505517 ; size: 3097512.0 ; completeness: 88.46 ; contamination: 0.0 ; distance:0.42724
 Group c__UBA1135 ; Number of Genomes: 15
 	Best GC: 62.7493802056; Worst GC: 51.7055288716
 	Best size: 5396125.0; Worst size: 1773771.0
 	Best completeness: 97.85; Worst completeness: 66.32
 	Best contamination: 0.0; Worst contamination: 5.91
-	Best distance: 0.74361; Worst distance: 0.9365000000000001
-	Selected representant genome: GC: 62.7493802056 ; size: 3948890.0 ; completeness: 91.4 ; contamination: 0.0 ; distance:0.74361
+	Best distance: 0.50207; Worst distance: 0.69496
+	Selected representant genome: GC: 62.7493802056 ; size: 3948890.0 ; completeness: 91.4 ; contamination: 0.0 ; distance:0.50207
 Group c__UBA8742 ; Number of Genomes: 2
 	Best GC: 71.2155005538; Worst GC: 63.8313353848
 	Best size: 8347715.0; Worst size: 3630456.0
 	Best completeness: 90.67; Worst completeness: 77.67
 	Best contamination: 3.72; Worst contamination: 6.27
-	Best distance: 0.75848; Worst distance: 0.76527
-	Selected representant genome: GC: 71.2155005538 ; size: 8347715.0 ; completeness: 77.67 ; contamination: 3.72 ; distance:0.75848
+	Best distance: 0.55354; Worst distance: 0.56033
+	Selected representant genome: GC: 71.2155005538 ; size: 8347715.0 ; completeness: 77.67 ; contamination: 3.72 ; distance:0.55354
 Group c__UBA8108 ; Number of Genomes: 13
 	Best GC: 59.839724089; Worst GC: 69.8990901921
 	Best size: 5867685.0; Worst size: 2311172.0
 	Best completeness: 96.17; Worst completeness: 60.82
 	Best contamination: 0.0; Worst contamination: 6.45
-	Best distance: 0.70662; Worst distance: 0.81589
-	Selected representant genome: GC: 59.839724089 ; size: 4414909.0 ; completeness: 93.28 ; contamination: 3.23 ; distance:0.71616
+	Best distance: 0.50232; Worst distance: 0.61159
+	Selected representant genome: GC: 59.839724089 ; size: 4414909.0 ; completeness: 93.28 ; contamination: 3.23 ; distance:0.51186
 Group c__UBA8919 ; Number of Genomes: 7
 	Best GC: 33.9686380281; Worst GC: 39.1753298079
 	Best size: 2465255.0; Worst size: 1416218.0
 	Best completeness: 93.19; Worst completeness: 65.81
 	Best contamination: 1.12; Worst contamination: 3.37
-	Best distance: 0.45704999999999996; Worst distance: 0.4887
-	Selected representant genome: GC: 33.9686380281 ; size: 2465255.0 ; completeness: 93.19 ; contamination: 2.35 ; distance:0.47424
+	Best distance: 0.13546999999999998; Worst distance: 0.16712000000000002
+	Selected representant genome: GC: 33.9686380281 ; size: 2465255.0 ; completeness: 93.19 ; contamination: 2.35 ; distance:0.15266000000000002
 Group c__UBA8953 ; Number of Genomes: 5
 	Best GC: 50.0951490445; Worst GC: 53.4915010051
 	Best size: 5678741.0; Worst size: 2825442.0
@@ -986,50 +986,50 @@ Group c__UBA9088 ; Number of Genomes: 1
 	Best size: 1505392.0; Worst size: 1505392.0
 	Best completeness: 89.51; Worst completeness: 89.51
 	Best contamination: 1.12; Worst contamination: 1.12
-	Best distance: 0.56342; Worst distance: 0.56342
-	Selected representant genome: GC: 35.7294976989 ; size: 1505392.0 ; completeness: 89.51 ; contamination: 1.12 ; distance:0.56342
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 35.7294976989 ; size: 1505392.0 ; completeness: 89.51 ; contamination: 1.12 ; distance:0.0
 Group c__UBA9160 ; Number of Genomes: 11
 	Best GC: 59.6332057381; Worst GC: 47.7933821802
 	Best size: 5851096.0; Worst size: 2315875.0
 	Best completeness: 98.25; Worst completeness: 71.14
 	Best contamination: 0.67; Worst contamination: 6.7
-	Best distance: 0.54923; Worst distance: 0.68886
-	Selected representant genome: GC: 59.1855938553 ; size: 4857186.0 ; completeness: 92.04 ; contamination: 1.94 ; distance:0.6768400000000001
+	Best distance: 0.24175; Worst distance: 0.38138000000000005
+	Selected representant genome: GC: 59.1855938553 ; size: 4857186.0 ; completeness: 92.04 ; contamination: 1.94 ; distance:0.3693600000000001
 Group c__UBA9217 ; Number of Genomes: 5
 	Best GC: 56.4393470442; Worst GC: 54.6536682818
 	Best size: 3857978.0; Worst size: 3012392.0
 	Best completeness: 93.18; Worst completeness: 67.05
 	Best contamination: 0.91; Worst contamination: 6.72
-	Best distance: 0.37223999999999996; Worst distance: 0.39483
-	Selected representant genome: GC: 56.6518262922 ; size: 3857978.0 ; completeness: 90.81 ; contamination: 6.72 ; distance:0.37223999999999996
+	Best distance: 0.12522; Worst distance: 0.14781
+	Selected representant genome: GC: 56.6518262922 ; size: 3857978.0 ; completeness: 90.81 ; contamination: 6.72 ; distance:0.12522
 Group c__UBA2968 ; Number of Genomes: 13
 	Best GC: 59.0943139321; Worst GC: 41.1434471967
 	Best size: 5970290.0; Worst size: 3494728.0
 	Best completeness: 97.74; Worst completeness: 63.67
 	Best contamination: 1.1; Worst contamination: 8.24
-	Best distance: 0.51974; Worst distance: 0.6616799999999999
-	Selected representant genome: GC: 59.4856473502 ; size: 5642168.0 ; completeness: 95.6 ; contamination: 1.1 ; distance:0.54956
+	Best distance: 0.36701; Worst distance: 0.50895
+	Selected representant genome: GC: 59.4856473502 ; size: 5642168.0 ; completeness: 95.6 ; contamination: 1.1 ; distance:0.39683
 Group c__UBA2242 ; Number of Genomes: 3
 	Best GC: 44.425023824; Worst GC: 41.9475117918
 	Best size: 2631854.0; Worst size: 2558836.0
 	Best completeness: 97.8; Worst completeness: 88.65
 	Best contamination: 2.2; Worst contamination: 2.2
-	Best distance: 0.45846000000000003; Worst distance: 0.50006
-	Selected representant genome: GC: 44.425023824 ; size: 2631854.0 ; completeness: 97.8 ; contamination: 2.2 ; distance:0.45846000000000003
+	Best distance: 0.19717; Worst distance: 0.23876999999999998
+	Selected representant genome: GC: 44.425023824 ; size: 2631854.0 ; completeness: 97.8 ; contamination: 2.2 ; distance:0.19717
 Group c__Elusimicrobia ; Number of Genomes: 52
 	Best GC: 58.8916832381; Worst GC: 36.0190724186
 	Best size: 4759680.0; Worst size: 1267460.0
 	Best completeness: 96.63; Worst completeness: 57.6
 	Best contamination: 0.0; Worst contamination: 5.43
-	Best distance: 0.48573; Worst distance: 0.93287
-	Selected representant genome: GC: 62.5616695666 ; size: 3329075.0 ; completeness: 95.51 ; contamination: 0.0 ; distance:0.72976
+	Best distance: 0.40533; Worst distance: 0.8524700000000001
+	Selected representant genome: GC: 62.5616695666 ; size: 3329075.0 ; completeness: 95.51 ; contamination: 0.0 ; distance:0.64936
 Group c__koll11 ; Number of Genomes: 64
 	Best GC: 44.8620572674; Worst GC: 35.4163716623
 	Best size: 2750020.0; Worst size: 704252.0
 	Best completeness: 92.05; Worst completeness: 54.75
 	Best contamination: 0.0; Worst contamination: 5.38
-	Best distance: 0.51789; Worst distance: 0.78418
-	Selected representant genome: GC: 42.0776912814 ; size: 1930505.0 ; completeness: 91.94 ; contamination: 2.15 ; distance:0.54399
+	Best distance: 0.39464; Worst distance: 0.66093
+	Selected representant genome: GC: 42.0776912814 ; size: 1930505.0 ; completeness: 91.94 ; contamination: 2.15 ; distance:0.42074
 Group c__WGA-4E ; Number of Genomes: 11
 	Best GC: 43.6100260626; Worst GC: 66.581488392
 	Best size: 6421894.0; Worst size: 3967361.0
@@ -1042,8 +1042,8 @@ Group c__AB16 ; Number of Genomes: 6
 	Best size: 2466972.0; Worst size: 1175592.0
 	Best completeness: 92.31; Worst completeness: 67.33
 	Best contamination: 0.0; Worst contamination: 1.28
-	Best distance: 0.46565; Worst distance: 0.47879000000000005
-	Selected representant genome: GC: 45.7726127298 ; size: 2091807.0 ; completeness: 88.95 ; contamination: 0.0 ; distance:0.47237999999999997
+	Best distance: 0.27377; Worst distance: 0.28691
+	Selected representant genome: GC: 45.7726127298 ; size: 2091807.0 ; completeness: 88.95 ; contamination: 0.0 ; distance:0.28049999999999997
 Group c__GWC2-55-46 ; Number of Genomes: 21
 	Best GC: 42.6429102865; Worst GC: 59.4027028108
 	Best size: 2788758.0; Worst size: 1614986.0
@@ -1056,8 +1056,8 @@ Group c__UBA9942 ; Number of Genomes: 4
 	Best size: 2194295.0; Worst size: 1761746.0
 	Best completeness: 91.4; Worst completeness: 70.67
 	Best contamination: 0.0; Worst contamination: 5.13
-	Best distance: 0.35811999999999994; Worst distance: 0.3689
-	Selected representant genome: GC: 38.885611955 ; size: 2026168.0 ; completeness: 87.62 ; contamination: 3.42 ; distance:0.35811999999999994
+	Best distance: 0.09731000000000001; Worst distance: 0.10808999999999999
+	Selected representant genome: GC: 38.885611955 ; size: 2026168.0 ; completeness: 87.62 ; contamination: 3.42 ; distance:0.09731000000000001
 Group c__GR-WP33-30 ; Number of Genomes: 15
 	Best GC: 59.6845361519; Worst GC: 69.7541578499
 	Best size: 5243325.0; Worst size: 1641571.0
@@ -1084,64 +1084,64 @@ Group c__UBA9087 ; Number of Genomes: 6
 	Best size: 2156918.0; Worst size: 821844.0
 	Best completeness: 97.73; Worst completeness: 72.17
 	Best contamination: 0.0; Worst contamination: 4.24
-	Best distance: 0.46536; Worst distance: 0.5154799999999999
-	Selected representant genome: GC: 50.0324087339 ; size: 2156918.0 ; completeness: 93.18 ; contamination: 0.0 ; distance:0.46536
+	Best distance: 0.27756000000000003; Worst distance: 0.32767999999999997
+	Selected representant genome: GC: 50.0324087339 ; size: 2156918.0 ; completeness: 93.18 ; contamination: 0.0 ; distance:0.27756000000000003
 Group c__Ellin6529 ; Number of Genomes: 12
 	Best GC: 70.4147231143; Worst GC: 62.5899810881
 	Best size: 3765823.0; Worst size: 882486.0
 	Best completeness: 93.07; Worst completeness: 62.04
 	Best contamination: 0.0; Worst contamination: 2.78
-	Best distance: 0.60227; Worst distance: 0.73438
-	Selected representant genome: GC: 71.2249349195 ; size: 1931930.0 ; completeness: 82.41 ; contamination: 0.0 ; distance:0.60354
+	Best distance: 0.44847; Worst distance: 0.58058
+	Selected representant genome: GC: 71.2249349195 ; size: 1931930.0 ; completeness: 82.41 ; contamination: 0.0 ; distance:0.44974
 Group c__Kapabacteria ; Number of Genomes: 18
 	Best GC: 43.5731951745; Worst GC: 59.4313657605
 	Best size: 4854030.0; Worst size: 1714052.0
 	Best completeness: 98.63; Worst completeness: 64.94
 	Best contamination: 0.0; Worst contamination: 5.74
-	Best distance: 0.49513; Worst distance: 0.73285
-	Selected representant genome: GC: 51.2699085349 ; size: 4854030.0 ; completeness: 98.63 ; contamination: 0.55 ; distance:0.50032
+	Best distance: 0.34028; Worst distance: 0.5780000000000001
+	Selected representant genome: GC: 51.2699085349 ; size: 4854030.0 ; completeness: 98.63 ; contamination: 0.55 ; distance:0.34547
 Group c__UBA5177 ; Number of Genomes: 2
 	Best GC: 60.836770617; Worst GC: 61.0866067197
 	Best size: 4445776.0; Worst size: 3030172.0
 	Best completeness: 84.43; Worst completeness: 81.88
 	Best contamination: 2.97; Worst contamination: 3.47
-	Best distance: 0.5502900000000001; Worst distance: 0.55061
-	Selected representant genome: GC: 61.0866067197 ; size: 3030172.0 ; completeness: 84.43 ; contamination: 2.97 ; distance:0.5502900000000001
+	Best distance: 0.0038; Worst distance: 0.00412
+	Selected representant genome: GC: 61.0866067197 ; size: 3030172.0 ; completeness: 84.43 ; contamination: 2.97 ; distance:0.0038
 Group c__UBA10199 ; Number of Genomes: 19
 	Best GC: 45.0502345177; Worst GC: 37.4837840494
 	Best size: 2566643.0; Worst size: 1374535.0
 	Best completeness: 94.12; Worst completeness: 66.32
 	Best contamination: 0.0; Worst contamination: 3.61
-	Best distance: 0.39919; Worst distance: 0.53679
-	Selected representant genome: GC: 44.056331472 ; size: 2225619.0 ; completeness: 88.06 ; contamination: 0.65 ; distance:0.41344000000000003
+	Best distance: 0.0; Worst distance: 0.25205
+	Selected representant genome: GC: 44.0528364034 ; size: 2216544.0 ; completeness: 87.42 ; contamination: 0.65 ; distance:0.0
 Group c__UBA10936 ; Number of Genomes: 1
 	Best GC: 60.2083894604; Worst GC: 60.2083894604
 	Best size: 4585862.0; Worst size: 4585862.0
 	Best completeness: 82.77; Worst completeness: 82.77
 	Best contamination: 3.07; Worst contamination: 3.07
-	Best distance: 0.65719; Worst distance: 0.65719
-	Selected representant genome: GC: 60.2083894604 ; size: 4585862.0 ; completeness: 82.77 ; contamination: 3.07 ; distance:0.65719
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 60.2083894604 ; size: 4585862.0 ; completeness: 82.77 ; contamination: 3.07 ; distance:0.0
 Group c__UBA994 ; Number of Genomes: 4
 	Best GC: 54.5923523888; Worst GC: 54.6515829672
 	Best size: 2436341.0; Worst size: 1446131.0
 	Best completeness: 90.56; Worst completeness: 70.85
 	Best contamination: 0.85; Worst contamination: 2.99
-	Best distance: 0.42286; Worst distance: 0.53596
-	Selected representant genome: GC: 54.5923523888 ; size: 1446131.0 ; completeness: 80.37 ; contamination: 0.85 ; distance:0.53596
+	Best distance: 0.26438; Worst distance: 0.37748
+	Selected representant genome: GC: 54.5923523888 ; size: 1446131.0 ; completeness: 80.37 ; contamination: 0.85 ; distance:0.37748
 Group c__Doudnabacteria ; Number of Genomes: 35
 	Best GC: 44.5113813802; Worst GC: 50.1815775145
 	Best size: 1081311.0; Worst size: 555565.0
 	Best completeness: 72.77; Worst completeness: 53.14
 	Best contamination: 0.0; Worst contamination: 2.97
-	Best distance: 0.7693300000000001; Worst distance: 0.9215000000000001
-	Selected representant genome: GC: 47.8013841011 ; size: 880149.0 ; completeness: 70.3 ; contamination: 0.0 ; distance:0.7709800000000002
+	Best distance: 0.43173; Worst distance: 0.5839000000000001
+	Selected representant genome: GC: 47.8013841011 ; size: 880149.0 ; completeness: 70.3 ; contamination: 0.0 ; distance:0.43338
 Group c__Endomicrobia ; Number of Genomes: 9
 	Best GC: 47.5491385031; Worst GC: 35.1841855525
 	Best size: 3091099.0; Worst size: 1148570.0
 	Best completeness: 96.63; Worst completeness: 72.3
 	Best contamination: 0.0; Worst contamination: 3.37
-	Best distance: 0.45787999999999995; Worst distance: 0.6374
-	Selected representant genome: GC: 47.7693151035 ; size: 2413529.0 ; completeness: 96.56 ; contamination: 0.0 ; distance:0.45787999999999995
+	Best distance: 0.38038; Worst distance: 0.5599
+	Selected representant genome: GC: 47.7693151035 ; size: 2413529.0 ; completeness: 96.56 ; contamination: 0.0 ; distance:0.38038
 Group c__Eremiobacteria ; Number of Genomes: 9
 	Best GC: 43.5750894354; Worst GC: 67.890704523
 	Best size: 4705588.0; Worst size: 2089263.0
@@ -1154,36 +1154,36 @@ Group c__UBA2235 ; Number of Genomes: 6
 	Best size: 3509239.0; Worst size: 1665916.0
 	Best completeness: 92.37; Worst completeness: 61.65
 	Best contamination: 0.0; Worst contamination: 4.95
-	Best distance: 0.62515; Worst distance: 0.7306900000000001
-	Selected representant genome: GC: 61.97475743 ; size: 3509239.0 ; completeness: 92.37 ; contamination: 0.99 ; distance:0.62552
+	Best distance: 0.46876; Worst distance: 0.5743
+	Selected representant genome: GC: 61.97475743 ; size: 3509239.0 ; completeness: 92.37 ; contamination: 0.99 ; distance:0.46913000000000005
 Group c__UBA6919 ; Number of Genomes: 2
 	Best GC: 33.1270364149; Worst GC: 36.1362086923
 	Best size: 3568355.0; Worst size: 3041875.0
 	Best completeness: 96.4; Worst completeness: 90.38
 	Best contamination: 0.0; Worst contamination: 0.67
-	Best distance: 0.65166; Worst distance: 0.73928
-	Selected representant genome: GC: 33.1270364149 ; size: 3568355.0 ; completeness: 96.4 ; contamination: 0.67 ; distance:0.65166
+	Best distance: 0.43904; Worst distance: 0.52666
+	Selected representant genome: GC: 33.1270364149 ; size: 3568355.0 ; completeness: 96.4 ; contamination: 0.67 ; distance:0.43904
 Group c__UBA12135 ; Number of Genomes: 2
 	Best GC: 41.5318811343; Worst GC: 41.5470588122
 	Best size: 4450845.0; Worst size: 4202118.0
 	Best completeness: 78.48; Worst completeness: 75.11
 	Best contamination: 1.2; Worst contamination: 3.01
-	Best distance: 0.7420100000000001; Worst distance: 0.74306
-	Selected representant genome: GC: 41.5470588122 ; size: 4202118.0 ; completeness: 78.48 ; contamination: 1.2 ; distance:0.7420100000000001
+	Best distance: 0.00055; Worst distance: 0.0016
+	Selected representant genome: GC: 41.5470588122 ; size: 4202118.0 ; completeness: 78.48 ; contamination: 1.2 ; distance:0.00055
 Group c__GWE2-31-10 ; Number of Genomes: 4
 	Best GC: 27.0009327579; Worst GC: 31.5423114551
 	Best size: 4469737.0; Worst size: 4078932.0
 	Best completeness: 96.55; Worst completeness: 83.47
 	Best contamination: 0.05; Worst contamination: 2.4
-	Best distance: 0.7582400000000001; Worst distance: 0.7871400000000001
-	Selected representant genome: GC: 26.884170287 ; size: 4469737.0 ; completeness: 88.4 ; contamination: 2.05 ; distance:0.7582400000000001
+	Best distance: 0.23532; Worst distance: 0.26422
+	Selected representant genome: GC: 26.884170287 ; size: 4469737.0 ; completeness: 88.4 ; contamination: 2.05 ; distance:0.23532
 Group c__UBA5829 ; Number of Genomes: 3
 	Best GC: 51.583511146; Worst GC: 58.7276861921
 	Best size: 3290035.0; Worst size: 2254517.0
 	Best completeness: 81.14; Worst completeness: 59.77
 	Best contamination: 0.0; Worst contamination: 1.95
-	Best distance: 0.46182; Worst distance: 0.49428000000000005
-	Selected representant genome: GC: 51.583511146 ; size: 2468038.0 ; completeness: 72.27 ; contamination: 0.0 ; distance:0.46182
+	Best distance: 0.29251; Worst distance: 0.32497
+	Selected representant genome: GC: 51.583511146 ; size: 2468038.0 ; completeness: 72.27 ; contamination: 0.0 ; distance:0.29251
 Group c__UBA4055 ; Number of Genomes: 4
 	Best GC: 39.4448619619; Worst GC: 31.3542753239
 	Best size: 2736738.0; Worst size: 1741902.0
@@ -1203,15 +1203,15 @@ Group c__Dissulfuribacteria ; Number of Genomes: 3
 	Best size: 2606474.0; Worst size: 1885320.0
 	Best completeness: 98.19; Worst completeness: 80.36
 	Best contamination: 0.6; Worst contamination: 1.98
-	Best distance: 0.53011; Worst distance: 0.5916699999999999
-	Selected representant genome: GC: 43.2794324061 ; size: 2524199.0 ; completeness: 98.19 ; contamination: 1.19 ; distance:0.53011
+	Best distance: 0.23344; Worst distance: 0.295
+	Selected representant genome: GC: 43.2794324061 ; size: 2524199.0 ; completeness: 98.19 ; contamination: 1.19 ; distance:0.23344
 Group c__Desulfuribacillia ; Number of Genomes: 2
 	Best GC: 37.5175402028; Worst GC: 38.1829144414
 	Best size: 3119699.0; Worst size: 3106435.0
 	Best completeness: 96.92; Worst completeness: 96.03
 	Best contamination: 2.05; Worst contamination: 3.59
-	Best distance: 0.32131; Worst distance: 0.32406999999999997
-	Selected representant genome: GC: 37.5175402028 ; size: 3106435.0 ; completeness: 96.92 ; contamination: 3.59 ; distance:0.32131
+	Best distance: 0.09598; Worst distance: 0.09874
+	Selected representant genome: GC: 37.5175402028 ; size: 3106435.0 ; completeness: 96.92 ; contamination: 3.59 ; distance:0.09598
 Group c__GCA-001730085 ; Number of Genomes: 1
 	Best GC: 34.6936955744; Worst GC: 34.6936955744
 	Best size: 1907665.0; Worst size: 1907665.0
@@ -1224,36 +1224,36 @@ Group c__Mor1 ; Number of Genomes: 1
 	Best size: 5989545.0; Worst size: 5989545.0
 	Best completeness: 99.15; Worst completeness: 99.15
 	Best contamination: 3.47; Worst contamination: 3.47
-	Best distance: 0.5797399999999999; Worst distance: 0.5797399999999999
-	Selected representant genome: GC: 66.8013381739 ; size: 5989545.0 ; completeness: 99.15 ; contamination: 3.47 ; distance:0.5797399999999999
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 66.8013381739 ; size: 5989545.0 ; completeness: 99.15 ; contamination: 3.47 ; distance:0.0
 Group c__Chthonomonadetes ; Number of Genomes: 2
 	Best GC: 54.5763848284; Worst GC: 54.6136462103
 	Best size: 3438278.0; Worst size: 3437861.0
 	Best completeness: 96.3; Worst completeness: 95.65
 	Best contamination: 0.0; Worst contamination: 0.0
-	Best distance: 0.5055599999999999; Worst distance: 0.5064599999999999
-	Selected representant genome: GC: 54.6136462103 ; size: 3438278.0 ; completeness: 96.3 ; contamination: 0.0 ; distance:0.5055599999999999
+	Best distance: 0.00171; Worst distance: 0.00261
+	Selected representant genome: GC: 54.6136462103 ; size: 3438278.0 ; completeness: 96.3 ; contamination: 0.0 ; distance:0.00171
 Group c__OXYB2-FULL-49-7 ; Number of Genomes: 2
 	Best GC: 48.736150588; Worst GC: 49.9768875716
 	Best size: 5449730.0; Worst size: 3673002.0
 	Best completeness: 97.8; Worst completeness: 78.28
 	Best contamination: 2.2; Worst contamination: 3.3
-	Best distance: 0.51211; Worst distance: 0.5599
-	Selected representant genome: GC: 49.9768875716 ; size: 5449730.0 ; completeness: 97.8 ; contamination: 2.2 ; distance:0.51211
+	Best distance: 0.25708; Worst distance: 0.30487
+	Selected representant genome: GC: 49.9768875716 ; size: 5449730.0 ; completeness: 97.8 ; contamination: 2.2 ; distance:0.25708
 Group c__UBA9649 ; Number of Genomes: 14
 	Best GC: 62.8284665341; Worst GC: 49.6621102675
 	Best size: 2213928.0; Worst size: 844698.0
 	Best completeness: 91.94; Worst completeness: 55.96
 	Best contamination: 0.0; Worst contamination: 2.15
-	Best distance: 0.56247; Worst distance: 0.6859200000000001
-	Selected representant genome: GC: 63.367092853 ; size: 1420395.0 ; completeness: 86.56 ; contamination: 0.0 ; distance:0.6668600000000001
+	Best distance: 0.42362999999999995; Worst distance: 0.54708
+	Selected representant genome: GC: 63.367092853 ; size: 1420395.0 ; completeness: 86.56 ; contamination: 0.0 ; distance:0.52802
 Group c__WOR-1 ; Number of Genomes: 26
 	Best GC: 44.703406621; Worst GC: 54.025506365
 	Best size: 1985228.0; Worst size: 1261044.0
 	Best completeness: 89.32; Worst completeness: 65.26
 	Best contamination: 0.0; Worst contamination: 3.42
-	Best distance: 0.50048; Worst distance: 0.56398
-	Selected representant genome: GC: 46.3146604267 ; size: 1695776.0 ; completeness: 89.32 ; contamination: 0.85 ; distance:0.5180800000000001
+	Best distance: 0.32317; Worst distance: 0.38666999999999996
+	Selected representant genome: GC: 46.3146604267 ; size: 1695776.0 ; completeness: 89.32 ; contamination: 0.85 ; distance:0.34077
 Group c__D2-FULL-39-29 ; Number of Genomes: 2
 	Best GC: 39.4003939756; Worst GC: 40.5228036943
 	Best size: 3003844.0; Worst size: 2805110.0
@@ -1273,15 +1273,15 @@ Group c__Andersenbacteria ; Number of Genomes: 11
 	Best size: 1443042.0; Worst size: 778473.0
 	Best completeness: 76.12; Worst completeness: 56.88
 	Best contamination: 0.0; Worst contamination: 2.78
-	Best distance: 0.9615700000000001; Worst distance: 1.0548199999999999
-	Selected representant genome: GC: 45.5129772977 ; size: 1362175.0 ; completeness: 68.98 ; contamination: 0.19 ; distance:0.96211
+	Best distance: 0.31399; Worst distance: 0.40724000000000005
+	Selected representant genome: GC: 45.5129772977 ; size: 1362175.0 ; completeness: 68.98 ; contamination: 0.19 ; distance:0.31453
 Group c__Berkelbacteria ; Number of Genomes: 25
 	Best GC: 40.5644347767; Worst GC: 49.9610223561
 	Best size: 960706.0; Worst size: 524088.0
 	Best completeness: 78.45; Worst completeness: 55.91
 	Best contamination: 0.0; Worst contamination: 1.12
-	Best distance: 0.7624200000000001; Worst distance: 1.0472100000000002
-	Selected representant genome: GC: 39.0108178817 ; size: 915059.0 ; completeness: 69.8 ; contamination: 0.0 ; distance:0.7877500000000001
+	Best distance: 0.50857; Worst distance: 0.7933600000000002
+	Selected representant genome: GC: 39.0108178817 ; size: 915059.0 ; completeness: 69.8 ; contamination: 0.0 ; distance:0.5339
 Group c__CG2-30-53-67 ; Number of Genomes: 6
 	Best GC: 52.8910696485; Worst GC: 52.4994820553
 	Best size: 2946385.0; Worst size: 2176809.0
@@ -1301,29 +1301,29 @@ Group c__UBA8248 ; Number of Genomes: 7
 	Best size: 4372169.0; Worst size: 2246033.0
 	Best completeness: 94.81; Worst completeness: 66.76
 	Best contamination: 0.0; Worst contamination: 5.18
-	Best distance: 0.51285; Worst distance: 0.5905400000000001
-	Selected representant genome: GC: 59.4640326117 ; size: 4372169.0 ; completeness: 94.44 ; contamination: 0.85 ; distance:0.51285
+	Best distance: 0.22854000000000002; Worst distance: 0.30623
+	Selected representant genome: GC: 59.4640326117 ; size: 4372169.0 ; completeness: 94.44 ; contamination: 0.85 ; distance:0.22854000000000002
 Group c__RBG-13-55-18 ; Number of Genomes: 2
 	Best GC: 57.2854097551; Worst GC: 54.6183839501
 	Best size: 2599281.0; Worst size: 1770936.0
 	Best completeness: 96.58; Worst completeness: 96.58
 	Best contamination: 0.0; Worst contamination: 1.71
-	Best distance: 0.51212; Worst distance: 0.58674
-	Selected representant genome: GC: 54.6183839501 ; size: 2599281.0 ; completeness: 96.58 ; contamination: 0.0 ; distance:0.51212
+	Best distance: 0.34109; Worst distance: 0.41571
+	Selected representant genome: GC: 54.6183839501 ; size: 2599281.0 ; completeness: 96.58 ; contamination: 0.0 ; distance:0.34109
 Group c__CG2-30-40-21 ; Number of Genomes: 5
 	Best GC: 40.1646844726; Worst GC: 40.3170209944
 	Best size: 2372847.0; Worst size: 2148420.0
 	Best completeness: 93.45; Worst completeness: 87.08
 	Best contamination: 1.12; Worst contamination: 2.25
-	Best distance: 0.41345000000000004; Worst distance: 0.4151
-	Selected representant genome: GC: 40.1646844726 ; size: 2344051.0 ; completeness: 88.95 ; contamination: 1.12 ; distance:0.41455000000000003
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 40.1646844726 ; size: 2344051.0 ; completeness: 88.95 ; contamination: 1.12 ; distance:0.0
 Group c__UBA8468 ; Number of Genomes: 6
 	Best GC: 40.6090172669; Worst GC: 40.2901955128
 	Best size: 1481715.0; Worst size: 924845.0
 	Best completeness: 84.88; Worst completeness: 60.28
 	Best contamination: 0.0; Worst contamination: 2.75
-	Best distance: 0.59651; Worst distance: 0.59707
-	Selected representant genome: GC: 40.8480619088 ; size: 1414695.0 ; completeness: 81.96 ; contamination: 1.12 ; distance:0.59654
+	Best distance: 0.0027800000000000004; Worst distance: 0.00334
+	Selected representant genome: GC: 40.8480619088 ; size: 1414695.0 ; completeness: 81.96 ; contamination: 1.12 ; distance:0.00281
 Group c__UBA2214 ; Number of Genomes: 6
 	Best GC: 48.8950210832; Worst GC: 56.3448369015
 	Best size: 4200013.0; Worst size: 1433169.0
@@ -1336,15 +1336,15 @@ Group c__UBA4802 ; Number of Genomes: 8
 	Best size: 5201416.0; Worst size: 3041216.0
 	Best completeness: 96.56; Worst completeness: 83.15
 	Best contamination: 0.0; Worst contamination: 4.49
-	Best distance: 0.55967; Worst distance: 0.7022600000000001
-	Selected representant genome: GC: 47.5206348565 ; size: 5201416.0 ; completeness: 95.44 ; contamination: 4.49 ; distance:0.63646
+	Best distance: 0.22537; Worst distance: 0.36796
+	Selected representant genome: GC: 47.5206348565 ; size: 5201416.0 ; completeness: 95.44 ; contamination: 4.49 ; distance:0.30216
 Group c__Brevinematia ; Number of Genomes: 3
 	Best GC: 49.251464683; Worst GC: 35.2441278437
 	Best size: 3543039.0; Worst size: 1501400.0
 	Best completeness: 93.16; Worst completeness: 65.73
 	Best contamination: 0.0; Worst contamination: 0.19
-	Best distance: 0.76975; Worst distance: 0.88168
-	Selected representant genome: GC: 50.8921212881 ; size: 3543039.0 ; completeness: 93.16 ; contamination: 0.19 ; distance:0.76975
+	Best distance: 0.34099999999999997; Worst distance: 0.45293
+	Selected representant genome: GC: 50.8921212881 ; size: 3543039.0 ; completeness: 93.16 ; contamination: 0.19 ; distance:0.34099999999999997
 Group c__O2-12-FULL-43-9 ; Number of Genomes: 3
 	Best GC: 40.2038459961; Worst GC: 43.0792164401
 	Best size: 2043746.0; Worst size: 1740682.0
@@ -1357,15 +1357,15 @@ Group c__2-12-FULL-45-22 ; Number of Genomes: 1
 	Best size: 3667056.0; Worst size: 3667056.0
 	Best completeness: 81.1; Worst completeness: 81.1
 	Best contamination: 2.56; Worst contamination: 2.56
-	Best distance: 0.37293; Worst distance: 0.37293
-	Selected representant genome: GC: 45.1527977187 ; size: 3667056.0 ; completeness: 81.1 ; contamination: 2.56 ; distance:0.37293
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 45.1527977187 ; size: 3667056.0 ; completeness: 81.1 ; contamination: 2.56 ; distance:0.0
 Group c__CG2-30-59-28 ; Number of Genomes: 11
 	Best GC: 66.0325461803; Worst GC: 58.4202117341
 	Best size: 9229921.0; Worst size: 4413321.0
 	Best completeness: 93.52; Worst completeness: 73.23
 	Best contamination: 0.0; Worst contamination: 7.59
-	Best distance: 0.53622; Worst distance: 0.5485500000000002
-	Selected representant genome: GC: 66.0432630463 ; size: 9229921.0 ; completeness: 93.52 ; contamination: 5.74 ; distance:0.5474500000000001
+	Best distance: 0.33446; Worst distance: 0.34679
+	Selected representant genome: GC: 66.0432630463 ; size: 9229921.0 ; completeness: 93.52 ; contamination: 5.74 ; distance:0.34569
 Group c__GWA2-38-11 ; Number of Genomes: 3
 	Best GC: 38.2857419575; Worst GC: 37.5129040358
 	Best size: 2681228.0; Worst size: 2000362.0
@@ -1385,29 +1385,29 @@ Group c__Oligoflexia ; Number of Genomes: 6
 	Best size: 7569109.0; Worst size: 2235816.0
 	Best completeness: 90.76; Worst completeness: 82.63
 	Best contamination: 0.0; Worst contamination: 5.16
-	Best distance: 0.69918; Worst distance: 0.98854
-	Selected representant genome: GC: 45.9374292996 ; size: 7275418.0 ; completeness: 90.76 ; contamination: 2.52 ; distance:0.69918
+	Best distance: 0.52955; Worst distance: 0.81891
+	Selected representant genome: GC: 45.9374292996 ; size: 7275418.0 ; completeness: 90.76 ; contamination: 2.52 ; distance:0.52955
 Group c__UBA727 ; Number of Genomes: 7
 	Best GC: 56.1929125496; Worst GC: 71.300999846
 	Best size: 5889409.0; Worst size: 2457325.0
 	Best completeness: 91.29; Worst completeness: 53.6
 	Best contamination: 0.21; Worst contamination: 3.73
-	Best distance: 0.6036600000000001; Worst distance: 0.7298999999999999
-	Selected representant genome: GC: 51.3050973202 ; size: 4601103.0 ; completeness: 91.29 ; contamination: 2.12 ; distance:0.6036600000000001
+	Best distance: 0.44859000000000004; Worst distance: 0.57483
+	Selected representant genome: GC: 51.3050973202 ; size: 4601103.0 ; completeness: 91.29 ; contamination: 2.12 ; distance:0.44859000000000004
 Group c__YA12-FULL-61-11 ; Number of Genomes: 1
 	Best GC: 60.6327163058; Worst GC: 60.6327163058
 	Best size: 4641089.0; Worst size: 4641089.0
 	Best completeness: 67.86; Worst completeness: 67.86
 	Best contamination: 0.48; Worst contamination: 0.48
-	Best distance: 0.6198899999999999; Worst distance: 0.6198899999999999
-	Selected representant genome: GC: 60.6327163058 ; size: 4641089.0 ; completeness: 67.86 ; contamination: 0.48 ; distance:0.6198899999999999
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 60.6327163058 ; size: 4641089.0 ; completeness: 67.86 ; contamination: 0.48 ; distance:0.0
 Group c__CG2-30-54-11 ; Number of Genomes: 1
 	Best GC: 54.0777131473; Worst GC: 54.0777131473
 	Best size: 1443902.0; Worst size: 1443902.0
 	Best completeness: 74.23; Worst completeness: 74.23
 	Best contamination: 0.0; Worst contamination: 0.0
-	Best distance: 0.63638; Worst distance: 0.63638
-	Selected representant genome: GC: 54.0777131473 ; size: 1443902.0 ; completeness: 74.23 ; contamination: 0.0 ; distance:0.63638
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 54.0777131473 ; size: 1443902.0 ; completeness: 74.23 ; contamination: 0.0 ; distance:0.0
 Group c__RBG-16-71-46 ; Number of Genomes: 1
 	Best GC: 71.02020277; Worst GC: 71.02020277
 	Best size: 3722320.0; Worst size: 3722320.0
@@ -1420,22 +1420,22 @@ Group c__Thermincolia ; Number of Genomes: 6
 	Best size: 3654550.0; Worst size: 1721509.0
 	Best completeness: 99.83; Worst completeness: 73.15
 	Best contamination: 0.51; Worst contamination: 3.32
-	Best distance: 0.26627; Worst distance: 0.33823
-	Selected representant genome: GC: 45.8824557803 ; size: 3157416.0 ; completeness: 99.49 ; contamination: 1.28 ; distance:0.26627
+	Best distance: 0.20534000000000002; Worst distance: 0.2773
+	Selected representant genome: GC: 45.8824557803 ; size: 3157416.0 ; completeness: 99.49 ; contamination: 1.28 ; distance:0.20534000000000002
 Group c__4484-211 ; Number of Genomes: 3
 	Best GC: 39.4032552754; Worst GC: 44.3770119284
 	Best size: 1080106.0; Worst size: 826021.0
 	Best completeness: 76.85; Worst completeness: 58.23
 	Best contamination: 0.0; Worst contamination: 0.95
-	Best distance: 0.82877; Worst distance: 0.96424
-	Selected representant genome: GC: 44.3770119284 ; size: 826021.0 ; completeness: 76.85 ; contamination: 0.0 ; distance:0.82877
+	Best distance: 0.47244; Worst distance: 0.6079100000000001
+	Selected representant genome: GC: 44.3770119284 ; size: 826021.0 ; completeness: 76.85 ; contamination: 0.0 ; distance:0.47244
 Group c__Sericytochromatia ; Number of Genomes: 7
 	Best GC: 59.3567890246; Worst GC: 48.5677503649
 	Best size: 5993086.0; Worst size: 3328953.0
 	Best completeness: 90.6; Worst completeness: 78.35
 	Best contamination: 2.56; Worst contamination: 4.7
-	Best distance: 0.44743; Worst distance: 0.57635
-	Selected representant genome: GC: 59.3567890246 ; size: 3328953.0 ; completeness: 84.0 ; contamination: 2.56 ; distance:0.46891
+	Best distance: 0.35862; Worst distance: 0.48754000000000003
+	Selected representant genome: GC: 59.3567890246 ; size: 3328953.0 ; completeness: 84.0 ; contamination: 2.56 ; distance:0.3801
 Group c__AABM5-125-24 ; Number of Genomes: 1
 	Best GC: 55.7976006255; Worst GC: 55.7976006255
 	Best size: 2816489.0; Worst size: 2816489.0
@@ -1455,15 +1455,15 @@ Group c__Proteinivoracia ; Number of Genomes: 4
 	Best size: 2300172.0; Worst size: 1523708.0
 	Best completeness: 98.31; Worst completeness: 82.19
 	Best contamination: 0.0; Worst contamination: 0.85
-	Best distance: 0.38897; Worst distance: 0.53396
-	Selected representant genome: GC: 32.9312199427 ; size: 2300172.0 ; completeness: 97.46 ; contamination: 0.0 ; distance:0.38897
+	Best distance: 0.27494999999999997; Worst distance: 0.41994
+	Selected representant genome: GC: 32.9312199427 ; size: 2300172.0 ; completeness: 97.46 ; contamination: 0.0 ; distance:0.27494999999999997
 Group c__Dehalobacteriia ; Number of Genomes: 7
 	Best GC: 43.7700345338; Worst GC: 49.4677401558
 	Best size: 3766545.0; Worst size: 1510170.0
 	Best completeness: 95.62; Worst completeness: 78.52
 	Best contamination: 0.27; Worst contamination: 2.55
-	Best distance: 0.36646; Worst distance: 0.56079
-	Selected representant genome: GC: 43.1667483065 ; size: 3766545.0 ; completeness: 95.62 ; contamination: 2.55 ; distance:0.36646
+	Best distance: 0.23542; Worst distance: 0.42975
+	Selected representant genome: GC: 43.1667483065 ; size: 3766545.0 ; completeness: 95.62 ; contamination: 2.55 ; distance:0.23542
 Group c__UBA5359 ; Number of Genomes: 1
 	Best GC: 49.013373048; Worst GC: 49.013373048
 	Best size: 2254220.0; Worst size: 2254220.0
@@ -1490,8 +1490,8 @@ Group c__UBA4820 ; Number of Genomes: 1
 	Best size: 2124892.0; Worst size: 2124892.0
 	Best completeness: 91.83; Worst completeness: 91.83
 	Best contamination: 3.42; Worst contamination: 3.42
-	Best distance: 0.66066; Worst distance: 0.66066
-	Selected representant genome: GC: 36.7948000967 ; size: 2124892.0 ; completeness: 91.83 ; contamination: 3.42 ; distance:0.66066
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 36.7948000967 ; size: 2124892.0 ; completeness: 91.83 ; contamination: 3.42 ; distance:0.0
 Group c__CG03 ; Number of Genomes: 4
 	Best GC: 47.8468480603; Worst GC: 44.2253095234
 	Best size: 1781838.0; Worst size: 715001.0
@@ -1504,15 +1504,15 @@ Group c__UBA2394 ; Number of Genomes: 3
 	Best size: 3369472.0; Worst size: 2442057.0
 	Best completeness: 86.39; Worst completeness: 70.46
 	Best contamination: 0.42; Worst contamination: 1.34
-	Best distance: 0.6675; Worst distance: 0.69624
-	Selected representant genome: GC: 48.4266140094 ; size: 2654626.0 ; completeness: 72.4 ; contamination: 0.42 ; distance:0.67864
+	Best distance: 0.54737; Worst distance: 0.57611
+	Selected representant genome: GC: 48.4266140094 ; size: 2654626.0 ; completeness: 72.4 ; contamination: 0.42 ; distance:0.5585100000000001
 Group c__UBA5377 ; Number of Genomes: 3
 	Best GC: 66.7778759717; Worst GC: 65.6646508098
 	Best size: 6644211.0; Worst size: 4127996.0
 	Best completeness: 94.44; Worst completeness: 87.0
 	Best contamination: 0.31; Worst contamination: 1.13
-	Best distance: 0.6433300000000001; Worst distance: 0.6643600000000001
-	Selected representant genome: GC: 67.0848170287 ; size: 4440764.0 ; completeness: 94.44 ; contamination: 0.31 ; distance:0.6433300000000001
+	Best distance: 0.50787; Worst distance: 0.5289
+	Selected representant genome: GC: 67.0848170287 ; size: 4440764.0 ; completeness: 94.44 ; contamination: 0.31 ; distance:0.50787
 Group c__UBA1551 ; Number of Genomes: 9
 	Best GC: 48.0580185799; Worst GC: 38.2550142457
 	Best size: 2933422.0; Worst size: 1431170.0
@@ -1525,29 +1525,29 @@ Group c__UBA8477 ; Number of Genomes: 4
 	Best size: 3022545.0; Worst size: 2427914.0
 	Best completeness: 94.51; Worst completeness: 79.02
 	Best contamination: 0.0; Worst contamination: 1.1
-	Best distance: 0.47501000000000004; Worst distance: 0.47655000000000003
-	Selected representant genome: GC: 47.8256331376 ; size: 3022545.0 ; completeness: 94.51 ; contamination: 0.0 ; distance:0.47501000000000004
+	Best distance: 0.00184; Worst distance: 0.00338
+	Selected representant genome: GC: 47.8256331376 ; size: 3022545.0 ; completeness: 94.51 ; contamination: 0.0 ; distance:0.00184
 Group c__UBA8481 ; Number of Genomes: 3
 	Best GC: 42.2606950268; Worst GC: 42.3763274553
 	Best size: 2388717.0; Worst size: 1913862.0
 	Best completeness: 95.06; Worst completeness: 77.4
 	Best contamination: 0.0; Worst contamination: 3.06
-	Best distance: 0.00055; Worst distance: 0.00194
-	Selected representant genome: GC: 42.2606950268 ; size: 2388717.0 ; completeness: 93.38 ; contamination: 0.0 ; distance:0.00055
+	Best distance: 0.0; Worst distance: 0.00128
+	Selected representant genome: GC: 42.2606950268 ; size: 2388717.0 ; completeness: 93.38 ; contamination: 0.0 ; distance:0.0
 Group c__UBA4733 ; Number of Genomes: 1
 	Best GC: 64.9506346496; Worst GC: 64.9506346496
 	Best size: 7555351.0; Worst size: 7555351.0
 	Best completeness: 92.96; Worst completeness: 92.96
 	Best contamination: 3.96; Worst contamination: 3.96
-	Best distance: 0.54999; Worst distance: 0.54999
-	Selected representant genome: GC: 64.9506346496 ; size: 7555351.0 ; completeness: 92.96 ; contamination: 3.96 ; distance:0.54999
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 64.9506346496 ; size: 7555351.0 ; completeness: 92.96 ; contamination: 3.96 ; distance:0.0
 Group c__UBA6624 ; Number of Genomes: 4
 	Best GC: 36.0059838258; Worst GC: 35.8783522965
 	Best size: 1264697.0; Worst size: 941713.0
 	Best completeness: 89.5; Worst completeness: 57.03
 	Best contamination: 0.0; Worst contamination: 1.72
-	Best distance: 0.98886; Worst distance: 1.01352
-	Selected representant genome: GC: 35.8783522965 ; size: 1264697.0 ; completeness: 89.5 ; contamination: 0.0 ; distance:1.0050000000000001
+	Best distance: 0.03098; Worst distance: 0.05564
+	Selected representant genome: GC: 35.8783522965 ; size: 1264697.0 ; completeness: 89.5 ; contamination: 0.0 ; distance:0.04712
 Group c__UBA1439 ; Number of Genomes: 2
 	Best GC: 42.6415951123; Worst GC: 68.7893275461
 	Best size: 2414713.0; Worst size: 1841873.0
@@ -1560,22 +1560,22 @@ Group c__UBA4738 ; Number of Genomes: 6
 	Best size: 2992730.0; Worst size: 1831775.0
 	Best completeness: 87.02; Worst completeness: 72.5
 	Best contamination: 0.0; Worst contamination: 3.42
-	Best distance: 0.6195900000000001; Worst distance: 0.6497
-	Selected representant genome: GC: 69.2475731821 ; size: 2948306.0 ; completeness: 87.02 ; contamination: 3.42 ; distance:0.64969
+	Best distance: 0.2142; Worst distance: 0.24430999999999997
+	Selected representant genome: GC: 69.2475731821 ; size: 2948306.0 ; completeness: 87.02 ; contamination: 3.42 ; distance:0.2443
 Group c__EM3 ; Number of Genomes: 3
 	Best GC: 40.3257112084; Worst GC: 34.7517017751
 	Best size: 2059798.0; Worst size: 1445026.0
 	Best completeness: 96.61; Worst completeness: 91.53
 	Best contamination: 0.0; Worst contamination: 1.69
-	Best distance: 0.6423; Worst distance: 0.71463
-	Selected representant genome: GC: 40.3257112084 ; size: 1445026.0 ; completeness: 94.92 ; contamination: 0.0 ; distance:0.71463
+	Best distance: 0.42134; Worst distance: 0.49367
+	Selected representant genome: GC: 40.3257112084 ; size: 1445026.0 ; completeness: 94.92 ; contamination: 0.0 ; distance:0.49367
 Group c__UBA9042 ; Number of Genomes: 6
 	Best GC: 56.7529977436; Worst GC: 72.3688080924
 	Best size: 8213741.0; Worst size: 2721741.0
 	Best completeness: 91.32; Worst completeness: 61.38
 	Best contamination: 0.02; Worst contamination: 5.05
-	Best distance: 0.61898; Worst distance: 0.7072100000000001
-	Selected representant genome: GC: 53.8545264625 ; size: 5378339.0 ; completeness: 91.32 ; contamination: 4.24 ; distance:0.61898
+	Best distance: 0.43523; Worst distance: 0.52346
+	Selected representant genome: GC: 53.8545264625 ; size: 5378339.0 ; completeness: 91.32 ; contamination: 4.24 ; distance:0.43523
 Group c__UBA3054 ; Number of Genomes: 1
 	Best GC: 55.850335859; Worst GC: 55.850335859
 	Best size: 1378038.0; Worst size: 1378038.0
@@ -1588,15 +1588,15 @@ Group c__DTU065 ; Number of Genomes: 2
 	Best size: 2459741.0; Worst size: 2204711.0
 	Best completeness: 94.12; Worst completeness: 93.45
 	Best contamination: 1.01; Worst contamination: 1.31
-	Best distance: 0.4929199999999999; Worst distance: 0.5040899999999999
-	Selected representant genome: GC: 48.7407302365 ; size: 2204711.0 ; completeness: 94.12 ; contamination: 1.01 ; distance:0.4929199999999999
+	Best distance: 0.13162; Worst distance: 0.14279
+	Selected representant genome: GC: 48.7407302365 ; size: 2204711.0 ; completeness: 94.12 ; contamination: 1.01 ; distance:0.13162
 Group c__UBA4248 ; Number of Genomes: 6
 	Best GC: 55.9840958075; Worst GC: 68.5815176298
 	Best size: 8297899.0; Worst size: 3612751.0
 	Best completeness: 87.83; Worst completeness: 62.55
 	Best contamination: 0.72; Worst contamination: 7.42
-	Best distance: 0.59194; Worst distance: 0.7565999999999999
-	Selected representant genome: GC: 52.7746797101 ; size: 5579410.0 ; completeness: 87.83 ; contamination: 7.42 ; distance:0.61042
+	Best distance: 0.43634; Worst distance: 0.601
+	Selected representant genome: GC: 52.7746797101 ; size: 5579410.0 ; completeness: 87.83 ; contamination: 7.42 ; distance:0.45482
 Group c__CG2-30-70-394 ; Number of Genomes: 1
 	Best GC: 70.347491223; Worst GC: 70.347491223
 	Best size: 2646238.0; Worst size: 2646238.0
@@ -1609,8 +1609,8 @@ Group c__DTU084 ; Number of Genomes: 5
 	Best size: 2609244.0; Worst size: 1828975.0
 	Best completeness: 79.45; Worst completeness: 65.02
 	Best contamination: 0.28; Worst contamination: 3.11
-	Best distance: 0.40240000000000004; Worst distance: 0.47153
-	Selected representant genome: GC: 50.9468627484 ; size: 1860139.0 ; completeness: 79.45 ; contamination: 3.11 ; distance:0.40240000000000004
+	Best distance: 0.08505; Worst distance: 0.15417999999999998
+	Selected representant genome: GC: 50.9468627484 ; size: 1860139.0 ; completeness: 79.45 ; contamination: 3.11 ; distance:0.08505
 Group c__PRR-12 ; Number of Genomes: 6
 	Best GC: 63.9292564343; Worst GC: 50.9404981378
 	Best size: 3392145.0; Worst size: 1531283.0
@@ -1630,15 +1630,15 @@ Group c__ZB3 ; Number of Genomes: 12
 	Best size: 1934809.0; Worst size: 1061360.0
 	Best completeness: 86.4; Worst completeness: 56.32
 	Best contamination: 0.0; Worst contamination: 5.98
-	Best distance: 0.77528; Worst distance: 0.86277
-	Selected representant genome: GC: 39.2622006244 ; size: 1538832.0 ; completeness: 86.4 ; contamination: 0.0 ; distance:0.81761
+	Best distance: 0.496; Worst distance: 0.5834900000000001
+	Selected representant genome: GC: 39.2622006244 ; size: 1538832.0 ; completeness: 86.4 ; contamination: 0.0 ; distance:0.5383300000000001
 Group c__UBA10988 ; Number of Genomes: 2
 	Best GC: 70.1398934933; Worst GC: 70.0151135726
 	Best size: 3382696.0; Worst size: 3265063.0
 	Best completeness: 79.95; Worst completeness: 79.94
 	Best contamination: 0.0; Worst contamination: 1.85
-	Best distance: 0.68975; Worst distance: 0.69196
-	Selected representant genome: GC: 70.1398934933 ; size: 3382696.0 ; completeness: 79.95 ; contamination: 1.85 ; distance:0.68975
+	Best distance: 0.00306; Worst distance: 0.00527
+	Selected representant genome: GC: 70.1398934933 ; size: 3382696.0 ; completeness: 79.95 ; contamination: 1.85 ; distance:0.00306
 Group c__UBA7526 ; Number of Genomes: 1
 	Best GC: 47.4648304975; Worst GC: 47.4648304975
 	Best size: 1159566.0; Worst size: 1159566.0
@@ -1665,50 +1665,50 @@ Group c__GCA-002792135 ; Number of Genomes: 2
 	Best size: 889721.0; Worst size: 664249.0
 	Best completeness: 64.32; Worst completeness: 54.26
 	Best contamination: 0.0; Worst contamination: 0.0
-	Best distance: 0.75528; Worst distance: 0.8195600000000001
-	Selected representant genome: GC: 41.8054641361 ; size: 664249.0 ; completeness: 54.26 ; contamination: 0.0 ; distance:0.75528
+	Best distance: 0.43496; Worst distance: 0.49924
+	Selected representant genome: GC: 41.8054641361 ; size: 664249.0 ; completeness: 54.26 ; contamination: 0.0 ; distance:0.43496
 Group c__UBA7883 ; Number of Genomes: 1
 	Best GC: 40.9919021951; Worst GC: 40.9919021951
 	Best size: 1747448.0; Worst size: 1747448.0
 	Best completeness: 97.33; Worst completeness: 97.33
 	Best contamination: 1.2; Worst contamination: 1.2
-	Best distance: 0.57762; Worst distance: 0.57762
-	Selected representant genome: GC: 40.9919021951 ; size: 1747448.0 ; completeness: 97.33 ; contamination: 1.2 ; distance:0.57762
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 40.9919021951 ; size: 1747448.0 ; completeness: 97.33 ; contamination: 1.2 ; distance:0.0
 Group c__GCA-002687715 ; Number of Genomes: 2
 	Best GC: 62.5326379001; Worst GC: 67.046536013
 	Best size: 5822363.0; Worst size: 5071512.0
 	Best completeness: 95.83; Worst completeness: 75.31
 	Best contamination: 0.0; Worst contamination: 1.7
-	Best distance: 0.69062; Worst distance: 0.70386
-	Selected representant genome: GC: 62.5326379001 ; size: 5071512.0 ; completeness: 95.83 ; contamination: 1.7 ; distance:0.69062
+	Best distance: 0.12986; Worst distance: 0.1431
+	Selected representant genome: GC: 62.5326379001 ; size: 5071512.0 ; completeness: 95.83 ; contamination: 1.7 ; distance:0.12986
 Group c__GCA-2746535 ; Number of Genomes: 1
 	Best GC: 33.5755937387; Worst GC: 33.5755937387
 	Best size: 6760120.0; Worst size: 6760120.0
 	Best completeness: 93.55; Worst completeness: 93.55
 	Best contamination: 2.87; Worst contamination: 2.87
-	Best distance: 0.7185999999999999; Worst distance: 0.7185999999999999
-	Selected representant genome: GC: 33.5755937387 ; size: 6760120.0 ; completeness: 93.55 ; contamination: 2.87 ; distance:0.7185999999999999
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 33.5755937387 ; size: 6760120.0 ; completeness: 93.55 ; contamination: 2.87 ; distance:0.0
 Group c__UBA5301 ; Number of Genomes: 1
 	Best GC: 44.8282204516; Worst GC: 44.8282204516
 	Best size: 1916905.0; Worst size: 1916905.0
 	Best completeness: 73.39; Worst completeness: 73.39
 	Best contamination: 3.29; Worst contamination: 3.29
-	Best distance: 0.42025999999999997; Worst distance: 0.42025999999999997
-	Selected representant genome: GC: 44.8282204516 ; size: 1916905.0 ; completeness: 73.39 ; contamination: 3.29 ; distance:0.42025999999999997
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 44.8282204516 ; size: 1916905.0 ; completeness: 73.39 ; contamination: 3.29 ; distance:0.0
 Group c__CG2-30-33-46 ; Number of Genomes: 7
 	Best GC: 33.1481516565; Worst GC: 33.2223006749
 	Best size: 932836.0; Worst size: 853727.0
 	Best completeness: 79.21; Worst completeness: 76.24
 	Best contamination: 0.0; Worst contamination: 0.0
-	Best distance: 0.71526; Worst distance: 0.7174500000000001
-	Selected representant genome: GC: 33.1481516565 ; size: 897365.0 ; completeness: 78.22 ; contamination: 0.0 ; distance:0.7169000000000001
+	Best distance: 0.00055; Worst distance: 0.0027400000000000002
+	Selected representant genome: GC: 33.1481516565 ; size: 897365.0 ; completeness: 78.22 ; contamination: 0.0 ; distance:0.00219
 Group c__UBA890 ; Number of Genomes: 4
 	Best GC: 55.582828964; Worst GC: 54.4825436153
 	Best size: 3314426.0; Worst size: 1219072.0
 	Best completeness: 87.27; Worst completeness: 65.33
 	Best contamination: 1.71; Worst contamination: 2.62
-	Best distance: 0.6473099999999999; Worst distance: 0.6543599999999999
-	Selected representant genome: GC: 55.582828964 ; size: 3091484.0 ; completeness: 87.27 ; contamination: 2.61 ; distance:0.6535299999999999
+	Best distance: 0.03188; Worst distance: 0.03893
+	Selected representant genome: GC: 55.582828964 ; size: 3091484.0 ; completeness: 87.27 ; contamination: 2.61 ; distance:0.0381
 Group c__Deferrisomatia ; Number of Genomes: 1
 	Best GC: 70.0792932742; Worst GC: 70.0792932742
 	Best size: 4236551.0; Worst size: 4236551.0
@@ -1735,8 +1735,8 @@ Group c__SDB-A ; Number of Genomes: 1
 	Best size: 3139690.0; Worst size: 3139690.0
 	Best completeness: 95.24; Worst completeness: 95.24
 	Best contamination: 2.2; Worst contamination: 2.2
-	Best distance: 0.78991; Worst distance: 0.78991
-	Selected representant genome: GC: 37.8571132819 ; size: 3139690.0 ; completeness: 95.24 ; contamination: 2.2 ; distance:0.78991
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 37.8571132819 ; size: 3139690.0 ; completeness: 95.24 ; contamination: 2.2 ; distance:0.0
 Group c__CSP1-3 ; Number of Genomes: 4
 	Best GC: 67.8859995262; Worst GC: 64.0853867008
 	Best size: 2535673.0; Worst size: 2079062.0
@@ -1763,22 +1763,22 @@ Group c__UBA9089 ; Number of Genomes: 1
 	Best size: 1356243.0; Worst size: 1356243.0
 	Best completeness: 77.53; Worst completeness: 77.53
 	Best contamination: 1.12; Worst contamination: 1.12
-	Best distance: 0.37907; Worst distance: 0.37907
-	Selected representant genome: GC: 44.1434905102 ; size: 1356243.0 ; completeness: 77.53 ; contamination: 1.12 ; distance:0.37907
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 44.1434905102 ; size: 1356243.0 ; completeness: 77.53 ; contamination: 1.12 ; distance:0.0
 Group c__UBA5214 ; Number of Genomes: 1
 	Best GC: 37.2165910202; Worst GC: 37.2165910202
 	Best size: 2355414.0; Worst size: 2355414.0
 	Best completeness: 91.57; Worst completeness: 91.57
 	Best contamination: 1.12; Worst contamination: 1.12
-	Best distance: 0.38513; Worst distance: 0.38513
-	Selected representant genome: GC: 37.2165910202 ; size: 2355414.0 ; completeness: 91.57 ; contamination: 1.12 ; distance:0.38513
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 37.2165910202 ; size: 2355414.0 ; completeness: 91.57 ; contamination: 1.12 ; distance:0.0
 Group c__UBA11346 ; Number of Genomes: 1
 	Best GC: 68.042156061; Worst GC: 68.042156061
 	Best size: 3575277.0; Worst size: 3575277.0
 	Best completeness: 64.39; Worst completeness: 64.39
 	Best contamination: 0.0; Worst contamination: 0.0
-	Best distance: 0.8382400000000001; Worst distance: 0.8382400000000001
-	Selected representant genome: GC: 68.042156061 ; size: 3575277.0 ; completeness: 64.39 ; contamination: 0.0 ; distance:0.8382400000000001
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 68.042156061 ; size: 3575277.0 ; completeness: 64.39 ; contamination: 0.0 ; distance:0.0
 Group c__Moduliflexia ; Number of Genomes: 3
 	Best GC: 49.578713956; Worst GC: 47.2055389278
 	Best size: 8384694.0; Worst size: 3412527.0
@@ -1791,36 +1791,36 @@ Group c__RBG-16-64-22 ; Number of Genomes: 1
 	Best size: 2378495.0; Worst size: 2378495.0
 	Best completeness: 89.55; Worst completeness: 89.55
 	Best contamination: 0.91; Worst contamination: 0.91
-	Best distance: 0.40548999999999996; Worst distance: 0.40548999999999996
-	Selected representant genome: GC: 64.5678711226 ; size: 2378495.0 ; completeness: 89.55 ; contamination: 0.91 ; distance:0.40548999999999996
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 64.5678711226 ; size: 2378495.0 ; completeness: 89.55 ; contamination: 0.91 ; distance:0.0
 Group c__XYA12-FULL-58-9 ; Number of Genomes: 2
 	Best GC: 58.3542293633; Worst GC: 58.3212564155
 	Best size: 6510817.0; Worst size: 6365462.0
 	Best completeness: 87.8; Worst completeness: 87.21
 	Best contamination: 5.54; Worst contamination: 5.7
-	Best distance: 0.57729; Worst distance: 0.57734
-	Selected representant genome: GC: 58.3212564155 ; size: 6510817.0 ; completeness: 87.21 ; contamination: 5.54 ; distance:0.57729
+	Best distance: 0.00056; Worst distance: 0.00061
+	Selected representant genome: GC: 58.3212564155 ; size: 6510817.0 ; completeness: 87.21 ; contamination: 5.54 ; distance:0.00056
 Group c__1-40CM-2-68-10 ; Number of Genomes: 1
 	Best GC: 68.0844008375; Worst GC: 68.0844008375
 	Best size: 1853084.0; Worst size: 1853084.0
 	Best completeness: 69.66; Worst completeness: 69.66
 	Best contamination: 3.42; Worst contamination: 3.42
-	Best distance: 0.53699; Worst distance: 0.53699
-	Selected representant genome: GC: 68.0844008375 ; size: 1853084.0 ; completeness: 69.66 ; contamination: 3.42 ; distance:0.53699
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 68.0844008375 ; size: 1853084.0 ; completeness: 69.66 ; contamination: 3.42 ; distance:0.0
 Group c__Glassbacteria ; Number of Genomes: 2
 	Best GC: 58.0665412233; Worst GC: 58.1707237818
 	Best size: 4170026.0; Worst size: 2667161.0
 	Best completeness: 94.51; Worst completeness: 65.51
 	Best contamination: 0.0; Worst contamination: 0.0
-	Best distance: 0.49855000000000005; Worst distance: 0.49865000000000004
-	Selected representant genome: GC: 58.0665412233 ; size: 4170026.0 ; completeness: 94.51 ; contamination: 0.0 ; distance:0.49865000000000004
+	Best distance: 0.00113; Worst distance: 0.00123
+	Selected representant genome: GC: 58.0665412233 ; size: 4170026.0 ; completeness: 94.51 ; contamination: 0.0 ; distance:0.00123
 Group c__RBG-13-37-8 ; Number of Genomes: 1
 	Best GC: 38.6629161204; Worst GC: 38.6629161204
 	Best size: 5236627.0; Worst size: 5236627.0
 	Best completeness: 89.74; Worst completeness: 89.74
 	Best contamination: 3.42; Worst contamination: 3.42
-	Best distance: 0.6222000000000001; Worst distance: 0.6222000000000001
-	Selected representant genome: GC: 38.6629161204 ; size: 5236627.0 ; completeness: 89.74 ; contamination: 3.42 ; distance:0.6222000000000001
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 38.6629161204 ; size: 5236627.0 ; completeness: 89.74 ; contamination: 3.42 ; distance:0.0
 Group c__RBG-13-65-10 ; Number of Genomes: 1
 	Best GC: 64.9399511694; Worst GC: 64.9399511694
 	Best size: 2647353.0; Worst size: 2647353.0
@@ -1847,43 +1847,43 @@ Group c__TC1 ; Number of Genomes: 2
 	Best size: 2146242.0; Worst size: 1622248.0
 	Best completeness: 76.78; Worst completeness: 72.38
 	Best contamination: 0.61; Worst contamination: 2.11
-	Best distance: 0.51596; Worst distance: 0.60643
-	Selected representant genome: GC: 43.7359354867 ; size: 2146242.0 ; completeness: 76.78 ; contamination: 2.11 ; distance:0.51596
+	Best distance: 0.30651; Worst distance: 0.39698
+	Selected representant genome: GC: 43.7359354867 ; size: 2146242.0 ; completeness: 76.78 ; contamination: 2.11 ; distance:0.30651
 Group c__4484-49 ; Number of Genomes: 1
 	Best GC: 39.4887536575; Worst GC: 39.4887536575
 	Best size: 891312.0; Worst size: 891312.0
 	Best completeness: 62.93; Worst completeness: 62.93
 	Best contamination: 0.0; Worst contamination: 0.0
-	Best distance: 0.54714; Worst distance: 0.54714
-	Selected representant genome: GC: 39.4887536575 ; size: 891312.0 ; completeness: 62.93 ; contamination: 0.0 ; distance:0.54714
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 39.4887536575 ; size: 891312.0 ; completeness: 62.93 ; contamination: 0.0 ; distance:0.0
 Group c__JdFR-97 ; Number of Genomes: 1
 	Best GC: 57.5934846099; Worst GC: 57.5934846099
 	Best size: 4102562.0; Worst size: 4102562.0
 	Best completeness: 96.77; Worst completeness: 96.77
 	Best contamination: 2.58; Worst contamination: 2.58
-	Best distance: 0.42335; Worst distance: 0.42335
-	Selected representant genome: GC: 57.5934846099 ; size: 4102562.0 ; completeness: 96.77 ; contamination: 2.58 ; distance:0.42335
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 57.5934846099 ; size: 4102562.0 ; completeness: 96.77 ; contamination: 2.58 ; distance:0.0
 Group c__UBA3072 ; Number of Genomes: 1
 	Best GC: 37.9122530518; Worst GC: 37.9122530518
 	Best size: 1752986.0; Worst size: 1752986.0
 	Best completeness: 90.19; Worst completeness: 90.19
 	Best contamination: 0.55; Worst contamination: 0.55
-	Best distance: 0.66662; Worst distance: 0.66662
-	Selected representant genome: GC: 37.9122530518 ; size: 1752986.0 ; completeness: 90.19 ; contamination: 0.55 ; distance:0.66662
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 37.9122530518 ; size: 1752986.0 ; completeness: 90.19 ; contamination: 0.55 ; distance:0.0
 Group c__4484-113 ; Number of Genomes: 1
 	Best GC: 58.9685628122; Worst GC: 58.9685628122
 	Best size: 1543928.0; Worst size: 1543928.0
 	Best completeness: 76.64; Worst completeness: 76.64
 	Best contamination: 0.85; Worst contamination: 0.85
-	Best distance: 0.70448; Worst distance: 0.70448
-	Selected representant genome: GC: 58.9685628122 ; size: 1543928.0 ; completeness: 76.64 ; contamination: 0.85 ; distance:0.70448
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 58.9685628122 ; size: 1543928.0 ; completeness: 76.64 ; contamination: 0.85 ; distance:0.0
 Group c__4484-213 ; Number of Genomes: 1
 	Best GC: 40.4059368995; Worst GC: 40.4059368995
 	Best size: 932608.0; Worst size: 932608.0
 	Best completeness: 78.36; Worst completeness: 78.36
 	Best contamination: 4.84; Worst contamination: 4.84
-	Best distance: 0.47745000000000004; Worst distance: 0.47745000000000004
-	Selected representant genome: GC: 40.4059368995 ; size: 932608.0 ; completeness: 78.36 ; contamination: 4.84 ; distance:0.47745000000000004
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 40.4059368995 ; size: 932608.0 ; completeness: 78.36 ; contamination: 4.84 ; distance:0.0
 Group c__Entotheonellia ; Number of Genomes: 1
 	Best GC: 56.2596034734; Worst GC: 56.2596034734
 	Best size: 7898184.0; Worst size: 7898184.0
@@ -1896,57 +1896,57 @@ Group c__UBA1671 ; Number of Genomes: 1
 	Best size: 10165179.0; Worst size: 10165179.0
 	Best completeness: 96.86; Worst completeness: 96.86
 	Best contamination: 7.17; Worst contamination: 7.17
-	Best distance: 0.67216; Worst distance: 0.67216
-	Selected representant genome: GC: 51.3092365058 ; size: 10165179.0 ; completeness: 96.86 ; contamination: 7.17 ; distance:0.67216
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 51.3092365058 ; size: 10165179.0 ; completeness: 96.86 ; contamination: 7.17 ; distance:0.0
 Group c__bin61 ; Number of Genomes: 1
 	Best GC: 67.6491614502; Worst GC: 67.6491614502
 	Best size: 2880151.0; Worst size: 2880151.0
 	Best completeness: 64.96; Worst completeness: 64.96
 	Best contamination: 0.0; Worst contamination: 0.0
-	Best distance: 0.78693; Worst distance: 0.78693
-	Selected representant genome: GC: 67.6491614502 ; size: 2880151.0 ; completeness: 64.96 ; contamination: 0.0 ; distance:0.78693
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 67.6491614502 ; size: 2880151.0 ; completeness: 64.96 ; contamination: 0.0 ; distance:0.0
 Group c__UBA3073 ; Number of Genomes: 4
 	Best GC: 43.7036092683; Worst GC: 44.1946529842
 	Best size: 2484955.0; Worst size: 1312056.0
 	Best completeness: 95.6; Worst completeness: 67.6
 	Best contamination: 1.12; Worst contamination: 8.39
-	Best distance: 0.61331; Worst distance: 0.6555900000000001
-	Selected representant genome: GC: 43.7036092683 ; size: 2059656.0 ; completeness: 85.16 ; contamination: 1.65 ; distance:0.6133200000000001
+	Best distance: 0.08331; Worst distance: 0.12559
+	Selected representant genome: GC: 43.7036092683 ; size: 2059656.0 ; completeness: 85.16 ; contamination: 1.65 ; distance:0.08331999999999999
 Group c__GCA-2747255 ; Number of Genomes: 1
 	Best GC: 46.4648714998; Worst GC: 46.4648714998
 	Best size: 3496648.0; Worst size: 3496648.0
 	Best completeness: 92.21; Worst completeness: 92.21
 	Best contamination: 3.42; Worst contamination: 3.42
-	Best distance: 0.69474; Worst distance: 0.69474
-	Selected representant genome: GC: 46.4648714998 ; size: 3496648.0 ; completeness: 92.21 ; contamination: 3.42 ; distance:0.69474
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 46.4648714998 ; size: 3496648.0 ; completeness: 92.21 ; contamination: 3.42 ; distance:0.0
 Group c__UBA6911 ; Number of Genomes: 1
 	Best GC: 51.6078363876; Worst GC: 51.6078363876
 	Best size: 4941781.0; Worst size: 4941781.0
 	Best completeness: 86.38; Worst completeness: 86.38
 	Best contamination: 5.13; Worst contamination: 5.13
-	Best distance: 0.59735; Worst distance: 0.59735
-	Selected representant genome: GC: 51.6078363876 ; size: 4941781.0 ; completeness: 86.38 ; contamination: 5.13 ; distance:0.59735
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 51.6078363876 ; size: 4941781.0 ; completeness: 86.38 ; contamination: 5.13 ; distance:0.0
 Group c__um-filter-49-7 ; Number of Genomes: 1
 	Best GC: 49.095328138; Worst GC: 49.095328138
 	Best size: 2111409.0; Worst size: 2111409.0
 	Best completeness: 81.55; Worst completeness: 81.55
 	Best contamination: 2.56; Worst contamination: 2.56
-	Best distance: 0.59636; Worst distance: 0.59636
-	Selected representant genome: GC: 49.095328138 ; size: 2111409.0 ; completeness: 81.55 ; contamination: 2.56 ; distance:0.59636
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 49.095328138 ; size: 2111409.0 ; completeness: 81.55 ; contamination: 2.56 ; distance:0.0
 Group c__UBA2361 ; Number of Genomes: 2
 	Best GC: 39.5544522627; Worst GC: 39.5529257815
 	Best size: 2473498.0; Worst size: 2470428.0
 	Best completeness: 89.92; Worst completeness: 89.92
 	Best contamination: 1.26; Worst contamination: 1.26
-	Best distance: 0.69255; Worst distance: 0.69255
-	Selected representant genome: GC: 39.5544522627 ; size: 2473498.0 ; completeness: 89.92 ; contamination: 1.26 ; distance:0.69255
+	Best distance: 0.00055; Worst distance: 0.00055
+	Selected representant genome: GC: 39.5544522627 ; size: 2473498.0 ; completeness: 89.92 ; contamination: 1.26 ; distance:0.00055
 Group c__UBA3569 ; Number of Genomes: 3
 	Best GC: 62.2341049513; Worst GC: 55.765621139
 	Best size: 2468000.0; Worst size: 1971393.0
 	Best completeness: 92.54; Worst completeness: 76.89
 	Best contamination: 0.0; Worst contamination: 2.97
-	Best distance: 0.28053; Worst distance: 0.33503
-	Selected representant genome: GC: 55.765621139 ; size: 2468000.0 ; completeness: 92.54 ; contamination: 2.97 ; distance:0.28053
+	Best distance: 0.23003; Worst distance: 0.28453
+	Selected representant genome: GC: 55.765621139 ; size: 2468000.0 ; completeness: 92.54 ; contamination: 2.97 ; distance:0.23003
 Group c__UBA5184 ; Number of Genomes: 1
 	Best GC: 65.0698529242; Worst GC: 65.0698529242
 	Best size: 2220621.0; Worst size: 2220621.0
@@ -1959,8 +1959,8 @@ Group c__GCA-2686955 ; Number of Genomes: 1
 	Best size: 4278577.0; Worst size: 4278577.0
 	Best completeness: 89.56; Worst completeness: 89.56
 	Best contamination: 2.4; Worst contamination: 2.4
-	Best distance: 0.53298; Worst distance: 0.53298
-	Selected representant genome: GC: 63.4402656031 ; size: 4278577.0 ; completeness: 89.56 ; contamination: 2.4 ; distance:0.53298
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 63.4402656031 ; size: 4278577.0 ; completeness: 89.56 ; contamination: 2.4 ; distance:0.0
 Group c__Goldbacteria-1 ; Number of Genomes: 1
 	Best GC: 42.200689594; Worst GC: 42.200689594
 	Best size: 2862642.0; Worst size: 2862642.0
@@ -1987,12 +1987,12 @@ Group c__GCA-2699105 ; Number of Genomes: 1
 	Best size: 3219954.0; Worst size: 3219954.0
 	Best completeness: 63.3; Worst completeness: 63.3
 	Best contamination: 1.09; Worst contamination: 1.09
-	Best distance: 0.47772000000000003; Worst distance: 0.47772000000000003
-	Selected representant genome: GC: 53.071748301 ; size: 3219954.0 ; completeness: 63.3 ; contamination: 1.09 ; distance:0.47772000000000003
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 53.071748301 ; size: 3219954.0 ; completeness: 63.3 ; contamination: 1.09 ; distance:0.0
 Group c__UBA6077 ; Number of Genomes: 1
 	Best GC: 62.2124035223; Worst GC: 62.2124035223
 	Best size: 5908186.0; Worst size: 5908186.0
 	Best completeness: 98.68; Worst completeness: 98.68
 	Best contamination: 2.18; Worst contamination: 2.18
-	Best distance: 0.44322; Worst distance: 0.44322
-	Selected representant genome: GC: 62.2124035223 ; size: 5908186.0 ; completeness: 98.68 ; contamination: 2.18 ; distance:0.44322
+	Best distance: 0.0; Worst distance: 0.0
+	Selected representant genome: GC: 62.2124035223 ; size: 5908186.0 ; completeness: 98.68 ; contamination: 2.18 ; distance:0.0
