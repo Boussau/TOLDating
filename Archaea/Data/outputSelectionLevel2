@@ -5,6 +5,7 @@ Parsing command line arguments
 -- Reading tree from file
 -- tree read
 Number of groups: 11
+dict_keys(['p__Thermoplasmatota', 'p__Halobacterota', 'p__Euryarchaeota', 'p__Hadesarchaeota', 'p__JdFR-18', 'p__Crenarchaeota', 'p__Asgardarchaeota', 'p__Nanoarchaeota', 'p__Micrarchaeota', 'p__UAP2', 'p__Altiarchaeota'])
 Getting table
 -- Table contains 2076 lines.
 Mean GC: 47.39875710834637
