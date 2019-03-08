@@ -5,6 +5,7 @@ Parsing command line arguments
 -- Reading tree from file
 -- tree read
 Number of groups: 40
+dict_keys(['c__MGII', 'c__UBA184', 'c__Thermoplasmata', 'c__Thermoplasmata_A', 'c__CG49143', 'c__E2', 'c__UBA186', 'c__Halobacteria', 'c__Methanomicrobia', 'c__Methanosarcinia', 'c__Archaeoglobi', 'c__NRA6', 'c__Methanonatronarchaeia', 'c__Methanobacteria', 'c__Methanococci', 'c__Methanopyri', 'c__Thermococci', 'c__YNP-45', 'c__JdFR-18', 'c__Nitrososphaeria', 'c__Bathyarchaeia', 'c__Thermoprotei', 'c__Methanomethylicia', 'c__UBA168', 'c__Korarchaeia', 'c__Lokiarchaeia', 'c__Heimdallarchaeia', 'c__Woesearchaeia', 'c__UBA10117', 'c__Parvarchaeia', 'c__CG07-land', 'c__1-14-0-10-43-11', 'c__Nanoarchaeia', 'c__CG03', 'c__Aenigmarchaeia', 'c__Nanohaloarchaea', 'c__Micrarchaeia', 'c__Iainarchaeia', 'c__UBA543', 'c__Altiarchaeia'])
 Getting table
 -- Table contains 2076 lines.
 Mean GC: 47.3987571083464
