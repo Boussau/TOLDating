@@ -55,9 +55,12 @@ for l in fref:
         sp_name=sp_name.replace("__","_")
         sp_name=sp_name.replace("__","_")
         sp_name=sp_name.replace("__","_")
-        sp_name=sp_name.replace("%","")        
+        sp_name=sp_name.replace("%","")
         sp_name=sp_name.split("_")[1]+"_"+sp_name.split("_")[-1][:4]+"_"+sp_name.split("_")[-2][:4]
-        corresp[ li[0] ] = sp_name
+        corresp[ li[0].replace("GB_GCA_","").replace("RS_GCF_","") ] = sp_name
+        if ("002292025" in li[0]) :
+            print ( li[0].replace("GB_GCA_","").replace("RS_GCF_","") , sp_name)
+
         #print (li[0] +" Corresponds to "+ sp_name)
         #print (old_name, " ##-> ","&"+sp_name)
 print("ref file read.")
@@ -72,9 +75,11 @@ for l in f:
     print(l)
     i = 0
     for k in corresp.keys():
+        if ("002292025" in k) :
+            print (k)
 #        print k +" indeed corresponds to "+ corresp[k]
-        l = l.replace(k, corresp[k])
-        print (k,corresp[k], "&")
+        l = l.replace(k, corresp[k] + "_")
+        #print (k,corresp[k], "&")
         i = i+1
         if i % 1000 == 0:
             print (i)
