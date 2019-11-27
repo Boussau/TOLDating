@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+for fn in *.treefile
+do
+  python ../Scripts/NEW_RenameLeavesAccordingToRefFile.py $fn ${fn}RN ../Bacteria/Data/bac_metadata_r86.tsv
+  python ../Scripts/NEW_RenameLeavesAccordingToRefFile.py ${fn}RN ${fn}_renamed ../Archaea/Data/arc_metadata_r86.tsv
+  rm ${fn}RN
+done
+

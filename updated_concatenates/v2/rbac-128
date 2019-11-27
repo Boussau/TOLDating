@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=bac128v2
+#SBATCH --output=%x-%j.out
+#SBATCH --error=%x-%j.err
+#SBATCH --partition=high
+#SBATCH --time="14-00:00:00"
+#SBATCH --mem-per-cpu=10GB
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=20
+#SBATCH --mail-type="FAIL"
+#SBATCH --mail-user="dominik.schrempf@gmail.com"
+
+# Needs 388GB for 256 components with 4 rate categories.
+./udm bacteria_v2_linsi_bmge.fas UdmLclrHogenom.nex 128 20

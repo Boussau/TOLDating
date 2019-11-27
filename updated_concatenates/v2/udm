@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+# Command arguments.
+data_fn="$1"
+dist_fn="$2"
+n_comps="$3"
+n_cpus="$4"
+
+# udm_models="Poisson+UdmLclr004"
+# udm_models="Poisson+UdmLclr256"
+# udm_models="Poisson+UdmLclr004,Poisson+UdmLclr008,Poisson+UdmLclr016,Poisson+UdmLclr032,Poisson+UdmLclr064,Poisson+UdmLclr128,Poisson+UdmLclr256"
+# cxx_models="C10"
+# cxx_models="C10,C20,C30,C40,C50,C60"
+
+udm_model="Poisson+UdmLclr${n_comps}+R4"
+
+cmd_base=(iqtree)
+
+cmd_opts=(-nt "$n_cpus"
+          # -redo -mredo
+          -s "$data_fn"
+          # -mset "${udm_models},${cxx_models},LG,WAG"
+          # -mset "${udm_models},LG"
+	  # -mrate "G4,R4"
+          -mdef "${dist_fn}"
+	  -mwopt
+	  -bb 1000
+	  # -m "MF"
+	  # -m "Poisson+UdmLclr256+G4"
+	  -m "${udm_model}"
+          -pre "${data_fn}_${n_comps}")
+
+"${cmd_base[@]}" "${cmd_opts[@]}"
