@@ -1,0 +1,366 @@
+
+#P001_Platypus 	P036_Human	1.911	1.629
+max_age_1 <- 1.911
+min_age_1 <- 1.629
+clade_1sp1 <- "P001_Platypus"
+clade_1sp2 <- "P036_Human"
+
+clade_1 = clade(clade_1sp1,clade_1sp2)
+age_1 := tmrca(psi, clade_1)
+width_age_prior_1 <- (max_age_1-min_age_1)/2.0
+mean_age_prior_1 <- min_age_1 + width_age_prior_1
+obs_age_1 ~ dnSoftBoundUniformNormal(min=age_1 - width_age_prior_1, max=age_1 + width_age_prior_1, sd=2.5, p=0.95)
+obs_age_1.clamp( mean_age_prior_1 )
+
+#P002_Opossum	P036_Human	1.712	1.24
+max_age_2 <- 1.712
+min_age_2 <- 1.24
+clade_2sp1 <- "P002_Opossum"
+clade_2sp2 <- "P036_Human"
+
+clade_2 = clade(clade_2sp1,clade_2sp2)
+age_2 := tmrca(psi, clade_2)
+width_age_prior_2 <- (max_age_2-min_age_2)/2.0
+mean_age_prior_2 <- min_age_2 + width_age_prior_2
+obs_age_2 ~ dnSoftBoundUniformNormal(min=age_2 - width_age_prior_2, max=age_2 + width_age_prior_2, sd=2.5, p=0.95)
+obs_age_2.clamp( mean_age_prior_2 )
+
+#P002_Opossum	P003_Wallaby	-1	0.486
+max_age_3 <- 1.911
+min_age_3 <- 0.486
+clade_3sp1 <- "P002_Opossum"
+clade_3sp2 <- "P003_Wallaby"
+
+clade_3 = clade(clade_3sp1,clade_3sp2)
+age_3 := tmrca(psi, clade_3)
+width_age_prior_3 <- (max_age_3-min_age_3)/2.0
+mean_age_prior_3 <- min_age_3 + width_age_prior_3
+obs_age_3 ~ dnSoftBoundUniformNormal(min=age_3 - width_age_prior_3, max=age_3 + width_age_prior_3, sd=2.5, p=0.95)
+obs_age_3.clamp( mean_age_prior_3 )
+
+#P004_Tenrec	P036_Human	1.315	-1
+max_age_4 <- 1.315
+min_age_4 <- 0.0
+clade_4sp1 <- "P004_Tenrec"
+clade_4sp2 <- "P036_Human"
+
+clade_4 = clade(clade_4sp1,clade_4sp2)
+age_4 := tmrca(psi, clade_4)
+width_age_prior_4 <- (max_age_4-min_age_4)/2.0
+mean_age_prior_4 <- min_age_4 + width_age_prior_4
+obs_age_4 ~ dnSoftBoundUniformNormal(min=age_4 - width_age_prior_4, max=age_4 + width_age_prior_4, sd=2.5, p=0.95)
+obs_age_4.clamp( mean_age_prior_4 )
+
+#P005_Rock_hyrax	P006_Elephant	-1	0.556
+max_age_5 <- 1.911
+min_age_5 <- 0.556
+clade_5sp1 <- "P005_Rock_hyrax"
+clade_5sp2 <- "P006_Elephant"
+
+clade_5 = clade(clade_5sp1,clade_5sp2)
+age_5 := tmrca(psi, clade_5)
+width_age_prior_5 <- (max_age_5-min_age_5)/2.0
+mean_age_prior_5 <- min_age_5 + width_age_prior_5
+obs_age_5 ~ dnSoftBoundUniformNormal(min=age_5 - width_age_prior_5, max=age_5 + width_age_prior_5, sd=2.5, p=0.95)
+obs_age_5.clamp( mean_age_prior_5 )
+
+#P007_Armadillo	P008_Sloth	-1	0.556
+max_age_6 <- 1.911
+min_age_6 <- 0.556
+clade_6sp1 <- "P007_Armadillo"
+clade_6sp2 <- "P008_Sloth"
+
+clade_6 = clade(clade_6sp1,clade_6sp2)
+age_6 := tmrca(psi, clade_6)
+width_age_prior_6 <- (max_age_6-min_age_6)/2.0
+mean_age_prior_6 <- min_age_6 + width_age_prior_6
+obs_age_6 ~ dnSoftBoundUniformNormal(min=age_6 - width_age_prior_6, max=age_6 + width_age_prior_6, sd=2.5, p=0.95)
+obs_age_6.clamp( mean_age_prior_6 )
+
+#P009_Hedgehog	P010_Common_shrew	-1	0.615
+max_age_7 <- 1.911
+min_age_7 <- 0.615
+clade_7sp1 <- "P009_Hedgehog"
+clade_7sp2 <- "P010_Common_shrew"
+
+clade_7 = clade(clade_7sp1,clade_7sp2)
+age_7 := tmrca(psi, clade_7)
+width_age_prior_7 <- (max_age_7-min_age_7)/2.0
+mean_age_prior_7 <- min_age_7 + width_age_prior_7
+obs_age_7 ~ dnSoftBoundUniformNormal(min=age_7 - width_age_prior_7, max=age_7 + width_age_prior_7, sd=2.5, p=0.95)
+obs_age_7.clamp( mean_age_prior_7 )
+
+#P011_Dolphin	P012_Cow	-1	0.524
+max_age_8 <- 1.911
+min_age_8 <- 0.524
+clade_8sp1 <- "P011_Dolphin"
+clade_8sp2 <- "P012_Cow"
+
+clade_8 = clade(clade_8sp1,clade_8sp2)
+age_8 := tmrca(psi, clade_8)
+width_age_prior_8 <- (max_age_8-min_age_8)/2.0
+mean_age_prior_8 <- min_age_8 + width_age_prior_8
+obs_age_8 ~ dnSoftBoundUniformNormal(min=age_8 - width_age_prior_8, max=age_8 + width_age_prior_8, sd=2.5, p=0.95)
+obs_age_8.clamp( mean_age_prior_8 )
+
+#P011_Dolphin	P014_Alpaca	0.658	-1
+max_age_9 <- 0.658
+min_age_9 <- 0.0
+clade_9sp1 <- "P011_Dolphin"
+clade_9sp2 <- "P014_Alpaca"
+
+clade_9 = clade(clade_9sp1,clade_9sp2)
+age_9 := tmrca(psi, clade_9)
+width_age_prior_9 <- (max_age_9-min_age_9)/2.0
+mean_age_prior_9 <- min_age_9 + width_age_prior_9
+obs_age_9 ~ dnSoftBoundUniformNormal(min=age_9 - width_age_prior_9, max=age_9 + width_age_prior_9, sd=2.5, p=0.95)
+obs_age_9.clamp( mean_age_prior_9 )
+
+#P015_Horse	P017_Cat	-1	0.625
+max_age_10 <- 1.911
+min_age_10 <- 0.625
+clade_10sp1 <- "P015_Horse"
+clade_10sp2 <- "P017_Cat"
+
+clade_10 = clade(clade_10sp1,clade_10sp2)
+age_10 := tmrca(psi, clade_10)
+width_age_prior_10 <- (max_age_10-min_age_10)/2.0
+mean_age_prior_10 <- min_age_10 + width_age_prior_10
+obs_age_10 ~ dnSoftBoundUniformNormal(min=age_10 - width_age_prior_10, max=age_10 + width_age_prior_10, sd=2.5, p=0.95)
+obs_age_10.clamp( mean_age_prior_10 )
+
+#P016_Dog	P017_Cat	0.658	0.3968
+max_age_11 <- 0.658
+min_age_11 <- 0.3968
+clade_11sp1 <- "P016_Dog"
+clade_11sp2 <- "P017_Cat"
+
+clade_11 = clade(clade_11sp1,clade_11sp2)
+age_11 := tmrca(psi, clade_11)
+width_age_prior_11 <- (max_age_11-min_age_11)/2.0
+mean_age_prior_11 <- min_age_11 + width_age_prior_11
+obs_age_11 ~ dnSoftBoundUniformNormal(min=age_11 - width_age_prior_11, max=age_11 + width_age_prior_11, sd=2.5, p=0.95)
+obs_age_11.clamp( mean_age_prior_11 )
+
+#P018_Megabat	P019_Microbat	-1	0.486
+max_age_12 <- 1.911
+min_age_12 <- 0.486
+clade_12sp1 <- "P018_Megabat"
+clade_12sp2 <- "P019_Microbat"
+
+clade_12 = clade(clade_12sp1,clade_12sp2)
+age_12 := tmrca(psi, clade_12)
+width_age_prior_12 <- (max_age_12-min_age_12)/2.0
+mean_age_prior_12 <- min_age_12 + width_age_prior_12
+obs_age_12 ~ dnSoftBoundUniformNormal(min=age_12 - width_age_prior_12, max=age_12 + width_age_prior_12, sd=2.5, p=0.95)
+obs_age_12.clamp( mean_age_prior_12 )
+
+#P020_Rabbit	P021_Pika	0.658	0.486
+max_age_13 <- 0.658
+min_age_13 <- 0.486
+clade_13sp1 <- "P020_Rabbit"
+clade_13sp2 <- "P021_Pika"
+
+clade_13 = clade(clade_13sp1,clade_13sp2)
+age_13 := tmrca(psi, clade_13)
+width_age_prior_13 <- (max_age_13-min_age_13)/2.0
+mean_age_prior_13 <- min_age_13 + width_age_prior_13
+obs_age_13 ~ dnSoftBoundUniformNormal(min=age_13 - width_age_prior_13, max=age_13 + width_age_prior_13, sd=2.5, p=0.95)
+obs_age_13.clamp( mean_age_prior_13 )
+
+#P020_Rabbit	P026_Rat	-1	0.615
+max_age_14 <- 1.911
+min_age_14 <- 0.615
+clade_14sp1 <- "P020_Rabbit"
+clade_14sp2 <- "P026_Rat"
+
+clade_14 = clade(clade_14sp1,clade_14sp2)
+age_14 := tmrca(psi, clade_14)
+width_age_prior_14 <- (max_age_14-min_age_14)/2.0
+mean_age_prior_14 <- min_age_14 + width_age_prior_14
+obs_age_14 ~ dnSoftBoundUniformNormal(min=age_14 - width_age_prior_14, max=age_14 + width_age_prior_14, sd=2.5, p=0.95)
+obs_age_14.clamp( mean_age_prior_14 )
+
+#P022_Squirrel	P026_Rat	0.658	0.556
+max_age_15 <- 0.658
+min_age_15 <- 0.556
+clade_15sp1 <- "P022_Squirrel"
+clade_15sp2 <- "P026_Rat"
+
+clade_15 = clade(clade_15sp1,clade_15sp2)
+age_15 := tmrca(psi, clade_15)
+width_age_prior_15 <- (max_age_15-min_age_15)/2.0
+mean_age_prior_15 <- min_age_15 + width_age_prior_15
+obs_age_15 ~ dnSoftBoundUniformNormal(min=age_15 - width_age_prior_15, max=age_15 + width_age_prior_15, sd=2.5, p=0.95)
+obs_age_15.clamp( mean_age_prior_15 )
+
+#P023_Guinea_pig	P026_Rat	0.589	0.525
+max_age_16 <- 0.589
+min_age_16 <- 0.525
+clade_16sp1 <- "P023_Guinea_pig"
+clade_16sp2 <- "P026_Rat"
+
+clade_16 = clade(clade_16sp1,clade_16sp2)
+age_16 := tmrca(psi, clade_16)
+width_age_prior_16 <- (max_age_16-min_age_16)/2.0
+mean_age_prior_16 <- min_age_16 + width_age_prior_16
+obs_age_16 ~ dnSoftBoundUniformNormal(min=age_16 - width_age_prior_16, max=age_16 + width_age_prior_16, sd=2.5, p=0.95)
+obs_age_16.clamp( mean_age_prior_16 )
+
+#P024_Kangaroo_rat	P026_Rat	0.56	0.402
+max_age_17 <- 0.56
+min_age_17 <- 0.402
+clade_17sp1 <- "P024_Kangaroo_rat"
+clade_17sp2 <- "P026_Rat"
+
+clade_17 = clade(clade_17sp1,clade_17sp2)
+age_17 := tmrca(psi, clade_17)
+width_age_prior_17 <- (max_age_17-min_age_17)/2.0
+mean_age_prior_17 <- min_age_17 + width_age_prior_17
+obs_age_17 ~ dnSoftBoundUniformNormal(min=age_17 - width_age_prior_17, max=age_17 + width_age_prior_17, sd=2.5, p=0.95)
+obs_age_17.clamp( mean_age_prior_17 )
+
+#P025_Mouse	P026_Rat	0.14	0.104
+max_age_18 <- 0.14
+min_age_18 <- 0.104
+clade_18sp1 <- "P025_Mouse"
+clade_18sp2 <- "P026_Rat"
+
+clade_18 = clade(clade_18sp1,clade_18sp2)
+age_18 := tmrca(psi, clade_18)
+width_age_prior_18 <- (max_age_18-min_age_18)/2.0
+mean_age_prior_18 <- min_age_18 + width_age_prior_18
+obs_age_18 ~ dnSoftBoundUniformNormal(min=age_18 - width_age_prior_18, max=age_18 + width_age_prior_18, sd=2.5, p=0.95)
+obs_age_18.clamp( mean_age_prior_18 )
+
+#P027_Tree_shrew	P036_Human	-1	0.615
+max_age_18 <- 1.911
+min_age_18 <- 0.615
+clade_18sp1 <- "P027_Tree_shrew"
+clade_18sp2 <- "P036_Human"
+
+clade_18 = clade(clade_18sp1,clade_18sp2)
+age_18 := tmrca(psi, clade_18)
+width_age_prior_18 <- (max_age_18-min_age_18)/2.0
+mean_age_prior_18 <- min_age_18 + width_age_prior_18
+obs_age_18 ~ dnSoftBoundUniformNormal(min=age_18 - width_age_prior_18, max=age_18 + width_age_prior_18, sd=2.5, p=0.95)
+obs_age_18.clamp( mean_age_prior_18 )
+
+#P028_Bushbaby	P029_Mouse_lemur	0.556	0.337
+max_age_19 <- 0.556
+min_age_19 <- 0.337
+clade_19sp1 <- "P028_Bushbaby"
+clade_19sp2 <- "P029_Mouse_lemur"
+
+clade_19 = clade(clade_19sp1,clade_19sp2)
+age_19 := tmrca(psi, clade_19)
+width_age_prior_19 <- (max_age_19-min_age_19)/2.0
+mean_age_prior_19 <- min_age_19 + width_age_prior_19
+obs_age_19 ~ dnSoftBoundUniformNormal(min=age_19 - width_age_prior_19, max=age_19 + width_age_prior_19, sd=2.5, p=0.95)
+obs_age_19.clamp( mean_age_prior_19 )
+
+#P028_Bushbaby	P036_Human	-1	0.556
+max_age_20 <- 1.911
+min_age_20 <- 0.556
+clade_20sp1 <- "P028_Bushbaby"
+clade_20sp2 <- "P036_Human"
+
+clade_20 = clade(clade_20sp1,clade_20sp2)
+age_20 := tmrca(psi, clade_20)
+width_age_prior_20 <- (max_age_20-min_age_20)/2.0
+mean_age_prior_20 <- min_age_20 + width_age_prior_20
+obs_age_20 ~ dnSoftBoundUniformNormal(min=age_20 - width_age_prior_20, max=age_20 + width_age_prior_20, sd=2.5, p=0.95)
+obs_age_20.clamp( mean_age_prior_20 )
+
+#P031_Marmoset	P036_Human	-1	0.337
+max_age_22 <- 1.911
+min_age_22 <- 0.337
+clade_22sp1 <- "P031_Marmoset"
+clade_22sp2 <- "P036_Human"
+
+clade_22 = clade(clade_22sp1,clade_22sp2)
+age_22 := tmrca(psi, clade_22)
+width_age_prior_22 <- (max_age_22-min_age_22)/2.0
+mean_age_prior_22 <- min_age_22 + width_age_prior_22
+obs_age_22 ~ dnSoftBoundUniformNormal(min=age_22 - width_age_prior_22, max=age_22 + width_age_prior_22, sd=2.5, p=0.95)
+obs_age_22.clamp( mean_age_prior_22 )
+
+#P032_Rhesus	P036_Human	0.34	0.235
+max_age_23 <- 0.34
+min_age_23 <- 0.235
+clade_23sp1 <- "P032_Rhesus"
+clade_23sp2 <- "P036_Human"
+
+clade_23 = clade(clade_23sp1,clade_23sp2)
+age_23 := tmrca(psi, clade_23)
+width_age_prior_23 <- (max_age_23-min_age_23)/2.0
+mean_age_prior_23 <- min_age_23 + width_age_prior_23
+obs_age_23 ~ dnSoftBoundUniformNormal(min=age_23 - width_age_prior_23, max=age_23 + width_age_prior_23, sd=2.5, p=0.95)
+obs_age_23.clamp( mean_age_prior_23 )
+
+#P033_Orangutan	P036_Human	0.337	0.112
+max_age_24 <- 0.337
+min_age_24 <- 0.112
+clade_24sp1 <- "P033_Orangutan"
+clade_24sp2 <- "P036_Human"
+
+clade_24 = clade(clade_24sp1,clade_24sp2)
+age_24 := tmrca(psi, clade_24)
+width_age_prior_24 <- (max_age_24-min_age_24)/2.0
+mean_age_prior_24 <- min_age_24 + width_age_prior_24
+obs_age_24 ~ dnSoftBoundUniformNormal(min=age_24 - width_age_prior_24, max=age_24 + width_age_prior_24, sd=2.5, p=0.95)
+obs_age_24.clamp( mean_age_prior_24 )
+
+#P034_Gorilla	P036_Human	-1	0.0725
+max_age_25 <- 1.911
+min_age_25 <- 0.0725
+clade_25sp1 <- "P034_Gorilla"
+clade_25sp2 <- "P036_Human"
+
+clade_25 = clade(clade_25sp1,clade_25sp2)
+age_25 := tmrca(psi, clade_25)
+width_age_prior_25 <- (max_age_25-min_age_25)/2.0
+mean_age_prior_25 <- min_age_25 + width_age_prior_25
+obs_age_25 ~ dnSoftBoundUniformNormal(min=age_25 - width_age_prior_25, max=age_25 + width_age_prior_25, sd=2.5, p=0.95)
+obs_age_25.clamp( mean_age_prior_25 )
+
+#P035_Chimp	P036_Human	0.1	0.057
+max_age_26 <- 0.1
+min_age_26 <- 0.057
+clade_26sp1 <- "P035_Chimp"
+clade_26sp2 <- "P036_Human"
+
+clade_26 = clade(clade_26sp1,clade_26sp2)
+age_26 := tmrca(psi, clade_26)
+width_age_prior_26 <- (max_age_26-min_age_26)/2.0
+mean_age_prior_26 <- min_age_26 + width_age_prior_26
+obs_age_26 ~ dnSoftBoundUniformNormal(min=age_26 - width_age_prior_26, max=age_26 + width_age_prior_26, sd=2.5, p=0.95)
+obs_age_26.clamp( mean_age_prior_26 )
+
+#P001_Platypus	P036_Human	1.911	1.629
+#P002_Opossum	P036_Human	1.712	1.24
+#P002_Opossum	P003_Wallaby	-1	0.486
+#P004_Tenrec	P036_Human	1.315	-1
+#P005_Rock_hyrax	P006_Elephant	-1	0.556
+#P007_Armadillo	P008_Sloth	-1	0.556
+#P009_Hedgehog	P010_Common_shrew	-1	0.615
+#P011_Dolphin	P012_Cow	-1	0.524
+#P011_Dolphin	P014_Alpaca	0.658	-1
+#P015_Horse	P017_Cat	-1	0.625
+#P016_Dog	P017_Cat	0.658	0.3968
+#P018_Megabat	P019_Microbat	-1	0.486
+#P020_Rabbit	P021_Pika	0.658	0.486
+#P020_Rabbit	P026_Rat	-1	0.615
+#P022_Squirrel	P026_Rat	0.658	0.556
+#P023_Guinea_pig	P026_Rat	0.589	0.525
+#P024_Kangaroo_rat	P026_Rat	0.56	0.402
+#P025_Mouse	P026_Rat	0.14	0.104
+#P027_Tree_shrew	P036_Human	-1	0.615
+#P028_Bushbaby	P029_Mouse_lemur	0.556	0.337
+#P028_Bushbaby	P036_Human	-1	0.556
+#P031_Marmoset	P036_Human	-1	0.337
+#P032_Rhesus	P036_Human	0.34	0.235
+#P033_Orangutan	P036_Human	0.337	0.112
+#P034_Gorilla	P036_Human	-1	0.0725
+#P035_Chimp	P036_Human	0.1	0.057
+

@@ -1,0 +1,24 @@
+########
+# UExp #
+########
+
+rate_mean ~ dnExp(1)
+	
+moves[mvi++] = mvScale(rate_mean, lambda=0.5, weight=10.0)
+
+# use a discretized lognormal
+for (j in n_branches:1)
+{
+	branch_rates[j] ~ dnExp(rate_mean)
+	moves[mvi++] = mvScale(branch_rates[j], lambda=0.5, weight=1.0,tune=true)
+}
+mvVectorScale(branch_rates, delta=0.5, weight=1.0,tune=true)
+
+mean_rt := mean(branch_rates)
+var_rt := var(branch_rates)
+
+extension += "_UExp"
+
+########
+# UExp #
+########

@@ -1,0 +1,44 @@
+extension=extension+"_GTR4+G4+I"
+
+###################
+# PhyloCTMC Model #
+###################
+
+# specify the stationary frequency parameters
+pi_prior <- v(1,1,1,1) 
+pi ~ dnDirichlet(pi_prior)
+moves[mvi++] = mvBetaSimplex(pi, weight=2.0)
+moves[mvi++] = mvDirichletSimplex(pi, weight=1.0)
+
+
+# specify the exchangeability rate parameters
+er_prior <- v(1,1,1,1,1,1)
+er ~ dnDirichlet(er_prior)
+moves[mvi++] = mvBetaSimplex(er, weight=3.0)
+moves[mvi++] = mvDirichletSimplex(er, weight=1.5)
+
+
+# create a deterministic variable for the rate matrix, GTR
+Q := fnGTR(er,pi) 
+
+
+#############################
+# Among Site Rate Variation #
+#############################
+
+# among site rate variation, +Gamma4
+alpha ~ dnUniform( 0, 1E8 )
+alpha.setValue( 1.0 )
+sr := fnDiscretizeGamma( alpha, alpha, 4, false )
+moves[mvi++] = mvScale(alpha, lambda=1.0, weight=2.0)
+
+
+# the probability of a site being invariable, +I
+p_inv ~ dnBeta(1,1)
+moves[mvi++] = mvBetaProbability(p_inv, weight=2.0)
+
+
+seq ~ dnPhyloCTMC(tree=psi, Q=Q, siteRates=sr, pInv=p_inv, type="DNA", branchRates=branch_rates)
+
+# attach the data
+seq.clamp(data)

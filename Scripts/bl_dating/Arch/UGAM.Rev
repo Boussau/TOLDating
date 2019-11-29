@@ -1,0 +1,36 @@
+
+########
+# UGAM #
+########
+
+rate_mean ~ dnExp(1)
+sigma ~ dnExp(10.0)
+	
+first_gamma_param := rate_mean*rate_mean/sigma
+second_gamma_param := rate_mean/sigma
+# moves
+if (add_moves) moves[mvi++] = mvScale(rate_mean, lambda=0.5, weight=10.0);
+if (add_moves) moves[mvi++] = mvScale(sigma, lambda=0.5, weight=10.0);
+
+# use a discretized lognormal
+for (j in n_branches:1)
+{
+        times[j]=psi.branchLength(j)
+	branch_rates[j] ~ dnGamma(first_gamma_param,second_gamma_param)
+	if (initialize_rates) branch_rates[j].setValue(observedBls[j]/times[j]);
+	# moves
+	if (add_moves) moves[mvi++] = mvScale(branch_rates[j], lambda=0.5, weight=1.0,tune=true);
+}
+# moves
+if (add_moves) mvVectorScale(branch_rates, lambda=0.5, weight=1.0,tune=true);
+
+mean_rt := mean(branch_rates)
+var_rt := var(branch_rates)
+if (initialize_rates) rate_mean.setValue(mean_rt);
+if (initialize_rates) sigma.setValue(var_rt);
+
+extension += "_UGAM"
+
+########
+# UGAM #
+########

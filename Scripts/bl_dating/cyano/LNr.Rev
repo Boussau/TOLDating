@@ -1,0 +1,76 @@
+########
+#  LN  #
+########
+global_log_mean_rate ~ dnNorm(0.,1.)
+if (initialize_rates) global_log_mean_rate.setValue(ln(abs(mean_tree_root_age/tree.rootAge())));
+if (add_moves) moves[mvi++] = mvSlide(global_log_mean_rate, delta=0.5, weight=3.0);
+
+log_root_rate ~ dnNormal(0,1)
+if (initialize_rates) log_root_rate.setValue(0);
+nu ~ dnExp(1.)
+
+#moves
+if (add_moves) moves[mvi++] = mvSlide(log_root_rate, delta=0.5, weight=1.0);
+if (add_moves) moves[mvi++] = mvScale(nu, lambda=0.5, weight=10.0);
+
+# use a discretized lognormal
+for (j in n_branches:1)
+{
+    
+    parent_i=tree.parent(j)
+    times[j]=psi.branchLength(j)
+    if (parent_i==tree.nnodes())
+    {
+	log_node_rates[j] ~ dnNorm(
+	log_root_rate-global_log_mean_rate
+	, sqrt(nu*times[j]) )	
+    }
+    
+    if (parent_i<tree.nnodes())
+    {       
+        log_node_rates[j] ~ dnNorm(
+	log_node_rates[parent_i]-global_log_mean_rate,
+	sqrt(nu*times[j]))
+    }
+    
+    #moves
+    if (add_moves) moves[mvi++] = mvSlide(log_node_rates[j], delta=0.5, weight=1.0,tune=true);
+    
+}
+
+for (j in n_branches:1)
+{
+    
+    parent_i=tree.parent(j)
+    if (parent_i==tree.nnodes())
+    {
+       if (initialize_rates) log_node_rates[j].setValue(
+       ln(observedBls[j]/times[j])-global_log_mean_rate);
+       
+       branch_rates[j] := (
+       exp(log_root_rate+global_log_mean_rate)
+       +
+       exp(log_node_rates[j]+global_log_mean_rate)
+       )/2.       
+    }
+    
+    if (parent_i<tree.nnodes())
+    {
+        if (initialize_rates) log_node_rates[j].setValue(
+	ln(observedBls[j]/times[j])-global_log_mean_rate);
+	
+        branch_rates[j] := (
+	exp(log_node_rates[parent_i]+global_log_mean_rate)
+	+
+	exp(log_node_rates[j]+global_log_mean_rate)
+	)/2.
+    }
+}
+mean_rt := mean(branch_rates)
+var_rt := var(branch_rates)
+
+extension += "_LNr"
+
+########
+# LN #
+########

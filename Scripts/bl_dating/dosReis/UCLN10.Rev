@@ -1,0 +1,35 @@
+########
+# UCLN #
+########
+
+NUM_RATE_CATEGORIES = 10
+
+ucln_mean ~ dnExp(1)
+ucln_log_mean := ln( ucln_mean )
+ucln_sigma ~ dnExponential(1)
+
+ucln_mean.setValue(0.1)
+
+if (add_moves) moves[mvi++] = mvScale(ucln_mean, lambda=0.5, weight=5.0);
+if (add_moves) moves[mvi++] = mvScale(ucln_sigma, lambda=0.5, weight=5.0);
+
+# use a discretized lognormal
+rate_categories := fnDiscretizeDistribution(dnLnorm(ucln_log_mean, ucln_sigma), NUM_RATE_CATEGORIES)
+rate_probs <- simplex(rep(1, NUM_RATE_CATEGORIES))
+for (j in 1:n_branches) {
+    # for each branch pull from one of the rate categories
+    branch_rates[j] ~ dnMixture(rate_categories, rate_probs)
+    
+    if (add_moves) moves[mvi++] = mvMixtureAllocation(branch_rates[j], weight=2.0);
+}
+
+mean_rt := mean(branch_rates)
+var_rt := var(branch_rates)
+
+extension += "_UCLN10"
+
+
+########
+# UCLN #
+########
+

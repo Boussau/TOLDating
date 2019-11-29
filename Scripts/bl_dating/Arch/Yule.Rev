@@ -1,0 +1,6 @@
+	birth_rate ~ dnExp(1)
+	birth_rate.setValue(1)
+	death_rate <- 0.0
+	moves[mvi++] = mvScale(birth_rate,lambda=1.0,tune=true,weight=hyper_weigth)
+	psi ~ dnBDP(lambda=birth_rate, mu=death_rate, rho=1.0, rootAge=root_time, samplingStrategy="uniform", condition="survival", taxa=taxa)
+	extension=extension+"Yule"

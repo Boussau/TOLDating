@@ -1,0 +1,13 @@
+
+diversification ~ dnExp(1)
+turnover ~ dnExp(1)
+birth_rate := diversification + turnover
+death_rate := turnover
+#moves
+if (add_moves) moves[mvi++] = mvScale(diversification,lambda=1.0,tune=true,weight=hyper_weigth);
+if (add_moves) moves[mvi++] = mvScale(turnover,lambda=1.0,tune=true,weight=hyper_weigth);
+
+if (!constrain) psi ~ dnBDP(lambda=birth_rate, mu=death_rate, rho=1.0, rootAge=root_time, samplingStrategy="uniform", condition="survival", taxa=taxa)
+if (constrain) psi ~  dnConstrainedNodeOrder(dnBDP(lambda=birth_rate, mu=death_rate, rho=1.0, rootAge=root_time, samplingStrategy="uniform", condition="survival", taxa=taxa),constraints)
+
+extension=extension+"_BD"

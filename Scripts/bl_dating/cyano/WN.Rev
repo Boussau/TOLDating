@@ -1,0 +1,37 @@
+########
+# WN #
+########
+
+rate_mean ~ dnExp(1.)
+sigma ~ dnExp(10.0)
+	
+#moves
+if (add_moves) moves[mvi++] = mvScale(rate_mean, lambda=0.5, weight=10.0,tune=true);
+if (add_moves) moves[mvi++] = mvScale(sigma, lambda=0.5, weight=10.0,tune=true);
+
+# use a discretized lognormal
+for (j in n_branches:1)
+{
+        times[j]=psi.branchLength(j)
+
+	first_gamma_param[j] := rate_mean*rate_mean/(sigma/times[j])
+	second_gamma_param[j] := rate_mean/(sigma/times[j])
+
+	branch_rates[j] ~ dnGamma(first_gamma_param[j],second_gamma_param[j])
+	if (initialize_rates) branch_rates[j].setValue(observedBls[j]/times[j]);
+	#moves
+	if (add_moves) moves[mvi++] = mvScale(branch_rates[j], lambda=0.5, weight=1.0,tune=true);
+}
+#moves
+if(add_moves) moves[mvi++] = mvVectorScale(branch_rates, lambda=0.5, weight=1.0,tune=true);
+
+mean_rt := mean(branch_rates)
+var_rt := var(branch_rates)
+if (initialize_rates) rate_mean.setValue(mean_rt);
+
+
+extension += "_WN"
+
+########
+# WN #
+########

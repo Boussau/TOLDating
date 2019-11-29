@@ -1,0 +1,143 @@
+###########
+# Options #
+###########
+handle="DosReis"
+rate_model="WNr"
+ctmc="BL"
+tree_model="BD"
+constrain=false
+
+extension = ""
+
+mcmc_length = 300000/6.
+mcmc_burnin = 10000*0
+mcmc_nchains = 1
+mcmc_printgen = 100
+
+time_moves=true
+add_moves=true
+hyper_weigth=3.0
+
+#set initial rates according to initial tree
+initialize_rates=true
+
+#reading bug fix
+var_scaling=1e6
+
+#inital root heigth to contorl time units
+initial_root_height=1.8
+
+#calibrations
+calib_file="calib.Rev"
+#constraints
+cons_file="cons.Rev"
+
+#Starting tree
+tree_file=handle+".tree"
+tree <- readTrees(tree_file)[1]
+tree.makeUltrametric()
+
+if (ctmc!="BL")
+{
+alignment_file=handle+".fst"
+data <- readDiscreteCharacterData(alignment_file)
+}
+
+###########
+# Options #
+###########
+
+# set my move index
+mvi = 1
+mni = 0
+
+# Get some useful variables from the data. We need these later on.
+n_species <- tree.ntips()
+n_branches <- 2*n_species - 2
+taxa <- tree.taxa()
+
+##############
+# Root Prior #
+##############
+root_time ~ dnExp(1)
+
+################
+# Constraints  #
+################
+if (constrain) {
+extension=extension+"_cons"
+constraints <- readRelativeNodeAgeConstraints(file=cons_file);
+}
+
+##############
+# Tree model #
+##############
+source(tree_model+".Rev")
+### add some moves that change the ages of the nodes in the tree
+if (time_moves)
+{
+	moves[mvi++] = mvScale(root_time, weight=1.0, lambda=0.1)
+	moves[mvi++] = mvSubtreeScale(psi, weight=1.0*n_branches)
+	moves[mvi++] = mvNodeTimeSlideUniform(psi, weight=1.0*n_branches)
+	moves[mvi++] = mvLayeredScaleProposal(tree=psi, lambda=0.1, tune=true, weight=1.0*n_branches)
+}
+
+# We rescale the tree so that the root age is initial_root_height
+tree.rescale( initial_root_height / tree.rootAge() )
+# We fix the tree
+psi.setValue(tree)
+
+#read mean and var bls
+if (ctmc=="BL" || initialize_rates) source("readBLs.Rev");
+
+################
+# Calibrations #
+################
+source(calib_file)
+
+################
+# Rate Model   #
+################
+source(rate_model+".Rev")
+
+################
+# CTMC         #
+################
+source(ctmc+".Rev")
+
+#some things we would like to see in the .log 
+for(i in 1:n_branches)
+{
+  ages[i] := psi.nodeAge(i) 
+}
+
+#############
+# THE Model #
+#############
+mymodel = model(branch_rates)
+
+fname_stem=handle+extension
+monitors[++mni] = mnModel(filename=fname_stem+".log",printgen=10, separator = TAB)
+monitors[++mni] = mnStochasticVariable(filename=fname_stem+"_Stoch.log",printgen=10)
+
+monitors[++mni] = mnExtNewick(filename=fname_stem+".trees", isNodeParameter=FALSE, printgen=10, separator = TAB, tree=psi, branch_rates)
+monitors[++mni] = mnScreen(printgen=mcmc_printgen, mean_rt, var_rt,root_time,age_1,age_2)
+
+#mymcmc = mcmcmc(mymodel, monitors, moves, nruns=2, nchains=3)
+
+mymcmc = mcmc(mymodel, monitors, moves, nruns=1)
+
+if (mcmc_burnin>0) mymcmc.burnin(generations=mcmc_burnin,tuningInterval=mcmc_burnin);
+mymcmc.run(generations=mcmc_length)
+
+mymcmc.operatorSummary()
+
+# Now, we will analyze the tree output.
+# Let us start by reading in the tree trace
+treetrace = readTreeTrace(fname_stem+".trees", treetype="clock", burnin=0.25)
+
+map_tree = mapTree(treetrace,fname_stem+".tree")
+
+# you may want to quit RevBayes now
+q()
+

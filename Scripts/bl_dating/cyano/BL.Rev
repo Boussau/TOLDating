@@ -1,0 +1,26 @@
+extension=extension+"_BL"
+#left_i <- tree.child(tree.nnodes(),1)
+#right_i <- tree.child(tree.nnodes(),2)
+
+for(i in 1:n_branches)
+{
+if(i != left_i && i != right_i)
+     {
+	times[i] := psi.branchLength(i) # chronogram we sample
+	meanbl[i] := times[i]*branch_rates[i]
+  
+        bls[i] ~ dnNormal(meanbl[i] ,sqrt(varbl[i]))
+
+        bls[i].clamp(observedBls[i])
+  }	
+}
+if (left_i<right_i) i <- left_i
+if (left_i>=right_i) i<-right_i
+
+times[left_i] := psi.branchLength(left_i) # chronogram we sample
+times[right_i] := psi.branchLength(right_i) # chronogram we sample  
+meanbl[i] := times[left_i]*branch_rates[left_i]+times[right_i]*branch_rates[right_i]
+
+bls[i] ~ dnNormal(meanbl[i] ,sqrt(varbl[i]))
+
+bls[i].clamp(observedBls[i])

@@ -1,0 +1,89 @@
+extension="sim"
+constrain=false
+
+n_species <- 20
+n_branches <- 2*n_species - 2
+for (sp in 1:n_species)
+{
+taxa[sp]=taxon(sp)
+}
+
+
+############BD################
+
+root_time <- 1.
+
+diversification <- 1.1
+turnover <- 1.
+birth_rate := diversification + turnover
+death_rate := turnover
+
+if (!constrain) psi ~ dnBDP(lambda=birth_rate, mu=death_rate, rho=1.0, rootAge=root_time, samplingStrategy="uniform", condition="survival", taxa=taxa)
+if (constrain) psi ~  dnConstrainedNodeOrder(dnBDP(lambda=birth_rate, mu=death_rate, rho=1.0, rootAge=root_time, samplingStrategy="uniform", condition="survival", taxa=taxa),constraints)
+
+tree <- psi
+
+##############LN##############
+global_log_mean_rate <- 0.
+log_root_rate <- 0.
+nu <- 0.1
+
+
+for (j in n_branches:1)
+{
+    
+    parent_i=tree.parent(j)
+    times[j]=psi.branchLength(j)
+    if (parent_i==tree.nnodes())
+    {
+	log_node_rates[j] ~ dnNorm(
+	log_root_rate-global_log_mean_rate
+	, sqrt(nu*times[j]) )	
+    }
+    
+    if (parent_i<tree.nnodes())
+    {       
+        log_node_rates[j] ~ dnNorm(
+	log_node_rates[parent_i]-global_log_mean_rate,
+	sqrt(nu*times[j]))
+    }
+        
+}
+
+for (j in n_branches:1)
+{    
+    parent_i=tree.parent(j)
+    if (parent_i==tree.nnodes())
+    {
+       branch_rates[j] := (
+       exp(log_root_rate+global_log_mean_rate)
+       +
+       exp(log_node_rates[j]+global_log_mean_rate)
+       )/2.       
+    }
+    
+    if (parent_i<tree.nnodes())
+    {
+        branch_rates[j] := (
+	exp(log_node_rates[parent_i]+global_log_mean_rate)
+	+
+	exp(log_node_rates[j]+global_log_mean_rate)
+	)/2.
+    }
+}
+mean_rt := mean(branch_rates)
+var_rt := var(branch_rates)
+
+extension += "_LN"
+############################
+
+#write(psi,filename=extension+".tree")
+
+for (i in n_branches:1)
+{
+observedBls[i] <- psi.branchLength(i)*branch_rates[i]
+times[i] <- psi.branchLength(i)
+}
+
+#write(observedBls,filename=extension+".bls")
+
