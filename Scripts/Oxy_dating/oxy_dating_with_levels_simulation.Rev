@@ -1,0 +1,103 @@
+###############################################################
+######################### SIMULATION:##########################
+###############################################################
+
+
+times_fn = "TestData/timeBoundaries.txt"
+levels_fn = "TestData/pO2_levels.txt"
+#aero_data <- readDiscreteCharacterData("TestData/data.nex")
+input_tree <- readTrees("TestData/extantTree_1.dnd")[1]
+
+taxa = input_tree.taxa()
+n_taxa = taxa.size()
+n_branches = 2 * n_taxa - 2
+n_sites = 100
+
+#####################
+### Tree model
+#####################
+
+root_age ~ dnUniform(3.8, 4.5)
+
+root_age.setValue(input_tree.rootAge())
+
+rho <- 1/50 # proportion of sampled taxa
+
+birth ~ dnExp(10) # birth prior
+death ~ dnExp(10) # death prior
+
+tree ~ dnBDP(lambda=birth, mu=death, rho=rho, rootAge=root_age, taxa=taxa)
+
+tree.setValue(input_tree)
+
+
+#####################
+### Epochs and their bounds
+#####################
+time_bounds <- readDataDelimitedFile(file=times_fn, delimiter=" ")
+levels <- readDataDelimitedFile(file=levels_fn, delimiter=" ")
+n_epochs <- time_bounds.size()
+for (i in 1:n_epochs) {
+  epoch_times[i] <- time_bounds[i][1]
+  epoch_levels[i] <- levels[i][1]
+}
+
+#####################
+### Epoch-specific models of aerobiosis evolution
+#####################
+
+alpha ~ dnExp(1)
+beta ~ dnExp(1)
+
+for (i in 1:n_epochs) {
+  pi_aerobe[i] ~ dnBeta(alpha*epoch_levels[i],beta*epoch_levels[i])
+  pi_anaerobe[i] := abs(1-pi_aerobe[i])
+  Q_aero[i] := fnF81(Simplex(pi_aerobe[i], pi_anaerobe[i]))
+}
+
+#####################
+### Complete model of aerobiosis evolution:
+#####################
+
+pi_aerobe_root ~ dnBeta(alpha,beta)
+pi_anaerobe_root := abs(1-pi_aerobe_root)
+root_frequency := Simplex(pi_aerobe_root, pi_anaerobe_root)
+Q_aero_epoch := fnEpoch(Q=Q_aero, times=epoch_times, rates=rep(1.0,n_epochs))
+
+Q_aero_epoch # printing the model on stdout
+
+#####################
+### PhyloCTMC:
+#####################
+evo_aero ~ dnPhyloCTMC(tree=tree, rootFrequencies=root_frequency, Q=Q_aero_epoch, type="Standard", nSites=n_sites)
+writeNexus("TestData/simulated_Data.nex", evo_aero) # Saving the data to file
+writeNexus("TestData/simulated_Tree.nex", tree) # Saving the tree to file
+
+
+#####################
+### Outputting the parameter values
+#####################
+print("\t\talpha : ")
+alpha
+print("\t\tbeta : ")
+beta
+print("\t\tQ_aeros : ")
+   Q_aero[1]
+   Q_aero[2]
+   Q_aero[3]
+   Q_aero[4]
+print("\t\tbirth : ")
+   birth
+print("\t\tdeath : ")
+   death
+print("\t\tpi_aerobes : ")
+   pi_aerobe[1]
+   pi_aerobe[2]
+   pi_aerobe[3]
+   pi_aerobe[4]
+print("\t\tpi_aerobe_root : ")
+   pi_aerobe_root
+print("\t\tRoot age : ")
+   root_age
+print("\t\ttree : ")
+   tree
