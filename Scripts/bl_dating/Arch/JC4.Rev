@@ -1,0 +1,12 @@
+extension=extension+"_JC4"
+
+###################
+# PhyloCTMC Model #
+###################
+
+# the sequence evolution model
+Q <- fnJC(4)
+seq ~ dnPhyloCTMC(tree=psi, Q=Q, branchRates=branch_rates, type="DNA")
+
+# attach the data
+seq.clamp(data)

@@ -1,0 +1,26 @@
+mean_tree <- readTrees(handle+"_stat.trees")[1]
+var_tree <- readTrees(handle+"_stat.trees")[2]
+
+mean_tree_root_age=mean_tree.rootAge()
+
+left_i <- tree.child(tree.nnodes(),1)
+right_i <- tree.child(tree.nnodes(),2)
+
+for(i in 1:n_branches)
+{
+if(i != left_i && i != right_i)
+     {
+ 
+  observedBls[i] <- mean_tree.branchLength(i) # input tree, constant  
+  varbl[i] := var_tree.branchLength(i)/var_scaling
+  if (varbl[i]<1e-10) varbl[i]:=1e-10
+  }	
+}
+if (left_i<right_i) i <- left_i
+if (left_i>=right_i) i<-right_i
+
+observedBls[left_i] <- mean_tree.branchLength(left_i) # input tree, constant
+observedBls[right_i] <- mean_tree.branchLength(right_i) # input tree, constant
+  
+varbl[i] := var_tree.branchLength(i)/var_scaling
+if (varbl[i]<1e-10) varbl[i]:=1e-10

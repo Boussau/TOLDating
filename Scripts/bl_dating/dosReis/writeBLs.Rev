@@ -1,0 +1,12 @@
+handle="DosReis"
+mean_tree <- readTrees(handle+"_stat.trees")[1]
+var_tree <- readTrees(handle+"_stat.trees")[2]
+
+mean_tree_root_age=mean_tree.rootAge()
+
+for(i in 1:(2*36-2))
+{
+write(mean_tree.branchLength(i) , var_tree.branchLength(i) )
+
+}
+

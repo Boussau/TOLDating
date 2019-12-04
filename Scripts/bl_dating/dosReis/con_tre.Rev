@@ -1,0 +1,7 @@
+treetrace = readTreeTrace("DosReis_free_BD_CTMC_GTR+G.trees", treetype="clock", burnin=0.25)
+
+map_tree = mapTree(treetrace,"DosReis_free_BD_CTMC_GTR+G.tree")
+
+# you may want to quit RevBayes now
+q()
+

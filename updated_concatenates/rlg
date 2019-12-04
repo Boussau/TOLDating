@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=LG
+#SBATCH --output=%x-%j.out
+#SBATCH --error=%x-%j.err
+#SBATCH --partition=high
+#SBATCH --time="14-00:00:00"
+#SBATCH --mem-per-cpu=500MB
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=40
+#SBATCH --mail-type="FAIL"
+#SBATCH --mail-user="dominik.schrempf@gmail.com"
+
+lg() {
+  iqtree -nt 10 -s "$1" -m LG+F+R4 -pre "$1"_LG
+}
+export -f lg
+
+parallel lg {} ::: all_domains_concat.fas archaea_fams_linsi_concat.fas bact_fams_linsi_bmge_concat.fas euk_fams_linsi_bmge_concat.fas

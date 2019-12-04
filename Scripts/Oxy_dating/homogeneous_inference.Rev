@@ -1,0 +1,107 @@
+###############################################################
+######################### INFERENCE:###########################
+###############################################################
+
+
+aero_data <- readDiscreteCharacterData("TestData/simulated_Data.nex")
+
+n_sites = 100
+
+taxa = aero_data.taxa()
+n_taxa = taxa.size()
+n_branches = 2 * n_taxa - 2
+
+#####################
+### Tree model
+#####################
+root_age ~ dnUniform(3.8, 4.5)
+
+rho <- 1/50 # proportion of sampled taxa
+
+birth ~ dnExp(10) # birth prior
+death ~ dnExp(10) # death prior
+
+tree ~ dnBDP(lambda=birth, mu=death, rho=rho, rootAge=root_age, taxa=taxa)
+
+topo <- readTrees ("TestData/simulated_Tree.nex")[1]
+tree.setValue(topo)
+
+
+#####################
+### Epoch-agnostic model of aerobiosis evolution
+#####################
+
+alpha <- 1
+beta <- 1
+
+pi_aerobe ~ dnBeta(alpha,beta)
+pi_anaerobe := abs(1-pi_aerobe)
+Q_aero := fnF81(Simplex(pi_aerobe, pi_anaerobe))
+
+#####################
+### Complete model of aerobiosis evolution:
+#####################
+
+pi_aerobe_root ~ dnBeta(alpha,beta)
+pi_anaerobe_root := abs(1-pi_aerobe_root)
+root_frequency := Simplex(pi_aerobe_root, pi_anaerobe_root)
+
+#####################
+### PhyloCTMC:
+#####################
+evo_aero ~ dnPhyloCTMC(tree=tree, rootFrequencies=root_frequency, Q=Q_aero, type="Standard", nSites=n_sites)
+
+#####################
+### Clamping to the simulated data:
+#####################
+evo_aero.clamp(aero_data)
+
+#####################
+### Moves:
+#####################
+
+moves = VectorMoves()
+moves.append( mvScale(root_age, weight=5) )
+moves.append( mvScale(birth, weight=2) )
+moves.append( mvScale(death, weight=2) )
+moves.append( mvNodeTimeSlideUniform(tree, weight=n_branches/2) )
+moves.append( mvSubtreeScale(tree, weight=n_branches/8) )
+moves.append( mvTreeScale(tree, root_age, weight=n_branches/8) )
+moves.append( mvBetaProbability(pi_aerobe))
+moves.append( mvBetaProbability(pi_aerobe_root))
+
+
+#####################
+### Launch the analysis:
+#####################
+# initialize the model object #
+mymodel = model(tree)
+
+# Create a vector of monitors #
+monitors = VectorMonitors()
+# 1. for the full model #
+monitors.append( mnModel(filename="output/homogeneous_model.log", printgen=10) )
+# 2. the tree #
+monitors.append( mnFile(filename="output/homogeneous_model.trees", printgen=10, tree) )
+# 3. and a few select parameters to be printed to the screen #
+monitors.append( mnScreen(printgen=100) )
+
+# Initialize the MCMC object #
+mymcmc = mcmc(mymodel, monitors, moves, nruns=2, combine="mixed")
+
+# Run the MCMC #
+mymcmc.run(generations=20000, tuningInterval=200)
+
+# check the performance of the MCMC/moves
+mymcmc.operatorSummary()
+
+# Read in the tree trace and construct the consensus tree tree #
+trace = readTreeTrace("output/homogeneous_model.trees", treetype="clock")
+trace.setBurnin(0.25)
+
+# Summarize tree trace and the consensus tree to file
+mapTree(trace, file="output/homogeneous_model_map.tre")
+consensusTree(trace, file="output/homogeneous_model_majrule.tre")
+
+# Quit RevBayes #
+q()

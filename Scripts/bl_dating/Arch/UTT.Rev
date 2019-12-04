@@ -1,0 +1,4 @@
+if (!constrain) psi ~ dnUniformTimeTree(rootAge=root_time, taxa=taxa)
+if (constrain) psi ~ dnConstrainedNodeOrder(dnUniformTimeTree(rootAge=root_time, taxa=taxa),constraints)
+
+	extension=extension+"_UTT"

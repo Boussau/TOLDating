@@ -1,0 +1,82 @@
+#read data
+data <- readDiscreteCharacterData("DosReis.fst")
+tree <- readBranchLengthTrees("unrooted.tree")[1]
+
+#attributes of data
+num_taxa <- data.ntaxa()
+num_branches <- 2 * num_taxa - 3
+taxa <- data.taxa()
+
+#MCMC move indicies
+mvi = 1 
+mni = 1
+
+
+#br.len. priors
+for (i in 1:num_branches) {
+   br_lens[i] ~ dnExponential(10.)
+   moves[mvi++] = mvScale(br_lens[i]) 
+}
+
+#tree length
+TL := sum(br_lens)
+
+
+topology ~ dnUniformTopology(taxa)
+
+#fixing the tree topo.
+topology.setValue(tree)
+
+psi := treeAssembly(topology, br_lens)
+
+
+# specify the stationary frequency parameters
+pi_prior <- v(1,1,1,1) 
+pi ~ dnDirichlet(pi_prior)
+moves[mvi++] = mvBetaSimplex(pi, weight=2.0)
+moves[mvi++] = mvDirichletSimplex(pi, weight=1.0)
+
+
+# specify the exchangeability rate parameters
+er_prior <- v(1,1,1,1,1,1)
+er ~ dnDirichlet(er_prior)
+moves[mvi++] = mvBetaSimplex(er, weight=3.0)
+moves[mvi++] = mvDirichletSimplex(er, weight=1.5)
+
+
+# create a deterministic variable for the rate matrix, GTR
+Q := fnGTR(er,pi) 
+
+
+#############################
+# Among Site Rate Variation #
+#############################
+
+# among site rate variation, +Gamma4
+alpha ~ dnUniform( 0, 1E8 )
+alpha.setValue( 1.0 )
+sr := fnDiscretizeGamma( alpha, alpha, 4, false )
+moves[mvi++] = mvScale(alpha, lambda=1.0, weight=2.0)
+
+
+# the probability of a site being invariable, +I
+p_inv ~ dnBeta(1,1)
+moves[mvi++] = mvBetaProbability(p_inv, weight=2.0)
+
+
+seq ~ dnPhyloCTMC(tree=psi, Q=Q, siteRates=sr, pInv=p_inv, type="DNA")
+
+# attach the data
+seq.clamp(data)
+
+mymodel = model(Q)
+
+
+monitors[mni++] = mnModel(filename="DosReis.log", printgen=10)
+monitors[mni++] = mnFile(filename="DosReis.trees", printgen=10, psi)
+monitors[mni++] = mnScreen(printgen=1000, TL,br_lens)
+
+mymcmc = mcmc(mymodel, monitors, moves, nruns=1)
+mymcmc.burnin(generations=1000,tuningInterval=1000)
+mymcmc.run(generations=100000)
+q()

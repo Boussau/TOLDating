@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Command arguments.
+data_fn="$1"
+dist_fn="$2"
+n_comps="$3"
+n_cpus="$4"
+
+udm_model="Poisson+UdmLclr${n_comps}+R4"
+
+cmd_base=(iqtree)
+
+cmd_opts=(-nt "$n_cpus"
+          # -redo -mredo
+          -s "$data_fn"
+          -mdef "${dist_fn}"
+	  -mwopt
+	  -m "${udm_model}"
+	  -fs  "${data_fn}_${n_comps}_pmsf.sitefreq" 
+          -pre "${data_fn}_${n_comps}_pmsf")
+
+"${cmd_base[@]}" "${cmd_opts[@]}"

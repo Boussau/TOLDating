@@ -1,0 +1,7 @@
+treetrace = readTreeTrace("cyano.prior._cons_BD_UGAM_BL.trees", treetype="clock", burnin=0.25)
+
+map_tree = mapTree(treetrace,"cyano.prior._cons_BD_UGAM_BL.tree")
+
+# you may want to quit RevBayes now
+q()
+

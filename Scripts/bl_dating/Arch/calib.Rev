@@ -1,0 +1,12 @@
+#oldest eukaryotes
+max_age_1 <- 4.56
+min_age_1 <- 1.776
+clade_1sp1 <- "Lokiarch"
+clade_1sp2 <- "Kcryp"
+
+clade_1 = clade(clade_1sp1,clade_1sp2)
+age_1 := tmrca(psi, clade_1)
+width_age_prior_1 <- (max_age_1-min_age_1)/2.0
+mean_age_prior_1 <- min_age_1 + width_age_prior_1
+obs_age_1 ~ dnSoftBoundUniformNormal(min=age_1 - width_age_prior_1, max=age_1 + width_age_prior_1, sd=2.5, p=0.95)
+obs_age_1.clamp( mean_age_prior_1 )

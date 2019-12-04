@@ -1,0 +1,64 @@
+########
+# LN #
+########
+log_root_rate_mean <- 0
+
+if (initialize_rates) log_root_rate_mean <- ln(0.4)
+
+log_root_rate ~ dnNormal(log_root_rate_mean,abs(10*log_root_rate_mean)+1)
+
+if (initialize_rates) log_root_rate.setValue(log_root_rate_mean);
+nu ~ dnExp(1.)
+nu.setValue(1)
+
+#moves
+if (add_moves) moves[mvi++] = mvSlide(log_root_rate, delta=0.5, weight=1.0);
+if (add_moves) moves[mvi++] = mvScale(nu, lambda=0.5, weight=10.0);
+
+# use a discretized lognormal
+for (j in n_branches:1)
+{
+    
+    parent_i=tree.parent(j)
+    times[j]=psi.branchLength(j)
+    if (parent_i==tree.nnodes())
+    {
+	log_node_rates[j] ~ dnNorm( log_root_rate , sqrt(nu*times[j]) )	
+    }
+    
+    if (parent_i<tree.nnodes())
+    {       
+        log_node_rates[j] ~ dnNorm(log_node_rates[parent_i],sqrt(nu*times[j]))
+    }
+    
+    #moves
+    if (add_moves) moves[mvi++] = mvSlide(log_node_rates[j], delta=0.5, weight=1.0,tune=true);
+    
+}
+#moves
+if (add_moves) mvVectorSlide(log_node_rates, delta=0.5, weight=1.0,tune=true);
+
+for (j in n_branches:1)
+{
+    
+    parent_i=tree.parent(j)
+    if (parent_i==tree.nnodes())
+    {
+       if (initialize_rates) log_node_rates[j].setValue( ln(0.4) );
+       branch_rates[j] := (exp(log_root_rate)+exp(log_node_rates[j]))/2.       
+    }
+    
+    if (parent_i<tree.nnodes())
+    {
+        if (initialize_rates) log_node_rates[j].setValue(ln(0.4));
+        branch_rates[j] := (exp(log_node_rates[parent_i])+exp(log_node_rates[j]))/2.
+    }
+}
+mean_rt := mean(branch_rates)
+var_rt := var(branch_rates)
+
+extension += "_LNA"
+
+########
+# LN #
+########
