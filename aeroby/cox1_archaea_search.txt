@@ -1,0 +1,97 @@
+GCA_002507085.1_ASM250708v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__UBA168;o__UBA168;f__UBA168;g__UBA168;s__		0
+GCA_002792055.1_ASM279205v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Woesearchaeia;o__CG1-02-33-12;f__CG1-02-33-12;g__CG1-02-33-12;s__		0
+GCA_000830295.1_ASM83029v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Woesearchaeia;o__GW2011-AR15;f__GW2011-AR15;g__GW2011-AR15;s__		0
+GCA_002494765.1_ASM249476v1_genomic_prot.fas	d__Archaea;p__Thermoplasmatota;c__UBA186;o__UBA186;f__UBA186;g__UBA186;s__		0
+UBA8695_prot.fas	None		0
+GCA_002780595.1_ASM278059v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__CG03;o__CG03;f__CG03;g__CG03;s__CG03 sp1		0
+GCA_001940755.1_ASM194075v1_genomic_prot.fas	d__Archaea;p__Asgardarchaeota;c__Heimdallarchaeia;o__UBA460;f__UBA460;g__UBA460;s__		0
+GCA_002779595.1_ASM277959v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__CG07-land;o__CG07-land;f__CG07-land;g__CG07-land;s__CG07-land sp1		0
+GCA_001775995.1_ASM177599v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Bathyarchaeia;o__RBG-16-48-13;f__RBG-16-48-13;g__RBG-16-48-13;s__		0
+GCA_002254745.1_ASM225474v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Thermoprotei;o__ex4484-217-1;f__ex4484-217-1;g__ex4484-217-1;s__		0
+GCA_001940725.1_ASM194072v1_genomic_prot.fas	d__Archaea;p__Asgardarchaeota;c__Heimdallarchaeia;o__LC-2;f__LC-2;g__LC-2;s__		1
+GCA_001918745.1_ASM191874v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Bathyarchaeia;o__40CM-2-53-6;f__40CM-2-53-6;g__40CM-2-53-6;s__		1
+GCA_001717035.1_ASM171703v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Methanomethylicia;o__Methanomethyliales;f__Methanomethyliaceae;g__Methanomethylicus;s__Methanomethylicus mesodigestum		0
+GCA_002503915.1_ASM250391v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Parvarchaeia;o__Parvarchaeales;f__Parvarchaeaceae;g__Parvarchaeum;s__Parvarchaeum acidophilus		0
+GCA_002499005.1_ASM249900v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Nitrososphaeria;o__UBA164;f__UBA164;g__UBA164;s__		0
+GCA_002011165.1_ASM201116v1_genomic_prot.fas	d__Archaea;p__Halobacterota;c__Archaeoglobi;o__JdFR-21;f__JdFR-21;g__JdFR-21;s__		0
+GCA_002505945.1_ASM250594v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Woesearchaeia;o__UBA119;f__UBA119;g__UBA119;s__		0
+GCA_000813245.1_ASM81324v1_genomic_prot.fas	None		0
+GCA_002841105.1_ASM284110v1_genomic_prot.fas	d__Archaea;p__Altiarchaeota;c__Altiarchaeia;o__ltiarchaeales-1;f__ltiarchaeales-1;g__ltiarchaeales-1;s__		0
+GCA_001595945.1_ASM159594v1_genomic_prot.fas	d__Archaea;p__Thermoplasmatota;c__E2;o__DHVEG-1;f__DHVEG-1;g__SM1-50;s__		0
+GCA_001914405.1_ASM191440v1_genomic_prot.fas	d__Archaea;p__Halobacterota;c__Methanonatronarchaeia;o__Methanonatronarchaeales;f__Methanonatronarchaeaceae;g__Methanohalarchaeum;s__Methanohalarchaeum thermophilum		0
+UBA10011_prot.fas	None		0
+GCA_900012635.1_Pyrococcus_chitonophagus_genome_sequence_genomic_prot.fas	None		0
+GCA_002779075.1_ASM277907v1_genomic_prot.fas	d__Archaea;p__Micrarchaeota;c__Iainarchaeia;o__0-14-0-20-30-16;f__0-14-0-20-30-16;g__0-14-0-20-30-16;s__		0
+GCA_002784265.1_ASM278426v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Aenigmarchaeia;o__CG10238-14;f__CG10238-14;g__CG10238-14;s__CG10238-14 sp1		0
+GCA_002762705.1_ASM276270v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Woesearchaeia;o__CG08-08-20-14;f__CG08-08-20-14;g__CG08-08-20-14;s__		0
+UBA8853_prot.fas	None		0
+GCA_000398765.1_ASM39876v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Thermoprotei;o__Geoarchaeales;f__Geoarchaeaceae;g__SCGC-AAA471-B05;s__SCGC-AAA471-B05 sp1		1
+UBA9210_prot.fas	None		0
+GCA_002254415.1_ASM225441v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__CG03;o__ex4484-52;f__ex4484-52;g__ex4484-52;s__		0
+GCA_001940645.1_ASM194064v1_genomic_prot.fas	d__Archaea;p__Asgardarchaeota;c__Heimdallarchaeia;o__LC-3;f__LC-3;g__LC-3;s__		1
+GCA_001896515.1_ASM189651v1_genomic_prot.fas	d__Archaea;p__Micrarchaeota;c__Micrarchaeia;o__Micrarchaeales;f__Micrarchaeaceae;g__Micrarchaeum;s__Micrarchaeum acidiphilum		0
+GCA_001563875.1_ASM156387v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Nanohaloarchaea;o__J07AB43;f__J07AB43;g__B1-Br10-U2g19;s__B1-Br10-U2g19 sp1		0
+GCA_002011125.1_ASM201112v1_genomic_prot.fas	d__Archaea;p__JdFR-18;c__JdFR-18;o__JdFR-18;f__JdFR-18;g__JdFR-18;s__		1
+GCA_000214415.1_ASM21441v1_genomic_prot.fas	None		0
+UBA10117_prot.fas	None		0
+UBA12055_prot.fas	None		0
+UBA10154_prot.fas	None		0
+GCA_001595785.1_ASM159578v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Woesearchaeia;o__SM23-78;f__SM23-78;g__SM23-78;s__		0
+GCA_002505765.1_ASM250576v1_genomic_prot.fas	d__Archaea;p__Euryarchaeota;c__Methanobacteria;o__Methanobacteriales;f__Methanobacteriaceae;g__Methanobacterium_D;s__		0
+GCA_001940655.1_ASM194065v1_genomic_prot.fas	d__Archaea;p__Asgardarchaeota;c__Lokiarchaeia;o__CR-4;f__CR-4;g__CR-4;s__		0
+GCA_002762795.1_ASM276279v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Woesearchaeia;o__ARS49;f__1-14-0-10-37-12;g__1-14-0-10-37-12;s__		0
+GCA_000270325.1_ASM27032v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Nitrososphaeria;o__Caldiarchaeales;f__Caldiarchaeaceae;g__Caldiarchaeum;s__Caldiarchaeum subterraneum		1
+GCA_000019605.1_ASM1960v1_genomic_prot.fas	None		0
+GCA_002785505.1_ASM278550v1_genomic_prot.fas	d__Archaea;p__Altiarchaeota;c__Altiarchaeia;o__Altiarchaeales;f__Altiarchaeaceae;g__Altiarchaeum;s__Altiarchaeum sp1		0
+GCA_002781385.1_ASM278138v1_genomic_prot.fas	d__Archaea;p__Thermoplasmatota;c__CG49143;o__CG49143;f__CG49143;g__CG49143;s__		0
+GCA_001871595.1_ASM187159v1_genomic_prot.fas	d__Archaea;p__Micrarchaeota;c__Micrarchaeia;o__UBA8480;f__UBA97;g__UBA97;s__UBA97 sp1		0
+GCA_000145985.1_ASM14598v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Thermoprotei;o__Desulfurococcales;f__Ignisphaeraceae;g__Ignisphaera;s__Ignisphaera aggregans		0
+GCA_002509385.1_ASM250938v1_genomic_prot.fas	d__Archaea;p__Halobacterota;c__Methanosarcinia;o__UBA590;f__UBA590;g__UBA590;s__		0
+UBA8941_prot.fas	None		0
+GCA_900065925.1_NDEV.embl.gz_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Nitrososphaeria;o__Nitrososphaerales;f__Nitrosopumilaceae;g__Nitrosotalea;s__Nitrosotalea devanaterra		1
+GCA_000011205.1_ASM1120v1_genomic_prot.fas	None		1
+GCA_002503985.1_ASM250398v1_genomic_prot.fas	d__Archaea;p__Thermoplasmatota;c__UBA184;o__UBA184;f__UBA184;g__UBA184;s__		0
+GCA_000970285.1_ASM97028v1_genomic_prot.fas	None		0
+UBA12052_prot.fas	None		0
+GCA_001515205.2_ASM151520v2_genomic_prot.fas	d__Archaea;p__Hadesarchaeota;c__YNP-45;o__YNP-45;f__YNP-45;g__YNP-45;s__		0
+GCA_001766815.1_ASM176681v1_genomic_prot.fas	d__Archaea;p__Halobacterota;c__Methanosarcinia;o__Syntrophoarchaeales;f__Syntrophoarchaeaceae;g__Syntrophoarchaeum;s__Syntrophoarchaeum caldarius		0
+GCA_001552015.1_ASM155201v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Nanoarchaeia;o__Nanoarchaeales;f__Nanopusillaceae;g__Nanopusillus;s__Nanopusillus acidilobi		0
+GCA_000308215.1_ASM30821v1_genomic_prot.fas	None		0
+GCA_002494525.1_ASM249452v1_genomic_prot.fas	d__Archaea;p__UAP2;c__UBA543;o__UBA543;f__UBA55;g__UBA55;s__UBA55 sp1		0
+GCA_000402515.1_ASM40251v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Woesearchaeia;o__SCGC-AAA011-G17;f__SCGC-AAA011-G17;g__SCGC-AAA011-G17;s__SCGC-AAA011-G17 sp1		0
+GCA_000021965.1_ASM2196v1_genomic_prot.fas	None		0
+GCA_001723855.1_ASM172385v1_genomic_prot.fas	d__Archaea;p__Altiarchaeota;c__Altiarchaeia;o__IMC4;f__WOR-SM1-SCG;g__WOR-SM1-SCG;s__		0
+UBA9212_prot.fas	None		0
+GCA_001940665.1_ASM194066v1_genomic_prot.fas	d__Archaea;p__Asgardarchaeota;c__Lokiarchaeia;o__LCB-4;f__LCB-4;g__LCB-4;s__		0
+GCA_002506365.1_ASM250636v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Woesearchaeia;o__UBA583;f__UBA583;g__UBA583;s__		0
+GCA_000230735.3_ASM23073v3_genomic_prot.fas	None		1
+GCA_002490245.1_ASM249024v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Bathyarchaeia;o__B26-1;f__B24-2;g__B24-2;s__		0
+GCA_002011035.1_ASM201103v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Bathyarchaeia;o__B25;f__B25;g__JdFR-11;s__		1
+GCA_000711905.1_ASM71190v1_genomic_prot.fas	None		0
+GCA_002762985.1_ASM276298v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Woesearchaeia;o__UBA12501;f__UBA12501;g__1-14-0-10-44-13;s__		0
+GCA_000247545.1_ASM24754v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Thermoprotei;o__Thermoproteales;f__Thermoproteaceae;g__Pyrobaculum;s__Pyrobaculum oguniense		1
+GCA_002499085.1_ASM249908v1_genomic_prot.fas	d__Archaea;p__Thermoplasmatota;c__Thermoplasmata_A;o__SG8-5;f__SG8-5;g__UBA147;s__UBA147 sp1		0
+GCA_002503015.1_ASM250301v1_genomic_prot.fas	d__Archaea;p__Thermoplasmatota;c__MGII;o__MGII;f__MGIIA;g__UBA618;s__		1
+UBA10200_prot.fas	None		0
+GCA_000063445.1_ASM6344v1_genomic_prot.fas	None		0
+GCA_000025665.1_ASM2566v1_genomic_prot.fas	None		0
+GCA_002763335.1_ASM276333v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Woesearchaeia;o__UBA10216;f__CG1-02-47-18;g__CG1-02-47-18;s__		0
+GCA_002506485.1_ASM250648v1_genomic_prot.fas	d__Archaea;p__Thermoplasmatota;c__MGII;o__MGIII;f__CG-Epi1;g__CG-Epi1;s__CG-Epi1 sp3		1
+GCA_002254565.1_ASM225456v1_genomic_prot.fas	d__Archaea;p__Altiarchaeota;c__Altiarchaeia;o__SCGC-AAA252-I15;f__ex4484-2;g__ex4484-2;s__		0
+GCA_002255045.1_ASM225504v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Nitrososphaeria;o__ex4484-205;f__ex4484-205;g__ex4484-205;s__		0
+GCA_002838995.1_ASM283899v1_genomic_prot.fas	d__Archaea;p__Thermoplasmatota;c__E2;o__hermoplasmata-2;f__hermoplasmata-2;g__hermoplasmata-2;s__		0
+GCA_002779235.1_ASM277923v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Woesearchaeia;o__0-14-0-80-44-23;f__0-14-0-80-44-23;g__0-14-0-80-44-23;s__		0
+GCA_002255025.1_ASM225502v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Bathyarchaeia;o__ex4484-135;f__ex4484-135;g__ex4484-135;s__		0
+GCA_002763265.1_ASM276326v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__1-14-0-10-43-11;o__1-14-0-10-43-11;f__1-14-0-10-43-11;g__1-14-0-10-43-11;s__		0
+GCA_000025505.1_ASM2550v1_genomic_prot.fas	None		1
+UBA12494_prot.fas	None		0
+GCA_002825515.1_ASM282551v1_genomic_prot.fas	d__Archaea;p__Asgardarchaeota;c__Lokiarchaeia;o__Thorarchaeales;f__Thorarchaeaceae;g__SMTZ1-45;s__		0
+GCA_001593865.1_ASM159386v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Bathyarchaeia;o__B24;f__B24;g__B24;s__		0
+UBA9653_prot.fas	None		0
+GCA_000011185.1_ASM1118v1_genomic_prot.fas	None		0
+GCA_002495235.1_ASM249523v1_genomic_prot.fas	d__Archaea;p__Thermoplasmatota;c__UBA186;o__UBA287;f__UBA287;g__UBA287;s__		0
+GCA_001509375.1_ASM150937v1_genomic_prot.fas	d__Archaea;p__Halobacterota;c__Methanosarcinia;o__Methanotrichales;f__Methanotrichaceae;g__Methanothrix_A;s__Methanothrix_A harundinacea		0
+GCA_002011075.1_ASM201107v1_genomic_prot.fas	d__Archaea;p__Crenarchaeota;c__Nitrososphaeria;o__JdFR-13;f__JdFR-13;g__JdFR-13;s__		1
+GCA_001587575.1_ASM158757v1_genomic_prot.fas	d__Archaea;p__Euryarchaeota;c__Thermococci;o__Methanofastidiosales;f__Methanofastidiosaceae;g__Methanofastidiosum;s__		0
+GCA_001871535.1_ASM187153v1_genomic_prot.fas	d__Archaea;p__Micrarchaeota;c__Micrarchaeia;o__UBA10214;f__UBA8471;g__UBA8471;s__UBA8471 sp1		0
+GCA_002792115.1_ASM279211v1_genomic_prot.fas	d__Archaea;p__Nanoarchaeota;c__Woesearchaeia;o__GW2011-AR9;f__GW2011-AR9;g__um-filter-33-13;s__		0
