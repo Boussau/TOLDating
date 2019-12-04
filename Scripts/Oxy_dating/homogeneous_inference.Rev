@@ -5,7 +5,7 @@
 
 aero_data <- readDiscreteCharacterData("TestData/simulated_Data.nex")
 
-n_sites = 100
+n_sites = 2000
 
 taxa = aero_data.taxa()
 n_taxa = taxa.size()
@@ -25,6 +25,7 @@ tree ~ dnBDP(lambda=birth, mu=death, rho=rho, rootAge=root_age, taxa=taxa)
 
 topo <- readTrees ("TestData/simulated_Tree.nex")[1]
 tree.setValue(topo)
+root_age.setValue(topo.rootAge()) # We set the root age to the truth
 
 
 #####################
@@ -46,10 +47,13 @@ pi_aerobe_root ~ dnBeta(alpha,beta)
 pi_anaerobe_root := abs(1-pi_aerobe_root)
 root_frequency := Simplex(pi_aerobe_root, pi_anaerobe_root)
 
+# Rate of evolution for the molecular clock
+branchRates ~ dnExponential(10)
+
 #####################
 ### PhyloCTMC:
 #####################
-evo_aero ~ dnPhyloCTMC(tree=tree, rootFrequencies=root_frequency, Q=Q_aero, type="Standard", nSites=n_sites)
+evo_aero ~ dnPhyloCTMC(tree=tree, rootFrequencies=root_frequency, Q=Q_aero, branchRates=branchRates, type="Standard", nSites=n_sites)
 
 #####################
 ### Clamping to the simulated data:
@@ -61,14 +65,17 @@ evo_aero.clamp(aero_data)
 #####################
 
 moves = VectorMoves()
-moves.append( mvScale(root_age, weight=5) )
 moves.append( mvScale(birth, weight=2) )
 moves.append( mvScale(death, weight=2) )
 moves.append( mvNodeTimeSlideUniform(tree, weight=n_branches/2) )
 moves.append( mvSubtreeScale(tree, weight=n_branches/8) )
-moves.append( mvTreeScale(tree, root_age, weight=n_branches/8) )
 moves.append( mvBetaProbability(pi_aerobe))
 moves.append( mvBetaProbability(pi_aerobe_root))
+moves.append( mvScale(branchRates, weight=10) )
+
+# The root age is fixed:
+# moves.append( mvTreeScale(tree, root_age, weight=n_branches/8) )
+# moves.append( mvScale(root_age, weight=5) )
 
 
 #####################
@@ -102,6 +109,19 @@ trace.setBurnin(0.25)
 # Summarize tree trace and the consensus tree to file
 mapTree(trace, file="output/homogeneous_model_map.tre")
 consensusTree(trace, file="output/homogeneous_model_majrule.tre")
+
+
+# run 1:
+trace = readTreeTrace("output/homogeneous_model_run_1.trees", treetype="clock")
+trace.setBurnin(0.25)
+mapTree(trace, file="output/homogeneous_model_run_1_map.tre")
+
+# run 2:
+trace = readTreeTrace("output/homogeneous_model_run_2.trees", treetype="clock")
+trace.setBurnin(0.25)
+mapTree(trace, file="output/homogeneous_model_run_2_map.tre")
+
+
 
 # Quit RevBayes #
 q()

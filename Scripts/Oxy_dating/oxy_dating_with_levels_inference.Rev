@@ -7,7 +7,7 @@ times_fn = "TestData/timeBoundaries.txt"
 levels_fn = "TestData/pO2_levels.txt"
 aero_data <- readDiscreteCharacterData("TestData/simulated_Data.nex")
 
-n_sites = 100
+n_sites = 2000
 taxa = aero_data.taxa()
 n_taxa = taxa.size()
 n_branches = 2 * n_taxa - 2
@@ -26,6 +26,7 @@ tree ~ dnBDP(lambda=birth, mu=death, rho=rho, rootAge=root_age, taxa=taxa)
 
 topo <- readTrees ("TestData/simulated_Tree.nex")[1]
 tree.setValue(topo)
+root_age.setValue(topo.rootAge()) # We set the root age to the truth
 
 
 #####################
@@ -43,30 +44,41 @@ for (i in 1:n_epochs) {
 ### Epoch-specific models of aerobiosis evolution
 #####################
 
-alpha ~ dnExp(1)
-beta ~ dnExp(1)
+
+# We use a logistic function to specify the probability of being aerobe based on O2 partial pressures at a given time point:
+# f(x) = L/(1+exp(-k*(x-x0)))
+# We have : L: the maximum value, i.e. 1.0
+# k: the steepness of the curve
+# x0: the sigmoid's midpoint
+
+L <- 1.0
+k ~ dnExponential(1)
+x0~ dnUniform(0, 100)
 
 for (i in 1:n_epochs) {
-  pi_aerobe[i] ~ dnBeta(alpha*epoch_levels[i],beta*epoch_levels[i])
+  pi_aerobe[i] := L/(1+exp(-k*(epoch_levels[i]-x0)))
   pi_anaerobe[i] := abs(1-pi_aerobe[i])
   Q_aero[i] := fnF81(Simplex(pi_aerobe[i], pi_anaerobe[i]))
 }
 
+
 #####################
 ### Complete model of aerobiosis evolution:
 #####################
-
-pi_aerobe_root ~ dnBeta(alpha,beta)
+pi_aerobe_root := pi_aerobe[1]
 pi_anaerobe_root := abs(1-pi_aerobe_root)
 root_frequency := Simplex(pi_aerobe_root, pi_anaerobe_root)
 Q_aero_epoch := fnEpoch(Q=Q_aero, times=epoch_times, rates=rep(1.0,n_epochs))
 
 Q_aero_epoch # printing the model on stdout
 
+# Rate of evolution for the molecular clock
+branchRates ~ dnExponential(10)
+
 #####################
 ### PhyloCTMC:
 #####################
-evo_aero ~ dnPhyloCTMC(tree=tree, rootFrequencies=root_frequency, Q=Q_aero_epoch, type="Standard", nSites=n_sites)
+evo_aero ~ dnPhyloCTMC(tree=tree, rootFrequencies=root_frequency, Q=Q_aero_epoch, branchRates=branchRates, type="Standard", nSites=n_sites)
 
 #####################
 ### Clamping to the simulated data:
@@ -78,20 +90,17 @@ evo_aero.clamp(aero_data)
 #####################
 
 moves = VectorMoves()
-moves.append( mvScale(root_age, weight=5) )
 moves.append( mvScale(birth, weight=2) )
 moves.append( mvScale(death, weight=2) )
 moves.append( mvNodeTimeSlideUniform(tree, weight=n_branches/2) )
 moves.append( mvSubtreeScale(tree, weight=n_branches/8) )
-moves.append( mvTreeScale(tree, root_age, weight=n_branches/8) )
-moves.append( mvScale(alpha, weight=10) )
-moves.append( mvScale(beta, weight=10) )
-moves.append( mvBetaProbability(pi_aerobe[1]))
-moves.append( mvBetaProbability(pi_aerobe[2]))
-moves.append( mvBetaProbability(pi_aerobe[3]))
-moves.append( mvBetaProbability(pi_aerobe[4]))
-moves.append( mvBetaProbability(pi_aerobe_root))
+moves.append( mvScale(k, weight=10) )
+moves.append( mvScale(x0, weight=10) )
+moves.append( mvScale(branchRates, weight=10) )
 
+# The root age is fixed:
+# moves.append( mvTreeScale(tree, root_age, weight=n_branches/8) )
+# moves.append( mvScale(root_age, weight=5) )
 
 #####################
 ### Launch the analysis:
@@ -124,6 +133,17 @@ trace.setBurnin(0.25)
 # Summarize tree trace and the consensus tree to file
 mapTree(trace, file="output/correct_model_map.tre")
 consensusTree(trace, file="output/correct_model_majrule.tre")
+
+# run 1:
+trace = readTreeTrace("output/correct_model_run_1.trees", treetype="clock")
+trace.setBurnin(0.25)
+mapTree(trace, file="output/correct_model_run_1_map.tre")
+
+# run 2:
+trace = readTreeTrace("output/correct_model_run_2.trees", treetype="clock")
+trace.setBurnin(0.25)
+mapTree(trace, file="output/correct_model_run_2_map.tre")
+
 
 # Quit RevBayes #
 q()

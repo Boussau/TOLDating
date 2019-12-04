@@ -11,7 +11,7 @@ input_tree <- readTrees("TestData/extantTree_1.dnd")[1]
 taxa = input_tree.taxa()
 n_taxa = taxa.size()
 n_branches = 2 * n_taxa - 2
-n_sites = 100
+n_sites = 2000
 
 #####################
 ### Tree model
@@ -46,20 +46,28 @@ for (i in 1:n_epochs) {
 ### Epoch-specific models of aerobiosis evolution
 #####################
 
-alpha ~ dnExp(1)
-beta ~ dnExp(1)
+# We use a logistic function to specify the probability of being aerobe based on O2 partial pressures at a given time point:
+# f(x) = L/(1+exp(-k*(x-x0)))
+# We have : L: the maximum value, i.e. 1.0
+# k: the steepness of the curve
+# x0: the sigmoid's midpoint
+
+L <- 1.0
+k <- 0.1
+x0 <- 30
 
 for (i in 1:n_epochs) {
-  pi_aerobe[i] ~ dnBeta(alpha*epoch_levels[i],beta*epoch_levels[i])
+  pi_aerobe[i] := L/(1+exp(-k*(epoch_levels[i]-x0)))
   pi_anaerobe[i] := abs(1-pi_aerobe[i])
   Q_aero[i] := fnF81(Simplex(pi_aerobe[i], pi_anaerobe[i]))
 }
 
 #####################
-### Complete model of aerobiosis evolution:
+### Complete model of aerobiosis evolution
 #####################
 
-pi_aerobe_root ~ dnBeta(alpha,beta)
+# We assume the aerobe probability at the root agrees with the aerobe probability in the first epoch
+pi_aerobe_root := pi_aerobe[1]
 pi_anaerobe_root := abs(1-pi_aerobe_root)
 root_frequency := Simplex(pi_aerobe_root, pi_anaerobe_root)
 Q_aero_epoch := fnEpoch(Q=Q_aero, times=epoch_times, rates=rep(1.0,n_epochs))
@@ -69,7 +77,8 @@ Q_aero_epoch # printing the model on stdout
 #####################
 ### PhyloCTMC:
 #####################
-evo_aero ~ dnPhyloCTMC(tree=tree, rootFrequencies=root_frequency, Q=Q_aero_epoch, type="Standard", nSites=n_sites)
+branchRates <- 0.02
+evo_aero ~ dnPhyloCTMC(tree=tree, rootFrequencies=root_frequency, Q=Q_aero_epoch, branchRates=branchRates, type="Standard", nSites=n_sites)
 writeNexus("TestData/simulated_Data.nex", evo_aero) # Saving the data to file
 writeNexus("TestData/simulated_Tree.nex", tree) # Saving the tree to file
 
@@ -77,10 +86,10 @@ writeNexus("TestData/simulated_Tree.nex", tree) # Saving the tree to file
 #####################
 ### Outputting the parameter values
 #####################
-print("\t\talpha : ")
-alpha
-print("\t\tbeta : ")
-beta
+print("\t\tk : ")
+   k
+print("\t\tx0 : ")
+   x0
 print("\t\tQ_aeros : ")
    Q_aero[1]
    Q_aero[2]
@@ -99,5 +108,17 @@ print("\t\tpi_aerobe_root : ")
    pi_aerobe_root
 print("\t\tRoot age : ")
    root_age
+print("\t\tRate of evolution : ")
+   branchRates
 print("\t\ttree : ")
    tree
+
+#####################
+### Outputting statistics
+#####################
+print("\t\tMin pairwise difference : ")
+   evo_aero.minPairwiseDifference()
+print("\t\tMax pairwise difference : ")
+   evo_aero.maxPairwiseDifference()
+print("\t\tNumber of invariant sites : ")
+   evo_aero.getNumInvariantSites()
