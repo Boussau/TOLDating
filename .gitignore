@@ -1,4 +1,10 @@
+# Big files
 Bacteria/Data/bac_metadata_r86.tsv
+*.mldist
+
+# SLURM error and log files
+*.err
+*.out
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
