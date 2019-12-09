@@ -1,0 +1,1044 @@
+IQ-TREE 1.7-beta12 built May 23 2019
+
+Input file name: combined_concatenate_v2_linsi_bmge.fas
+Type of analysis: tree reconstruction
+Random seed number: 369771
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 478 sequences with 4648 amino-acid sites
+Number of constant sites: 73 (= 1.57057% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 73 (= 1.57057% of all sites)
+Number of parsimony informative sites: 4477
+Number of distinct site patterns: 4647
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+F+R4
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0914
+  pi(R) = 0.0687
+  pi(N) = 0.0304
+  pi(D) = 0.0427
+  pi(C) = 0.0105
+  pi(Q) = 0.0287
+  pi(E) = 0.0573
+  pi(G) = 0.0844
+  pi(H) = 0.0200
+  pi(I) = 0.0855
+  pi(L) = 0.0909
+  pi(K) = 0.0673
+  pi(M) = 0.0258
+  pi(F) = 0.0307
+  pi(P) = 0.0381
+  pi(S) = 0.0485
+  pi(T) = 0.0535
+  pi(W) = 0.0051
+  pi(Y) = 0.0228
+  pi(V) = 0.0977
+
+Model of rate heterogeneity: FreeRate with 4 categories
+Site proportion and rates:  (0.1818,0.1204) (0.2954,0.4819) (0.3250,1.0970) (0.1978,2.4228)
+
+ Category  Relative_rate  Proportion
+  1         0.1204         0.1818
+  2         0.4819         0.2954
+  3         1.0970         0.3250
+  4         2.4228         0.1978
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2138821.9706 (s.e. 17927.5463)
+Unconstrained log-likelihood (without tree): -39247.2195
+Number of free parameters (#branches + #model parameters): 978
+Akaike information criterion (AIC) score: 4279599.9412
+Corrected Akaike information criterion (AICc) score: 4280121.8610
+Bayesian information criterion (BIC) score: 4285902.3612
+
+Total tree length (sum of branch lengths): 167.5843
+Sum of internal branch lengths: 24.7520 (14.7699% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Acanthamoeba-castellanii.ap.cs.fa' is drawn at root
+
++--Acanthamoeba-castellanii.ap.cs.fa
+|
+|                    +--Acanthocystis-sp.ap.cs.fa
+|                 +--|
+|                 |  |  +--Raineriophrys-erinaceoides.ap.cs.fa
+|                 |  +--|
+|                 |     +--Raphidiophrys-heterophryoidea.ap.cs.fa
+|              +--|
+|              |  +--Choanocystis-sp.ap.cs.fa
+|           +--|
+|           |  |        +--Ancyromonas-sigmoides.ap.cs.fa
+|           |  |     +--|
+|           |  |     |  +--Nutomonas-longa.ap.cs.fa
+|           |  |  +--|
+|           |  |  |  +--Fabomonas-tropica.ap.cs.fa
+|           |  +--|
+|           |     +--Gefionella-okellyi.ap.cs.fa
+|        +--|
+|        |  |        +--Ancoracysta-twista.ap.cs.fa
+|        |  |     +--|
+|        |  |     |  +--Cyanophora-paradoxa.ap.cs.fa
+|        |  |  +--|
+|        |  |  |  |     +--Cryptophyceae-sp.ap.cs.fa
+|        |  |  |  |  +--|
+|        |  |  |  |  |  +--Guillardia-theta.ap.cs.fa
+|        |  |  |  +--|
+|        |  |  |     +--Goniomonas-avonlea.ap.cs.fa
+|        |  +--|
+|        |     |  +--Diphylleia-rotans.ap.cs.fa
+|        |     +--|
+|        |        +--Rigifila-ramosa.ap.cs.fa
+|     +--|
+|     |  |                             +-----Aduncisulcus-paluster.ap.cs.fa
+|     |  |                          +--|
+|     |  |                          |  |  +----Chilomastix-cuspidata.ap.cs.fa
+|     |  |                          |  +--|
+|     |  |                          |     |     +--Dysnectes-brevis.ap.cs.fa
+|     |  |                          |     |  +--|
+|     |  |                          |     |  |  +------Trepomonas-sp.ap.cs.fa
+|     |  |                          |     +--|
+|     |  |                          |        +----Kipferlia-bialata.ap.cs.fa
+|     |  |                       +--|
+|     |  |                       |  +---Ergobibamus-cyprinoides.ap.cs.fa
+|     |  |                    +--|
+|     |  |                    |  +----Carpediemonas-membranifera.ap.cs.fa
+|     |  |                 +--|
+|     |  |                 |  |     +--Elphidium-margaritaceum.ap.cs.fa
+|     |  |                 |  |  +--|
+|     |  |                 |  |  |  +--Reticulomyxa-filosa.ap.cs.fa
+|     |  |                 |  +--|
+|     |  |                 |     |                                                                         +--GCA_000009905.1_ASM990v1_genomic_prot.fas
+|     |  |                 |     |                                                                      +--|
+|     |  |                 |     |                                                                      |  |  +--GCA_000183545.3_ASM18354v3_genomic_prot.fas
+|     |  |                 |     |                                                                      |  +--|
+|     |  |                 |     |                                                                      |     +--GCA_000237975.1_ASM23797v1_genomic_prot.fas
+|     |  |                 |     |                                                                   +--|
+|     |  |                 |     |                                                                   |  |  +--GCA_002375925.1_ASM237592v1_genomic_prot.fas
+|     |  |                 |     |                                                                   |  +--|
+|     |  |                 |     |                                                                   |     +--GCA_002376005.1_ASM237600v1_genomic_prot.fas
+|     |  |                 |     |                                                                +--|
+|     |  |                 |     |                                                                |  |              +--GCA_000020005.1_ASM2000v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |           +--|
+|     |  |                 |     |                                                                |  |           |  +--GCA_001513245.1_ASM151324v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |        +--|
+|     |  |                 |     |                                                                |  |        |  |              +--GCA_000426545.1_ASM42654v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |        |  |           +--|
+|     |  |                 |     |                                                                |  |        |  |           |  +--GCA_001050455.1_ASM105045v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |        |  |        +--|
+|     |  |                 |     |                                                                |  |        |  |        |  +--GCA_001730225.1_ASM173022v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |        |  |     +--|
+|     |  |                 |     |                                                                |  |        |  |     |  +--GCA_000472905.1_ASM47290v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |        |  |  +--|
+|     |  |                 |     |                                                                |  |        |  |  |  +--GCA_900111575.1_IMG-taxon_2602042032_annotated_assembly_genomic_prot.fas
+|     |  |                 |     |                                                                |  |        |  +--|
+|     |  |                 |     |                                                                |  |        |     +---GCA_002292025.1_ASM229202v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |     +--|
+|     |  |                 |     |                                                                |  |     |  +--GCA_001513125.1_ASM151312v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |  +--|
+|     |  |                 |     |                                                                |  |  |  |              +--GCA_000092945.1_ASM9294v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |  |  |           +--|
+|     |  |                 |     |                                                                |  |  |  |           |  +--GCA_000214435.1_ASM21443v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |  |  |        +--|
+|     |  |                 |     |                                                                |  |  |  |        |  +--GCA_000746025.1_ASM74602v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |  |  |     +--|
+|     |  |                 |     |                                                                |  |  |  |     |  |     +--GCA_000987045.1_ASM98704v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |  |  |     |  |  +--|
+|     |  |                 |     |                                                                |  |  |  |     |  |  |  +--GCA_002224645.1_ASM222464v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |  |  |     |  +--|
+|     |  |                 |     |                                                                |  |  |  |     |     +--GCA_001936615.1_ASM193661v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |  |  |  +--|
+|     |  |                 |     |                                                                |  |  |  |  |  |  +--GCA_001570625.1_ASM157062v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |  |  |  |  +--|
+|     |  |                 |     |                                                                |  |  |  |  |     +--GCA_002418765.1_ASM241876v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  |  |  +--|
+|     |  |                 |     |                                                                |  |  |     +---GCA_000230275.1_ASM23027v1_genomic_prot.fas
+|     |  |                 |     |                                                                |  +--|
+|     |  |                 |     |                                                                |     |     +--GCA_000147695.3_ASM14769v3_genomic_prot.fas
+|     |  |                 |     |                                                                |     |  +--|
+|     |  |                 |     |                                                                |     |  |  |  +--GCA_000213255.1_ASM21325v1_genomic_prot.fas
+|     |  |                 |     |                                                                |     |  |  +--|
+|     |  |                 |     |                                                                |     |  |     +--GCA_000237085.1_ASM23708v1_genomic_prot.fas
+|     |  |                 |     |                                                                |     +--|
+|     |  |                 |     |                                                                |        +--GCA_002376045.1_ASM237604v1_genomic_prot.fas
+|     |  |                 |     |                                                             +--|
+|     |  |                 |     |                                                             |  |  +---GCA_000517025.1_ASM51702v1_genomic_prot.fas
+|     |  |                 |     |                                                             |  +--|
+|     |  |                 |     |                                                             |     |           +--GCA_001028815.1_ASM102881v1_genomic_prot.fas
+|     |  |                 |     |                                                             |     |        +--|
+|     |  |                 |     |                                                             |     |        |  +--GCA_001512545.1_ASM151254v1_genomic_prot.fas
+|     |  |                 |     |                                                             |     |     +--|
+|     |  |                 |     |                                                             |     |     |  +--GCA_002408345.1_ASM240834v1_genomic_prot.fas
+|     |  |                 |     |                                                             |     |  +--|
+|     |  |                 |     |                                                             |     |  |  |     +--GCA_001512605.1_ASM151260v1_genomic_prot.fas
+|     |  |                 |     |                                                             |     |  |  |  +--|
+|     |  |                 |     |                                                             |     |  |  |  |  +--GCA_002409965.1_ASM240996v1_genomic_prot.fas
+|     |  |                 |     |                                                             |     |  |  +--|
+|     |  |                 |     |                                                             |     |  |     +--GCA_001512905.1_ASM151290v1_genomic_prot.fas
+|     |  |                 |     |                                                             |     +--|
+|     |  |                 |     |                                                             |        +---GCA_003501365.1_ASM350136v1_genomic_prot.fas
+|     |  |                 |     |                                                          +--|
+|     |  |                 |     |                                                          |  |                    +---GCA_000017805.1_ASM1780v1_genomic_prot.fas
+|     |  |                 |     |                                                          |  |                 +--|
+|     |  |                 |     |                                                          |  |                 |  +-----GCA_002702065.1_ASM270206v1_genomic_prot.fas
+|     |  |                 |     |                                                          |  |              +--|
+|     |  |                 |     |                                                          |  |              |  |     +--GCA_000702505.1_ASM70250v1_genomic_prot.fas
+|     |  |                 |     |                                                          |  |              |  |  +--|
+|     |  |                 |     |                                                          |  |              |  |  |  +----GCA_002413265.1_ASM241326v1_genomic_prot.fas
+|     |  |                 |     |                                                          |  |              |  +--|
+|     |  |                 |     |                                                          |  |              |     |  +---GCA_002347925.1_ASM234792v1_genomic_prot.fas
+|     |  |                 |     |                                                          |  |              |     +--|
+|     |  |                 |     |                                                          |  |              |        +-----GCA_002404055.1_ASM240405v1_genomic_prot.fas
+|     |  |                 |     |                                                          |  |           +--|
+|     |  |                 |     |                                                          |  |           |  |  +-----GCA_001010485.1_ASM101048v1_genomic_prot.fas
+|     |  |                 |     |                                                          |  |           |  +--|
+|     |  |                 |     |                                                          |  |           |     +---GCA_002436065.1_ASM243606v1_genomic_prot.fas
+|     |  |                 |     |                                                          |  |        +--|
+|     |  |                 |     |                                                          |  |        |  |  +----GCA_001795345.1_ASM179534v1_genomic_prot.fas
+|     |  |                 |     |                                                          |  |        |  +--|
+|     |  |                 |     |                                                          |  |        |     +----GCA_003446775.1_ASM344677v1_genomic_prot.fas
+|     |  |                 |     |                                                          |  |     +--|
+|     |  |                 |     |                                                          |  |     |  |  +----GCA_002407045.1_ASM240704v1_genomic_prot.fas
+|     |  |                 |     |                                                          |  |     |  +--|
+|     |  |                 |     |                                                          |  |     |     +----GCA_002413145.1_ASM241314v1_genomic_prot.fas
+|     |  |                 |     |                                                          |  |  +--|
+|     |  |                 |     |                                                          |  |  |  +----GCA_001443485.1_ASM144348v1_genomic_prot.fas
+|     |  |                 |     |                                                          |  +--|
+|     |  |                 |     |                                                          |     |           +---GCA_001442985.1_ASM144298v1_genomic_prot.fas
+|     |  |                 |     |                                                          |     |        +--|
+|     |  |                 |     |                                                          |     |        |  +---GCA_001457975.1_P488_genomic_prot.fas
+|     |  |                 |     |                                                          |     |     +--|
+|     |  |                 |     |                                                          |     |     |  +--GCA_003450055.1_ASM345005v1_genomic_prot.fas
+|     |  |                 |     |                                                          |     |  +--|
+|     |  |                 |     |                                                          |     |  |  |     +-----GCA_002409445.1_ASM240944v1_genomic_prot.fas
+|     |  |                 |     |                                                          |     |  |  |  +--|
+|     |  |                 |     |                                                          |     |  |  |  |  +----GCA_002784985.1_ASM278498v1_genomic_prot.fas
+|     |  |                 |     |                                                          |     |  |  +--|
+|     |  |                 |     |                                                          |     |  |     +-----GCA_002411015.1_ASM241101v1_genomic_prot.fas
+|     |  |                 |     |                                                          |     +--|
+|     |  |                 |     |                                                          |        |  +---GCA_002410925.1_ASM241092v1_genomic_prot.fas
+|     |  |                 |     |                                                          |        +--|
+|     |  |                 |     |                                                          |           +---GCA_002779575.1_ASM277957v1_genomic_prot.fas
+|     |  |                 |     |                                                       +--|
+|     |  |                 |     |                                                       |  |           +----GCA_000024265.1_ASM2426v1_genomic_prot.fas
+|     |  |                 |     |                                                       |  |        +--|
+|     |  |                 |     |                                                       |  |        |  +--GCA_001871795.1_ASM187179v1_genomic_prot.fas
+|     |  |                 |     |                                                       |  |     +--|
+|     |  |                 |     |                                                       |  |     |  |  +----GCA_000688095.1_ASM68809v1_genomic_prot.fas
+|     |  |                 |     |                                                       |  |     |  +--|
+|     |  |                 |     |                                                       |  |     |     +----GCA_900175965.1_IMG-taxon_2505679031_annotated_assembly_genomic_prot.fas
+|     |  |                 |     |                                                       |  |  +--|
+|     |  |                 |     |                                                       |  |  |  |     +----GCA_000519205.1_ASM51920v1_genomic_prot.fas
+|     |  |                 |     |                                                       |  |  |  |  +--|
+|     |  |                 |     |                                                       |  |  |  |  |  |  +---GCA_001023575.1_ASM102357v1_genomic_prot.fas
+|     |  |                 |     |                                                       |  |  |  |  |  +--|
+|     |  |                 |     |                                                       |  |  |  |  |     +---GCA_002405235.1_ASM240523v1_genomic_prot.fas
+|     |  |                 |     |                                                       |  |  |  +--|
+|     |  |                 |     |                                                       |  |  |     +---GCA_001768645.1_ASM176864v1_genomic_prot.fas
+|     |  |                 |     |                                                       |  +--|
+|     |  |                 |     |                                                       |     +------GCA_002304935.1_ASM230493v1_genomic_prot.fas
+|     |  |                 |     |                                                    +--|
+|     |  |                 |     |                                                    |  |                                                     +---GCA_000012665.1_ASM1266v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                                  +--|
+|     |  |                 |     |                                                    |  |                                                  |  +--GCA_000143965.1_ASM14396v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                               +--|
+|     |  |                 |     |                                                    |  |                                               |  +---GCA_001914235.1_ASM191423v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                            +--|
+|     |  |                 |     |                                                    |  |                                            |  |     +--GCA_000217795.1_ASM21779v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                            |  |  +--|
+|     |  |                 |     |                                                    |  |                                            |  |  |  +--GCA_001687335.1_ASM168733v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                            |  +--|
+|     |  |                 |     |                                                    |  |                                            |     +--GCA_001577525.1_ASM157752v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                         +--|
+|     |  |                 |     |                                                    |  |                                         |  |  +--GCA_000195295.1_ASM19529v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                         |  +--|
+|     |  |                 |     |                                                    |  |                                         |     |  +---GCA_002798115.1_ASM279811v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                         |     +--|
+|     |  |                 |     |                                                    |  |                                         |        +--GCA_900129305.1_IMG-taxon_2582580750_annotated_assembly_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                      +--|
+|     |  |                 |     |                                                    |  |                                      |  |  +---GCA_000266945.1_ASM26694v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                      |  +--|
+|     |  |                 |     |                                                    |  |                                      |     |  +---GCA_000526155.1_ASM52615v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                      |     +--|
+|     |  |                 |     |                                                    |  |                                      |        +--GCA_002010915.1_ASM201091v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                   +--|
+|     |  |                 |     |                                                    |  |                                   |  +----GCA_000512235.1_ASM51223v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                +--|
+|     |  |                 |     |                                                    |  |                                |  |        +--GCA_000012925.1_ASM1292v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                |  |     +--|
+|     |  |                 |     |                                                    |  |                                |  |     |  +--GCA_002383495.1_ASM238349v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                |  |  +--|
+|     |  |                 |     |                                                    |  |                                |  |  |  |     +--GCA_001798165.1_ASM179816v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                |  |  |  |  +--|
+|     |  |                 |     |                                                    |  |                                |  |  |  |  |  +---GCA_001798595.1_ASM179859v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                |  |  |  +--|
+|     |  |                 |     |                                                    |  |                                |  |  |     +--GCA_002327985.1_ASM232798v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                |  +--|
+|     |  |                 |     |                                                    |  |                                |     |  +---GCA_001798805.1_ASM179880v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                                |     +--|
+|     |  |                 |     |                                                    |  |                                |        +---GCA_001873935.1_ASM187393v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                             +--|
+|     |  |                 |     |                                                    |  |                             |  |  +----GCA_001797815.1_ASM179781v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                             |  +--|
+|     |  |                 |     |                                                    |  |                             |     |  +----GCA_001799195.1_ASM179919v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                             |     +--|
+|     |  |                 |     |                                                    |  |                             |        +------GCA_002347965.1_ASM234796v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          +--|
+|     |  |                 |     |                                                    |  |                          |  |                       +--GCA_000014865.1_ASM1486v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |                    +--|
+|     |  |                 |     |                                                    |  |                          |  |                    |  +---GCA_000300235.2_ASM30023v2_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |                 +--|
+|     |  |                 |     |                                                    |  |                          |  |                 |  |     +--GCA_000347995.1_ASM34799v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |                 |  |  +--|
+|     |  |                 |     |                                                    |  |                          |  |                 |  |  |  +---GCA_002699105.1_ASM269910v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |                 |  +--|
+|     |  |                 |     |                                                    |  |                          |  |                 |     +----GCA_001895085.1_ASM189508v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |              +--|
+|     |  |                 |     |                                                    |  |                          |  |              |  |  +-----GCA_002310995.1_ASM231099v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |              |  +--|
+|     |  |                 |     |                                                    |  |                          |  |              |     +--------GCA_003511165.1_ASM351116v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |           +--|
+|     |  |                 |     |                                                    |  |                          |  |           |  |  +------GCA_002344365.1_ASM234436v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |           |  +--|
+|     |  |                 |     |                                                    |  |                          |  |           |     +----GCA_900177345.1_IMG-taxon_2708742533_annotated_assembly_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |        +--|
+|     |  |                 |     |                                                    |  |                          |  |        |  |  +------GCA_001469005.2_ASM146900v2_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |        |  +--|
+|     |  |                 |     |                                                    |  |                          |  |        |     |  +------GCA_001770205.1_ASM177020v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |        |     +--|
+|     |  |                 |     |                                                    |  |                          |  |        |        +----GCA_002381805.1_ASM238180v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |     +--|
+|     |  |                 |     |                                                    |  |                          |  |     |  |  +-----GCA_002343335.1_ASM234333v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |     |  +--|
+|     |  |                 |     |                                                    |  |                          |  |     |     +----GCA_002433485.1_ASM243348v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |  +--|
+|     |  |                 |     |                                                    |  |                          |  |  |  |        +---GCA_000024805.1_ASM2480v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |  |  |     +--|
+|     |  |                 |     |                                                    |  |                          |  |  |  |     |  +---GCA_002453135.1_ASM245313v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |  |  |  +--|
+|     |  |                 |     |                                                    |  |                          |  |  |  |  |  |     +---GCA_002323315.1_ASM232331v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |  |  |  |  |  +--|
+|     |  |                 |     |                                                    |  |                          |  |  |  |  |  |  |  +---GCA_002863065.1_ASM286306v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |  |  |  |  +--|
+|     |  |                 |     |                                                    |  |                          |  |  |  |  |     +-----GCA_002390675.1_ASM239067v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |  |  +--|
+|     |  |                 |     |                                                    |  |                          |  |  |     |     +---GCA_000331735.1_ASM33173v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |  |     |  +--|
+|     |  |                 |     |                                                    |  |                          |  |  |     |  |  +----GCA_002721815.1_ASM272181v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  |  |     +--|
+|     |  |                 |     |                                                    |  |                          |  |  |        +---GCA_001798655.1_ASM179865v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |  +--|
+|     |  |                 |     |                                                    |  |                          |     |  +----GCA_001798085.1_ASM179808v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                          |     +--|
+|     |  |                 |     |                                                    |  |                          |        +----GCA_001798515.1_ASM179851v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       +--|
+|     |  |                 |     |                                                    |  |                       |  |           +----GCA_000299235.1_ASM29923v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       |  |        +--|
+|     |  |                 |     |                                                    |  |                       |  |        |  +--GCA_900170025.1_NSND_Contig_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       |  |     +--|
+|     |  |                 |     |                                                    |  |                       |  |     |  |     +--GCA_001803765.1_ASM180376v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       |  |     |  |  +--|
+|     |  |                 |     |                                                    |  |                       |  |     |  |  |  +--GCA_001803795.1_ASM180379v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       |  |     |  +--|
+|     |  |                 |     |                                                    |  |                       |  |     |     +--GCA_002011815.1_ASM201181v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       |  |  +--|
+|     |  |                 |     |                                                    |  |                       |  |  |  |  +--GCA_001873285.1_ASM187328v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       |  |  |  +--|
+|     |  |                 |     |                                                    |  |                       |  |  |     +----GCA_001873295.1_ASM187329v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       |  +--|
+|     |  |                 |     |                                                    |  |                       |     |        +---GCA_001542995.1_ASM154299v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       |     |     +--|
+|     |  |                 |     |                                                    |  |                       |     |     |  |  +----GCA_002500605.1_ASM250060v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       |     |     |  +--|
+|     |  |                 |     |                                                    |  |                       |     |     |     +--GCA_003489165.1_ASM348916v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       |     |  +--|
+|     |  |                 |     |                                                    |  |                       |     |  |  |  +--GCA_001803565.1_ASM180356v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       |     |  |  +--|
+|     |  |                 |     |                                                    |  |                       |     |  |     |  +---GCA_002238965.1_ASM223896v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       |     |  |     +--|
+|     |  |                 |     |                                                    |  |                       |     |  |        +---GCA_900079095.1_E.gemina.ts_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                       |     +--|
+|     |  |                 |     |                                                    |  |                       |        +---GCA_001790715.1_ASM179071v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                    +--|
+|     |  |                 |     |                                                    |  |                    |  |     +---GCA_000177635.2_ASM17763v2_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                    |  |  +--|
+|     |  |                 |     |                                                    |  |                    |  |  |  +----GCA_000218625.1_ASM21862v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                    |  +--|
+|     |  |                 |     |                                                    |  |                    |     |  +---GCA_001788395.1_ASM178839v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                    |     +--|
+|     |  |                 |     |                                                    |  |                    |        +---GCA_002748425.1_ASM274842v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 +--|
+|     |  |                 |     |                                                    |  |                 |  |                    +--GCA_000014005.1_ASM1400v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |  |                 +--|
+|     |  |                 |     |                                                    |  |                 |  |                 |  +---GCA_002451015.1_ASM245101v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |  |              +--|
+|     |  |                 |     |                                                    |  |                 |  |              |  +--GCA_002483445.1_ASM248344v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |  |           +--|
+|     |  |                 |     |                                                    |  |                 |  |           |  |  +--GCA_001917905.1_ASM191790v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |  |           |  +--|
+|     |  |                 |     |                                                    |  |                 |  |           |     +----GCA_002238705.1_ASM223870v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |  |        +--|
+|     |  |                 |     |                                                    |  |                 |  |        |  +----GCA_002295025.1_ASM229502v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |  |     +--|
+|     |  |                 |     |                                                    |  |                 |  |     |  |     +---GCA_001664505.1_ASM166450v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |  |     |  |  +--|
+|     |  |                 |     |                                                    |  |                 |  |     |  |  |  +---GCA_001919375.1_ASM191937v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |  |     |  +--|
+|     |  |                 |     |                                                    |  |                 |  |     |     |  +-----GCA_002402325.1_ASM240232v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |  |     |     +--|
+|     |  |                 |     |                                                    |  |                 |  |     |        +---GCA_002420005.1_ASM242000v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |  |  +--|
+|     |  |                 |     |                                                    |  |                 |  |  |  |  +----GCA_000242615.3_ASM24261v3_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |  |  |  +--|
+|     |  |                 |     |                                                    |  |                 |  |  |     |  +----GCA_002747255.1_ASM274725v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |  |  |     +--|
+|     |  |                 |     |                                                    |  |                 |  |  |        +---GCA_002789615.1_ASM278961v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |  +--|
+|     |  |                 |     |                                                    |  |                 |     |  +-----GCA_001780385.1_ASM178038v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |                 |     +--|
+|     |  |                 |     |                                                    |  |                 |        +---GCA_002010725.1_ASM201072v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              +--|
+|     |  |                 |     |                                                    |  |              |  |                       +----GCA_000020465.1_ASM2046v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |                    +--|
+|     |  |                 |     |                                                    |  |              |  |                    |  |  +----GCA_000381545.1_ASM38154v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |                    |  +--|
+|     |  |                 |     |                                                    |  |              |  |                    |     +---GCA_002694685.1_ASM269468v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |                 +--|
+|     |  |                 |     |                                                    |  |              |  |                 |  |  +--GCA_001485605.1_JGI_assembly_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |                 |  +--|
+|     |  |                 |     |                                                    |  |              |  |                 |     |     +--GCA_001804715.1_ASM180471v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |                 |     |  +--|
+|     |  |                 |     |                                                    |  |              |  |                 |     |  |  +--GCA_003519375.1_ASM351937v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |                 |     +--|
+|     |  |                 |     |                                                    |  |              |  |                 |        +----GCA_002483085.1_ASM248308v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |              +--|
+|     |  |                 |     |                                                    |  |              |  |              |  +------GCA_003477045.1_ASM347704v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |           +--|
+|     |  |                 |     |                                                    |  |              |  |           |  |     +--GCA_000241815.1_ASM24181v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |           |  |  +--|
+|     |  |                 |     |                                                    |  |              |  |           |  |  |  +---GCA_001771235.1_ASM177123v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |           |  +--|
+|     |  |                 |     |                                                    |  |              |  |           |     |     +---GCA_001304035.1_ASM130403v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |           |     |  +--|
+|     |  |                 |     |                                                    |  |              |  |           |     |  |  +----GCA_002127415.1_ASM212741v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |           |     +--|
+|     |  |                 |     |                                                    |  |              |  |           |        |     +---GCA_001872685.1_ASM187268v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |           |        |  +--|
+|     |  |                 |     |                                                    |  |              |  |           |        |  |  +--GCA_003512065.1_ASM351206v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |           |        +--|
+|     |  |                 |     |                                                    |  |              |  |           |           |  +----GCA_002256485.1_ASM225648v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |           |           +--|
+|     |  |                 |     |                                                    |  |              |  |           |              +--GCA_002347855.1_ASM234785v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |        +--|
+|     |  |                 |     |                                                    |  |              |  |        |  |     +----GCA_001045525.1_ASM104552v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |        |  |  +--|
+|     |  |                 |     |                                                    |  |              |  |        |  |  |  +-----GCA_900142465.1_IMG-taxon_2700988679_annotated_assembly_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |        |  +--|
+|     |  |                 |     |                                                    |  |              |  |        |     +----GCA_001797525.1_ASM179752v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     +--|
+|     |  |                 |     |                                                    |  |              |  |     |  |        +-----GCA_000404785.1_ASM40478v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     |  |     +--|
+|     |  |                 |     |                                                    |  |              |  |     |  |     |  |     +---GCA_001303705.1_ASM130370v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     |  |     |  |  +--|
+|     |  |                 |     |                                                    |  |              |  |     |  |     |  |  |  +---GCA_001780135.1_ASM178013v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     |  |     |  +--|
+|     |  |                 |     |                                                    |  |              |  |     |  |     |     |     +-----GCA_001303785.1_ASM130378v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     |  |     |     |  +--|
+|     |  |                 |     |                                                    |  |              |  |     |  |     |     |  |  +-----GCA_002316275.1_ASM231627v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     |  |     |     +--|
+|     |  |                 |     |                                                    |  |              |  |     |  |     |        |     +----GCA_001412365.1_ASM141236v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     |  |     |        |  +--|
+|     |  |                 |     |                                                    |  |              |  |     |  |     |        |  |  +-----GCA_002441125.1_ASM244112v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     |  |     |        +--|
+|     |  |                 |     |                                                    |  |              |  |     |  |     |           |  +-----GCA_002366725.1_ASM236672v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     |  |     |           +--|
+|     |  |                 |     |                                                    |  |              |  |     |  |     |              +------GCA_002367385.1_ASM236738v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     |  |  +--|
+|     |  |                 |     |                                                    |  |              |  |     |  |  |  +---GCA_000447245.1_RBG_1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     |  +--|
+|     |  |                 |     |                                                    |  |              |  |     |     |     +--GCA_002059205.1_ASM205920v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     |     |  +--|
+|     |  |                 |     |                                                    |  |              |  |     |     |  |  +---GCA_002433075.1_ASM243307v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     |     +--|
+|     |  |                 |     |                                                    |  |              |  |     |        |  +------GCA_002428525.1_ASM242852v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |     |        +--|
+|     |  |                 |     |                                                    |  |              |  |     |           +---GCA_003533805.1_ASM353380v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |  +--|
+|     |  |                 |     |                                                    |  |              |  |  |  |     +----GCA_001780165.1_ASM178016v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |  |  |  +--|
+|     |  |                 |     |                                                    |  |              |  |  |  |  |  |  +---GCA_002686955.1_ASM268695v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |  |  |  |  +--|
+|     |  |                 |     |                                                    |  |              |  |  |  |  |     +-----GCA_002790835.1_ASM279083v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |  |  +--|
+|     |  |                 |     |                                                    |  |              |  |  |     |     +---GCA_001780825.1_ASM178082v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |  |     |  +--|
+|     |  |                 |     |                                                    |  |              |  |  |     |  |  +----GCA_001919895.1_ASM191989v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  |  |     +--|
+|     |  |                 |     |                                                    |  |              |  |  |        +---GCA_002084765.1_ASM208476v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |  +--|
+|     |  |                 |     |                                                    |  |              |     |  +-----GCA_001618625.1_ASM161862v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |              |     +--|
+|     |  |                 |     |                                                    |  |              |        +------GCA_001774505.1_ASM177450v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |           +--|
+|     |  |                 |     |                                                    |  |           |  |        +-----GCA_001567115.1_ASM156711v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |           |  |     +--|
+|     |  |                 |     |                                                    |  |           |  |     |  +-----GCA_002729415.1_ASM272941v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |           |  |  +--|
+|     |  |                 |     |                                                    |  |           |  |  |  +-----GCA_002348185.1_ASM234818v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |           |  +--|
+|     |  |                 |     |                                                    |  |           |     |  +----GCA_002428325.1_ASM242832v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |           |     +--|
+|     |  |                 |     |                                                    |  |           |        +----GCA_002842095.1_ASM284209v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        +--|
+|     |  |                 |     |                                                    |  |        |  |                       +------GCA_000025905.1_ASM2590v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |                    +--|
+|     |  |                 |     |                                                    |  |        |  |                    |  +---GCA_003534995.1_ASM353499v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |                 +--|
+|     |  |                 |     |                                                    |  |        |  |                 |  |  +----GCA_001803315.1_ASM180331v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |                 |  +--|
+|     |  |                 |     |                                                    |  |        |  |                 |     +----GCA_001804815.1_ASM180481v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |              +--|
+|     |  |                 |     |                                                    |  |        |  |              |  +----GCA_002440765.1_ASM244076v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |           +--|
+|     |  |                 |     |                                                    |  |        |  |           |  |  +------GCA_000875975.1_ASM87597v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |           |  +--|
+|     |  |                 |     |                                                    |  |        |  |           |     +-----GCA_002366995.1_ASM236699v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |        +--|
+|     |  |                 |     |                                                    |  |        |  |        |  |        +-----GCA_000255655.1_ASM25565v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |        |  |     +--|
+|     |  |                 |     |                                                    |  |        |  |        |  |     |  +-----GCA_003532895.1_ASM353289v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |        |  |  +--|
+|     |  |                 |     |                                                    |  |        |  |        |  |  |  |  +-----GCA_002746535.1_ASM274653v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |        |  |  |  +--|
+|     |  |                 |     |                                                    |  |        |  |        |  |  |     +------GCA_003482625.1_ASM348262v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |        |  +--|
+|     |  |                 |     |                                                    |  |        |  |        |     |     +---GCA_000949635.1_ASM94963v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |        |     |  +--|
+|     |  |                 |     |                                                    |  |        |  |        |     |  |  +------GCA_002418285.1_ASM241828v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |        |     +--|
+|     |  |                 |     |                                                    |  |        |  |        |        |  +-----GCA_002320775.1_ASM232077v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |        |        +--|
+|     |  |                 |     |                                                    |  |        |  |        |           |  +-----GCA_002683135.1_ASM268313v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |        |           +--|
+|     |  |                 |     |                                                    |  |        |  |        |              +----GCA_002748355.1_ASM274835v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |     +--|
+|     |  |                 |     |                                                    |  |        |  |     |  +-----GCA_001730085.1_AB1_pvc_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |  +--|
+|     |  |                 |     |                                                    |  |        |  |  |  |        +----GCA_001804315.1_ASM180431v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |  |  |     +--|
+|     |  |                 |     |                                                    |  |        |  |  |  |     |  +----GCA_002085025.1_ASM208502v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |  |  |  +--|
+|     |  |                 |     |                                                    |  |        |  |  |  |  |  |     +----GCA_001804415.1_ASM180441v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |  |  |  |  |  +--|
+|     |  |                 |     |                                                    |  |        |  |  |  |  |  |  |  +---GCA_002085265.1_ASM208526v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |  |  |  |  +--|
+|     |  |                 |     |                                                    |  |        |  |  |  |  |     +---GCA_002780005.1_ASM278000v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  |  |  +--|
+|     |  |                 |     |                                                    |  |        |  |  |     +------GCA_002781765.1_ASM278176v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |  +--|
+|     |  |                 |     |                                                    |  |        |     |        +----GCA_001778375.1_ASM177837v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |     |     +--|
+|     |  |                 |     |                                                    |  |        |     |     |  +----GCA_002839855.1_ASM283985v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |     |  +--|
+|     |  |                 |     |                                                    |  |        |     |  |  |                 +--GCA_001800315.1_ASM180031v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |     |  |  |              +--|
+|     |  |                 |     |                                                    |  |        |     |  |  |              |  +-----GCA_003452935.1_ASM345293v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |     |  |  |           +--|
+|     |  |                 |     |                                                    |  |        |     |  |  |           |  +---GCA_002412545.1_ASM241254v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |     |  |  |        +--|
+|     |  |                 |     |                                                    |  |        |     |  |  |        |  +---GCA_001800605.1_ASM180060v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |     |  |  |     +--|
+|     |  |                 |     |                                                    |  |        |     |  |  |     |  +---------GCA_002841685.1_ASM284168v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |     |  |  |  +--|
+|     |  |                 |     |                                                    |  |        |     |  |  |  |  +---GCA_002441095.1_ASM244109v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |     |  |  +--|
+|     |  |                 |     |                                                    |  |        |     |  |     +-----GCA_002785465.1_ASM278546v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |     +--|
+|     |  |                 |     |                                                    |  |        |        |  +---GCA_002478245.1_ASM247824v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |        +--|
+|     |  |                 |     |                                                    |  |        |           |     +---GCA_002772295.1_ASM277229v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |           |  +--|
+|     |  |                 |     |                                                    |  |        |           |  |  +----GCA_003498085.1_ASM349808v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |        |           +--|
+|     |  |                 |     |                                                    |  |        |              +---GCA_003485015.1_ASM348501v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     +--|
+|     |  |                 |     |                                                    |  |     |  |                 +---GCA_000021565.1_ASM2156v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  |              +--|
+|     |  |                 |     |                                                    |  |     |  |              |  +---GCA_000421485.1_ASM42148v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  |           +--|
+|     |  |                 |     |                                                    |  |     |  |           |  +--------GCA_000403075.1_ASM40307v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  |        +--|
+|     |  |                 |     |                                                    |  |     |  |        |  +--GCA_001547735.1_ASM154773v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  |     +--|
+|     |  |                 |     |                                                    |  |     |  |     |  |  +----GCA_000420385.1_ASM42038v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  |     |  +--|
+|     |  |                 |     |                                                    |  |     |  |     |     +------GCA_001298465.1_ASM129846v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  |  +--|
+|     |  |                 |     |                                                    |  |     |  |  |  |           +----GCA_000143725.1_ASM14372v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  |  |  |        +--|
+|     |  |                 |     |                                                    |  |     |  |  |  |        |  +-----GCA_001829375.1_ASM182937v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  |  |  |     +--|
+|     |  |                 |     |                                                    |  |     |  |  |  |     |  |  +------GCA_001829415.1_ASM182941v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  |  |  |     |  +--|
+|     |  |                 |     |                                                    |  |     |  |  |  |     |     +---GCA_002450905.1_ASM245090v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  |  |  |  +--|
+|     |  |                 |     |                                                    |  |     |  |  |  |  |  |  +---GCA_000219725.1_ASM21972v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  |  |  |  |  +--|
+|     |  |                 |     |                                                    |  |     |  |  |  |  |     +----GCA_001829235.1_ASM182923v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  |  |  +--|
+|     |  |                 |     |                                                    |  |     |  |  |     |  +----GCA_000347175.1_gls454194v01_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  |  |     +--|
+|     |  |                 |     |                                                    |  |     |  |  |        +---GCA_002839375.1_ASM283937v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |  +--|
+|     |  |                 |     |                                                    |  |     |     |     +------GCA_001784175.1_ASM178417v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |     |  +--|
+|     |  |                 |     |                                                    |  |     |     |  |  +-----GCA_002780065.1_ASM278006v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |     |     +--|
+|     |  |                 |     |                                                    |  |     |        +-------GCA_002311855.1_ASM231185v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |  +--|
+|     |  |                 |     |                                                    |  |  |  |        +------GCA_002402105.1_ASM240210v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |  |  |     +--|
+|     |  |                 |     |                                                    |  |  |  |     |  +-----GCA_002839445.1_ASM283944v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |  |  |  +--|
+|     |  |                 |     |                                                    |  |  |  |  |  +----GCA_002423385.1_ASM242338v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  |  |  +--|
+|     |  |                 |     |                                                    |  |  |     +------GCA_003507225.1_ASM350722v1_genomic_prot.fas
+|     |  |                 |     |                                                    |  +--|
+|     |  |                 |     |                                                    |     |     +-----GCA_000238615.1_Synerg_sp_3_1_syn1_V1_genomic_prot.fas
+|     |  |                 |     |                                                    |     |  +--|
+|     |  |                 |     |                                                    |     |  |  +--GCA_001443005.1_ASM144300v1_genomic_prot.fas
+|     |  |                 |     |                                                    |     +--|
+|     |  |                 |     |                                                    |        |     +------GCA_000402295.1_ASM40229v1_genomic_prot.fas
+|     |  |                 |     |                                                    |        |  +--|
+|     |  |                 |     |                                                    |        |  |  +---GCA_002385475.1_ASM238547v1_genomic_prot.fas
+|     |  |                 |     |                                                    |        +--|
+|     |  |                 |     |                                                    |           +---GCA_003513845.1_ASM351384v1_genomic_prot.fas
+|     |  |                 |     |                                                 +--|
+|     |  |                 |     |                                                 |  |        +----GCA_000317475.1_ASM31747v1_genomic_prot.fas
+|     |  |                 |     |                                                 |  |     +--|
+|     |  |                 |     |                                                 |  |     |  +-----GCA_001784555.1_ASM178455v1_genomic_prot.fas
+|     |  |                 |     |                                                 |  |  +--|
+|     |  |                 |     |                                                 |  |  |  +---GCA_002083785.1_ASM208378v1_genomic_prot.fas
+|     |  |                 |     |                                                 |  +--|
+|     |  |                 |     |                                                 |     |  +----GCA_001771695.1_ASM177169v1_genomic_prot.fas
+|     |  |                 |     |                                                 |     +--|
+|     |  |                 |     |                                                 |        |  +---GCA_001783265.1_ASM178326v1_genomic_prot.fas
+|     |  |                 |     |                                                 |        +--|
+|     |  |                 |     |                                                 |           +-------GCA_002296285.1_ASM229628v1_genomic_prot.fas
+|     |  |                 |     |                                              +--|
+|     |  |                 |     |                                              |  |        +------GCA_000020945.1_ASM2094v1_genomic_prot.fas
+|     |  |                 |     |                                              |  |     +--|
+|     |  |                 |     |                                              |  |     |  +------GCA_002403335.1_ASM240333v1_genomic_prot.fas
+|     |  |                 |     |                                              |  |  +--|
+|     |  |                 |     |                                              |  |  |  |  +---GCA_000021645.1_ASM2164v1_genomic_prot.fas
+|     |  |                 |     |                                              |  |  |  +--|
+|     |  |                 |     |                                              |  |  |     +-----GCA_000212395.1_ASM21239v1_genomic_prot.fas
+|     |  |                 |     |                                              |  +--|
+|     |  |                 |     |                                              |     |  +-----GCA_000309885.1_ASM30988v1_genomic_prot.fas
+|     |  |                 |     |                                              |     +--|
+|     |  |                 |     |                                              |        |  +-----GCA_000621345.1_ASM62134v1_genomic_prot.fas
+|     |  |                 |     |                                              |        +--|
+|     |  |                 |     |                                              |           +-----GCA_002011425.1_ASM201142v1_genomic_prot.fas
+|     |  |                 |     |                                           +--|
+|     |  |                 |     |                                           |  |  +-------GCA_002050035.1_ASM205003v1_genomic_prot.fas
+|     |  |                 |     |                                           |  +--|
+|     |  |                 |     |                                           |     +-----------GCA_002716355.1_ASM271635v1_genomic_prot.fas
+|     |  |                 |     |                   +-----------------------|
+|     |  |                 |     |                   |                       |              +----GCA_000995065.1_ASM99506v1_genomic_prot.fas
+|     |  |                 |     |                   |                       |           +--|
+|     |  |                 |     |                   |                       |           |  |  +------GCA_001029735.1_ASM102973v1_genomic_prot.fas
+|     |  |                 |     |                   |                       |           |  +--|
+|     |  |                 |     |                   |                       |           |     +----GCA_002779715.1_ASM277971v1_genomic_prot.fas
+|     |  |                 |     |                   |                       |        +--|
+|     |  |                 |     |                   |                       |        |  |        +-----GCA_001001525.1_ASM100152v1_genomic_prot.fas
+|     |  |                 |     |                   |                       |        |  |     +--|
+|     |  |                 |     |                   |                       |        |  |     |  +------GCA_001817065.1_ASM181706v1_genomic_prot.fas
+|     |  |                 |     |                   |                       |        |  |  +--|
+|     |  |                 |     |                   |                       |        |  |  |  +----GCA_002778805.1_ASM277880v1_genomic_prot.fas
+|     |  |                 |     |                   |                       |        |  +--|
+|     |  |                 |     |                   |                       |        |     |  +-----GCA_001777695.1_ASM177769v1_genomic_prot.fas
+|     |  |                 |     |                   |                       |        |     +--|
+|     |  |                 |     |                   |                       |        |        +-----GCA_001818315.1_ASM181831v1_genomic_prot.fas
+|     |  |                 |     |                   |                       |     +--|
+|     |  |                 |     |                   |                       |     |  |  +-----GCA_000999315.1_ASM99931v1_genomic_prot.fas
+|     |  |                 |     |                   |                       |     |  +--|
+|     |  |                 |     |                   |                       |     |     +------GCA_001771215.1_ASM177121v1_genomic_prot.fas
+|     |  |                 |     |                   |                       |  +--|
+|     |  |                 |     |                   |                       |  |  +-------GCA_001873755.1_ASM187375v1_genomic_prot.fas
+|     |  |                 |     |                   |                       +--|
+|     |  |                 |     |                   |                          |        +-----GCA_001772695.1_ASM177269v1_genomic_prot.fas
+|     |  |                 |     |                   |                          |     +--|
+|     |  |                 |     |                   |                          |     |  +-----GCA_001774835.1_ASM177483v1_genomic_prot.fas
+|     |  |                 |     |                   |                          |  +--|
+|     |  |                 |     |                   |                          |  |  +------GCA_002084955.1_ASM208495v1_genomic_prot.fas
+|     |  |                 |     |                   |                          +--|
+|     |  |                 |     |                   |                             |  +------GCA_002413835.1_ASM241383v1_genomic_prot.fas
+|     |  |                 |     |                   |                             +--|
+|     |  |                 |     |                   |                                +---------GCA_002840365.1_ASM284036v1_genomic_prot.fas
+|     |  |                 |     |                +--|
+|     |  |                 |     |                |  |                       +----GCA_000402515.1_ASM40251v1_genomic_prot.fas
+|     |  |                 |     |                |  |                    +--|
+|     |  |                 |     |                |  |                    |  +-------UBA12055_prot.fas
+|     |  |                 |     |                |  |                 +--|
+|     |  |                 |     |                |  |                 |  |                 +---GCA_000830295.1_ASM83029v1_genomic_prot.fas
+|     |  |                 |     |                |  |                 |  |              +--|
+|     |  |                 |     |                |  |                 |  |              |  +---GCA_001595785.1_ASM159578v1_genomic_prot.fas
+|     |  |                 |     |                |  |                 |  |           +--|
+|     |  |                 |     |                |  |                 |  |           |  +----UBA12494_prot.fas
+|     |  |                 |     |                |  |                 |  |        +--|
+|     |  |                 |     |                |  |                 |  |        |  |  +----GCA_002762795.1_ASM276279v1_genomic_prot.fas
+|     |  |                 |     |                |  |                 |  |        |  +--|
+|     |  |                 |     |                |  |                 |  |        |     +----UBA12052_prot.fas
+|     |  |                 |     |                |  |                 |  |     +--|
+|     |  |                 |     |                |  |                 |  |     |  |     +---GCA_002762705.1_ASM276270v1_genomic_prot.fas
+|     |  |                 |     |                |  |                 |  |     |  |  +--|
+|     |  |                 |     |                |  |                 |  |     |  |  |  +--GCA_002762985.1_ASM276298v1_genomic_prot.fas
+|     |  |                 |     |                |  |                 |  |     |  +--|
+|     |  |                 |     |                |  |                 |  |     |     |        +---GCA_002763335.1_ASM276333v1_genomic_prot.fas
+|     |  |                 |     |                |  |                 |  |     |     |     +--|
+|     |  |                 |     |                |  |                 |  |     |     |     |  +----GCA_002779235.1_ASM277923v1_genomic_prot.fas
+|     |  |                 |     |                |  |                 |  |     |     |  +--|
+|     |  |                 |     |                |  |                 |  |     |     |  |  +--GCA_002792055.1_ASM279205v1_genomic_prot.fas
+|     |  |                 |     |                |  |                 |  |     |     +--|
+|     |  |                 |     |                |  |                 |  |     |        +----UBA10200_prot.fas
+|     |  |                 |     |                |  |                 |  |  +--|
+|     |  |                 |     |                |  |                 |  |  |  +-----GCA_002792115.1_ASM279211v1_genomic_prot.fas
+|     |  |                 |     |                |  |                 |  +--|
+|     |  |                 |     |                |  |                 |     +------GCA_002505945.1_ASM250594v1_genomic_prot.fas
+|     |  |                 |     |                |  |              +--|
+|     |  |                 |     |                |  |              |  +---------GCA_002506365.1_ASM250636v1_genomic_prot.fas
+|     |  |                 |     |                |  |           +--|
+|     |  |                 |     |                |  |           |  |     +------GCA_002763265.1_ASM276326v1_genomic_prot.fas
+|     |  |                 |     |                |  |           |  |  +--|
+|     |  |                 |     |                |  |           |  |  |  +------GCA_002779595.1_ASM277959v1_genomic_prot.fas
+|     |  |                 |     |                |  |           |  +--|
+|     |  |                 |     |                |  |           |     +-------UBA10117_prot.fas
+|     |  |                 |     |                |  |        +--|
+|     |  |                 |     |                |  |        |  |     +----------GCA_001552015.1_ASM155201v1_genomic_prot.fas
+|     |  |                 |     |                |  |        |  |  +--|
+|     |  |                 |     |                |  |        |  |  |  +----------GCA_002503915.1_ASM250391v1_genomic_prot.fas
+|     |  |                 |     |                |  |        |  +--|
+|     |  |                 |     |                |  |        |     +------------GCA_002780595.1_ASM278059v1_genomic_prot.fas
+|     |  |                 |     |                |  |     +--|
+|     |  |                 |     |                |  |     |  |  +--------GCA_001563875.1_ASM156387v1_genomic_prot.fas
+|     |  |                 |     |                |  |     |  +--|
+|     |  |                 |     |                |  |     |     |  +-----------GCA_002254415.1_ASM225441v1_genomic_prot.fas
+|     |  |                 |     |                |  |     |     +--|
+|     |  |                 |     |                |  |     |        |  +------GCA_002784265.1_ASM278426v1_genomic_prot.fas
+|     |  |                 |     |                |  |     |        +--|
+|     |  |                 |     |                |  |     |           +-----UBA10154_prot.fas
+|     |  |                 |     |                |  |  +--|
+|     |  |                 |     |                |  |  |  +--------GCA_002494525.1_ASM249452v1_genomic_prot.fas
+|     |  |                 |     |                |  +--|
+|     |  |                 |     |                |     |        +---GCA_001723855.1_ASM172385v1_genomic_prot.fas
+|     |  |                 |     |                |     |     +--|
+|     |  |                 |     |                |     |     |  +---GCA_002254565.1_ASM225456v1_genomic_prot.fas
+|     |  |                 |     |                |     |  +--|
+|     |  |                 |     |                |     |  |  |     +--GCA_002785505.1_ASM278550v1_genomic_prot.fas
+|     |  |                 |     |                |     |  |  +-----|
+|     |  |                 |     |                |     |  |        +--GCA_002841105.1_ASM284110v1_genomic_prot.fas
+|     |  |                 |     |                |     +--|
+|     |  |                 |     |                |        |        +------GCA_001871535.1_ASM187153v1_genomic_prot.fas
+|     |  |                 |     |                |        |     +--|
+|     |  |                 |     |                |        |     |  +------GCA_001896515.1_ASM189651v1_genomic_prot.fas
+|     |  |                 |     |                |        |  +--|
+|     |  |                 |     |                |        |  |  +-------GCA_001871595.1_ASM187159v1_genomic_prot.fas
+|     |  |                 |     |                |        +--|
+|     |  |                 |     |                |           |  +---------GCA_002779075.1_ASM277907v1_genomic_prot.fas
+|     |  |                 |     |                |           +--|
+|     |  |                 |     |                |              +----UBA10011_prot.fas
+|     |  |                 |     |             +--|
+|     |  |                 |     |             |  |           +-----GCA_000011185.1_ASM1118v1_genomic_prot.fas
+|     |  |                 |     |             |  |        +--|
+|     |  |                 |     |             |  |        |  +--GCA_000025665.1_ASM2566v1_genomic_prot.fas
+|     |  |                 |     |             |  |     +--|
+|     |  |                 |     |             |  |     |  |              +--GCA_000308215.1_ASM30821v1_genomic_prot.fas
+|     |  |                 |     |             |  |     |  |           +--|
+|     |  |                 |     |             |  |     |  |           |  +---UBA9653_prot.fas
+|     |  |                 |     |             |  |     |  |        +--|
+|     |  |                 |     |             |  |     |  |        |  |  +------GCA_002503985.1_ASM250398v1_genomic_prot.fas
+|     |  |                 |     |             |  |     |  |        |  +--|
+|     |  |                 |     |             |  |     |  |        |     +--UBA8695_prot.fas
+|     |  |                 |     |             |  |     |  |     +--|
+|     |  |                 |     |             |  |     |  |     |  +---GCA_002499085.1_ASM249908v1_genomic_prot.fas
+|     |  |                 |     |             |  |     |  |  +--|
+|     |  |                 |     |             |  |     |  |  |  |     +-------GCA_002503015.1_ASM250301v1_genomic_prot.fas
+|     |  |                 |     |             |  |     |  |  |  |  +--|
+|     |  |                 |     |             |  |     |  |  |  |  |  +-----GCA_002506485.1_ASM250648v1_genomic_prot.fas
+|     |  |                 |     |             |  |     |  |  |  +--|
+|     |  |                 |     |             |  |     |  |  |     +---GCA_002781385.1_ASM278138v1_genomic_prot.fas
+|     |  |                 |     |             |  |     |  +--|
+|     |  |                 |     |             |  |     |     |     +----GCA_001595945.1_ASM159594v1_genomic_prot.fas
+|     |  |                 |     |             |  |     |     |  +--|
+|     |  |                 |     |             |  |     |     |  |  +----GCA_002838995.1_ASM283899v1_genomic_prot.fas
+|     |  |                 |     |             |  |     |     +--|
+|     |  |                 |     |             |  |     |        |  +------GCA_002494765.1_ASM249476v1_genomic_prot.fas
+|     |  |                 |     |             |  |     |        +--|
+|     |  |                 |     |             |  |     |           |  +------GCA_002495235.1_ASM249523v1_genomic_prot.fas
+|     |  |                 |     |             |  |     |           +--|
+|     |  |                 |     |             |  |     |              +-----UBA9212_prot.fas
+|     |  |                 |     |             |  |  +--|
+|     |  |                 |     |             |  |  |  |           +-----GCA_000021965.1_ASM2196v1_genomic_prot.fas
+|     |  |                 |     |             |  |  |  |        +--|
+|     |  |                 |     |             |  |  |  |        |  |  +-----GCA_000230735.3_ASM23073v3_genomic_prot.fas
+|     |  |                 |     |             |  |  |  |        |  +--|
+|     |  |                 |     |             |  |  |  |        |     +----GCA_001914405.1_ASM191440v1_genomic_prot.fas
+|     |  |                 |     |             |  |  |  |     +--|
+|     |  |                 |     |             |  |  |  |     |  |        +---GCA_000063445.1_ASM6344v1_genomic_prot.fas
+|     |  |                 |     |             |  |  |  |     |  |     +--|
+|     |  |                 |     |             |  |  |  |     |  |     |  +---GCA_002509385.1_ASM250938v1_genomic_prot.fas
+|     |  |                 |     |             |  |  |  |     |  |  +--|
+|     |  |                 |     |             |  |  |  |     |  |  |  |  +---GCA_000711905.1_ASM71190v1_genomic_prot.fas
+|     |  |                 |     |             |  |  |  |     |  |  |  +--|
+|     |  |                 |     |             |  |  |  |     |  |  |     |  +--GCA_000970285.1_ASM97028v1_genomic_prot.fas
+|     |  |                 |     |             |  |  |  |     |  |  |     +--|
+|     |  |                 |     |             |  |  |  |     |  |  |        +--GCA_001509375.1_ASM150937v1_genomic_prot.fas
+|     |  |                 |     |             |  |  |  |     |  +--|
+|     |  |                 |     |             |  |  |  |     |     |  +---GCA_001766815.1_ASM176681v1_genomic_prot.fas
+|     |  |                 |     |             |  |  |  |     |     +--|
+|     |  |                 |     |             |  |  |  |     |        +----UBA9210_prot.fas
+|     |  |                 |     |             |  |  |  |  +--|
+|     |  |                 |     |             |  |  |  |  |  +--GCA_002011165.1_ASM201116v1_genomic_prot.fas
+|     |  |                 |     |             |  |  |  +--|
+|     |  |                 |     |             |  |  |     +---GCA_000025505.1_ASM2550v1_genomic_prot.fas
+|     |  |                 |     |             |  +--|
+|     |  |                 |     |             |     |           +---GCA_000214415.1_ASM21441v1_genomic_prot.fas
+|     |  |                 |     |             |     |        +--|
+|     |  |                 |     |             |     |        |  +----GCA_002505765.1_ASM250576v1_genomic_prot.fas
+|     |  |                 |     |             |     |     +--|
+|     |  |                 |     |             |     |     |  +----UBA8853_prot.fas
+|     |  |                 |     |             |     |  +--|
+|     |  |                 |     |             |     |  |  +----GCA_002011125.1_ASM201112v1_genomic_prot.fas
+|     |  |                 |     |             |     +--|
+|     |  |                 |     |             |        |  +-----GCA_001515205.2_ASM151520v2_genomic_prot.fas
+|     |  |                 |     |             |        +--|
+|     |  |                 |     |             |           |  +-----GCA_001587575.1_ASM158757v1_genomic_prot.fas
+|     |  |                 |     |             |           +--|
+|     |  |                 |     |             |              +---GCA_900012635.1_Pyrococcus_chitonophagus_genome_sequence_genomic_prot.fas
+|     |  |                 |     |          +--|
+|     |  |                 |     |          |  |                    +----GCA_000011205.1_ASM1120v1_genomic_prot.fas
+|     |  |                 |     |          |  |                 +--|
+|     |  |                 |     |          |  |                 |  +----GCA_000145985.1_ASM14598v1_genomic_prot.fas
+|     |  |                 |     |          |  |              +--|
+|     |  |                 |     |          |  |              |  +---GCA_002254745.1_ASM225474v1_genomic_prot.fas
+|     |  |                 |     |          |  |           +--|
+|     |  |                 |     |          |  |           |  +---------GCA_002507085.1_ASM250708v1_genomic_prot.fas
+|     |  |                 |     |          |  |        +--|
+|     |  |                 |     |          |  |        |  |     +------GCA_000247545.1_ASM24754v1_genomic_prot.fas
+|     |  |                 |     |          |  |        |  |  +--|
+|     |  |                 |     |          |  |        |  |  |  +---GCA_000813245.1_ASM81324v1_genomic_prot.fas
+|     |  |                 |     |          |  |        |  +--|
+|     |  |                 |     |          |  |        |     +------GCA_000398765.1_ASM39876v1_genomic_prot.fas
+|     |  |                 |     |          |  |     +--|
+|     |  |                 |     |          |  |     |  +------GCA_001717035.1_ASM171703v1_genomic_prot.fas
+|     |  |                 |     |          |  |  +--|
+|     |  |                 |     |          |  |  |  |        +------GCA_000270325.1_ASM27032v1_genomic_prot.fas
+|     |  |                 |     |          |  |  |  |     +--|
+|     |  |                 |     |          |  |  |  |     |  +-----GCA_002255045.1_ASM225504v1_genomic_prot.fas
+|     |  |                 |     |          |  |  |  |  +--|
+|     |  |                 |     |          |  |  |  |  |  |  +----GCA_001593865.1_ASM159386v1_genomic_prot.fas
+|     |  |                 |     |          |  |  |  |  |  +--|
+|     |  |                 |     |          |  |  |  |  |     |        +---GCA_001775995.1_ASM177599v1_genomic_prot.fas
+|     |  |                 |     |          |  |  |  |  |     |     +--|
+|     |  |                 |     |          |  |  |  |  |     |     |  +------GCA_001918745.1_ASM191874v1_genomic_prot.fas
+|     |  |                 |     |          |  |  |  |  |     |  +--|
+|     |  |                 |     |          |  |  |  |  |     |  |  +----GCA_002011035.1_ASM201103v1_genomic_prot.fas
+|     |  |                 |     |          |  |  |  |  |     +--|
+|     |  |                 |     |          |  |  |  |  |        |     +--GCA_002255025.1_ASM225502v1_genomic_prot.fas
+|     |  |                 |     |          |  |  |  |  |        |  +--|
+|     |  |                 |     |          |  |  |  |  |        |  |  +---GCA_002490245.1_ASM249024v1_genomic_prot.fas
+|     |  |                 |     |          |  |  |  |  |        +--|
+|     |  |                 |     |          |  |  |  |  |           +-------UBA8941_prot.fas
+|     |  |                 |     |          |  |  |  +--|
+|     |  |                 |     |          |  |  |     |  +-------GCA_002011075.1_ASM201107v1_genomic_prot.fas
+|     |  |                 |     |          |  |  |     +--|
+|     |  |                 |     |          |  |  |        |  +------GCA_002499005.1_ASM249900v1_genomic_prot.fas
+|     |  |                 |     |          |  |  |        +--|
+|     |  |                 |     |          |  |  |           +------GCA_900065925.1_NDEV.embl.gz_genomic_prot.fas
+|     |  |                 |     |          |  +--|
+|     |  |                 |     |          |     |     +-------GCA_001940655.1_ASM194065v1_genomic_prot.fas
+|     |  |                 |     |          |     |  +--|
+|     |  |                 |     |          |     |  |  +---GCA_001940665.1_ASM194066v1_genomic_prot.fas
+|     |  |                 |     |          |     +--|
+|     |  |                 |     |          |        +------GCA_002825515.1_ASM282551v1_genomic_prot.fas
+|     |  |                 |     |       +--|
+|     |  |                 |     |       |  |  +-------GCA_001940645.1_ASM194064v1_genomic_prot.fas
+|     |  |                 |     |       |  +--|
+|     |  |                 |     |       |     |  +-------GCA_001940725.1_ASM194072v1_genomic_prot.fas
+|     |  |                 |     |       |     +--|
+|     |  |                 |     |       |        +-----GCA_001940755.1_ASM194075v1_genomic_prot.fas
+|     |  |                 |     +-------|
+|     |  |                 |             +--------GCA_000019605.1_ASM1960v1_genomic_prot.fas
+|     |  |              +--|
+|     |  |              |  |      +--Oxytricha-trifallax.ap.cs.fa
+|     |  |              |  |  +---|
+|     |  |              |  |  |   +--Stylonychia-lemnae.ap.cs.fa
+|     |  |              |  +--|
+|     |  |              |     |     +--Paramecium-tetraurelia.ap.cs.fa
+|     |  |              |     |  +--|
+|     |  |              |     |  |  +--Tetrahymena-thermophila.ap.cs.fa
+|     |  |              |     +--|
+|     |  |              |        +---Stentor-coeruleus.ap.cs.fa
+|     |  |           +--|
+|     |  |           |  +---Stygiella-incarcerata.ap.cs.fa
+|     |  |        +--|
+|     |  |        |  |     +--Amastigomonas-sp.ap.cs.fa
+|     |  |        |  |  +--|
+|     |  |        |  |  |  +--Thecamonas-trahens.ap.cs.fa
+|     |  |        |  +--|
+|     |  |        |     +---Trimastix-marina.ap.cs.fa
+|     |  |     +--|
+|     |  |     |  |        +--Bigelowiella-natans.ap.cs.fa
+|     |  |     |  |     +--|
+|     |  |     |  |     |  +-----Entamoeba-dispar.ap.cs.fa
+|     |  |     |  |  +--|
+|     |  |     |  |  |  +----Naegleria-gruberi.ap.cs.fa
+|     |  |     |  +--|
+|     |  |     |     |        +---Bodo-saltans.ap.cs.fa
+|     |  |     |     |     +--|
+|     |  |     |     |     |  +---Diplonema-papillatum.ap.cs.fa
+|     |  |     |     |  +--|
+|     |  |     |     |  |  +--Euglena-gracilis.ap.cs.fa
+|     |  |     |     +--|
+|     |  |     |        |     +--Telonema-spP1.ap.cs.fa
+|     |  |     |        |  +--|
+|     |  |     |        |  |  +--Telonema-subtile.ap.cs.fa
+|     |  |     |        +--|
+|     |  |     |           +--Telonema-spP2.ap.cs.fa
+|     |  |  +--|
+|     |  |  |  |     +--Chondrus-crispus.ap.cs.fa
+|     |  |  |  |  +--|
+|     |  |  |  |  |  +--Porphyra-umbilicalis.ap.cs.fa
+|     |  |  |  +--|
+|     |  |  |     |  +--Cyanidioschyzon-merolae.ap.cs.fa
+|     |  |  |     +--|
+|     |  |  |        +--Galdieria-sulphuraria.ap.cs.fa
+|     |  +--|
+|     |     |              +--Amphidinium-carterae.ap.cs.fa
+|     |     |           +--|
+|     |     |           |  |     +--Polarella-glacialis.ap.cs.fa
+|     |     |           |  |  +--|
+|     |     |           |  |  |  +--Protoceratium-reticulatum.ap.cs.fa
+|     |     |           |  +--|
+|     |     |           |     +--Togula-jolla.ap.cs.fa
+|     |     |        +--|
+|     |     |        |  +--Noctiluca-scintillans.ap.cs.fa
+|     |     |     +--|
+|     |     |     |  |  +--Chrysochromulina-sp.ap.cs.fa
+|     |     |     |  +--|
+|     |     |     |     +--Emiliana-huxleyi.ap.cs.fa
+|     |     |  +--|
+|     |     |  |  |           +--Aureococcus-anophagefferens.ap.cs.fa
+|     |     |  |  |        +--|
+|     |     |  |  |        |  +--Nannochloropsis-gaditana.ap.cs.fa
+|     |     |  |  |     +--|
+|     |     |  |  |     |  +--Ectocarpus-siliculosus.ap.cs.fa
+|     |     |  |  |  +--|
+|     |     |  |  |  |  |  +--Bolidomonas-pacifica.ap.cs.fa
+|     |     |  |  |  |  +--|
+|     |     |  |  |  |     |           +--Fistulifera-solaris.ap.cs.fa
+|     |     |  |  |  |     |        +--|
+|     |     |  |  |  |     |        |  +--Phaeodactylum-tricornutum.ap.cs.fa
+|     |     |  |  |  |     |     +--|
+|     |     |  |  |  |     |     |  |  +--Fragilariopsis-cylindrus.ap.cs.fa
+|     |     |  |  |  |     |     |  +--|
+|     |     |  |  |  |     |     |     +--Nitzschia-RCC80.ap.cs.fa
+|     |     |  |  |  |     |  +--|
+|     |     |  |  |  |     |  |  |  +--Odontella-aurita.ap.cs.fa
+|     |     |  |  |  |     |  |  +--|
+|     |     |  |  |  |     |  |     |  +--Thalassiosira-oceanica.ap.cs.fa
+|     |     |  |  |  |     |  |     +--|
+|     |     |  |  |  |     |  |        +--Thalassiosira-pseudonana.ap.cs.fa
+|     |     |  |  |  |     +--|
+|     |     |  |  |  |        +--Leptocylindrus-danicus.ap.cs.fa
+|     |     |  |  +--|
+|     |     |  |     +--Thraustotheca-clavata.ap.cs.fa
+|     |     +--|
+|     |        |           +--Arabidopsis-thaliana.ap.cs.fa
+|     |        |        +--|
+|     |        |        |  +--Oryza-sativa.ap.cs.fa
+|     |        |     +--|
+|     |        |     |  |  +--Physcomitrella-patens.ap.cs.fa
+|     |        |     |  +--|
+|     |        |     |     +--Selaginella-moellendorffii.ap.cs.fa
+|     |        |  +--|
+|     |        |  |  +--Klebsormidium-nitens.ap.cs.fa
+|     |        +--|
+|     |           |        +--Auxenochlorella-protothecoides.ap.cs.fa
+|     |           |     +--|
+|     |           |     |  |     +--Chlamydomonas-reinhardtii.ap.cs.fa
+|     |           |     |  |  +--|
+|     |           |     |  |  |  +--Volvox-carteri.ap.cs.fa
+|     |           |     |  +--|
+|     |           |     |     +--Monoraphidium-neglectum.ap.cs.fa
+|     |           |  +--|
+|     |           |  |  +--Tetraselmis-sp.ap.cs.fa
+|     |           +--|
+|     |              |     +--Bathycoccus-prasinos.ap.cs.fa
+|     |              |  +--|
+|     |              |  |  +--Ostreococcus-tauri.ap.cs.fa
+|     |              +--|
+|     |                 +--Micromonas-pusilla.ap.cs.fa
+|  +--|
+|  |  |  +--Hemimastix-kukwesjijk.ap.cs.fa
+|  |  +--|
+|  |     +--Spironema-multiciliatum.ap.cs.fa
++--|
+|  |           +--Allomyces-macrogynus.ap.cs.fa
+|  |        +--|
+|  |        |  +--Spizellomyces-punctatus.ap.cs.fa
+|  |     +--|
+|  |     |  |  +--Lobosporangium-transversale.ap.cs.fa
+|  |     |  +--|
+|  |     |     +--Schizosaccharomyces-pombe.ap.cs.fa
+|  |  +--|
+|  |  |  |  +---Fonticula-alba.ap.cs.fa
+|  |  |  +--|
+|  |  |     +--Parvularia-atlantis.ap.cs.fa
+|  +--|
+|     |     +--Amphimedon-queenslandica.ap.cs.fa
+|     |  +--|
+|     |  |  |        +--Limulus-polyphemus.ap.cs.fa
+|     |  |  |     +--|
+|     |  |  |     |  +--Lottia-gigantea.ap.cs.fa
+|     |  |  |  +--|
+|     |  |  |  |  +--Xenopus-tropicalis.ap.cs.fa
+|     |  |  +--|
+|     |  |     +--Nematostella-vectensis.ap.cs.fa
+|     +--|
+|        |  +--Monosiga-brevicollis.ap.cs.fa
+|        +--|
+|           +--Salpingoeca-rosetta.ap.cs.fa
+|
+|  +--Dictyostelium-discoideum.ap.cs.fa
++--|
+   +--Physarum-polycephalum.ap.cs.fa
+
+Tree in newick format:
+
+(Acanthamoeba-castellanii.ap.cs.fa:0.1376619144,(((((((Acanthocystis-sp.ap.cs.fa:0.1237952014,(Raineriophrys-erinaceoides.ap.cs.fa:0.1010679157,Raphidiophrys-heterophryoidea.ap.cs.fa:0.1074697135):0.0408114149):0.0732338033,Choanocystis-sp.ap.cs.fa:0.1361748031):0.0804822765,(((Ancyromonas-sigmoides.ap.cs.fa:0.2156896164,Nutomonas-longa.ap.cs.fa:0.1714015288):0.0606473752,Fabomonas-tropica.ap.cs.fa:0.1710342275):0.0334942286,Gefionella-okellyi.ap.cs.fa:0.2348537223):0.0195269547):0.0130922263,(((Ancoracysta-twista.ap.cs.fa:0.1841518794,Cyanophora-paradoxa.ap.cs.fa:0.1544320342):0.0320642320,((Cryptophyceae-sp.ap.cs.fa:0.1057593436,Guillardia-theta.ap.cs.fa:0.0619699682):0.1501222206,Goniomonas-avonlea.ap.cs.fa:0.1352204026):0.0731956404):0.0178050036,(Diphylleia-rotans.ap.cs.fa:0.1399846844,Rigifila-ramosa.ap.cs.fa:0.1359393561):0.0597707601):0.0148739125):0.0130327375,((((((((((Aduncisulcus-paluster.ap.cs.fa:0.3756555013,(Chilomastix-cuspidata.ap.cs.fa:0.3665617325,((Dysnectes-brevis.ap.cs.fa:0.2219200480,Trepomonas-sp.ap.cs.fa:0.4654560482):0.0894034198,Kipferlia-bialata.ap.cs.fa:0.3203909017):0.0362654312):0.0518022936):0.0340612178,Ergobibamus-cyprinoides.ap.cs.fa:0.2765219893):0.0396518201,Carpediemonas-membranifera.ap.cs.fa:0.3433054065):0.0955777813,((Elphidium-margaritaceum.ap.cs.fa:0.1616451973,Reticulomyxa-filosa.ap.cs.fa:0.1750326403):0.1815279969,((((((((((((((((GCA_000009905.1_ASM990v1_genomic_prot.fas:0.2129206854,(GCA_000183545.3_ASM18354v3_genomic_prot.fas:0.2051076195,GCA_000237975.1_ASM23797v1_genomic_prot.fas:0.2247140044):0.0482256015):0.0244108085,(GCA_002375925.1_ASM237592v1_genomic_prot.fas:0.1403286763,GCA_002376005.1_ASM237600v1_genomic_prot.fas:0.2188302063):0.0519389020):0.0442003973,(((((GCA_000020005.1_ASM2000v1_genomic_prot.fas:0.2360414328,GCA_001513245.1_ASM151324v1_genomic_prot.fas:0.1850539361):0.0433188770,(((((GCA_000426545.1_ASM42654v1_genomic_prot.fas:0.1471443620,GCA_001050455.1_ASM105045v1_genomic_prot.fas:0.1584305566):0.0389945219,GCA_001730225.1_ASM173022v1_genomic_prot.fas:0.1505338119):0.0282831190,GCA_000472905.1_ASM47290v1_genomic_prot.fas:0.1974873693):0.0562614260,GCA_900111575.1_IMG-taxon_2602042032_annotated_assembly_genomic_prot.fas:0.1839017805):0.0244750004,GCA_002292025.1_ASM229202v1_genomic_prot.fas:0.2961976434):0.0184767324):0.0170587812,GCA_001513125.1_ASM151312v1_genomic_prot.fas:0.1943656385):0.0149058188,(((((GCA_000092945.1_ASM9294v1_genomic_prot.fas:0.0942653373,GCA_000214435.1_ASM21443v1_genomic_prot.fas:0.1514157937):0.0354726355,GCA_000746025.1_ASM74602v1_genomic_prot.fas:0.1517098494):0.0160403523,((GCA_000987045.1_ASM98704v1_genomic_prot.fas:0.1399241932,GCA_002224645.1_ASM222464v1_genomic_prot.fas:0.1796463679):0.0210922936,GCA_001936615.1_ASM193661v1_genomic_prot.fas:0.2228456445):0.0216497756):0.0166675414,(GCA_001570625.1_ASM157062v1_genomic_prot.fas:0.2243009618,GCA_002418765.1_ASM241876v1_genomic_prot.fas:0.2407914744):0.0535070700):0.0283769507,GCA_000230275.1_ASM23027v1_genomic_prot.fas:0.2956786955):0.0222298709):0.0157586025,((GCA_000147695.3_ASM14769v3_genomic_prot.fas:0.1825069028,(GCA_000213255.1_ASM21325v1_genomic_prot.fas:0.1844009605,GCA_000237085.1_ASM23708v1_genomic_prot.fas:0.1691185112):0.0310803784):0.0287801137,GCA_002376045.1_ASM237604v1_genomic_prot.fas:0.1681721164):0.0467955922):0.0227054658):0.0232517974,(GCA_000517025.1_ASM51702v1_genomic_prot.fas:0.2865375714,((((GCA_001028815.1_ASM102881v1_genomic_prot.fas:0.1852479403,GCA_001512545.1_ASM151254v1_genomic_prot.fas:0.2362594359):0.0330502398,GCA_002408345.1_ASM240834v1_genomic_prot.fas:0.2110896075):0.0217825085,((GCA_001512605.1_ASM151260v1_genomic_prot.fas:0.1768043410,GCA_002409965.1_ASM240996v1_genomic_prot.fas:0.2430077118):0.0695590616,GCA_001512905.1_ASM151290v1_genomic_prot.fas:0.2111279907):0.0381601130):0.0231219319,GCA_003501365.1_ASM350136v1_genomic_prot.fas:0.2950037928):0.0219535570):0.0158095300):0.0379504506,(((((((GCA_000017805.1_ASM1780v1_genomic_prot.fas:0.2530739965,GCA_002702065.1_ASM270206v1_genomic_prot.fas:0.3731101400):0.0522922265,((GCA_000702505.1_ASM70250v1_genomic_prot.fas:0.2379868656,GCA_002413265.1_ASM241326v1_genomic_prot.fas:0.3089486766):0.0338313894,(GCA_002347925.1_ASM234792v1_genomic_prot.fas:0.2996558143,GCA_002404055.1_ASM240405v1_genomic_prot.fas:0.3753431566):0.0417650552):0.0288702589):0.0197693853,(GCA_001010485.1_ASM101048v1_genomic_prot.fas:0.3862132388,GCA_002436065.1_ASM243606v1_genomic_prot.fas:0.2591017637):0.0493375170):0.0484502362,(GCA_001795345.1_ASM179534v1_genomic_prot.fas:0.3569197386,GCA_003446775.1_ASM344677v1_genomic_prot.fas:0.3581237223):0.0516874171):0.0513150612,(GCA_002407045.1_ASM240704v1_genomic_prot.fas:0.3321091375,GCA_002413145.1_ASM241314v1_genomic_prot.fas:0.3569057956):0.0842487550):0.0181508787,GCA_001443485.1_ASM144348v1_genomic_prot.fas:0.3274731715):0.0241457035,((((GCA_001442985.1_ASM144298v1_genomic_prot.fas:0.3014841414,GCA_001457975.1_P488_genomic_prot.fas:0.2564499443):0.0538783905,GCA_003450055.1_ASM345005v1_genomic_prot.fas:0.2390632852):0.0732578464,((GCA_002409445.1_ASM240944v1_genomic_prot.fas:0.4283867429,GCA_002784985.1_ASM278498v1_genomic_prot.fas:0.3101475365):0.0512228410,GCA_002411015.1_ASM241101v1_genomic_prot.fas:0.4262896135):0.0497055347):0.0347945320,(GCA_002410925.1_ASM241092v1_genomic_prot.fas:0.2585467332,GCA_002779575.1_ASM277957v1_genomic_prot.fas:0.2880881610):0.0382121079):0.0308393278):0.0279796152):0.0230395953,((((GCA_000024265.1_ASM2426v1_genomic_prot.fas:0.3602857579,GCA_001871795.1_ASM187179v1_genomic_prot.fas:0.1897141629):0.0399476710,(GCA_000688095.1_ASM68809v1_genomic_prot.fas:0.3096602738,GCA_900175965.1_IMG-taxon_2505679031_annotated_assembly_genomic_prot.fas:0.3388803754):0.1139871919):0.0224009742,((GCA_000519205.1_ASM51920v1_genomic_prot.fas:0.3372168349,(GCA_001023575.1_ASM102357v1_genomic_prot.fas:0.3014696339,GCA_002405235.1_ASM240523v1_genomic_prot.fas:0.2733556729):0.0414036876):0.0598493473,GCA_001768645.1_ASM176864v1_genomic_prot.fas:0.2967237540):0.0419094549):0.0338769486,GCA_002304935.1_ASM230493v1_genomic_prot.fas:0.4307728258):0.0631699312):0.0266526251,((((((((((((((((((GCA_000012665.1_ASM1266v1_genomic_prot.fas:0.3022984581,GCA_000143965.1_ASM14396v1_genomic_prot.fas:0.2211365663):0.0437530329,GCA_001914235.1_ASM191423v1_genomic_prot.fas:0.2859575178):0.0318089410,((GCA_000217795.1_ASM21779v1_genomic_prot.fas:0.2222051373,GCA_001687335.1_ASM168733v1_genomic_prot.fas:0.2104265658):0.0471222916,GCA_001577525.1_ASM157752v1_genomic_prot.fas:0.2448328627):0.0307812017):0.0264925421,(GCA_000195295.1_ASM19529v1_genomic_prot.fas:0.2260507495,(GCA_002798115.1_ASM279811v1_genomic_prot.fas:0.2636936959,GCA_900129305.1_IMG-taxon_2582580750_annotated_assembly_genomic_prot.fas:0.1757683655):0.0311848097):0.0250803681):0.0289360567,(GCA_000266945.1_ASM26694v1_genomic_prot.fas:0.2817923749,(GCA_000526155.1_ASM52615v1_genomic_prot.fas:0.2763758674,GCA_002010915.1_ASM201091v1_genomic_prot.fas:0.1990964688):0.0292342064):0.0281419112):0.0140701810,GCA_000512235.1_ASM51223v1_genomic_prot.fas:0.3379733547):0.0179050159,(((GCA_000012925.1_ASM1292v1_genomic_prot.fas:0.1923382428,GCA_002383495.1_ASM238349v1_genomic_prot.fas:0.2274185468):0.0416132000,((GCA_001798165.1_ASM179816v1_genomic_prot.fas:0.2299090693,GCA_001798595.1_ASM179859v1_genomic_prot.fas:0.2827615030):0.0323165563,GCA_002327985.1_ASM232798v1_genomic_prot.fas:0.2249769800):0.0205895615):0.0150549352,(GCA_001798805.1_ASM179880v1_genomic_prot.fas:0.2554570114,GCA_001873935.1_ASM187393v1_genomic_prot.fas:0.2715921046):0.0481161607):0.0257497834):0.0177045145,(GCA_001797815.1_ASM179781v1_genomic_prot.fas:0.3129252694,(GCA_001799195.1_ASM179919v1_genomic_prot.fas:0.3200411393,GCA_002347965.1_ASM234796v1_genomic_prot.fas:0.4655415153):0.0439821192):0.0391855422):0.0190491486,((((((((GCA_000014865.1_ASM1486v1_genomic_prot.fas:0.2395678958,GCA_000300235.2_ASM30023v2_genomic_prot.fas:0.3006984456):0.0737743179,((GCA_000347995.1_ASM34799v1_genomic_prot.fas:0.2445359762,GCA_002699105.1_ASM269910v1_genomic_prot.fas:0.2679457362):0.1128945679,GCA_001895085.1_ASM189508v1_genomic_prot.fas:0.3347558493):0.0414247127):0.0679883669,(GCA_002310995.1_ASM231099v1_genomic_prot.fas:0.4285117527,GCA_003511165.1_ASM351116v1_genomic_prot.fas:0.5578482967):0.0948618105):0.0247257052,(GCA_002344365.1_ASM234436v1_genomic_prot.fas:0.4416572619,GCA_900177345.1_IMG-taxon_2708742533_annotated_assembly_genomic_prot.fas:0.3537903207):0.0631939938):0.0234230493,(GCA_001469005.2_ASM146900v2_genomic_prot.fas:0.4359545811,(GCA_001770205.1_ASM177020v1_genomic_prot.fas:0.4453685488,GCA_002381805.1_ASM238180v1_genomic_prot.fas:0.3606904543):0.0622112787):0.0338901388):0.0298921296,(GCA_002343335.1_ASM234333v1_genomic_prot.fas:0.4190974916,GCA_002433485.1_ASM243348v1_genomic_prot.fas:0.3151630446):0.0544712600):0.0277967080,(((GCA_000024805.1_ASM2480v1_genomic_prot.fas:0.2802866680,GCA_002453135.1_ASM245313v1_genomic_prot.fas:0.2938938965):0.0371032227,((GCA_002323315.1_ASM232331v1_genomic_prot.fas:0.2835190754,GCA_002863065.1_ASM286306v1_genomic_prot.fas:0.2965021750):0.0455416626,GCA_002390675.1_ASM239067v1_genomic_prot.fas:0.3945882011):0.0385582908):0.0232513296,((GCA_000331735.1_ASM33173v1_genomic_prot.fas:0.2594721420,GCA_002721815.1_ASM272181v1_genomic_prot.fas:0.3085929539):0.0376295213,GCA_001798655.1_ASM179865v1_genomic_prot.fas:0.2762009359):0.0340749423):0.0388665913):0.0249644450,(GCA_001798085.1_ASM179808v1_genomic_prot.fas:0.3227939434,GCA_001798515.1_ASM179851v1_genomic_prot.fas:0.3112038519):0.0642894975):0.0191309964):0.0388547611,((((GCA_000299235.1_ASM29923v1_genomic_prot.fas:0.3112943879,GCA_900170025.1_NSND_Contig_genomic_prot.fas:0.2336550714):0.0697536970,((GCA_001803765.1_ASM180376v1_genomic_prot.fas:0.1965837128,GCA_001803795.1_ASM180379v1_genomic_prot.fas:0.2040790205):0.0401735852,GCA_002011815.1_ASM201181v1_genomic_prot.fas:0.2427001065):0.0202079061):0.0405295873,(GCA_001873285.1_ASM187328v1_genomic_prot.fas:0.2220218916,GCA_001873295.1_ASM187329v1_genomic_prot.fas:0.3374720863):0.0661673101):0.0311159956,(((GCA_001542995.1_ASM154299v1_genomic_prot.fas:0.2980093334,(GCA_002500605.1_ASM250060v1_genomic_prot.fas:0.3332516082,GCA_003489165.1_ASM348916v1_genomic_prot.fas:0.1987796901):0.0333857412):0.0356661626,(GCA_001803565.1_ASM180356v1_genomic_prot.fas:0.2321751829,(GCA_002238965.1_ASM223896v1_genomic_prot.fas:0.2930402363,GCA_900079095.1_E.gemina.ts_genomic_prot.fas:0.2962181398):0.0437333943):0.0207686974):0.0404496115,GCA_001790715.1_ASM179071v1_genomic_prot.fas:0.2858551748):0.0261787843):0.0220587948):0.0191757859,((GCA_000177635.2_ASM17763v2_genomic_prot.fas:0.3034823633,GCA_000218625.1_ASM21862v1_genomic_prot.fas:0.3381883275):0.0810636277,(GCA_001788395.1_ASM178839v1_genomic_prot.fas:0.2998006608,GCA_002748425.1_ASM274842v1_genomic_prot.fas:0.2670259802):0.0515716154):0.0216153749):0.0156846851,(((((((GCA_000014005.1_ASM1400v1_genomic_prot.fas:0.2268671932,GCA_002451015.1_ASM245101v1_genomic_prot.fas:0.2601085942):0.0292767608,GCA_002483445.1_ASM248344v1_genomic_prot.fas:0.2453198470):0.0403517551,(GCA_001917905.1_ASM191790v1_genomic_prot.fas:0.2099404457,GCA_002238705.1_ASM223870v1_genomic_prot.fas:0.3414568683):0.0446398304):0.0262765985,GCA_002295025.1_ASM229502v1_genomic_prot.fas:0.3629406392):0.0243997571,((GCA_001664505.1_ASM166450v1_genomic_prot.fas:0.2514673229,GCA_001919375.1_ASM191937v1_genomic_prot.fas:0.2791659211):0.0444600805,(GCA_002402325.1_ASM240232v1_genomic_prot.fas:0.3845310834,GCA_002420005.1_ASM242000v1_genomic_prot.fas:0.2770437287):0.0475981744):0.0353979939):0.0256355829,(GCA_000242615.3_ASM24261v3_genomic_prot.fas:0.3546008096,(GCA_002747255.1_ASM274725v1_genomic_prot.fas:0.3205992224,GCA_002789615.1_ASM278961v1_genomic_prot.fas:0.2837903275):0.0497282170):0.0862867959):0.0330884695,(GCA_001780385.1_ASM178038v1_genomic_prot.fas:0.3711971529,GCA_002010725.1_ASM201072v1_genomic_prot.fas:0.2868875899):0.0781805906):0.0587053905):0.0220566102,((((((((GCA_000020465.1_ASM2046v1_genomic_prot.fas:0.3457555191,(GCA_000381545.1_ASM38154v1_genomic_prot.fas:0.3239978319,GCA_002694685.1_ASM269468v1_genomic_prot.fas:0.2828658936):0.0670165124):0.0466987112,(GCA_001485605.1_JGI_assembly_genomic_prot.fas:0.2135792284,((GCA_001804715.1_ASM180471v1_genomic_prot.fas:0.2172856345,GCA_003519375.1_ASM351937v1_genomic_prot.fas:0.1956760677):0.0369658233,GCA_002483085.1_ASM248308v1_genomic_prot.fas:0.3089442596):0.0212715762):0.0357471872):0.0466958535,GCA_003477045.1_ASM347704v1_genomic_prot.fas:0.4425933755):0.0235652258,((GCA_000241815.1_ASM24181v1_genomic_prot.fas:0.2369735116,GCA_001771235.1_ASM177123v1_genomic_prot.fas:0.2490310718):0.0432131105,((GCA_001304035.1_ASM130403v1_genomic_prot.fas:0.2686970181,GCA_002127415.1_ASM212741v1_genomic_prot.fas:0.3488228574):0.0449977930,((GCA_001872685.1_ASM187268v1_genomic_prot.fas:0.2545923667,GCA_003512065.1_ASM351206v1_genomic_prot.fas:0.2420342866):0.0442328748,(GCA_002256485.1_ASM225648v1_genomic_prot.fas:0.3205088020,GCA_002347855.1_ASM234785v1_genomic_prot.fas:0.2280318285):0.0449668154):0.0797611872):0.0224988846):0.0233961595):0.0419499463,((GCA_001045525.1_ASM104552v1_genomic_prot.fas:0.3086281931,GCA_900142465.1_IMG-taxon_2700988679_annotated_assembly_genomic_prot.fas:0.3958588411):0.0537727766,GCA_001797525.1_ASM179752v1_genomic_prot.fas:0.3395353055):0.0965133462):0.0234095244,(((GCA_000404785.1_ASM40478v1_genomic_prot.fas:0.4181456736,((GCA_001303705.1_ASM130370v1_genomic_prot.fas:0.2462268324,GCA_001780135.1_ASM178013v1_genomic_prot.fas:0.2780188321):0.0436718153,((GCA_001303785.1_ASM130378v1_genomic_prot.fas:0.3917504075,GCA_002316275.1_ASM231627v1_genomic_prot.fas:0.4127486242):0.0721036421,((GCA_001412365.1_ASM141236v1_genomic_prot.fas:0.3559053637,GCA_002441125.1_ASM244112v1_genomic_prot.fas:0.4167573772):0.0547969085,(GCA_002366725.1_ASM236672v1_genomic_prot.fas:0.3701689010,GCA_002367385.1_ASM236738v1_genomic_prot.fas:0.4404042654):0.0614948635):0.0426055658):0.0689016413):0.0266930375):0.0171993737,GCA_000447245.1_RBG_1_genomic_prot.fas:0.2995462222):0.0246841417,((GCA_002059205.1_ASM205920v1_genomic_prot.fas:0.2419148282,GCA_002433075.1_ASM243307v1_genomic_prot.fas:0.2772683306):0.0599213804,(GCA_002428525.1_ASM242852v1_genomic_prot.fas:0.4676222436,GCA_003533805.1_ASM353380v1_genomic_prot.fas:0.2993899961):0.0366391473):0.0333781546):0.0182048954):0.0191727635,((GCA_001780165.1_ASM178016v1_genomic_prot.fas:0.3268227637,(GCA_002686955.1_ASM268695v1_genomic_prot.fas:0.3053789002,GCA_002790835.1_ASM279083v1_genomic_prot.fas:0.3939178727):0.0384666558):0.0473018153,((GCA_001780825.1_ASM178082v1_genomic_prot.fas:0.2531188111,GCA_001919895.1_ASM191989v1_genomic_prot.fas:0.3268243184):0.0935812803,GCA_002084765.1_ASM208476v1_genomic_prot.fas:0.3047997035):0.0274861268):0.0203738290):0.0250024396,(GCA_001618625.1_ASM161862v1_genomic_prot.fas:0.4238033840,GCA_001774505.1_ASM177450v1_genomic_prot.fas:0.4308690038):0.0869755986):0.0428665926):0.0164038244,(((GCA_001567115.1_ASM156711v1_genomic_prot.fas:0.3941591543,GCA_002729415.1_ASM272941v1_genomic_prot.fas:0.3712187076):0.0384848649,GCA_002348185.1_ASM234818v1_genomic_prot.fas:0.4129196762):0.0337913967,(GCA_002428325.1_ASM242832v1_genomic_prot.fas:0.3209441099,GCA_002842095.1_ASM284209v1_genomic_prot.fas:0.3582015272):0.0674683547):0.0368210050):0.0147485466,((((((((GCA_000025905.1_ASM2590v1_genomic_prot.fas:0.4400496814,GCA_003534995.1_ASM353499v1_genomic_prot.fas:0.2846816972):0.0493363990,(GCA_001803315.1_ASM180331v1_genomic_prot.fas:0.3388721069,GCA_001804815.1_ASM180481v1_genomic_prot.fas:0.3563144487):0.0620821297):0.0655439701,GCA_002440765.1_ASM244076v1_genomic_prot.fas:0.3535932099):0.0349696485,(GCA_000875975.1_ASM87597v1_genomic_prot.fas:0.4459881259,GCA_002366995.1_ASM236699v1_genomic_prot.fas:0.4056846859):0.0810983415):0.0280451297,(((GCA_000255655.1_ASM25565v1_genomic_prot.fas:0.4152820740,GCA_003532895.1_ASM353289v1_genomic_prot.fas:0.3968956198):0.0673902042,(GCA_002746535.1_ASM274653v1_genomic_prot.fas:0.4058680819,GCA_003482625.1_ASM348262v1_genomic_prot.fas:0.4912750127):0.0792832800):0.0459450087,((GCA_000949635.1_ASM94963v1_genomic_prot.fas:0.3008255902,GCA_002418285.1_ASM241828v1_genomic_prot.fas:0.4762263461):0.0474681287,(GCA_002320775.1_ASM232077v1_genomic_prot.fas:0.3728688479,(GCA_002683135.1_ASM268313v1_genomic_prot.fas:0.3814203977,GCA_002748355.1_ASM274835v1_genomic_prot.fas:0.3540390802):0.0607511101):0.0554575237):0.0337921725):0.1208685632):0.0307986221,GCA_001730085.1_AB1_pvc_genomic_prot.fas:0.4300476375):0.0123785713,(((GCA_001804315.1_ASM180431v1_genomic_prot.fas:0.3525077475,GCA_002085025.1_ASM208502v1_genomic_prot.fas:0.3175902246):0.0400308137,((GCA_001804415.1_ASM180441v1_genomic_prot.fas:0.3625265640,GCA_002085265.1_ASM208526v1_genomic_prot.fas:0.2831262824):0.0472967414,GCA_002780005.1_ASM278000v1_genomic_prot.fas:0.2906143754):0.0391722575):0.0372162930,GCA_002781765.1_ASM278176v1_genomic_prot.fas:0.4875412969):0.0474896349):0.0373888509,(((GCA_001778375.1_ASM177837v1_genomic_prot.fas:0.3451836557,GCA_002839855.1_ASM283985v1_genomic_prot.fas:0.3664891262):0.0864356944,((((((GCA_001800315.1_ASM180031v1_genomic_prot.fas:0.2273572559,GCA_003452935.1_ASM345293v1_genomic_prot.fas:0.3689201499):0.0353197696,GCA_002412545.1_ASM241254v1_genomic_prot.fas:0.2538784035):0.0343276782,GCA_001800605.1_ASM180060v1_genomic_prot.fas:0.3019751788):0.0483803199,GCA_002841685.1_ASM284168v1_genomic_prot.fas:0.6176554664):0.0330980004,GCA_002441095.1_ASM244109v1_genomic_prot.fas:0.3000922691):0.0396963543,GCA_002785465.1_ASM278546v1_genomic_prot.fas:0.3998290774):0.0223076458):0.0306678763,(GCA_002478245.1_ASM247824v1_genomic_prot.fas:0.2917247964,((GCA_002772295.1_ASM277229v1_genomic_prot.fas:0.2896826498,GCA_003498085.1_ASM349808v1_genomic_prot.fas:0.3626675300):0.0399455458,GCA_003485015.1_ASM348501v1_genomic_prot.fas:0.2612396337):0.0722338055):0.0306079804):0.0275042211):0.0209692858):0.0202828175,((((((GCA_000021565.1_ASM2156v1_genomic_prot.fas:0.3017442654,GCA_000421485.1_ASM42148v1_genomic_prot.fas:0.2626410510):0.0642500416,GCA_000403075.1_ASM40307v1_genomic_prot.fas:0.5630948547):0.0306671087,GCA_001547735.1_ASM154773v1_genomic_prot.fas:0.2438599953):0.0403833314,(GCA_000420385.1_ASM42038v1_genomic_prot.fas:0.3074719549,GCA_001298465.1_ASM129846v1_genomic_prot.fas:0.4878810250):0.0849279335):0.0435728578,((((GCA_000143725.1_ASM14372v1_genomic_prot.fas:0.3567028312,GCA_001829375.1_ASM182937v1_genomic_prot.fas:0.3750802475):0.0692845739,(GCA_001829415.1_ASM182941v1_genomic_prot.fas:0.4417751301,GCA_002450905.1_ASM245090v1_genomic_prot.fas:0.3003102681):0.0434576110):0.0295221216,(GCA_000219725.1_ASM21972v1_genomic_prot.fas:0.2685227946,GCA_001829235.1_ASM182923v1_genomic_prot.fas:0.3236778458):0.1267992337):0.0466784484,(GCA_000347175.1_gls454194v01_genomic_prot.fas:0.3618288751,GCA_002839375.1_ASM283937v1_genomic_prot.fas:0.2851357588):0.1083934879):0.0765024934):0.0221165588,((GCA_001784175.1_ASM178417v1_genomic_prot.fas:0.4826488192,GCA_002780065.1_ASM278006v1_genomic_prot.fas:0.4091716213):0.0522869526,GCA_002311855.1_ASM231185v1_genomic_prot.fas:0.5347639370):0.0560318694):0.0203844998):0.0276506673,(((GCA_002402105.1_ASM240210v1_genomic_prot.fas:0.4640321863,GCA_002839445.1_ASM283944v1_genomic_prot.fas:0.3729430555):0.0712684833,GCA_002423385.1_ASM242338v1_genomic_prot.fas:0.3604244607):0.0444348892,GCA_003507225.1_ASM350722v1_genomic_prot.fas:0.4437357149):0.0322708979):0.0185229622,((GCA_000238615.1_Synerg_sp_3_1_syn1_V1_genomic_prot.fas:0.3776735099,GCA_001443005.1_ASM144300v1_genomic_prot.fas:0.2234522838):0.0836612437,((GCA_000402295.1_ASM40229v1_genomic_prot.fas:0.4331152965,GCA_002385475.1_ASM238547v1_genomic_prot.fas:0.2855498597):0.0529784464,GCA_003513845.1_ASM351384v1_genomic_prot.fas:0.2763348234):0.0474275914):0.0418157472):0.0193889934):0.0184979534,(((GCA_000317475.1_ASM31747v1_genomic_prot.fas:0.3347431959,GCA_001784555.1_ASM178455v1_genomic_prot.fas:0.4067654972):0.0351863696,GCA_002083785.1_ASM208378v1_genomic_prot.fas:0.2823720502):0.0786132821,(GCA_001771695.1_ASM177169v1_genomic_prot.fas:0.3686677567,(GCA_001783265.1_ASM178326v1_genomic_prot.fas:0.2759554483,GCA_002296285.1_ASM229628v1_genomic_prot.fas:0.5393997340):0.0698094215):0.0679958554):0.0495528642):0.0293447384,(((GCA_000020945.1_ASM2094v1_genomic_prot.fas:0.4318811707,GCA_002403335.1_ASM240333v1_genomic_prot.fas:0.4755008131):0.1042456280,(GCA_000021645.1_ASM2164v1_genomic_prot.fas:0.2803028076,GCA_000212395.1_ASM21239v1_genomic_prot.fas:0.4004928771):0.0586441433):0.0245268849,(GCA_000309885.1_ASM30988v1_genomic_prot.fas:0.4215746373,(GCA_000621345.1_ASM62134v1_genomic_prot.fas:0.3741838862,GCA_002011425.1_ASM201142v1_genomic_prot.fas:0.4019635002):0.0629361728):0.0364261073):0.0449161999):0.0408018145,(GCA_002050035.1_ASM205003v1_genomic_prot.fas:0.5128007012,GCA_002716355.1_ASM271635v1_genomic_prot.fas:0.7705537550):0.1049802926):0.0308711046,(((((GCA_000995065.1_ASM99506v1_genomic_prot.fas:0.3664563520,(GCA_001029735.1_ASM102973v1_genomic_prot.fas:0.4397944053,GCA_002779715.1_ASM277971v1_genomic_prot.fas:0.3450154866):0.0427866924):0.0435594190,(((GCA_001001525.1_ASM100152v1_genomic_prot.fas:0.3737465704,GCA_001817065.1_ASM181706v1_genomic_prot.fas:0.4898642326):0.0677066381,GCA_002778805.1_ASM277880v1_genomic_prot.fas:0.3637792844):0.0357863788,(GCA_001777695.1_ASM177769v1_genomic_prot.fas:0.4081083160,GCA_001818315.1_ASM181831v1_genomic_prot.fas:0.3874694463):0.0571849653):0.0624232715):0.0243532388,(GCA_000999315.1_ASM99931v1_genomic_prot.fas:0.4253823331,GCA_001771215.1_ASM177121v1_genomic_prot.fas:0.4365005703):0.0820249609):0.0355498682,GCA_001873755.1_ASM187375v1_genomic_prot.fas:0.4980060389):0.0387345686,(((GCA_001772695.1_ASM177269v1_genomic_prot.fas:0.4214505588,GCA_001774835.1_ASM177483v1_genomic_prot.fas:0.4037541026):0.0670057556,GCA_002084955.1_ASM208495v1_genomic_prot.fas:0.4537579797):0.0936744784,(GCA_002413835.1_ASM241383v1_genomic_prot.fas:0.4733327643,GCA_002840365.1_ASM284036v1_genomic_prot.fas:0.6294338803):0.1197766667):0.0404002535):0.0405053293):1.5333997769,((((((((GCA_000402515.1_ASM40251v1_genomic_prot.fas:0.3376343590,UBA12055_prot.fas:0.5349825264):0.0701965589,((((((GCA_000830295.1_ASM83029v1_genomic_prot.fas:0.2930738051,GCA_001595785.1_ASM159578v1_genomic_prot.fas:0.2603214175):0.0490743434,UBA12494_prot.fas:0.3432323302):0.0200312663,(GCA_002762795.1_ASM276279v1_genomic_prot.fas:0.3270865667,UBA12052_prot.fas:0.3104678029):0.0610960903):0.0239141568,((GCA_002762705.1_ASM276270v1_genomic_prot.fas:0.3009061148,GCA_002762985.1_ASM276298v1_genomic_prot.fas:0.2435091622):0.0406192175,(((GCA_002763335.1_ASM276333v1_genomic_prot.fas:0.2981261218,GCA_002779235.1_ASM277923v1_genomic_prot.fas:0.3310482279):0.0421998657,GCA_002792055.1_ASM279205v1_genomic_prot.fas:0.2273450963):0.0365398466,UBA10200_prot.fas:0.3346931730):0.0277936641):0.0227018758):0.0232697457,GCA_002792115.1_ASM279211v1_genomic_prot.fas:0.3691833089):0.0383660461,GCA_002505945.1_ASM250594v1_genomic_prot.fas:0.4653291524):0.0412487532):0.0432705891,GCA_002506365.1_ASM250636v1_genomic_prot.fas:0.6210012550):0.0549880123,((GCA_002763265.1_ASM276326v1_genomic_prot.fas:0.4451385466,GCA_002779595.1_ASM277959v1_genomic_prot.fas:0.4665634591):0.0778710976,UBA10117_prot.fas:0.5071960999):0.0445136887):0.0579944085,((GCA_001552015.1_ASM155201v1_genomic_prot.fas:0.6929341839,GCA_002503915.1_ASM250391v1_genomic_prot.fas:0.6956869234):0.0717294757,GCA_002780595.1_ASM278059v1_genomic_prot.fas:0.8287301551):0.0730372174):0.0709963303,(GCA_001563875.1_ASM156387v1_genomic_prot.fas:0.5819273322,(GCA_002254415.1_ASM225441v1_genomic_prot.fas:0.7428071319,(GCA_002784265.1_ASM278426v1_genomic_prot.fas:0.4801315062,UBA10154_prot.fas:0.4295409122):0.0560872882):0.0388111356):0.0752486702):0.0418281676,GCA_002494525.1_ASM249452v1_genomic_prot.fas:0.5688641372):0.0416200897,(((GCA_001723855.1_ASM172385v1_genomic_prot.fas:0.2653678094,GCA_002254565.1_ASM225456v1_genomic_prot.fas:0.2737443486):0.0554162496,(GCA_002785505.1_ASM278550v1_genomic_prot.fas:0.0705075588,GCA_002841105.1_ASM284110v1_genomic_prot.fas:0.0808192172):0.4293508708):0.1386325956,(((GCA_001871535.1_ASM187153v1_genomic_prot.fas:0.4808138943,GCA_001896515.1_ASM189651v1_genomic_prot.fas:0.4857125422):0.1225402612,GCA_001871595.1_ASM187159v1_genomic_prot.fas:0.5030579736):0.1077854012,(GCA_002779075.1_ASM277907v1_genomic_prot.fas:0.6215217754,UBA10011_prot.fas:0.3443954422):0.1617551139):0.0910601347):0.0492193076):0.0257059466):0.0245831408,((((GCA_000011185.1_ASM1118v1_genomic_prot.fas:0.4246117341,GCA_000025665.1_ASM2566v1_genomic_prot.fas:0.1931203662):0.1029797501,(((((GCA_000308215.1_ASM30821v1_genomic_prot.fas:0.2359688831,UBA9653_prot.fas:0.2460053738):0.0453614557,(GCA_002503985.1_ASM250398v1_genomic_prot.fas:0.4813706522,UBA8695_prot.fas:0.2306457963):0.0499249167):0.0350974417,GCA_002499085.1_ASM249908v1_genomic_prot.fas:0.2941643071):0.0664124471,((GCA_002503015.1_ASM250301v1_genomic_prot.fas:0.5195449026,GCA_002506485.1_ASM250648v1_genomic_prot.fas:0.4011008677):0.0701419338,GCA_002781385.1_ASM278138v1_genomic_prot.fas:0.2589261464):0.0398425602):0.0365661426,((GCA_001595945.1_ASM159594v1_genomic_prot.fas:0.3161881823,GCA_002838995.1_ASM283899v1_genomic_prot.fas:0.3177842106):0.0498636803,(GCA_002494765.1_ASM249476v1_genomic_prot.fas:0.4495252904,(GCA_002495235.1_ASM249523v1_genomic_prot.fas:0.4761343107,UBA9212_prot.fas:0.3833127291):0.0481988078):0.0437096875):0.0366101396):0.0418976894):0.0996407420,((((GCA_000021965.1_ASM2196v1_genomic_prot.fas:0.3768864034,(GCA_000230735.3_ASM23073v3_genomic_prot.fas:0.4167728379,GCA_001914405.1_ASM191440v1_genomic_prot.fas:0.3282629190):0.0684304945):0.0375895053,(((GCA_000063445.1_ASM6344v1_genomic_prot.fas:0.2690623451,GCA_002509385.1_ASM250938v1_genomic_prot.fas:0.2615769756):0.0370618578,(GCA_000711905.1_ASM71190v1_genomic_prot.fas:0.2661438536,(GCA_000970285.1_ASM97028v1_genomic_prot.fas:0.2406623947,GCA_001509375.1_ASM150937v1_genomic_prot.fas:0.2224124528):0.0501167262):0.0376422020):0.0286557621,(GCA_001766815.1_ASM176681v1_genomic_prot.fas:0.2708297841,UBA9210_prot.fas:0.3335113604):0.0515926715):0.0234389084):0.0423826832,GCA_002011165.1_ASM201116v1_genomic_prot.fas:0.2286823332):0.0432327812,GCA_000025505.1_ASM2550v1_genomic_prot.fas:0.2936236933):0.0629881049):0.0641964893,((((GCA_000214415.1_ASM21441v1_genomic_prot.fas:0.3021195886,GCA_002505765.1_ASM250576v1_genomic_prot.fas:0.3569158154):0.0404702386,UBA8853_prot.fas:0.3524907985):0.0302795326,GCA_002011125.1_ASM201112v1_genomic_prot.fas:0.3169450925):0.0285244008,(GCA_001515205.2_ASM151520v2_genomic_prot.fas:0.3936784253,(GCA_001587575.1_ASM158757v1_genomic_prot.fas:0.3869009485,GCA_900012635.1_Pyrococcus_chitonophagus_genome_sequence_genomic_prot.fas:0.2668655864):0.0558912109):0.0337171812):0.0276654815):0.0323633588):0.0865381134,(((((((GCA_000011205.1_ASM1120v1_genomic_prot.fas:0.3280780608,GCA_000145985.1_ASM14598v1_genomic_prot.fas:0.3333909242):0.0593139438,GCA_002254745.1_ASM225474v1_genomic_prot.fas:0.2624095987):0.0785019768,GCA_002507085.1_ASM250708v1_genomic_prot.fas:0.6214155683):0.0521056976,((GCA_000247545.1_ASM24754v1_genomic_prot.fas:0.4493968403,GCA_000813245.1_ASM81324v1_genomic_prot.fas:0.3047676461):0.0728619619,GCA_000398765.1_ASM39876v1_genomic_prot.fas:0.4905773161):0.0632338693):0.0407636975,GCA_001717035.1_ASM171703v1_genomic_prot.fas:0.4674597412):0.0536517326,(((GCA_000270325.1_ASM27032v1_genomic_prot.fas:0.4729395954,GCA_002255045.1_ASM225504v1_genomic_prot.fas:0.4142912306):0.0732693000,(GCA_001593865.1_ASM159386v1_genomic_prot.fas:0.3292756500,(((GCA_001775995.1_ASM177599v1_genomic_prot.fas:0.3060643593,GCA_001918745.1_ASM191874v1_genomic_prot.fas:0.4398491271):0.0405453798,GCA_002011035.1_ASM201103v1_genomic_prot.fas:0.3132183740):0.0504629135,((GCA_002255025.1_ASM225502v1_genomic_prot.fas:0.2349152478,GCA_002490245.1_ASM249024v1_genomic_prot.fas:0.2570110599):0.0481565880,UBA8941_prot.fas:0.4984616824):0.0347242476):0.0253268238):0.0345992218):0.0350634877,(GCA_002011075.1_ASM201107v1_genomic_prot.fas:0.4952454103,(GCA_002499005.1_ASM249900v1_genomic_prot.fas:0.4447679394,GCA_900065925.1_NDEV.embl.gz_genomic_prot.fas:0.4645487474):0.1482920014):0.1221353648):0.0402399617):0.0518395704,((GCA_001940655.1_ASM194065v1_genomic_prot.fas:0.5475353005,GCA_001940665.1_ASM194066v1_genomic_prot.fas:0.2865832006):0.0590372624,GCA_002825515.1_ASM282551v1_genomic_prot.fas:0.4818789587):0.0640124873):0.0279093852):0.0417629404,(GCA_001940645.1_ASM194064v1_genomic_prot.fas:0.5483659314,(GCA_001940725.1_ASM194072v1_genomic_prot.fas:0.5043873135,GCA_001940755.1_ASM194075v1_genomic_prot.fas:0.3736822562):0.1445449384):0.0745694975):0.0591407909,GCA_000019605.1_ASM1960v1_genomic_prot.fas:0.5744133776):0.5337784707):0.0688149706):0.0353777186,((Oxytricha-trifallax.ap.cs.fa:0.0322940120,Stylonychia-lemnae.ap.cs.fa:0.0305809928):0.2574244253,((Paramecium-tetraurelia.ap.cs.fa:0.2214858371,Tetrahymena-thermophila.ap.cs.fa:0.1936608065):0.1222175233,Stentor-coeruleus.ap.cs.fa:0.2476288843):0.0343578443):0.0657638767):0.0149609805,Stygiella-incarcerata.ap.cs.fa:0.2903796454):0.0219419888,((Amastigomonas-sp.ap.cs.fa:0.1911133615,Thecamonas-trahens.ap.cs.fa:0.2029035658):0.1071964163,Trimastix-marina.ap.cs.fa:0.2759201443):0.0274023221):0.0229696237,(((Bigelowiella-natans.ap.cs.fa:0.2281493103,Entamoeba-dispar.ap.cs.fa:0.3743956312):0.0346347034,Naegleria-gruberi.ap.cs.fa:0.3112297862):0.0247972899,(((Bodo-saltans.ap.cs.fa:0.2637004096,Diplonema-papillatum.ap.cs.fa:0.2611579274):0.0406758947,Euglena-gracilis.ap.cs.fa:0.1931844289):0.0661596454,((Telonema-spP1.ap.cs.fa:0.0463595613,Telonema-subtile.ap.cs.fa:0.0552467154):0.0254206168,Telonema-spP2.ap.cs.fa:0.0495546978):0.1928419599):0.0359867504):0.0235654397):0.0157173502,((Chondrus-crispus.ap.cs.fa:0.1268576243,Porphyra-umbilicalis.ap.cs.fa:0.1343110331):0.0570792355,(Cyanidioschyzon-merolae.ap.cs.fa:0.2234328515,Galdieria-sulphuraria.ap.cs.fa:0.1514275194):0.0323348786):0.0792689627):0.0116571630,(((((Amphidinium-carterae.ap.cs.fa:0.0885285469,((Polarella-glacialis.ap.cs.fa:0.0874989216,Protoceratium-reticulatum.ap.cs.fa:0.0849446328):0.0204399072,Togula-jolla.ap.cs.fa:0.0684290371):0.0289497344):0.1070826045,Noctiluca-scintillans.ap.cs.fa:0.1325771823):0.1136729598,(Chrysochromulina-sp.ap.cs.fa:0.0973943895,Emiliana-huxleyi.ap.cs.fa:0.0970321288):0.1330421369):0.0320398643,((((Aureococcus-anophagefferens.ap.cs.fa:0.1295878572,Nannochloropsis-gaditana.ap.cs.fa:0.1269627518):0.0697937967,Ectocarpus-siliculosus.ap.cs.fa:0.1242675198):0.0225420591,(Bolidomonas-pacifica.ap.cs.fa:0.1044992527,((((Fistulifera-solaris.ap.cs.fa:0.0716747098,Phaeodactylum-tricornutum.ap.cs.fa:0.0487875879):0.0262168693,(Fragilariopsis-cylindrus.ap.cs.fa:0.0511244728,Nitzschia-RCC80.ap.cs.fa:0.0358818707):0.0428734183):0.0204478263,(Odontella-aurita.ap.cs.fa:0.0560265218,(Thalassiosira-oceanica.ap.cs.fa:0.0400271435,Thalassiosira-pseudonana.ap.cs.fa:0.0242830520):0.0411510813):0.0125805704):0.0232598413,Leptocylindrus-danicus.ap.cs.fa:0.0876880233):0.0420961379):0.0766512970):0.0448409927,Thraustotheca-clavata.ap.cs.fa:0.1520545918):0.0814814650):0.0219202513,((((Arabidopsis-thaliana.ap.cs.fa:0.0640639579,Oryza-sativa.ap.cs.fa:0.0579270321):0.0328945321,(Physcomitrella-patens.ap.cs.fa:0.0511569636,Selaginella-moellendorffii.ap.cs.fa:0.0921119097):0.0181032229):0.0241372684,Klebsormidium-nitens.ap.cs.fa:0.0858306980):0.0461402823,(((Auxenochlorella-protothecoides.ap.cs.fa:0.1398692919,((Chlamydomonas-reinhardtii.ap.cs.fa:0.0230862931,Volvox-carteri.ap.cs.fa:0.0195260686):0.0710951756,Monoraphidium-neglectum.ap.cs.fa:0.0904617871):0.0285620253):0.0198660741,Tetraselmis-sp.ap.cs.fa:0.1072776311):0.0359302680,((Bathycoccus-prasinos.ap.cs.fa:0.1168943165,Ostreococcus-tauri.ap.cs.fa:0.0933229657):0.0299604452,Micromonas-pusilla.ap.cs.fa:0.0738217352):0.0969778601):0.0270335096):0.0683136248):0.0208787640):0.0169860458):0.0145223147,(Hemimastix-kukwesjijk.ap.cs.fa:0.1373299407,Spironema-multiciliatum.ap.cs.fa:0.1544676119):0.1014010577):0.0172068709,((((Allomyces-macrogynus.ap.cs.fa:0.1298030686,Spizellomyces-punctatus.ap.cs.fa:0.1062123405):0.0216889481,(Lobosporangium-transversale.ap.cs.fa:0.1133288937,Schizosaccharomyces-pombe.ap.cs.fa:0.2155750462):0.0290002685):0.0384142823,(Fonticula-alba.ap.cs.fa:0.2542180890,Parvularia-atlantis.ap.cs.fa:0.1120362572):0.0591269674):0.0376204446,((Amphimedon-queenslandica.ap.cs.fa:0.1305315751,(((Limulus-polyphemus.ap.cs.fa:0.0835476810,Lottia-gigantea.ap.cs.fa:0.1414552937):0.0266756130,Xenopus-tropicalis.ap.cs.fa:0.0901936881):0.0209114803,Nematostella-vectensis.ap.cs.fa:0.1111759046):0.0182167010):0.0427634418,(Monosiga-brevicollis.ap.cs.fa:0.1232791687,Salpingoeca-rosetta.ap.cs.fa:0.1318571499):0.1030872750):0.0506516749):0.0297518710):0.0347685852,(Dictyostelium-discoideum.ap.cs.fa:0.2287612100,Physarum-polycephalum.ap.cs.fa:0.1401784921):0.0394405780);
+
+TIME STAMP
+----------
+
+Date and time: Mon Nov 25 23:18:11 2019
+Total CPU time used: 221063 seconds (61h:24m:22s)
+Total wall-clock time used: 22820.2 seconds (6h:20m:20s)
+

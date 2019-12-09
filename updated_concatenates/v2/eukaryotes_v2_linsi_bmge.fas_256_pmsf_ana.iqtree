@@ -1,0 +1,268 @@
+IQ-TREE 1.7-beta12 built May 23 2019
+
+Input file name: eukaryotes_v2_linsi_bmge.fas
+Type of analysis: tree reconstruction
+Random seed number: 331266
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used site-specific frequency model please also cite: 
+
+Huai-Chun Wang, Edward Susko, Bui Quang Minh, and Andrew J. Roger (2017)
+Modeling site heterogeneity with posterior mean site frequency profiles
+accelerates accurate phylogenomic estimation. Syst Biol, in press.
+https://doi.org/10.1093/sysbio/syx068
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 97 sequences with 8651 amino-acid sites
+Number of constant sites: 907 (= 10.4843% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 907 (= 10.4843% of all sites)
+Number of parsimony informative sites: 6900
+Number of distinct site patterns: 8404
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Poisson+SSF+F+R4
+
+State frequencies: (site specific frequencies)
+
+Model of rate heterogeneity: FreeRate with 4 categories
+Site proportion and rates:  (0.2582,0.0565) (0.2702,0.4211) (0.2862,1.2579) (0.1853,2.7602)
+
+ Category  Relative_rate  Proportion
+  1         0.0565         0.2582
+  2         0.4211         0.2702
+  3         1.2579         0.2862
+  4         2.7602         0.1853
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -605428.8047 (s.e. 5116.9437)
+Unconstrained log-likelihood (without tree): -78025.4746
+Number of free parameters (#branches + #model parameters): 216
+Akaike information criterion (AIC) score: 1211289.6095
+Corrected Akaike information criterion (AICc) score: 1211300.7245
+Bayesian information criterion (BIC) score: 1212815.7424
+
+Total tree length (sum of branch lengths): 32.0292
+Sum of internal branch lengths: 8.3795 (26.1621% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Acanthamoeba-castellanii.ap.cs.fa' is drawn at root
+
++------Acanthamoeba-castellanii.ap.cs.fa
+|
+|                     +---Acanthocystis-sp.ap.cs.fa
+|                  +--|
+|                  |  |  +--Raineriophrys-erinaceoides.ap.cs.fa
+|                  |  +--|
+|                  |     +---Raphidiophrys-heterophryoidea.ap.cs.fa
+|              +---|
+|              |   +----Choanocystis-sp.ap.cs.fa
+|           +--|
+|           |  |               +--Amphidinium-carterae.ap.cs.fa
+|           |  |           +---|
+|           |  |           |   |     +--Polarella-glacialis.ap.cs.fa
+|           |  |           |   |  +--|
+|           |  |           |   |  |  +--Protoceratium-reticulatum.ap.cs.fa
+|           |  |           |   +--|
+|           |  |           |      +--Togula-jolla.ap.cs.fa
+|           |  |     +-----|
+|           |  |     |     +-----Noctiluca-scintillans.ap.cs.fa
+|           |  |  +--|
+|           |  |  |  |                +--Oxytricha-trifallax.ap.cs.fa
+|           |  |  |  |     +----------|
+|           |  |  |  |     |          +--Stylonychia-lemnae.ap.cs.fa
+|           |  |  |  |  +--|
+|           |  |  |  |  |  |      +---------Paramecium-tetraurelia.ap.cs.fa
+|           |  |  |  |  |  +------|
+|           |  |  |  |  |         +-------Tetrahymena-thermophila.ap.cs.fa
+|           |  |  |  +--|
+|           |  |  |     +-----------Stentor-coeruleus.ap.cs.fa
+|           |  +--|
+|           |     |               +----Aureococcus-anophagefferens.ap.cs.fa
+|           |     |            +--|
+|           |     |            |  +-------Nannochloropsis-gaditana.ap.cs.fa
+|           |     |         +--|
+|           |     |         |  |  +---Bolidomonas-pacifica.ap.cs.fa
+|           |     |         |  +--|
+|           |     |         |     |              +--Fistulifera-solaris.ap.cs.fa
+|           |     |         |     |           +--|
+|           |     |         |     |           |  +--Phaeodactylum-tricornutum.ap.cs.fa
+|           |     |         |     |        +--|
+|           |     |         |     |        |  |  +--Fragilariopsis-cylindrus.ap.cs.fa
+|           |     |         |     |        |  +--|
+|           |     |         |     |        |     +--Nitzschia-RCC80.ap.cs.fa
+|           |     |         |     |     +--|
+|           |     |         |     |     |  +--Odontella-aurita.ap.cs.fa
+|           |     |         |     |  +--|
+|           |     |         |     |  |  |  +--Thalassiosira-oceanica.ap.cs.fa
+|           |     |         |     |  |  +--|
+|           |     |         |     |  |     +--Thalassiosira-pseudonana.ap.cs.fa
+|           |     |         |     +--|
+|           |     |         |        +--Leptocylindrus-danicus.ap.cs.fa
+|           |     |      +--|
+|           |     |      |  +----Ectocarpus-siliculosus.ap.cs.fa
+|           |     |  +---|
+|           |     |  |   +-----Thraustotheca-clavata.ap.cs.fa
+|           |     +--|
+|           |        |  +----------Bigelowiella-natans.ap.cs.fa
+|           |        +--|
+|           |           |                 +----Elphidium-margaritaceum.ap.cs.fa
+|           |           +-----------------|
+|           |                             +---------Reticulomyxa-filosa.ap.cs.fa
+|        +--|
+|        |  |                       +--Arabidopsis-thaliana.ap.cs.fa
+|        |  |                    +--|
+|        |  |                    |  +--Oryza-sativa.ap.cs.fa
+|        |  |                 +--|
+|        |  |                 |  +--Selaginella-moellendorffii.ap.cs.fa
+|        |  |              +--|
+|        |  |              |  +--Physcomitrella-patens.ap.cs.fa
+|        |  |           +--|
+|        |  |           |  +--Klebsormidium-nitens.ap.cs.fa
+|        |  |        +--|
+|        |  |        |  |        +-----Auxenochlorella-protothecoides.ap.cs.fa
+|        |  |        |  |     +--|
+|        |  |        |  |     |  |     +--Chlamydomonas-reinhardtii.ap.cs.fa
+|        |  |        |  |     |  |  +--|
+|        |  |        |  |     |  |  |  +--Volvox-carteri.ap.cs.fa
+|        |  |        |  |     |  +--|
+|        |  |        |  |     |     +---Monoraphidium-neglectum.ap.cs.fa
+|        |  |        |  |  +--|
+|        |  |        |  |  |  +---Tetraselmis-sp.ap.cs.fa
+|        |  |        |  +--|
+|        |  |        |     |      +----Bathycoccus-prasinos.ap.cs.fa
+|        |  |        |     |   +--|
+|        |  |        |     |   |  +--Ostreococcus-tauri.ap.cs.fa
+|        |  |        |     +---|
+|        |  |        |         +--Micromonas-pusilla.ap.cs.fa
+|        |  |     +--|
+|        |  |     |  |        +---Cryptophyceae-sp.ap.cs.fa
+|        |  |     |  |  +-----|
+|        |  |     |  |  |     +--Guillardia-theta.ap.cs.fa
+|        |  |     |  +--|
+|        |  |     |     +-----Goniomonas-avonlea.ap.cs.fa
+|        |  |  +--|
+|        |  |  |  |        +---Chrysochromulina-sp.ap.cs.fa
+|        |  |  |  +--------|
+|        |  |  |           +---Emiliana-huxleyi.ap.cs.fa
+|        |  +--|
+|        |     |         +-----Chondrus-crispus.ap.cs.fa
+|        |     |      +--|
+|        |     |      |  +----Porphyra-umbilicalis.ap.cs.fa
+|        |     |  +---|
+|        |     |  |   |  +----------Cyanidioschyzon-merolae.ap.cs.fa
+|        |     |  |   +--|
+|        |     |  |      +------Galdieria-sulphuraria.ap.cs.fa
+|        |     +--|
+|        |        |  +-----Diphylleia-rotans.ap.cs.fa
+|        |        +--|
+|        |           +-----Rigifila-ramosa.ap.cs.fa
+|     +--|
+|     |  |           +-------Ancoracysta-twista.ap.cs.fa
+|     |  |        +--|
+|     |  |        |  |             +--Telonema-spP1.ap.cs.fa
+|     |  |        |  |          +--|
+|     |  |        |  |          |  +--Telonema-subtile.ap.cs.fa
+|     |  |        |  +----------|
+|     |  |        |             +--Telonema-spP2.ap.cs.fa
+|     |  |     +--|
+|     |  |     |  |   +-----Hemimastix-kukwesjijk.ap.cs.fa
+|     |  |     |  +---|
+|     |  |     |      +-------Spironema-multiciliatum.ap.cs.fa
+|     |  |  +--|
+|     |  |  |  +-------Cyanophora-paradoxa.ap.cs.fa
+|     |  +--|
+|     |     |     +--------Ancyromonas-sigmoides.ap.cs.fa
+|     |     |  +--|
+|     |     |  |  +-------Nutomonas-longa.ap.cs.fa
+|     |     +--|
+|     |        +--------Fabomonas-tropica.ap.cs.fa
+|  +--|
+|  |  |                     +-----------------Aduncisulcus-paluster.ap.cs.fa
+|  |  |                  +--|
+|  |  |                  |  |  +-----------------Chilomastix-cuspidata.ap.cs.fa
+|  |  |                  |  +--|
+|  |  |                  |     |            +-----Dysnectes-brevis.ap.cs.fa
+|  |  |                  |     |  +---------|
+|  |  |                  |     |  |         +--------------------------Trepomonas-sp.ap.cs.fa
+|  |  |                  |     +--|
+|  |  |                  |        +----------------Kipferlia-bialata.ap.cs.fa
+|  |  |               +--|
+|  |  |               |  +-------------Ergobibamus-cyprinoides.ap.cs.fa
+|  |  |        +------|
+|  |  |        |      +-----------------Carpediemonas-membranifera.ap.cs.fa
+|  |  |     +--|
+|  |  |     |  +------------Trimastix-marina.ap.cs.fa
+|  |  |  +--|
+|  |  |  |  +-----------------------Entamoeba-dispar.ap.cs.fa
+|  |  +--|
+|  |     |              +------------Bodo-saltans.ap.cs.fa
+|  |     |           +--|
+|  |     |           |  +----------Diplonema-papillatum.ap.cs.fa
+|  |     |        +--|
+|  |     |        |  +--------Euglena-gracilis.ap.cs.fa
+|  |     |     +--|
+|  |     |     |  +----------------Naegleria-gruberi.ap.cs.fa
+|  |     |  +--|
+|  |     |  |  +--------------Stygiella-incarcerata.ap.cs.fa
+|  |     +--|
+|  |        +----------Gefionella-okellyi.ap.cs.fa
++--|
+|  |              +-----Allomyces-macrogynus.ap.cs.fa
+|  |           +--|
+|  |           |  |  +---Lobosporangium-transversale.ap.cs.fa
+|  |           |  +--|
+|  |           |     +---------Schizosaccharomyces-pombe.ap.cs.fa
+|  |        +--|
+|  |        |  +---Spizellomyces-punctatus.ap.cs.fa
+|  |     +--|
+|  |     |  |  +------------Fonticula-alba.ap.cs.fa
+|  |     |  +--|
+|  |     |     +----Parvularia-atlantis.ap.cs.fa
+|  |  +--|
+|  |  |  |     +----Amphimedon-queenslandica.ap.cs.fa
+|  |  |  |  +--|
+|  |  |  |  |  |        +---Limulus-polyphemus.ap.cs.fa
+|  |  |  |  |  |     +--|
+|  |  |  |  |  |     |  +-----Lottia-gigantea.ap.cs.fa
+|  |  |  |  |  |  +--|
+|  |  |  |  |  |  |  +--Xenopus-tropicalis.ap.cs.fa
+|  |  |  |  |  +--|
+|  |  |  |  |     +---Nematostella-vectensis.ap.cs.fa
+|  |  |  +--|
+|  |  |     |   +----Monosiga-brevicollis.ap.cs.fa
+|  |  |     +---|
+|  |  |         +----Salpingoeca-rosetta.ap.cs.fa
+|  +--|
+|     |     +--------Amastigomonas-sp.ap.cs.fa
+|     +-----|
+|           +-------Thecamonas-trahens.ap.cs.fa
+|
+|  +----------Dictyostelium-discoideum.ap.cs.fa
++--|
+   +-----Physarum-polycephalum.ap.cs.fa
+
+Tree in newick format:
+
+(Acanthamoeba-castellanii.ap.cs.fa:0.2576754018,(((((((Acanthocystis-sp.ap.cs.fa:0.1675828667,(Raineriophrys-erinaceoides.ap.cs.fa:0.1377124203,Raphidiophrys-heterophryoidea.ap.cs.fa:0.1555489779):0.0547431439):0.1086101873,Choanocystis-sp.ap.cs.fa:0.1798125744):0.1674916269,((((Amphidinium-carterae.ap.cs.fa:0.1210388447,((Polarella-glacialis.ap.cs.fa:0.1162850303,Protoceratium-reticulatum.ap.cs.fa:0.1281306929):0.0250578549,Togula-jolla.ap.cs.fa:0.0990905875):0.0367855736):0.1620632870,Noctiluca-scintillans.ap.cs.fa:0.2096143211):0.2258669311,(((Oxytricha-trifallax.ap.cs.fa:0.0584485152,Stylonychia-lemnae.ap.cs.fa:0.0350550638):0.3940880756,(Paramecium-tetraurelia.ap.cs.fa:0.3676323108,Tetrahymena-thermophila.ap.cs.fa:0.3012626772):0.2570780918):0.0757530189,Stentor-coeruleus.ap.cs.fa:0.4479722538):0.1376960520):0.0579212042,(((((Aureococcus-anophagefferens.ap.cs.fa:0.1974712664,Nannochloropsis-gaditana.ap.cs.fa:0.2846769074):0.0855610877,(Bolidomonas-pacifica.ap.cs.fa:0.1393854772,(((((Fistulifera-solaris.ap.cs.fa:0.0982811754,Phaeodactylum-tricornutum.ap.cs.fa:0.0674565363):0.0329149769,(Fragilariopsis-cylindrus.ap.cs.fa:0.0814455590,Nitzschia-RCC80.ap.cs.fa:0.0566155995):0.0501652328):0.0391481105,Odontella-aurita.ap.cs.fa:0.0831475894):0.0146586571,(Thalassiosira-oceanica.ap.cs.fa:0.0588193651,Thalassiosira-pseudonana.ap.cs.fa:0.0429009886):0.0519165581):0.0300669521,Leptocylindrus-danicus.ap.cs.fa:0.1182872792):0.0568679063):0.1378061743):0.0257256814,Ectocarpus-siliculosus.ap.cs.fa:0.2050318506):0.0628441603,Thraustotheca-clavata.ap.cs.fa:0.2413305486):0.1466418009,(Bigelowiella-natans.ap.cs.fa:0.4058369699,(Elphidium-margaritaceum.ap.cs.fa:0.1819503891,Reticulomyxa-filosa.ap.cs.fa:0.3568150097):0.6435327967):0.0853568852):0.0206058449):0.0158488704):0.0200191649,((((((((Arabidopsis-thaliana.ap.cs.fa:0.0943374422,Oryza-sativa.ap.cs.fa:0.0950797012):0.0578572792,Selaginella-moellendorffii.ap.cs.fa:0.1300335424):0.0189802703,Physcomitrella-patens.ap.cs.fa:0.0733012037):0.0433540517,Klebsormidium-nitens.ap.cs.fa:0.1207532004):0.0774699075,(((Auxenochlorella-protothecoides.ap.cs.fa:0.2154679749,((Chlamydomonas-reinhardtii.ap.cs.fa:0.0332625160,Volvox-carteri.ap.cs.fa:0.0341588482):0.1040462378,Monoraphidium-neglectum.ap.cs.fa:0.1437094629):0.0476999318):0.0293624457,Tetraselmis-sp.ap.cs.fa:0.1707567042):0.0560134483,((Bathycoccus-prasinos.ap.cs.fa:0.1788473758,Ostreococcus-tauri.ap.cs.fa:0.1336598299):0.0479290613,Micromonas-pusilla.ap.cs.fa:0.1010558303):0.1563722873):0.0370888866):0.1238559605,((Cryptophyceae-sp.ap.cs.fa:0.1564268239,Guillardia-theta.ap.cs.fa:0.0795838827):0.2339949575,Goniomonas-avonlea.ap.cs.fa:0.2364729809):0.1189875739):0.0184586957,(Chrysochromulina-sp.ap.cs.fa:0.1385941142,Emiliana-huxleyi.ap.cs.fa:0.1601150110):0.3212105024):0.0088253544,(((Chondrus-crispus.ap.cs.fa:0.2192519014,Porphyra-umbilicalis.ap.cs.fa:0.2058887684):0.0644912303,(Cyanidioschyzon-merolae.ap.cs.fa:0.3805775712,Galdieria-sulphuraria.ap.cs.fa:0.2586756802):0.0394838910):0.1646331081,(Diphylleia-rotans.ap.cs.fa:0.2303872281,Rigifila-ramosa.ap.cs.fa:0.2155151988):0.1011312526):0.0286861231):0.0219971750):0.0092163377,((((Ancoracysta-twista.ap.cs.fa:0.2966368676,((Telonema-spP1.ap.cs.fa:0.0609564123,Telonema-subtile.ap.cs.fa:0.0673838985):0.0301620731,Telonema-spP2.ap.cs.fa:0.0741094051):0.3846775546):0.0338242193,(Hemimastix-kukwesjijk.ap.cs.fa:0.2216191066,Spironema-multiciliatum.ap.cs.fa:0.2980654093):0.1614412585):0.0189499811,Cyanophora-paradoxa.ap.cs.fa:0.3006069034):0.0119959143,((Ancyromonas-sigmoides.ap.cs.fa:0.3391474084,Nutomonas-longa.ap.cs.fa:0.2822678151):0.0829387414,Fabomonas-tropica.ap.cs.fa:0.3155963029):0.0903317791):0.0065275258):0.0098495942,((((((Aduncisulcus-paluster.ap.cs.fa:0.6480059609,(Chilomastix-cuspidata.ap.cs.fa:0.6443179539,((Dysnectes-brevis.ap.cs.fa:0.2130725281,Trepomonas-sp.ap.cs.fa:0.9650021752):0.3765885870,Kipferlia-bialata.ap.cs.fa:0.6125967414):0.0398701230):0.1376902028):0.0475544921,Ergobibamus-cyprinoides.ap.cs.fa:0.4834052248):0.0621134269,Carpediemonas-membranifera.ap.cs.fa:0.6241987328):0.2713719895,Trimastix-marina.ap.cs.fa:0.4729953456):0.0365648850,Entamoeba-dispar.ap.cs.fa:0.8347611960):0.0409123742,(((((Bodo-saltans.ap.cs.fa:0.4724498925,Diplonema-papillatum.ap.cs.fa:0.3958993164):0.0442492411,Euglena-gracilis.ap.cs.fa:0.3274722170):0.1343865449,Naegleria-gruberi.ap.cs.fa:0.5920251869):0.0243485168,Stygiella-incarcerata.ap.cs.fa:0.5224487360):0.0207928011,Gefionella-okellyi.ap.cs.fa:0.3873382177):0.0259710349):0.0184779575):0.0262269911,(((((Allomyces-macrogynus.ap.cs.fa:0.2074334566,(Lobosporangium-transversale.ap.cs.fa:0.1704798611,Schizosaccharomyces-pombe.ap.cs.fa:0.3455263258):0.0320891012):0.0266010641,Spizellomyces-punctatus.ap.cs.fa:0.1560652903):0.0773943573,(Fonticula-alba.ap.cs.fa:0.4627778039,Parvularia-atlantis.ap.cs.fa:0.1957133588):0.0791332464):0.0571460451,((Amphimedon-queenslandica.ap.cs.fa:0.1993438375,(((Limulus-polyphemus.ap.cs.fa:0.1389850979,Lottia-gigantea.ap.cs.fa:0.2273161638):0.0326646516,Xenopus-tropicalis.ap.cs.fa:0.1370163061):0.0297163476,Nematostella-vectensis.ap.cs.fa:0.1604076953):0.0212795004):0.0563857385,(Monosiga-brevicollis.ap.cs.fa:0.1848612853,Salpingoeca-rosetta.ap.cs.fa:0.1945269282):0.1684755097):0.0952302047):0.0412691209,(Amastigomonas-sp.ap.cs.fa:0.3166392676,Thecamonas-trahens.ap.cs.fa:0.2783851124):0.2257144010):0.0119002461):0.0473695944,(Dictyostelium-discoideum.ap.cs.fa:0.3881611933,Physarum-polycephalum.ap.cs.fa:0.2254781378):0.0853422534);
+
+TIME STAMP
+----------
+
+Date and time: Fri Nov 29 11:22:44 2019
+Total CPU time used: 47076.6 seconds (13h:4m:36s)
+Total wall-clock time used: 2430.97 seconds (0h:40m:30s)
+

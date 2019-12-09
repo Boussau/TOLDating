@@ -1,0 +1,735 @@
+IQ-TREE 1.7-beta12 built May 23 2019
+
+Input file name: eukaryotes_v2_linsi_bmge.fas
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 888361
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2017) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol Biol Evol, in press.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 97 sequences with 8651 amino-acid sites
+Number of constant sites: 907 (= 10.4843% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 907 (= 10.4843% of all sites)
+Number of parsimony informative sites: 6900
+Number of distinct site patterns: 8404
+
+SUBSTITUTION PROCESS
+--------------------
+
+Mixture model of substitution: MIX{Poisson+FF256C000,Poisson+FF256C001,Poisson+FF256C002,Poisson+FF256C003,Poisson+FF256C004,Poisson+FF256C005,Poisson+FF256C006,Poisson+FF256C007,Poisson+FF256C008,Poisson+FF256C009,Poisson+FF256C010,Poisson+FF256C011,Poisson+FF256C012,Poisson+FF256C013,Poisson+FF256C014,Poisson+FF256C015,Poisson+FF256C016,Poisson+FF256C017,Poisson+FF256C018,Poisson+FF256C019,Poisson+FF256C020,Poisson+FF256C021,Poisson+FF256C022,Poisson+FF256C023,Poisson+FF256C024,Poisson+FF256C025,Poisson+FF256C026,Poisson+FF256C027,Poisson+FF256C028,Poisson+FF256C029,Poisson+FF256C030,Poisson+FF256C031,Poisson+FF256C032,Poisson+FF256C033,Poisson+FF256C034,Poisson+FF256C035,Poisson+FF256C036,Poisson+FF256C037,Poisson+FF256C038,Poisson+FF256C039,Poisson+FF256C040,Poisson+FF256C041,Poisson+FF256C042,Poisson+FF256C043,Poisson+FF256C044,Poisson+FF256C045,Poisson+FF256C046,Poisson+FF256C047,Poisson+FF256C048,Poisson+FF256C049,Poisson+FF256C050,Poisson+FF256C051,Poisson+FF256C052,Poisson+FF256C053,Poisson+FF256C054,Poisson+FF256C055,Poisson+FF256C056,Poisson+FF256C057,Poisson+FF256C058,Poisson+FF256C059,Poisson+FF256C060,Poisson+FF256C061,Poisson+FF256C062,Poisson+FF256C063,Poisson+FF256C064,Poisson+FF256C065,Poisson+FF256C066,Poisson+FF256C067,Poisson+FF256C068,Poisson+FF256C069,Poisson+FF256C070,Poisson+FF256C071,Poisson+FF256C072,Poisson+FF256C073,Poisson+FF256C074,Poisson+FF256C075,Poisson+FF256C076,Poisson+FF256C077,Poisson+FF256C078,Poisson+FF256C079,Poisson+FF256C080,Poisson+FF256C081,Poisson+FF256C082,Poisson+FF256C083,Poisson+FF256C084,Poisson+FF256C085,Poisson+FF256C086,Poisson+FF256C087,Poisson+FF256C088,Poisson+FF256C089,Poisson+FF256C090,Poisson+FF256C091,Poisson+FF256C092,Poisson+FF256C093,Poisson+FF256C094,Poisson+FF256C095,Poisson+FF256C096,Poisson+FF256C097,Poisson+FF256C098,Poisson+FF256C099,Poisson+FF256C100,Poisson+FF256C101,Poisson+FF256C102,Poisson+FF256C103,Poisson+FF256C104,Poisson+FF256C105,Poisson+FF256C106,Poisson+FF256C107,Poisson+FF256C108,Poisson+FF256C109,Poisson+FF256C110,Poisson+FF256C111,Poisson+FF256C112,Poisson+FF256C113,Poisson+FF256C114,Poisson+FF256C115,Poisson+FF256C116,Poisson+FF256C117,Poisson+FF256C118,Poisson+FF256C119,Poisson+FF256C120,Poisson+FF256C121,Poisson+FF256C122,Poisson+FF256C123,Poisson+FF256C124,Poisson+FF256C125,Poisson+FF256C126,Poisson+FF256C127,Poisson+FF256C128,Poisson+FF256C129,Poisson+FF256C130,Poisson+FF256C131,Poisson+FF256C132,Poisson+FF256C133,Poisson+FF256C134,Poisson+FF256C135,Poisson+FF256C136,Poisson+FF256C137,Poisson+FF256C138,Poisson+FF256C139,Poisson+FF256C140,Poisson+FF256C141,Poisson+FF256C142,Poisson+FF256C143,Poisson+FF256C144,Poisson+FF256C145,Poisson+FF256C146,Poisson+FF256C147,Poisson+FF256C148,Poisson+FF256C149,Poisson+FF256C150,Poisson+FF256C151,Poisson+FF256C152,Poisson+FF256C153,Poisson+FF256C154,Poisson+FF256C155,Poisson+FF256C156,Poisson+FF256C157,Poisson+FF256C158,Poisson+FF256C159,Poisson+FF256C160,Poisson+FF256C161,Poisson+FF256C162,Poisson+FF256C163,Poisson+FF256C164,Poisson+FF256C165,Poisson+FF256C166,Poisson+FF256C167,Poisson+FF256C168,Poisson+FF256C169,Poisson+FF256C170,Poisson+FF256C171,Poisson+FF256C172,Poisson+FF256C173,Poisson+FF256C174,Poisson+FF256C175,Poisson+FF256C176,Poisson+FF256C177,Poisson+FF256C178,Poisson+FF256C179,Poisson+FF256C180,Poisson+FF256C181,Poisson+FF256C182,Poisson+FF256C183,Poisson+FF256C184,Poisson+FF256C185,Poisson+FF256C186,Poisson+FF256C187,Poisson+FF256C188,Poisson+FF256C189,Poisson+FF256C190,Poisson+FF256C191,Poisson+FF256C192,Poisson+FF256C193,Poisson+FF256C194,Poisson+FF256C195,Poisson+FF256C196,Poisson+FF256C197,Poisson+FF256C198,Poisson+FF256C199,Poisson+FF256C200,Poisson+FF256C201,Poisson+FF256C202,Poisson+FF256C203,Poisson+FF256C204,Poisson+FF256C205,Poisson+FF256C206,Poisson+FF256C207,Poisson+FF256C208,Poisson+FF256C209,Poisson+FF256C210,Poisson+FF256C211,Poisson+FF256C212,Poisson+FF256C213,Poisson+FF256C214,Poisson+FF256C215,Poisson+FF256C216,Poisson+FF256C217,Poisson+FF256C218,Poisson+FF256C219,Poisson+FF256C220,Poisson+FF256C221,Poisson+FF256C222,Poisson+FF256C223,Poisson+FF256C224,Poisson+FF256C225,Poisson+FF256C226,Poisson+FF256C227,Poisson+FF256C228,Poisson+FF256C229,Poisson+FF256C230,Poisson+FF256C231,Poisson+FF256C232,Poisson+FF256C233,Poisson+FF256C234,Poisson+FF256C235,Poisson+FF256C236,Poisson+FF256C237,Poisson+FF256C238,Poisson+FF256C239,Poisson+FF256C240,Poisson+FF256C241,Poisson+FF256C242,Poisson+FF256C243,Poisson+FF256C244,Poisson+FF256C245,Poisson+FF256C246,Poisson+FF256C247,Poisson+FF256C248,Poisson+FF256C249,Poisson+FF256C250,Poisson+FF256C251,Poisson+FF256C252,Poisson+FF256C253,Poisson+FF256C254,Poisson+FF256C255}+R4
+
+  No  Component      Rate    Weight   Parameters
+   1  Poisson+FF256C000  1.0000   0.0025   Poisson+FF256C000
+   2  Poisson+FF256C001  1.0000   0.0040   Poisson+FF256C001
+   3  Poisson+FF256C002  1.0000   0.0031   Poisson+FF256C002
+   4  Poisson+FF256C003  1.0000   0.0000   Poisson+FF256C003
+   5  Poisson+FF256C004  1.0000   0.0006   Poisson+FF256C004
+   6  Poisson+FF256C005  1.0000   0.0037   Poisson+FF256C005
+   7  Poisson+FF256C006  1.0000   0.0038   Poisson+FF256C006
+   8  Poisson+FF256C007  1.0000   0.0045   Poisson+FF256C007
+   9  Poisson+FF256C008  1.0000   0.0040   Poisson+FF256C008
+  10  Poisson+FF256C009  1.0000   0.0127   Poisson+FF256C009
+  11  Poisson+FF256C010  1.0000   0.0019   Poisson+FF256C010
+  12  Poisson+FF256C011  1.0000   0.0004   Poisson+FF256C011
+  13  Poisson+FF256C012  1.0000   0.0041   Poisson+FF256C012
+  14  Poisson+FF256C013  1.0000   0.0025   Poisson+FF256C013
+  15  Poisson+FF256C014  1.0000   0.0027   Poisson+FF256C014
+  16  Poisson+FF256C015  1.0000   0.0040   Poisson+FF256C015
+  17  Poisson+FF256C016  1.0000   0.0010   Poisson+FF256C016
+  18  Poisson+FF256C017  1.0000   0.0014   Poisson+FF256C017
+  19  Poisson+FF256C018  1.0000   0.0080   Poisson+FF256C018
+  20  Poisson+FF256C019  1.0000   0.0033   Poisson+FF256C019
+  21  Poisson+FF256C020  1.0000   0.0003   Poisson+FF256C020
+  22  Poisson+FF256C021  1.0000   0.0059   Poisson+FF256C021
+  23  Poisson+FF256C022  1.0000   0.0027   Poisson+FF256C022
+  24  Poisson+FF256C023  1.0000   0.0087   Poisson+FF256C023
+  25  Poisson+FF256C024  1.0000   0.0004   Poisson+FF256C024
+  26  Poisson+FF256C025  1.0000   0.0009   Poisson+FF256C025
+  27  Poisson+FF256C026  1.0000   0.0030   Poisson+FF256C026
+  28  Poisson+FF256C027  1.0000   0.0073   Poisson+FF256C027
+  29  Poisson+FF256C028  1.0000   0.0086   Poisson+FF256C028
+  30  Poisson+FF256C029  1.0000   0.0054   Poisson+FF256C029
+  31  Poisson+FF256C030  1.0000   0.0017   Poisson+FF256C030
+  32  Poisson+FF256C031  1.0000   0.0074   Poisson+FF256C031
+  33  Poisson+FF256C032  1.0000   0.0043   Poisson+FF256C032
+  34  Poisson+FF256C033  1.0000   0.0000   Poisson+FF256C033
+  35  Poisson+FF256C034  1.0000   0.0027   Poisson+FF256C034
+  36  Poisson+FF256C035  1.0000   0.0000   Poisson+FF256C035
+  37  Poisson+FF256C036  1.0000   0.0000   Poisson+FF256C036
+  38  Poisson+FF256C037  1.0000   0.0025   Poisson+FF256C037
+  39  Poisson+FF256C038  1.0000   0.0000   Poisson+FF256C038
+  40  Poisson+FF256C039  1.0000   0.0035   Poisson+FF256C039
+  41  Poisson+FF256C040  1.0000   0.0015   Poisson+FF256C040
+  42  Poisson+FF256C041  1.0000   0.0082   Poisson+FF256C041
+  43  Poisson+FF256C042  1.0000   0.0035   Poisson+FF256C042
+  44  Poisson+FF256C043  1.0000   0.0055   Poisson+FF256C043
+  45  Poisson+FF256C044  1.0000   0.0093   Poisson+FF256C044
+  46  Poisson+FF256C045  1.0000   0.0017   Poisson+FF256C045
+  47  Poisson+FF256C046  1.0000   0.0062   Poisson+FF256C046
+  48  Poisson+FF256C047  1.0000   0.0017   Poisson+FF256C047
+  49  Poisson+FF256C048  1.0000   0.0000   Poisson+FF256C048
+  50  Poisson+FF256C049  1.0000   0.0000   Poisson+FF256C049
+  51  Poisson+FF256C050  1.0000   0.0000   Poisson+FF256C050
+  52  Poisson+FF256C051  1.0000   0.0060   Poisson+FF256C051
+  53  Poisson+FF256C052  1.0000   0.0000   Poisson+FF256C052
+  54  Poisson+FF256C053  1.0000   0.0000   Poisson+FF256C053
+  55  Poisson+FF256C054  1.0000   0.0052   Poisson+FF256C054
+  56  Poisson+FF256C055  1.0000   0.0008   Poisson+FF256C055
+  57  Poisson+FF256C056  1.0000   0.0021   Poisson+FF256C056
+  58  Poisson+FF256C057  1.0000   0.0062   Poisson+FF256C057
+  59  Poisson+FF256C058  1.0000   0.0000   Poisson+FF256C058
+  60  Poisson+FF256C059  1.0000   0.0009   Poisson+FF256C059
+  61  Poisson+FF256C060  1.0000   0.0005   Poisson+FF256C060
+  62  Poisson+FF256C061  1.0000   0.0071   Poisson+FF256C061
+  63  Poisson+FF256C062  1.0000   0.0011   Poisson+FF256C062
+  64  Poisson+FF256C063  1.0000   0.0004   Poisson+FF256C063
+  65  Poisson+FF256C064  1.0000   0.0010   Poisson+FF256C064
+  66  Poisson+FF256C065  1.0000   0.0041   Poisson+FF256C065
+  67  Poisson+FF256C066  1.0000   0.0014   Poisson+FF256C066
+  68  Poisson+FF256C067  1.0000   0.0000   Poisson+FF256C067
+  69  Poisson+FF256C068  1.0000   0.0042   Poisson+FF256C068
+  70  Poisson+FF256C069  1.0000   0.0041   Poisson+FF256C069
+  71  Poisson+FF256C070  1.0000   0.0000   Poisson+FF256C070
+  72  Poisson+FF256C071  1.0000   0.0000   Poisson+FF256C071
+  73  Poisson+FF256C072  1.0000   0.0003   Poisson+FF256C072
+  74  Poisson+FF256C073  1.0000   0.0017   Poisson+FF256C073
+  75  Poisson+FF256C074  1.0000   0.0023   Poisson+FF256C074
+  76  Poisson+FF256C075  1.0000   0.0022   Poisson+FF256C075
+  77  Poisson+FF256C076  1.0000   0.0000   Poisson+FF256C076
+  78  Poisson+FF256C077  1.0000   0.0000   Poisson+FF256C077
+  79  Poisson+FF256C078  1.0000   0.0000   Poisson+FF256C078
+  80  Poisson+FF256C079  1.0000   0.0050   Poisson+FF256C079
+  81  Poisson+FF256C080  1.0000   0.0064   Poisson+FF256C080
+  82  Poisson+FF256C081  1.0000   0.0010   Poisson+FF256C081
+  83  Poisson+FF256C082  1.0000   0.0037   Poisson+FF256C082
+  84  Poisson+FF256C083  1.0000   0.0003   Poisson+FF256C083
+  85  Poisson+FF256C084  1.0000   0.0002   Poisson+FF256C084
+  86  Poisson+FF256C085  1.0000   0.0035   Poisson+FF256C085
+  87  Poisson+FF256C086  1.0000   0.0011   Poisson+FF256C086
+  88  Poisson+FF256C087  1.0000   0.0009   Poisson+FF256C087
+  89  Poisson+FF256C088  1.0000   0.0003   Poisson+FF256C088
+  90  Poisson+FF256C089  1.0000   0.0034   Poisson+FF256C089
+  91  Poisson+FF256C090  1.0000   0.0007   Poisson+FF256C090
+  92  Poisson+FF256C091  1.0000   0.0010   Poisson+FF256C091
+  93  Poisson+FF256C092  1.0000   0.0000   Poisson+FF256C092
+  94  Poisson+FF256C093  1.0000   0.0000   Poisson+FF256C093
+  95  Poisson+FF256C094  1.0000   0.0059   Poisson+FF256C094
+  96  Poisson+FF256C095  1.0000   0.0001   Poisson+FF256C095
+  97  Poisson+FF256C096  1.0000   0.0006   Poisson+FF256C096
+  98  Poisson+FF256C097  1.0000   0.0019   Poisson+FF256C097
+  99  Poisson+FF256C098  1.0000   0.0108   Poisson+FF256C098
+ 100  Poisson+FF256C099  1.0000   0.0000   Poisson+FF256C099
+ 101  Poisson+FF256C100  1.0000   0.0000   Poisson+FF256C100
+ 102  Poisson+FF256C101  1.0000   0.0007   Poisson+FF256C101
+ 103  Poisson+FF256C102  1.0000   0.0000   Poisson+FF256C102
+ 104  Poisson+FF256C103  1.0000   0.0020   Poisson+FF256C103
+ 105  Poisson+FF256C104  1.0000   0.0006   Poisson+FF256C104
+ 106  Poisson+FF256C105  1.0000   0.0028   Poisson+FF256C105
+ 107  Poisson+FF256C106  1.0000   0.0126   Poisson+FF256C106
+ 108  Poisson+FF256C107  1.0000   0.0000   Poisson+FF256C107
+ 109  Poisson+FF256C108  1.0000   0.0013   Poisson+FF256C108
+ 110  Poisson+FF256C109  1.0000   0.0046   Poisson+FF256C109
+ 111  Poisson+FF256C110  1.0000   0.0122   Poisson+FF256C110
+ 112  Poisson+FF256C111  1.0000   0.0018   Poisson+FF256C111
+ 113  Poisson+FF256C112  1.0000   0.0004   Poisson+FF256C112
+ 114  Poisson+FF256C113  1.0000   0.0040   Poisson+FF256C113
+ 115  Poisson+FF256C114  1.0000   0.0000   Poisson+FF256C114
+ 116  Poisson+FF256C115  1.0000   0.0051   Poisson+FF256C115
+ 117  Poisson+FF256C116  1.0000   0.0015   Poisson+FF256C116
+ 118  Poisson+FF256C117  1.0000   0.0000   Poisson+FF256C117
+ 119  Poisson+FF256C118  1.0000   0.0059   Poisson+FF256C118
+ 120  Poisson+FF256C119  1.0000   0.0000   Poisson+FF256C119
+ 121  Poisson+FF256C120  1.0000   0.0000   Poisson+FF256C120
+ 122  Poisson+FF256C121  1.0000   0.0000   Poisson+FF256C121
+ 123  Poisson+FF256C122  1.0000   0.0000   Poisson+FF256C122
+ 124  Poisson+FF256C123  1.0000   0.0000   Poisson+FF256C123
+ 125  Poisson+FF256C124  1.0000   0.0005   Poisson+FF256C124
+ 126  Poisson+FF256C125  1.0000   0.0004   Poisson+FF256C125
+ 127  Poisson+FF256C126  1.0000   0.0000   Poisson+FF256C126
+ 128  Poisson+FF256C127  1.0000   0.0002   Poisson+FF256C127
+ 129  Poisson+FF256C128  1.0000   0.0000   Poisson+FF256C128
+ 130  Poisson+FF256C129  1.0000   0.0095   Poisson+FF256C129
+ 131  Poisson+FF256C130  1.0000   0.0001   Poisson+FF256C130
+ 132  Poisson+FF256C131  1.0000   0.0016   Poisson+FF256C131
+ 133  Poisson+FF256C132  1.0000   0.0008   Poisson+FF256C132
+ 134  Poisson+FF256C133  1.0000   0.0037   Poisson+FF256C133
+ 135  Poisson+FF256C134  1.0000   0.0000   Poisson+FF256C134
+ 136  Poisson+FF256C135  1.0000   0.0021   Poisson+FF256C135
+ 137  Poisson+FF256C136  1.0000   0.0051   Poisson+FF256C136
+ 138  Poisson+FF256C137  1.0000   0.0035   Poisson+FF256C137
+ 139  Poisson+FF256C138  1.0000   0.0003   Poisson+FF256C138
+ 140  Poisson+FF256C139  1.0000   0.0092   Poisson+FF256C139
+ 141  Poisson+FF256C140  1.0000   0.0080   Poisson+FF256C140
+ 142  Poisson+FF256C141  1.0000   0.0000   Poisson+FF256C141
+ 143  Poisson+FF256C142  1.0000   0.0039   Poisson+FF256C142
+ 144  Poisson+FF256C143  1.0000   0.0000   Poisson+FF256C143
+ 145  Poisson+FF256C144  1.0000   0.0005   Poisson+FF256C144
+ 146  Poisson+FF256C145  1.0000   0.0158   Poisson+FF256C145
+ 147  Poisson+FF256C146  1.0000   0.0064   Poisson+FF256C146
+ 148  Poisson+FF256C147  1.0000   0.0057   Poisson+FF256C147
+ 149  Poisson+FF256C148  1.0000   0.0027   Poisson+FF256C148
+ 150  Poisson+FF256C149  1.0000   0.0060   Poisson+FF256C149
+ 151  Poisson+FF256C150  1.0000   0.0119   Poisson+FF256C150
+ 152  Poisson+FF256C151  1.0000   0.0107   Poisson+FF256C151
+ 153  Poisson+FF256C152  1.0000   0.0026   Poisson+FF256C152
+ 154  Poisson+FF256C153  1.0000   0.0015   Poisson+FF256C153
+ 155  Poisson+FF256C154  1.0000   0.0142   Poisson+FF256C154
+ 156  Poisson+FF256C155  1.0000   0.0033   Poisson+FF256C155
+ 157  Poisson+FF256C156  1.0000   0.0019   Poisson+FF256C156
+ 158  Poisson+FF256C157  1.0000   0.0134   Poisson+FF256C157
+ 159  Poisson+FF256C158  1.0000   0.0135   Poisson+FF256C158
+ 160  Poisson+FF256C159  1.0000   0.0010   Poisson+FF256C159
+ 161  Poisson+FF256C160  1.0000   0.0013   Poisson+FF256C160
+ 162  Poisson+FF256C161  1.0000   0.0024   Poisson+FF256C161
+ 163  Poisson+FF256C162  1.0000   0.0016   Poisson+FF256C162
+ 164  Poisson+FF256C163  1.0000   0.0194   Poisson+FF256C163
+ 165  Poisson+FF256C164  1.0000   0.0025   Poisson+FF256C164
+ 166  Poisson+FF256C165  1.0000   0.0110   Poisson+FF256C165
+ 167  Poisson+FF256C166  1.0000   0.0054   Poisson+FF256C166
+ 168  Poisson+FF256C167  1.0000   0.0059   Poisson+FF256C167
+ 169  Poisson+FF256C168  1.0000   0.0026   Poisson+FF256C168
+ 170  Poisson+FF256C169  1.0000   0.0017   Poisson+FF256C169
+ 171  Poisson+FF256C170  1.0000   0.0075   Poisson+FF256C170
+ 172  Poisson+FF256C171  1.0000   0.0070   Poisson+FF256C171
+ 173  Poisson+FF256C172  1.0000   0.0005   Poisson+FF256C172
+ 174  Poisson+FF256C173  1.0000   0.0000   Poisson+FF256C173
+ 175  Poisson+FF256C174  1.0000   0.0000   Poisson+FF256C174
+ 176  Poisson+FF256C175  1.0000   0.0051   Poisson+FF256C175
+ 177  Poisson+FF256C176  1.0000   0.0031   Poisson+FF256C176
+ 178  Poisson+FF256C177  1.0000   0.0000   Poisson+FF256C177
+ 179  Poisson+FF256C178  1.0000   0.0015   Poisson+FF256C178
+ 180  Poisson+FF256C179  1.0000   0.0006   Poisson+FF256C179
+ 181  Poisson+FF256C180  1.0000   0.0018   Poisson+FF256C180
+ 182  Poisson+FF256C181  1.0000   0.0073   Poisson+FF256C181
+ 183  Poisson+FF256C182  1.0000   0.0001   Poisson+FF256C182
+ 184  Poisson+FF256C183  1.0000   0.0138   Poisson+FF256C183
+ 185  Poisson+FF256C184  1.0000   0.0127   Poisson+FF256C184
+ 186  Poisson+FF256C185  1.0000   0.0043   Poisson+FF256C185
+ 187  Poisson+FF256C186  1.0000   0.0000   Poisson+FF256C186
+ 188  Poisson+FF256C187  1.0000   0.0066   Poisson+FF256C187
+ 189  Poisson+FF256C188  1.0000   0.0028   Poisson+FF256C188
+ 190  Poisson+FF256C189  1.0000   0.0022   Poisson+FF256C189
+ 191  Poisson+FF256C190  1.0000   0.0022   Poisson+FF256C190
+ 192  Poisson+FF256C191  1.0000   0.0046   Poisson+FF256C191
+ 193  Poisson+FF256C192  1.0000   0.0046   Poisson+FF256C192
+ 194  Poisson+FF256C193  1.0000   0.0033   Poisson+FF256C193
+ 195  Poisson+FF256C194  1.0000   0.0049   Poisson+FF256C194
+ 196  Poisson+FF256C195  1.0000   0.0006   Poisson+FF256C195
+ 197  Poisson+FF256C196  1.0000   0.0000   Poisson+FF256C196
+ 198  Poisson+FF256C197  1.0000   0.0104   Poisson+FF256C197
+ 199  Poisson+FF256C198  1.0000   0.0021   Poisson+FF256C198
+ 200  Poisson+FF256C199  1.0000   0.0061   Poisson+FF256C199
+ 201  Poisson+FF256C200  1.0000   0.0027   Poisson+FF256C200
+ 202  Poisson+FF256C201  1.0000   0.0010   Poisson+FF256C201
+ 203  Poisson+FF256C202  1.0000   0.0007   Poisson+FF256C202
+ 204  Poisson+FF256C203  1.0000   0.0111   Poisson+FF256C203
+ 205  Poisson+FF256C204  1.0000   0.0000   Poisson+FF256C204
+ 206  Poisson+FF256C205  1.0000   0.0061   Poisson+FF256C205
+ 207  Poisson+FF256C206  1.0000   0.0128   Poisson+FF256C206
+ 208  Poisson+FF256C207  1.0000   0.0110   Poisson+FF256C207
+ 209  Poisson+FF256C208  1.0000   0.0094   Poisson+FF256C208
+ 210  Poisson+FF256C209  1.0000   0.0154   Poisson+FF256C209
+ 211  Poisson+FF256C210  1.0000   0.0028   Poisson+FF256C210
+ 212  Poisson+FF256C211  1.0000   0.0082   Poisson+FF256C211
+ 213  Poisson+FF256C212  1.0000   0.0025   Poisson+FF256C212
+ 214  Poisson+FF256C213  1.0000   0.0059   Poisson+FF256C213
+ 215  Poisson+FF256C214  1.0000   0.0132   Poisson+FF256C214
+ 216  Poisson+FF256C215  1.0000   0.0028   Poisson+FF256C215
+ 217  Poisson+FF256C216  1.0000   0.0046   Poisson+FF256C216
+ 218  Poisson+FF256C217  1.0000   0.0176   Poisson+FF256C217
+ 219  Poisson+FF256C218  1.0000   0.0077   Poisson+FF256C218
+ 220  Poisson+FF256C219  1.0000   0.0032   Poisson+FF256C219
+ 221  Poisson+FF256C220  1.0000   0.0036   Poisson+FF256C220
+ 222  Poisson+FF256C221  1.0000   0.0043   Poisson+FF256C221
+ 223  Poisson+FF256C222  1.0000   0.0137   Poisson+FF256C222
+ 224  Poisson+FF256C223  1.0000   0.0025   Poisson+FF256C223
+ 225  Poisson+FF256C224  1.0000   0.0054   Poisson+FF256C224
+ 226  Poisson+FF256C225  1.0000   0.0031   Poisson+FF256C225
+ 227  Poisson+FF256C226  1.0000   0.0169   Poisson+FF256C226
+ 228  Poisson+FF256C227  1.0000   0.0018   Poisson+FF256C227
+ 229  Poisson+FF256C228  1.0000   0.0070   Poisson+FF256C228
+ 230  Poisson+FF256C229  1.0000   0.0100   Poisson+FF256C229
+ 231  Poisson+FF256C230  1.0000   0.0040   Poisson+FF256C230
+ 232  Poisson+FF256C231  1.0000   0.0054   Poisson+FF256C231
+ 233  Poisson+FF256C232  1.0000   0.0054   Poisson+FF256C232
+ 234  Poisson+FF256C233  1.0000   0.0034   Poisson+FF256C233
+ 235  Poisson+FF256C234  1.0000   0.0111   Poisson+FF256C234
+ 236  Poisson+FF256C235  1.0000   0.0067   Poisson+FF256C235
+ 237  Poisson+FF256C236  1.0000   0.0137   Poisson+FF256C236
+ 238  Poisson+FF256C237  1.0000   0.0049   Poisson+FF256C237
+ 239  Poisson+FF256C238  1.0000   0.0014   Poisson+FF256C238
+ 240  Poisson+FF256C239  1.0000   0.0069   Poisson+FF256C239
+ 241  Poisson+FF256C240  1.0000   0.0269   Poisson+FF256C240
+ 242  Poisson+FF256C241  1.0000   0.0046   Poisson+FF256C241
+ 243  Poisson+FF256C242  1.0000   0.0019   Poisson+FF256C242
+ 244  Poisson+FF256C243  1.0000   0.0004   Poisson+FF256C243
+ 245  Poisson+FF256C244  1.0000   0.0028   Poisson+FF256C244
+ 246  Poisson+FF256C245  1.0000   0.0000   Poisson+FF256C245
+ 247  Poisson+FF256C246  1.0000   0.0064   Poisson+FF256C246
+ 248  Poisson+FF256C247  1.0000   0.0079   Poisson+FF256C247
+ 249  Poisson+FF256C248  1.0000   0.0021   Poisson+FF256C248
+ 250  Poisson+FF256C249  1.0000   0.0023   Poisson+FF256C249
+ 251  Poisson+FF256C250  1.0000   0.0099   Poisson+FF256C250
+ 252  Poisson+FF256C251  1.0000   0.0032   Poisson+FF256C251
+ 253  Poisson+FF256C252  1.0000   0.0004   Poisson+FF256C252
+ 254  Poisson+FF256C253  1.0000   0.0032   Poisson+FF256C253
+ 255  Poisson+FF256C254  1.0000   0.0018   Poisson+FF256C254
+ 256  Poisson+FF256C255  1.0000   0.0016   Poisson+FF256C255
+
+Model of rate heterogeneity: FreeRate with 4 categories
+Site proportion and rates:  (0.2352,0.0467) (0.2719,0.3935) (0.2984,1.2119) (0.1944,2.6761)
+
+ Category  Relative_rate  Proportion
+  1         0.0467         0.2352
+  2         0.3935         0.2719
+  3         1.2119         0.2984
+  4         2.6761         0.1944
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -644954.0841 (s.e. 5220.6479)
+Unconstrained log-likelihood (without tree): -78025.4746
+Number of free parameters (#branches + #model parameters): 452
+Akaike information criterion (AIC) score: 1290812.1681
+Corrected Akaike information criterion (AICc) score: 1290862.1208
+Bayesian information criterion (BIC) score: 1294005.7426
+
+Total tree length (sum of branch lengths): 31.5056
+Sum of internal branch lengths: 8.1752 (25.9483% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Acanthamoeba-castellanii.ap.cs.fa' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++-------Acanthamoeba-castellanii.ap.cs.fa
+|
+|                   +----Acanthocystis-sp.ap.cs.fa
+|                +--| (100)
+|                |  |  +---Raineriophrys-erinaceoides.ap.cs.fa
+|                |  +--| (100)
+|                |     +----Raphidiophrys-heterophryoidea.ap.cs.fa
+|           +----| (100)
+|           |    +-----Choanocystis-sp.ap.cs.fa
+|        +--| (71)
+|        |  |                  +-----Aureococcus-anophagefferens.ap.cs.fa
+|        |  |               +--| (100)
+|        |  |               |  +-------Nannochloropsis-gaditana.ap.cs.fa
+|        |  |            +--| (100)
+|        |  |            |  |   +---Bolidomonas-pacifica.ap.cs.fa
+|        |  |            |  +---| (100)
+|        |  |            |      |              +--Fistulifera-solaris.ap.cs.fa
+|        |  |            |      |           +--| (100)
+|        |  |            |      |           |  +--Phaeodactylum-tricornutum.ap.cs.fa
+|        |  |            |      |        +--| (100)
+|        |  |            |      |        |  |  +--Fragilariopsis-cylindrus.ap.cs.fa
+|        |  |            |      |        |  +--| (100)
+|        |  |            |      |        |     +--Nitzschia-RCC80.ap.cs.fa
+|        |  |            |      |     +--| (95)
+|        |  |            |      |     |  +--Odontella-aurita.ap.cs.fa
+|        |  |            |      |  +--| (100)
+|        |  |            |      |  |  |  +--Thalassiosira-oceanica.ap.cs.fa
+|        |  |            |      |  |  +--| (100)
+|        |  |            |      |  |     +--Thalassiosira-pseudonana.ap.cs.fa
+|        |  |            |      +--| (100)
+|        |  |            |         +--Leptocylindrus-danicus.ap.cs.fa
+|        |  |         +--| (100)
+|        |  |         |  +-----Ectocarpus-siliculosus.ap.cs.fa
+|        |  |     +---| (100)
+|        |  |     |   +------Thraustotheca-clavata.ap.cs.fa
+|        |  |  +--| (61)
+|        |  |  |  |  +-----------Bigelowiella-natans.ap.cs.fa
+|        |  |  |  +--| (81)
+|        |  |  |     |                 +-----Elphidium-margaritaceum.ap.cs.fa
+|        |  |  |     +-----------------| (100)
+|        |  |  |                       +---------Reticulomyxa-filosa.ap.cs.fa
+|        |  +--| (70)
+|        |     |                   +--Oxytricha-trifallax.ap.cs.fa
+|        |     |       +-----------| (100)
+|        |     |       |           +--Stylonychia-lemnae.ap.cs.fa
+|        |     |    +--| (100)
+|        |     |    |  |      +----------Paramecium-tetraurelia.ap.cs.fa
+|        |     |    |  +------| (100)
+|        |     |    |         +--------Tetrahymena-thermophila.ap.cs.fa
+|        |     +----| (100)
+|        |          +-------------Stentor-coeruleus.ap.cs.fa
+|     +--| (36)
+|     |  |                              +--Amphidinium-carterae.ap.cs.fa
+|     |  |                        +-----| (100)
+|     |  |                        |     |     +--Polarella-glacialis.ap.cs.fa
+|     |  |                        |     |  +--| (100)
+|     |  |                        |     |  |  +---Protoceratium-reticulatum.ap.cs.fa
+|     |  |                        |     +--| (100)
+|     |  |                        |        +--Togula-jolla.ap.cs.fa
+|     |  |                 +------| (100)
+|     |  |                 |      +---Noctiluca-scintillans.ap.cs.fa
+|     |  |              +--| (99)
+|     |  |              |  |              +--Arabidopsis-thaliana.ap.cs.fa
+|     |  |              |  |           +--| (100)
+|     |  |              |  |           |  +--Oryza-sativa.ap.cs.fa
+|     |  |              |  |        +--| (90)
+|     |  |              |  |        |  +---Selaginella-moellendorffii.ap.cs.fa
+|     |  |              |  |     +--| (100)
+|     |  |              |  |     |  +--Physcomitrella-patens.ap.cs.fa
+|     |  |              |  |  +--| (100)
+|     |  |              |  |  |  +--Klebsormidium-nitens.ap.cs.fa
+|     |  |              |  +--| (100)
+|     |  |              |     |        +-----Auxenochlorella-protothecoides.ap.cs.fa
+|     |  |              |     |     +--| (100)
+|     |  |              |     |     |  |     +--Chlamydomonas-reinhardtii.ap.cs.fa
+|     |  |              |     |     |  |  +--| (100)
+|     |  |              |     |     |  |  |  +--Volvox-carteri.ap.cs.fa
+|     |  |              |     |     |  +--| (100)
+|     |  |              |     |     |     +---Monoraphidium-neglectum.ap.cs.fa
+|     |  |              |     |  +--| (100)
+|     |  |              |     |  |  +----Tetraselmis-sp.ap.cs.fa
+|     |  |              |     +--| (100)
+|     |  |              |        |       +----Bathycoccus-prasinos.ap.cs.fa
+|     |  |              |        |    +--| (100)
+|     |  |              |        |    |  +---Ostreococcus-tauri.ap.cs.fa
+|     |  |              |        +----| (100)
+|     |  |              |             +--Micromonas-pusilla.ap.cs.fa
+|     |  |           +--| (61)
+|     |  |           |  |        +---Chrysochromulina-sp.ap.cs.fa
+|     |  |           |  +--------| (100)
+|     |  |           |           +----Emiliana-huxleyi.ap.cs.fa
+|     |  |        +--| (63)
+|     |  |        |  |          +---Cryptophyceae-sp.ap.cs.fa
+|     |  |        |  |   +------| (100)
+|     |  |        |  |   |      +--Guillardia-theta.ap.cs.fa
+|     |  |        |  +---| (100)
+|     |  |        |      +------Goniomonas-avonlea.ap.cs.fa
+|     |  |     +--| (87)
+|     |  |     |  |          +------Chondrus-crispus.ap.cs.fa
+|     |  |     |  |       +--| (100)
+|     |  |     |  |       |  +-----Porphyra-umbilicalis.ap.cs.fa
+|     |  |     |  |  +----| (100)
+|     |  |     |  |  |    |  +-----------Cyanidioschyzon-merolae.ap.cs.fa
+|     |  |     |  |  |    +--| (100)
+|     |  |     |  |  |       +-------Galdieria-sulphuraria.ap.cs.fa
+|     |  |     |  +--| (89)
+|     |  |     |     |  +------Diphylleia-rotans.ap.cs.fa
+|     |  |     |     +--| (100)
+|     |  |     |        +-----Rigifila-ramosa.ap.cs.fa
+|     |  |  +--| (56)
+|     |  |  |  |               +-------------Bodo-saltans.ap.cs.fa
+|     |  |  |  |            +--| (97)
+|     |  |  |  |            |  +-----------Diplonema-papillatum.ap.cs.fa
+|     |  |  |  |        +---| (100)
+|     |  |  |  |        |   +---------Euglena-gracilis.ap.cs.fa
+|     |  |  |  |     +--| (99)
+|     |  |  |  |     |  +-----------------Naegleria-gruberi.ap.cs.fa
+|     |  |  |  |  +--| (97)
+|     |  |  |  |  |  +---------------Stygiella-incarcerata.ap.cs.fa
+|     |  |  |  +--| (74)
+|     |  |  |     +-----------Gefionella-okellyi.ap.cs.fa
+|     |  +--| (46)
+|     |     |        +--------Ancoracysta-twista.ap.cs.fa
+|     |     |     +--| (100)
+|     |     |     |  |              +--Telonema-spP1.ap.cs.fa
+|     |     |     |  |           +--| (100)
+|     |     |     |  |           |  +--Telonema-subtile.ap.cs.fa
+|     |     |     |  +-----------| (100)
+|     |     |     |              +--Telonema-spP2.ap.cs.fa
+|     |     |  +--| (85)
+|     |     |  |  |    +------Hemimastix-kukwesjijk.ap.cs.fa
+|     |     |  |  +----| (100)
+|     |     |  |       +--------Spironema-multiciliatum.ap.cs.fa
+|     |     +--| (80)
+|     |        +--------Cyanophora-paradoxa.ap.cs.fa
+|  +--| (75)
+|  |  |                     +------------------Aduncisulcus-paluster.ap.cs.fa
+|  |  |                  +--| (99)
+|  |  |                  |  |  +------------------Chilomastix-cuspidata.ap.cs.fa
+|  |  |                  |  +--| (100)
+|  |  |                  |     |            +------Dysnectes-brevis.ap.cs.fa
+|  |  |                  |     |  +---------| (100)
+|  |  |                  |     |  |         +---------------------------Trepomonas-sp.ap.cs.fa
+|  |  |                  |     +--| (37)
+|  |  |                  |        +-----------------Kipferlia-bialata.ap.cs.fa
+|  |  |               +--| (98)
+|  |  |               |  +--------------Ergobibamus-cyprinoides.ap.cs.fa
+|  |  |        +------| (100)
+|  |  |        |      +------------------Carpediemonas-membranifera.ap.cs.fa
+|  |  |     +--| (54)
+|  |  |     |  +--------------Trimastix-marina.ap.cs.fa
+|  |  |  +--| (53)
+|  |  |  |  +------------------------Entamoeba-dispar.ap.cs.fa
+|  |  +--| (30)
+|  |     |     +---------Ancyromonas-sigmoides.ap.cs.fa
+|  |     |  +--| (100)
+|  |     |  |  +--------Nutomonas-longa.ap.cs.fa
+|  |     +--| (100)
+|  |        +---------Fabomonas-tropica.ap.cs.fa
++--| (99)
+|  |              +-----Allomyces-macrogynus.ap.cs.fa
+|  |           +--| (99)
+|  |           |  |  +----Lobosporangium-transversale.ap.cs.fa
+|  |           |  +--| (100)
+|  |           |     +---------Schizosaccharomyces-pombe.ap.cs.fa
+|  |        +--| (100)
+|  |        |  +----Spizellomyces-punctatus.ap.cs.fa
+|  |     +--| (100)
+|  |     |  |  +-------------Fonticula-alba.ap.cs.fa
+|  |     |  +--| (100)
+|  |     |     +-----Parvularia-atlantis.ap.cs.fa
+|  |  +--| (100)
+|  |  |  |     +-----Amphimedon-queenslandica.ap.cs.fa
+|  |  |  |  +--| (100)
+|  |  |  |  |  |        +---Limulus-polyphemus.ap.cs.fa
+|  |  |  |  |  |     +--| (100)
+|  |  |  |  |  |     |  +------Lottia-gigantea.ap.cs.fa
+|  |  |  |  |  |  +--| (100)
+|  |  |  |  |  |  |  +---Xenopus-tropicalis.ap.cs.fa
+|  |  |  |  |  +--| (100)
+|  |  |  |  |     +----Nematostella-vectensis.ap.cs.fa
+|  |  |  +--| (100)
+|  |  |     |    +----Monosiga-brevicollis.ap.cs.fa
+|  |  |     +----| (100)
+|  |  |          +-----Salpingoeca-rosetta.ap.cs.fa
+|  +--| (84)
+|     |     +---------Amastigomonas-sp.ap.cs.fa
+|     +-----| (100)
+|           +-------Thecamonas-trahens.ap.cs.fa
+|
+|  +-----------Dictyostelium-discoideum.ap.cs.fa
++--| (100)
+   +------Physarum-polycephalum.ap.cs.fa
+
+Tree in newick format:
+
+(Acanthamoeba-castellanii.ap.cs.fa:0.2648968280,((((((Acanthocystis-sp.ap.cs.fa:0.1699522752,(Raineriophrys-erinaceoides.ap.cs.fa:0.1381070625,Raphidiophrys-heterophryoidea.ap.cs.fa:0.1558231679)100:0.0542610446)100:0.1047184237,Choanocystis-sp.ap.cs.fa:0.1866535239)100:0.1658544224,((((((Aureococcus-anophagefferens.ap.cs.fa:0.2002993598,Nannochloropsis-gaditana.ap.cs.fa:0.2785568177)100:0.0840499086,(Bolidomonas-pacifica.ap.cs.fa:0.1420222340,(((((Fistulifera-solaris.ap.cs.fa:0.0978939768,Phaeodactylum-tricornutum.ap.cs.fa:0.0676388677)100:0.0329533664,(Fragilariopsis-cylindrus.ap.cs.fa:0.0811362894,Nitzschia-RCC80.ap.cs.fa:0.0566067198)100:0.0506525001)100:0.0382613756,Odontella-aurita.ap.cs.fa:0.0842072728)95:0.0148416460,(Thalassiosira-oceanica.ap.cs.fa:0.0590096947,Thalassiosira-pseudonana.ap.cs.fa:0.0428948372)100:0.0526358201)100:0.0296520645,Leptocylindrus-danicus.ap.cs.fa:0.1188082967)100:0.0554638297)100:0.1374434657)100:0.0251101585,Ectocarpus-siliculosus.ap.cs.fa:0.2080804812)100:0.0637747009,Thraustotheca-clavata.ap.cs.fa:0.2402211376)100:0.1439021576,(Bigelowiella-natans.ap.cs.fa:0.3994623875,(Elphidium-margaritaceum.ap.cs.fa:0.1895274419,Reticulomyxa-filosa.ap.cs.fa:0.3361309262)100:0.5896536199)81:0.0774174714)61:0.0168418841,(((Oxytricha-trifallax.ap.cs.fa:0.0570398966,Stylonychia-lemnae.ap.cs.fa:0.0354025722)100:0.3873813880,(Paramecium-tetraurelia.ap.cs.fa:0.3568483059,Tetrahymena-thermophila.ap.cs.fa:0.2991444314)100:0.2432895442)100:0.0726569457,Stentor-coeruleus.ap.cs.fa:0.4489934040)100:0.1729453746)70:0.0182112081)71:0.0218228876,((((((((Amphidinium-carterae.ap.cs.fa:0.1215754051,((Polarella-glacialis.ap.cs.fa:0.1160677533,Protoceratium-reticulatum.ap.cs.fa:0.1272980957)100:0.0253226557,Togula-jolla.ap.cs.fa:0.0996903023)100:0.0368897074)100:0.2148891134,Noctiluca-scintillans.ap.cs.fa:0.1498795465)100:0.2407477625,(((((Arabidopsis-thaliana.ap.cs.fa:0.0950150101,Oryza-sativa.ap.cs.fa:0.0956044799)100:0.0583212698,Selaginella-moellendorffii.ap.cs.fa:0.1292861124)90:0.0203378277,Physcomitrella-patens.ap.cs.fa:0.0730870519)100:0.0434593639,Klebsormidium-nitens.ap.cs.fa:0.1224342810)100:0.0871826685,(((Auxenochlorella-protothecoides.ap.cs.fa:0.2154798510,((Chlamydomonas-reinhardtii.ap.cs.fa:0.0337753325,Volvox-carteri.ap.cs.fa:0.0332770601)100:0.1034401096,Monoraphidium-neglectum.ap.cs.fa:0.1435588161)100:0.0483258770)100:0.0282296339,Tetraselmis-sp.ap.cs.fa:0.1737788597)100:0.0541068394,((Bathycoccus-prasinos.ap.cs.fa:0.1775931216,Ostreococcus-tauri.ap.cs.fa:0.1334050179)100:0.0466009009,Micromonas-pusilla.ap.cs.fa:0.1038771380)100:0.1575873303)100:0.0298311532)100:0.0761658960)99:0.0481227906,(Chrysochromulina-sp.ap.cs.fa:0.1403867924,Emiliana-huxleyi.ap.cs.fa:0.1585071776)100:0.3040271218)61:0.0178891567,((Cryptophyceae-sp.ap.cs.fa:0.1516727641,Guillardia-theta.ap.cs.fa:0.0834853077)100:0.2308442338,Goniomonas-avonlea.ap.cs.fa:0.2411268538)100:0.1298404873)63:0.0118818131,(((Chondrus-crispus.ap.cs.fa:0.2199969751,Porphyra-umbilicalis.ap.cs.fa:0.2070344887)100:0.0656830174,(Cyanidioschyzon-merolae.ap.cs.fa:0.3751306347,Galdieria-sulphuraria.ap.cs.fa:0.2601744170)100:0.0414284945)100:0.1607883043,(Diphylleia-rotans.ap.cs.fa:0.2324166243,Rigifila-ramosa.ap.cs.fa:0.2166751389)100:0.1029623532)89:0.0299323025)87:0.0180318388,(((((Bodo-saltans.ap.cs.fa:0.4591624797,Diplonema-papillatum.ap.cs.fa:0.3888732034)97:0.0447337993,Euglena-gracilis.ap.cs.fa:0.3296260321)100:0.1286660176,Naegleria-gruberi.ap.cs.fa:0.5761021537)99:0.0267676227,Stygiella-incarcerata.ap.cs.fa:0.5178385986)97:0.0210175603,Gefionella-okellyi.ap.cs.fa:0.3927160337)74:0.0340125966)56:0.0077547587,(((Ancoracysta-twista.ap.cs.fa:0.3009800740,((Telonema-spP1.ap.cs.fa:0.0609092939,Telonema-subtile.ap.cs.fa:0.0669885906)100:0.0299718283,Telonema-spP2.ap.cs.fa:0.0746653155)100:0.3738716889)100:0.0338825606,(Hemimastix-kukwesjijk.ap.cs.fa:0.2218875383,Spironema-multiciliatum.ap.cs.fa:0.2994153107)100:0.1636339159)85:0.0189798785,Cyanophora-paradoxa.ap.cs.fa:0.3054070284)80:0.0161440644)46:0.0086405340)36:0.0105845240,((((((Aduncisulcus-paluster.ap.cs.fa:0.6174278748,(Chilomastix-cuspidata.ap.cs.fa:0.6133212689,((Dysnectes-brevis.ap.cs.fa:0.2323610611,Trepomonas-sp.ap.cs.fa:0.8783635174)100:0.3174835676,Kipferlia-bialata.ap.cs.fa:0.5873385319)37:0.0370405787)100:0.1239051954)99:0.0440458319,Ergobibamus-cyprinoides.ap.cs.fa:0.4739598306)98:0.0602315750,Carpediemonas-membranifera.ap.cs.fa:0.5960017470)100:0.2434115249,Trimastix-marina.ap.cs.fa:0.4686229186)54:0.0332130885,Entamoeba-dispar.ap.cs.fa:0.7994837479)53:0.0419018952,((Ancyromonas-sigmoides.ap.cs.fa:0.3358879555,Nutomonas-longa.ap.cs.fa:0.2806750190)100:0.0806247624,Fabomonas-tropica.ap.cs.fa:0.3181886868)100:0.0766250126)30:0.0139958691)75:0.0259233598,(((((Allomyces-macrogynus.ap.cs.fa:0.2088777882,(Lobosporangium-transversale.ap.cs.fa:0.1736736395,Schizosaccharomyces-pombe.ap.cs.fa:0.3394291211)100:0.0310687192)99:0.0258341085,Spizellomyces-punctatus.ap.cs.fa:0.1619611062)100:0.0777967908,(Fonticula-alba.ap.cs.fa:0.4489426799,Parvularia-atlantis.ap.cs.fa:0.2018819346)100:0.0769011520)100:0.0558241274,((Amphimedon-queenslandica.ap.cs.fa:0.2014090942,(((Limulus-polyphemus.ap.cs.fa:0.1410008188,Lottia-gigantea.ap.cs.fa:0.2258886820)100:0.0328057462,Xenopus-tropicalis.ap.cs.fa:0.1389775853)100:0.0299938691,Nematostella-vectensis.ap.cs.fa:0.1625395389)100:0.0215063534)100:0.0595904096,(Monosiga-brevicollis.ap.cs.fa:0.1845937785,Salpingoeca-rosetta.ap.cs.fa:0.1942224785)100:0.1656469054)100:0.0947754856)100:0.0391166154,(Amastigomonas-sp.ap.cs.fa:0.3141028238,Thecamonas-trahens.ap.cs.fa:0.2784609881)100:0.2172508176)84:0.0125316404)99:0.0456940085,(Dictyostelium-discoideum.ap.cs.fa:0.3776316118,Physarum-polycephalum.ap.cs.fa:0.2340195906)100:0.0851114643);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -644954.105777
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-------Acanthamoeba-castellanii.ap.cs.fa
+|
+|                   +----Acanthocystis-sp.ap.cs.fa
+|                +--| (100)
+|                |  |  +---Raineriophrys-erinaceoides.ap.cs.fa
+|                |  +--| (100)
+|                |     +----Raphidiophrys-heterophryoidea.ap.cs.fa
+|           +----| (100)
+|           |    +-----Choanocystis-sp.ap.cs.fa
+|        +--| (71)
+|        |  |                  +-----Aureococcus-anophagefferens.ap.cs.fa
+|        |  |               +--| (100)
+|        |  |               |  +-------Nannochloropsis-gaditana.ap.cs.fa
+|        |  |            +--| (100)
+|        |  |            |  |   +---Bolidomonas-pacifica.ap.cs.fa
+|        |  |            |  +---| (100)
+|        |  |            |      |              +--Fistulifera-solaris.ap.cs.fa
+|        |  |            |      |           +--| (100)
+|        |  |            |      |           |  +--Phaeodactylum-tricornutum.ap.cs.fa
+|        |  |            |      |        +--| (100)
+|        |  |            |      |        |  |  +--Fragilariopsis-cylindrus.ap.cs.fa
+|        |  |            |      |        |  +--| (100)
+|        |  |            |      |        |     +--Nitzschia-RCC80.ap.cs.fa
+|        |  |            |      |     +--| (95)
+|        |  |            |      |     |  +--Odontella-aurita.ap.cs.fa
+|        |  |            |      |  +--| (100)
+|        |  |            |      |  |  |  +--Thalassiosira-oceanica.ap.cs.fa
+|        |  |            |      |  |  +--| (100)
+|        |  |            |      |  |     +--Thalassiosira-pseudonana.ap.cs.fa
+|        |  |            |      +--| (100)
+|        |  |            |         +--Leptocylindrus-danicus.ap.cs.fa
+|        |  |         +--| (100)
+|        |  |         |  +-----Ectocarpus-siliculosus.ap.cs.fa
+|        |  |     +---| (100)
+|        |  |     |   +------Thraustotheca-clavata.ap.cs.fa
+|        |  |  +--| (61)
+|        |  |  |  |  +-----------Bigelowiella-natans.ap.cs.fa
+|        |  |  |  +--| (81)
+|        |  |  |     |                 +-----Elphidium-margaritaceum.ap.cs.fa
+|        |  |  |     +-----------------| (100)
+|        |  |  |                       +---------Reticulomyxa-filosa.ap.cs.fa
+|        |  +--| (70)
+|        |     |                   +--Oxytricha-trifallax.ap.cs.fa
+|        |     |       +-----------| (100)
+|        |     |       |           +--Stylonychia-lemnae.ap.cs.fa
+|        |     |    +--| (100)
+|        |     |    |  |      +----------Paramecium-tetraurelia.ap.cs.fa
+|        |     |    |  +------| (100)
+|        |     |    |         +--------Tetrahymena-thermophila.ap.cs.fa
+|        |     +----| (100)
+|        |          +-------------Stentor-coeruleus.ap.cs.fa
+|     +--| (36)
+|     |  |                              +--Amphidinium-carterae.ap.cs.fa
+|     |  |                        +-----| (100)
+|     |  |                        |     |     +--Polarella-glacialis.ap.cs.fa
+|     |  |                        |     |  +--| (100)
+|     |  |                        |     |  |  +---Protoceratium-reticulatum.ap.cs.fa
+|     |  |                        |     +--| (100)
+|     |  |                        |        +--Togula-jolla.ap.cs.fa
+|     |  |                 +------| (100)
+|     |  |                 |      +---Noctiluca-scintillans.ap.cs.fa
+|     |  |              +--| (99)
+|     |  |              |  |              +--Arabidopsis-thaliana.ap.cs.fa
+|     |  |              |  |           +--| (100)
+|     |  |              |  |           |  +--Oryza-sativa.ap.cs.fa
+|     |  |              |  |        +--| (90)
+|     |  |              |  |        |  +---Selaginella-moellendorffii.ap.cs.fa
+|     |  |              |  |     +--| (100)
+|     |  |              |  |     |  +--Physcomitrella-patens.ap.cs.fa
+|     |  |              |  |  +--| (100)
+|     |  |              |  |  |  +--Klebsormidium-nitens.ap.cs.fa
+|     |  |              |  +--| (100)
+|     |  |              |     |        +-----Auxenochlorella-protothecoides.ap.cs.fa
+|     |  |              |     |     +--| (100)
+|     |  |              |     |     |  |     +--Chlamydomonas-reinhardtii.ap.cs.fa
+|     |  |              |     |     |  |  +--| (100)
+|     |  |              |     |     |  |  |  +--Volvox-carteri.ap.cs.fa
+|     |  |              |     |     |  +--| (100)
+|     |  |              |     |     |     +---Monoraphidium-neglectum.ap.cs.fa
+|     |  |              |     |  +--| (100)
+|     |  |              |     |  |  +----Tetraselmis-sp.ap.cs.fa
+|     |  |              |     +--| (100)
+|     |  |              |        |       +----Bathycoccus-prasinos.ap.cs.fa
+|     |  |              |        |    +--| (100)
+|     |  |              |        |    |  +---Ostreococcus-tauri.ap.cs.fa
+|     |  |              |        +----| (100)
+|     |  |              |             +--Micromonas-pusilla.ap.cs.fa
+|     |  |           +--| (61)
+|     |  |           |  |        +---Chrysochromulina-sp.ap.cs.fa
+|     |  |           |  +--------| (100)
+|     |  |           |           +----Emiliana-huxleyi.ap.cs.fa
+|     |  |        +--| (63)
+|     |  |        |  |          +---Cryptophyceae-sp.ap.cs.fa
+|     |  |        |  |   +------| (100)
+|     |  |        |  |   |      +--Guillardia-theta.ap.cs.fa
+|     |  |        |  +---| (100)
+|     |  |        |      +------Goniomonas-avonlea.ap.cs.fa
+|     |  |     +--| (87)
+|     |  |     |  |          +------Chondrus-crispus.ap.cs.fa
+|     |  |     |  |       +--| (100)
+|     |  |     |  |       |  +-----Porphyra-umbilicalis.ap.cs.fa
+|     |  |     |  |  +----| (100)
+|     |  |     |  |  |    |  +-----------Cyanidioschyzon-merolae.ap.cs.fa
+|     |  |     |  |  |    +--| (100)
+|     |  |     |  |  |       +-------Galdieria-sulphuraria.ap.cs.fa
+|     |  |     |  +--| (89)
+|     |  |     |     |  +------Diphylleia-rotans.ap.cs.fa
+|     |  |     |     +--| (100)
+|     |  |     |        +-----Rigifila-ramosa.ap.cs.fa
+|     |  |  +--| (56)
+|     |  |  |  |               +-------------Bodo-saltans.ap.cs.fa
+|     |  |  |  |            +--| (97)
+|     |  |  |  |            |  +-----------Diplonema-papillatum.ap.cs.fa
+|     |  |  |  |        +---| (100)
+|     |  |  |  |        |   +---------Euglena-gracilis.ap.cs.fa
+|     |  |  |  |     +--| (99)
+|     |  |  |  |     |  +-----------------Naegleria-gruberi.ap.cs.fa
+|     |  |  |  |  +--| (97)
+|     |  |  |  |  |  +---------------Stygiella-incarcerata.ap.cs.fa
+|     |  |  |  +--| (74)
+|     |  |  |     +-----------Gefionella-okellyi.ap.cs.fa
+|     |  +--| (46)
+|     |     |        +--------Ancoracysta-twista.ap.cs.fa
+|     |     |     +--| (100)
+|     |     |     |  |              +--Telonema-spP1.ap.cs.fa
+|     |     |     |  |           +--| (100)
+|     |     |     |  |           |  +--Telonema-subtile.ap.cs.fa
+|     |     |     |  +-----------| (100)
+|     |     |     |              +--Telonema-spP2.ap.cs.fa
+|     |     |  +--| (85)
+|     |     |  |  |    +------Hemimastix-kukwesjijk.ap.cs.fa
+|     |     |  |  +----| (100)
+|     |     |  |       +--------Spironema-multiciliatum.ap.cs.fa
+|     |     +--| (80)
+|     |        +--------Cyanophora-paradoxa.ap.cs.fa
+|  +--| (75)
+|  |  |                     +------------------Aduncisulcus-paluster.ap.cs.fa
+|  |  |                  +--| (99)
+|  |  |                  |  |     +------------------Chilomastix-cuspidata.ap.cs.fa
+|  |  |                  |  |  +--| (63)
+|  |  |                  |  |  |  |         +------Dysnectes-brevis.ap.cs.fa
+|  |  |                  |  |  |  +---------| (100)
+|  |  |                  |  |  |            +---------------------------Trepomonas-sp.ap.cs.fa
+|  |  |                  |  +--| (100)
+|  |  |                  |     +------------------Kipferlia-bialata.ap.cs.fa
+|  |  |               +--| (98)
+|  |  |               |  +--------------Ergobibamus-cyprinoides.ap.cs.fa
+|  |  |        +------| (100)
+|  |  |        |      +------------------Carpediemonas-membranifera.ap.cs.fa
+|  |  |     +--| (54)
+|  |  |     |  +--------------Trimastix-marina.ap.cs.fa
+|  |  |  +--| (53)
+|  |  |  |  +------------------------Entamoeba-dispar.ap.cs.fa
+|  |  +--| (30)
+|  |     |     +---------Ancyromonas-sigmoides.ap.cs.fa
+|  |     |  +--| (100)
+|  |     |  |  +--------Nutomonas-longa.ap.cs.fa
+|  |     +--| (100)
+|  |        +---------Fabomonas-tropica.ap.cs.fa
++--| (99)
+|  |              +-----Allomyces-macrogynus.ap.cs.fa
+|  |           +--| (99)
+|  |           |  |  +----Lobosporangium-transversale.ap.cs.fa
+|  |           |  +--| (100)
+|  |           |     +---------Schizosaccharomyces-pombe.ap.cs.fa
+|  |        +--| (100)
+|  |        |  +----Spizellomyces-punctatus.ap.cs.fa
+|  |     +--| (100)
+|  |     |  |  +-------------Fonticula-alba.ap.cs.fa
+|  |     |  +--| (100)
+|  |     |     +-----Parvularia-atlantis.ap.cs.fa
+|  |  +--| (100)
+|  |  |  |     +-----Amphimedon-queenslandica.ap.cs.fa
+|  |  |  |  +--| (100)
+|  |  |  |  |  |        +---Limulus-polyphemus.ap.cs.fa
+|  |  |  |  |  |     +--| (100)
+|  |  |  |  |  |     |  +------Lottia-gigantea.ap.cs.fa
+|  |  |  |  |  |  +--| (100)
+|  |  |  |  |  |  |  +---Xenopus-tropicalis.ap.cs.fa
+|  |  |  |  |  +--| (100)
+|  |  |  |  |     +----Nematostella-vectensis.ap.cs.fa
+|  |  |  +--| (100)
+|  |  |     |    +----Monosiga-brevicollis.ap.cs.fa
+|  |  |     +----| (100)
+|  |  |          +-----Salpingoeca-rosetta.ap.cs.fa
+|  +--| (84)
+|     |     +---------Amastigomonas-sp.ap.cs.fa
+|     +-----| (100)
+|           +-------Thecamonas-trahens.ap.cs.fa
+|
+|  +-----------Dictyostelium-discoideum.ap.cs.fa
++--| (100)
+   +------Physarum-polycephalum.ap.cs.fa
+
+
+Consensus tree in newick format: 
+
+(Acanthamoeba-castellanii.ap.cs.fa:0.2649191419,((((((Acanthocystis-sp.ap.cs.fa:0.1699449430,(Raineriophrys-erinaceoides.ap.cs.fa:0.1381305198,Raphidiophrys-heterophryoidea.ap.cs.fa:0.1558215439)100:0.0542922340)100:0.1047280457,Choanocystis-sp.ap.cs.fa:0.1866972966)100:0.1658739748,((((((Aureococcus-anophagefferens.ap.cs.fa:0.2004441217,Nannochloropsis-gaditana.ap.cs.fa:0.2786177823)100:0.0839308327,(Bolidomonas-pacifica.ap.cs.fa:0.1420690829,(((((Fistulifera-solaris.ap.cs.fa:0.0979022938,Phaeodactylum-tricornutum.ap.cs.fa:0.0676431225)100:0.0329616110,(Fragilariopsis-cylindrus.ap.cs.fa:0.0811350105,Nitzschia-RCC80.ap.cs.fa:0.0566149740)100:0.0506510092)100:0.0382657661,Odontella-aurita.ap.cs.fa:0.0842125367)95:0.0148417077,(Thalassiosira-oceanica.ap.cs.fa:0.0590148860,Thalassiosira-pseudonana.ap.cs.fa:0.0428968226)100:0.0526466989)100:0.0296320714,Leptocylindrus-danicus.ap.cs.fa:0.1188283118)100:0.0554530904)100:0.1374532459)100:0.0251016360,Ectocarpus-siliculosus.ap.cs.fa:0.2080857353)100:0.0637766789,Thraustotheca-clavata.ap.cs.fa:0.2402276797)100:0.1439139885,(Bigelowiella-natans.ap.cs.fa:0.3994739857,(Elphidium-margaritaceum.ap.cs.fa:0.1896145206,Reticulomyxa-filosa.ap.cs.fa:0.3360125978)100:0.5895291968)81:0.0774193536)61:0.0168368154,(((Oxytricha-trifallax.ap.cs.fa:0.0570604568,Stylonychia-lemnae.ap.cs.fa:0.0353909640)100:0.3874800053,(Paramecium-tetraurelia.ap.cs.fa:0.3567642282,Tetrahymena-thermophila.ap.cs.fa:0.2992667425)100:0.2433395685)100:0.0726359526,Stentor-coeruleus.ap.cs.fa:0.4490538858)100:0.1729798060)70:0.0182139101)71:0.0218175349,((((((((Amphidinium-carterae.ap.cs.fa:0.1215733888,((Polarella-glacialis.ap.cs.fa:0.1160822057,Protoceratium-reticulatum.ap.cs.fa:0.1273086518)100:0.0253221291,Togula-jolla.ap.cs.fa:0.0997089657)100:0.0369037944)100:0.2150184012,Noctiluca-scintillans.ap.cs.fa:0.1497867162)100:0.2408194879,(((((Arabidopsis-thaliana.ap.cs.fa:0.0950228325,Oryza-sativa.ap.cs.fa:0.0956106716)100:0.0583189972,Selaginella-moellendorffii.ap.cs.fa:0.1292867831)90:0.0203327299,Physcomitrella-patens.ap.cs.fa:0.0730954581)100:0.0434382555,Klebsormidium-nitens.ap.cs.fa:0.1224594033)100:0.0871560147,(((Auxenochlorella-protothecoides.ap.cs.fa:0.2154664918,((Chlamydomonas-reinhardtii.ap.cs.fa:0.0337752439,Volvox-carteri.ap.cs.fa:0.0332813706)100:0.1034532781,Monoraphidium-neglectum.ap.cs.fa:0.1435765221)100:0.0483385924)100:0.0282110962,Tetraselmis-sp.ap.cs.fa:0.1738088106)100:0.0541142814,((Bathycoccus-prasinos.ap.cs.fa:0.1776078590,Ostreococcus-tauri.ap.cs.fa:0.1334178998)100:0.0466851218,Micromonas-pusilla.ap.cs.fa:0.1038399156)100:0.1576291907)100:0.0298196596)100:0.0761644368)99:0.0481579873,(Chrysochromulina-sp.ap.cs.fa:0.1404126093,Emiliana-huxleyi.ap.cs.fa:0.1584985455)100:0.3040833993)61:0.0179040072,((Cryptophyceae-sp.ap.cs.fa:0.1517119989,Guillardia-theta.ap.cs.fa:0.0834743269)100:0.2309421755,Goniomonas-avonlea.ap.cs.fa:0.2411204193)100:0.1298628427)63:0.0118863859,(((Chondrus-crispus.ap.cs.fa:0.2199835841,Porphyra-umbilicalis.ap.cs.fa:0.2070293277)100:0.0656590340,(Cyanidioschyzon-merolae.ap.cs.fa:0.3751841234,Galdieria-sulphuraria.ap.cs.fa:0.2602124018)100:0.0413976496)100:0.1607841345,(Diphylleia-rotans.ap.cs.fa:0.2324203155,Rigifila-ramosa.ap.cs.fa:0.2167177889)100:0.1029666009)89:0.0299419126)87:0.0180372395,(((((Bodo-saltans.ap.cs.fa:0.4591341888,Diplonema-papillatum.ap.cs.fa:0.3889339380)97:0.0447082032,Euglena-gracilis.ap.cs.fa:0.3296113607)100:0.1286511608,Naegleria-gruberi.ap.cs.fa:0.5760688706)99:0.0267576797,Stygiella-incarcerata.ap.cs.fa:0.5177500330)97:0.0210303013,Gefionella-okellyi.ap.cs.fa:0.3927084276)74:0.0340366180)56:0.0077543783,(((Ancoracysta-twista.ap.cs.fa:0.3011559586,((Telonema-spP1.ap.cs.fa:0.0609105222,Telonema-subtile.ap.cs.fa:0.0669847970)100:0.0299599788,Telonema-spP2.ap.cs.fa:0.0746767001)100:0.3738518347)100:0.0338573881,(Hemimastix-kukwesjijk.ap.cs.fa:0.2218731377,Spironema-multiciliatum.ap.cs.fa:0.2994340927)100:0.1635632374)85:0.0190502422,Cyanophora-paradoxa.ap.cs.fa:0.3053824385)80:0.0161470227)46:0.0086234806)36:0.0105913553,((((((Aduncisulcus-paluster.ap.cs.fa:0.6157098390,((Chilomastix-cuspidata.ap.cs.fa:0.5946192788,(Dysnectes-brevis.ap.cs.fa:0.2333034433,Trepomonas-sp.ap.cs.fa:0.8711177866)100:0.3287081097)63:0.0471652896,Kipferlia-bialata.ap.cs.fa:0.6142225332)100:0.1104526176)99:0.0459595030,Ergobibamus-cyprinoides.ap.cs.fa:0.4748115194)98:0.0592080921,Carpediemonas-membranifera.ap.cs.fa:0.5959602748)100:0.2433586732,Trimastix-marina.ap.cs.fa:0.4687712835)54:0.0331609421,Entamoeba-dispar.ap.cs.fa:0.7997749236)53:0.0418136219,((Ancyromonas-sigmoides.ap.cs.fa:0.3359208363,Nutomonas-longa.ap.cs.fa:0.2806887595)100:0.0806251122,Fabomonas-tropica.ap.cs.fa:0.3181868968)100:0.0767019831)30:0.0139318553)75:0.0259024458,(((((Allomyces-macrogynus.ap.cs.fa:0.2088926326,(Lobosporangium-transversale.ap.cs.fa:0.1736411950,Schizosaccharomyces-pombe.ap.cs.fa:0.3394797280)100:0.0310870320)99:0.0258371192,Spizellomyces-punctatus.ap.cs.fa:0.1619614370)100:0.0777981437,(Fonticula-alba.ap.cs.fa:0.4489786723,Parvularia-atlantis.ap.cs.fa:0.2018797163)100:0.0769740182)100:0.0558163391,((Amphimedon-queenslandica.ap.cs.fa:0.2014513535,(((Limulus-polyphemus.ap.cs.fa:0.1410207147,Lottia-gigantea.ap.cs.fa:0.2259122917)100:0.0328022492,Xenopus-tropicalis.ap.cs.fa:0.1389806779)100:0.0300039699,Nematostella-vectensis.ap.cs.fa:0.1625416795)100:0.0215005160)100:0.0595811051,(Monosiga-brevicollis.ap.cs.fa:0.1845670753,Salpingoeca-rosetta.ap.cs.fa:0.1942459247)100:0.1656509643)100:0.0948189691)100:0.0391256865,(Amastigomonas-sp.ap.cs.fa:0.3141492067,Thecamonas-trahens.ap.cs.fa:0.2784133093)100:0.2172495258)84:0.0125260164)99:0.0456861727,(Dictyostelium-discoideum.ap.cs.fa:0.3777112860,Physarum-polycephalum.ap.cs.fa:0.2340341574)100:0.0851352537);
+
+TIME STAMP
+----------
+
+Date and time: Fri Dec  6 18:49:46 2019
+Total CPU time used: 10732942.53 seconds (2981h:22m:22s)
+Total wall-clock time used: 538727.2896 seconds (149h:38m:47s)
+
