@@ -14,9 +14,9 @@ cmd_opts=(-nt "$n_cpus"
           # -redo -mredo
           -s "$data_fn"
           -mdef "${dist_fn}"
-	  -mwopt
+	  # -mwopt
 	  -m "${udm_model}"
 	  -fs  "${data_fn}_${n_comps}_pmsf.sitefreq" 
-          -pre "${data_fn}_${n_comps}_pmsf")
+          -pre "${data_fn}_${n_comps}_pmsf_ana")
 
 "${cmd_base[@]}" "${cmd_opts[@]}"
