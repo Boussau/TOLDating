@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=eukLgConst
+#SBATCH --output=%x-%j.out
+#SBATCH --error=%x-%j.err
+#SBATCH --partition=high
+#SBATCH --time="14-00:00:00"
+#SBATCH --mem-per-cpu=500MB
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=10
+#SBATCH --mail-type="FAIL"
+#SBATCH --mail-user="dominik.schrempf@gmail.com"
+
+lg-const() {
+    iqtree -nt 10 -g eukaryotes/constraint.nwk -s "$1" -m LG+F+R4 -pre "${1}"_LG_const
+}
+
+lg-const eukaryotes_v2_linsi_bmge.fas
